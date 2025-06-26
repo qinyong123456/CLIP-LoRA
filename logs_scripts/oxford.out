@@ -1,0 +1,460 @@
+Preparing dataset.
+Reading split from /home/pedro36/projects/def-leszek/pedro36/datasets/DATA/Flower102/split_zhou_OxfordFlowers.json
+Creating a 4-shot dataset
+Creating a 16-shot dataset
+
+Getting textual features as CLIP's classifier.
+
+Loading visual features and labels from val set.
+
+Loading visual features and labels from test set.
+
+**** Zero-shot CLIP's test accuracy: 67.44. ****
+
+Residual Attention Block 0: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=512, out_features=512, bias=True)
+  )
+  (ln_1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=512, out_features=2048, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=2048, out_features=512, bias=True)
+  )
+  (ln_2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 1: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=512, out_features=512, bias=True)
+  )
+  (ln_1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=512, out_features=2048, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=2048, out_features=512, bias=True)
+  )
+  (ln_2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 2: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=512, out_features=512, bias=True)
+  )
+  (ln_1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=512, out_features=2048, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=2048, out_features=512, bias=True)
+  )
+  (ln_2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 3: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=512, out_features=512, bias=True)
+  )
+  (ln_1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=512, out_features=2048, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=2048, out_features=512, bias=True)
+  )
+  (ln_2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 4: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=512, out_features=512, bias=True)
+  )
+  (ln_1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=512, out_features=2048, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=2048, out_features=512, bias=True)
+  )
+  (ln_2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 5: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=512, out_features=512, bias=True)
+  )
+  (ln_1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=512, out_features=2048, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=2048, out_features=512, bias=True)
+  )
+  (ln_2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 6: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=512, out_features=512, bias=True)
+  )
+  (ln_1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=512, out_features=2048, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=2048, out_features=512, bias=True)
+  )
+  (ln_2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 7: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=512, out_features=512, bias=True)
+  )
+  (ln_1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=512, out_features=2048, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=2048, out_features=512, bias=True)
+  )
+  (ln_2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 8: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=512, out_features=512, bias=True)
+  )
+  (ln_1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=512, out_features=2048, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=2048, out_features=512, bias=True)
+  )
+  (ln_2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 9: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=512, out_features=512, bias=True)
+  )
+  (ln_1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=512, out_features=2048, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=2048, out_features=512, bias=True)
+  )
+  (ln_2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 10: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=512, out_features=512, bias=True)
+  )
+  (ln_1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=512, out_features=2048, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=2048, out_features=512, bias=True)
+  )
+  (ln_2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 11: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=512, out_features=512, bias=True)
+  )
+  (ln_1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=512, out_features=2048, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=2048, out_features=512, bias=True)
+  )
+  (ln_2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 0: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=768, out_features=768, bias=True)
+  )
+  (ln_1): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=768, out_features=3072, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=3072, out_features=768, bias=True)
+  )
+  (ln_2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 1: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=768, out_features=768, bias=True)
+  )
+  (ln_1): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=768, out_features=3072, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=3072, out_features=768, bias=True)
+  )
+  (ln_2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 2: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=768, out_features=768, bias=True)
+  )
+  (ln_1): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=768, out_features=3072, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=3072, out_features=768, bias=True)
+  )
+  (ln_2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 3: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=768, out_features=768, bias=True)
+  )
+  (ln_1): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=768, out_features=3072, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=3072, out_features=768, bias=True)
+  )
+  (ln_2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 4: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=768, out_features=768, bias=True)
+  )
+  (ln_1): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=768, out_features=3072, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=3072, out_features=768, bias=True)
+  )
+  (ln_2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 5: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=768, out_features=768, bias=True)
+  )
+  (ln_1): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=768, out_features=3072, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=3072, out_features=768, bias=True)
+  )
+  (ln_2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 6: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=768, out_features=768, bias=True)
+  )
+  (ln_1): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=768, out_features=3072, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=3072, out_features=768, bias=True)
+  )
+  (ln_2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 7: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=768, out_features=768, bias=True)
+  )
+  (ln_1): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=768, out_features=3072, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=3072, out_features=768, bias=True)
+  )
+  (ln_2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 8: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=768, out_features=768, bias=True)
+  )
+  (ln_1): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=768, out_features=3072, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=3072, out_features=768, bias=True)
+  )
+  (ln_2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 9: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=768, out_features=768, bias=True)
+  )
+  (ln_1): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=768, out_features=3072, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=3072, out_features=768, bias=True)
+  )
+  (ln_2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 10: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=768, out_features=768, bias=True)
+  )
+  (ln_1): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=768, out_features=3072, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=3072, out_features=768, bias=True)
+  )
+  (ln_2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 11: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=768, out_features=768, bias=True)
+  )
+  (ln_1): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=768, out_features=3072, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=3072, out_features=768, bias=True)
+  )
+  (ln_2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+)
+LR: 0.000200, Acc: 62.8064, Loss: 1.8038
+LR: 0.000200, Acc: 67.7083, Loss: 1.2743
+LR: 0.000200, Acc: 73.7745, Loss: 0.9690
+LR: 0.000200, Acc: 80.9436, Loss: 0.7118
+LR: 0.000200, Acc: 84.1912, Loss: 0.5627
+LR: 0.000199, Acc: 87.1324, Loss: 0.4720
+LR: 0.000199, Acc: 89.0931, Loss: 0.3857
+LR: 0.000199, Acc: 88.9093, Loss: 0.4255
+LR: 0.000198, Acc: 91.6667, Loss: 0.3142
+LR: 0.000198, Acc: 92.0956, Loss: 0.2971
+LR: 0.000198, Acc: 91.9730, Loss: 0.2826
+LR: 0.000197, Acc: 92.6471, Loss: 0.2771
+LR: 0.000197, Acc: 93.6887, Loss: 0.2387
+LR: 0.000196, Acc: 93.0760, Loss: 0.2674
+LR: 0.000196, Acc: 94.2402, Loss: 0.2263
+LR: 0.000195, Acc: 94.6078, Loss: 0.1905
+LR: 0.000194, Acc: 94.2402, Loss: 0.2134
+LR: 0.000194, Acc: 95.0368, Loss: 0.1762
+LR: 0.000193, Acc: 94.7917, Loss: 0.1881
+LR: 0.000192, Acc: 94.7304, Loss: 0.1890
+LR: 0.000191, Acc: 94.9142, Loss: 0.1880
+LR: 0.000190, Acc: 95.4044, Loss: 0.1812
+LR: 0.000190, Acc: 95.7108, Loss: 0.1490
+LR: 0.000189, Acc: 95.5882, Loss: 0.1717
+LR: 0.000188, Acc: 94.8529, Loss: 0.1894
+LR: 0.000187, Acc: 96.2010, Loss: 0.1477
+LR: 0.000186, Acc: 95.0368, Loss: 0.1871
+LR: 0.000185, Acc: 95.8333, Loss: 0.1491
+LR: 0.000184, Acc: 96.6912, Loss: 0.1380
+LR: 0.000183, Acc: 96.3235, Loss: 0.1345
+LR: 0.000181, Acc: 96.6912, Loss: 0.1317
+LR: 0.000180, Acc: 95.0368, Loss: 0.1861
+LR: 0.000179, Acc: 96.3848, Loss: 0.1414
+LR: 0.000178, Acc: 96.6912, Loss: 0.1227
+LR: 0.000177, Acc: 96.5074, Loss: 0.1258
+LR: 0.000175, Acc: 95.7721, Loss: 0.1443
+LR: 0.000174, Acc: 96.9363, Loss: 0.1190
+LR: 0.000173, Acc: 96.6912, Loss: 0.1182
+LR: 0.000171, Acc: 96.5686, Loss: 0.1259
+LR: 0.000170, Acc: 97.1814, Loss: 0.0944
+LR: 0.000168, Acc: 97.3652, Loss: 0.1060
+LR: 0.000167, Acc: 96.9363, Loss: 0.1030
+LR: 0.000165, Acc: 96.9975, Loss: 0.1007
+LR: 0.000164, Acc: 96.3235, Loss: 0.1291
+LR: 0.000162, Acc: 97.0588, Loss: 0.1062
+LR: 0.000161, Acc: 97.1201, Loss: 0.0943
+LR: 0.000159, Acc: 96.5686, Loss: 0.1270
+LR: 0.000157, Acc: 97.4265, Loss: 0.0951
+LR: 0.000156, Acc: 97.5490, Loss: 0.0934
+LR: 0.000154, Acc: 96.9975, Loss: 0.1053
+LR: 0.000152, Acc: 97.4265, Loss: 0.0995
+LR: 0.000151, Acc: 97.1201, Loss: 0.1015
+LR: 0.000149, Acc: 97.1201, Loss: 0.1029
+LR: 0.000147, Acc: 97.3652, Loss: 0.1041
+LR: 0.000145, Acc: 96.5074, Loss: 0.1379
+LR: 0.000144, Acc: 97.2426, Loss: 0.1196
+LR: 0.000142, Acc: 98.1005, Loss: 0.0764
+LR: 0.000140, Acc: 97.4265, Loss: 0.1028
+LR: 0.000138, Acc: 97.7941, Loss: 0.0805
+LR: 0.000136, Acc: 97.9167, Loss: 0.0871
+LR: 0.000135, Acc: 97.4877, Loss: 0.1019
+LR: 0.000133, Acc: 97.9167, Loss: 0.0791
+LR: 0.000131, Acc: 97.9779, Loss: 0.0752
+LR: 0.000129, Acc: 96.6912, Loss: 0.1100
+LR: 0.000127, Acc: 97.2426, Loss: 0.1064
+LR: 0.000125, Acc: 97.7941, Loss: 0.0759
+LR: 0.000123, Acc: 97.6103, Loss: 0.0882
+LR: 0.000121, Acc: 97.6716, Loss: 0.0827
+LR: 0.000119, Acc: 96.3235, Loss: 0.1201
+LR: 0.000117, Acc: 97.7328, Loss: 0.0776
+LR: 0.000115, Acc: 97.9167, Loss: 0.0762
+LR: 0.000113, Acc: 97.9167, Loss: 0.0796
+LR: 0.000111, Acc: 97.4877, Loss: 0.0899
+LR: 0.000109, Acc: 97.8554, Loss: 0.0828
+LR: 0.000107, Acc: 97.4877, Loss: 0.0922
+LR: 0.000105, Acc: 98.2230, Loss: 0.0737
+LR: 0.000103, Acc: 97.6716, Loss: 0.0809
+LR: 0.000101, Acc: 97.6716, Loss: 0.0816
+LR: 0.000099, Acc: 98.5907, Loss: 0.0571
+LR: 0.000097, Acc: 98.0392, Loss: 0.0652
+LR: 0.000095, Acc: 97.7328, Loss: 0.0879
+LR: 0.000093, Acc: 98.3456, Loss: 0.0612
+LR: 0.000091, Acc: 97.9779, Loss: 0.0682
+LR: 0.000089, Acc: 98.3456, Loss: 0.0622
+LR: 0.000087, Acc: 97.9779, Loss: 0.0752
+LR: 0.000085, Acc: 97.6716, Loss: 0.0822
+LR: 0.000084, Acc: 98.1618, Loss: 0.0798
+LR: 0.000082, Acc: 97.5490, Loss: 0.0783
+LR: 0.000080, Acc: 98.1618, Loss: 0.0630
+LR: 0.000078, Acc: 97.9779, Loss: 0.0786
+LR: 0.000076, Acc: 98.1618, Loss: 0.0671
+LR: 0.000074, Acc: 98.4681, Loss: 0.0566
+LR: 0.000072, Acc: 97.9167, Loss: 0.0700
+LR: 0.000070, Acc: 98.6520, Loss: 0.0577
+LR: 0.000068, Acc: 98.0392, Loss: 0.0667
+LR: 0.000066, Acc: 98.2843, Loss: 0.0780
+LR: 0.000064, Acc: 98.1618, Loss: 0.0766
+LR: 0.000062, Acc: 98.1618, Loss: 0.0727
+LR: 0.000061, Acc: 98.0392, Loss: 0.0684
+LR: 0.000059, Acc: 97.7328, Loss: 0.0868
+LR: 0.000057, Acc: 98.6520, Loss: 0.0555
+LR: 0.000055, Acc: 98.4069, Loss: 0.0596
+LR: 0.000053, Acc: 97.9779, Loss: 0.0742
+LR: 0.000052, Acc: 98.2843, Loss: 0.0649
+LR: 0.000050, Acc: 98.0392, Loss: 0.0627
+LR: 0.000048, Acc: 98.3456, Loss: 0.0605
+LR: 0.000047, Acc: 98.4069, Loss: 0.0578
+LR: 0.000045, Acc: 98.6520, Loss: 0.0515
+LR: 0.000043, Acc: 97.9167, Loss: 0.0753
+LR: 0.000042, Acc: 98.0392, Loss: 0.0636
+LR: 0.000040, Acc: 98.7132, Loss: 0.0575
+LR: 0.000039, Acc: 98.7132, Loss: 0.0503
+LR: 0.000037, Acc: 97.9779, Loss: 0.0698
+LR: 0.000035, Acc: 98.1618, Loss: 0.0678
+LR: 0.000034, Acc: 98.5294, Loss: 0.0570
+LR: 0.000033, Acc: 97.7941, Loss: 0.0684
+LR: 0.000031, Acc: 97.9779, Loss: 0.0696
+LR: 0.000030, Acc: 98.3456, Loss: 0.0653
+LR: 0.000028, Acc: 97.9779, Loss: 0.0662
+LR: 0.000027, Acc: 98.4681, Loss: 0.0681
+LR: 0.000026, Acc: 98.4069, Loss: 0.0601
+LR: 0.000024, Acc: 98.6520, Loss: 0.0521
+LR: 0.000023, Acc: 98.4681, Loss: 0.0721
+LR: 0.000022, Acc: 98.7132, Loss: 0.0505
+LR: 0.000021, Acc: 98.9583, Loss: 0.0387
+LR: 0.000019, Acc: 98.4069, Loss: 0.0516
+LR: 0.000018, Acc: 98.5294, Loss: 0.0559
+LR: 0.000017, Acc: 98.5907, Loss: 0.0556
+LR: 0.000016, Acc: 98.2843, Loss: 0.0620
+LR: 0.000015, Acc: 98.4681, Loss: 0.0520
+LR: 0.000014, Acc: 98.2843, Loss: 0.0592
+LR: 0.000013, Acc: 98.4681, Loss: 0.0561
+LR: 0.000012, Acc: 98.2843, Loss: 0.0626
+LR: 0.000011, Acc: 98.7132, Loss: 0.0554
+LR: 0.000010, Acc: 98.4681, Loss: 0.0580
+LR: 0.000010, Acc: 98.4069, Loss: 0.0563
+LR: 0.000009, Acc: 98.1005, Loss: 0.0683
+LR: 0.000008, Acc: 98.4681, Loss: 0.0652
+LR: 0.000007, Acc: 98.3456, Loss: 0.0620
+LR: 0.000007, Acc: 98.2230, Loss: 0.0633
+LR: 0.000006, Acc: 98.5907, Loss: 0.0494
+LR: 0.000005, Acc: 98.7745, Loss: 0.0497
+LR: 0.000005, Acc: 98.1618, Loss: 0.0622
+LR: 0.000004, Acc: 98.4681, Loss: 0.0659
+LR: 0.000004, Acc: 98.0392, Loss: 0.0769
+LR: 0.000003, Acc: 98.1618, Loss: 0.0557
+LR: 0.000003, Acc: 98.1618, Loss: 0.0692
+LR: 0.000003, Acc: 98.4069, Loss: 0.0516
+LR: 0.000002, Acc: 97.8554, Loss: 0.0741
+LR: 0.000002, Acc: 98.4681, Loss: 0.0469
+LR: 0.000002, Acc: 98.4681, Loss: 0.0637
+LR: 0.000001, Acc: 98.5907, Loss: 0.0613
+LR: 0.000001, Acc: 98.5294, Loss: 0.0581
+LR: 0.000001, Acc: 98.7745, Loss: 0.0545
+LR: 0.000001, Acc: 98.7745, Loss: 0.0456
+LR: 0.000001, Acc: 98.8358, Loss: 0.0450
+**** Final test accuracy: 98.09. ****
+
+LoRA weights saved to results/weights/vitb16/oxford_flowers/16shots/seed1/CLIP-LoRA_oxford_flowers.pt
