@@ -43,7 +43,7 @@ pip install --no-index --upgrade pip
 pip install --no-index torch torchvision torchaudio ftfy scipy regex tqdm gdown pandas
 export TQDM_DISABLE=1
 
-PYTHONWARNINGS="ignore" python3 {method}/main.py \\
+PYTHONWARNINGS="ignore" python3 main.py \\
 --root_path /home/pedro36/projects/def-leszek/pedro36/datasets/DATA \\
 --dataset {dataset} \\
 --seed {seed} \\
