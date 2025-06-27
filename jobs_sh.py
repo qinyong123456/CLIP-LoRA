@@ -6,17 +6,9 @@ methods = [
 ]
 datasets = [
 "oxford_pets",
-"oxford_flowers",
-"stanford_cars",
-"eurosat",
-"ucf101",
-"sun397",
-"caltech101",
-"dtd",
-"fgvc",
-"food101"
+"eurosat"
 ]
-shots_list = [1,2,4,8,16]
+shots_list = [1,2]
 seeds = [1]
 
 
