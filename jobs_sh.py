@@ -6,9 +6,10 @@ methods = [
 ]
 datasets = [
 "oxford_pets",
-"oxford_flowers"
+"oxford_flowers",
+"eurosat"
 ]
-shots_list = [1, 2]
+shots_list = [1, 2, 4, 8, 16]
 seeds = [1]
 
 job_scripts_dir = "job_scripts"

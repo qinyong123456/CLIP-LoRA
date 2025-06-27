@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/lustre03/project/6036820/pedro36/workspace/CLIP-LoRA/main.py", line 53, in <module>
+    main()
+  File "/lustre03/project/6036820/pedro36/workspace/CLIP-LoRA/main.py", line 27, in main
+    dataset = build_dataset(args.dataset, args.root_path, args.shots, preprocess)
+  File "/lustre03/project/6036820/pedro36/workspace/CLIP-LoRA/datasets/__init__.py", line 33, in build_dataset
+    return dataset_list[dataset](root_path, shots)
+  File "/lustre03/project/6036820/pedro36/workspace/CLIP-LoRA/datasets/eurosat.py", line 36, in __init__
+    train, val, test = OxfordPets.read_split(self.split_path, self.image_dir)
+  File "/lustre03/project/6036820/pedro36/workspace/CLIP-LoRA/datasets/oxford_pets.py", line 123, in read_split
+    split = read_json(filepath)
+  File "/lustre03/project/6036820/pedro36/workspace/CLIP-LoRA/datasets/utils.py", line 17, in read_json
+    with open(fpath, 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/pedro36/projects/def-leszek/pedro36/datasets/DATA/eurosat/split_zhou_EuroSAT.json'
