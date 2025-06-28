@@ -83,5 +83,4 @@ def plotar_graficos_por_dataset(json_path: str, pasta_saida: str = "results") ->
         plt.close()
         print(f"📊 Gráfico salvo: {caminho_saida}")
 
-# Exemplo de uso:
-# plotar_graficos_por_dataset("results/acuracias.json")
+plotar_graficos_por_dataset("results/acuracias.json")
