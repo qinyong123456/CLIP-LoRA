@@ -138,7 +138,7 @@ class MultiLinearLoRA(nn.Linear, LoRALayer):
         fan_in_fan_out: bool = False,
         dropout_rate = 0.,
         num_experts = 4,
-        top_k = 1,
+        top_k = 2,
         **kwargs
     ):
         super().__init__(
@@ -157,28 +157,41 @@ class MultiLinearLoRA(nn.Linear, LoRALayer):
         self.dropout = nn.Dropout(dropout_rate) if dropout_rate > 0 else None
 
     def forward(self, x: torch.Tensor, **kwargs):
-        original_output = nn.Linear.forward(self, x)
+        orig_shape = x.shape
+        if x.dim() > 2:
+            x_flat = x.view(-1, x.shape[-1])
+        else:
+            x_flat = x
+        original_output = nn.Linear.forward(self, x_flat)
         if self.training and self.dropout is not None:
-            x = self.dropout(x)
+            x_flat = self.dropout(x_flat)
         if self.r == 0 or self.merged:
-            return original_output
+            if x.dim() > 2:
+                return original_output.view(*orig_shape[:-1], -1)
+            else:
+                return original_output
 
-        router_logits = self.router(x)  # [batch, num_experts]
-        topk_vals, topk_indices = torch.topk(router_logits, self.top_k, dim=-1)  # [batch, top_k]
+        router_logits = self.router(x_flat)  # [N, num_experts]
+        topk_vals, topk_indices = torch.topk(router_logits, self.top_k, dim=-1)  # [N, top_k]
         expert_adjust = torch.zeros_like(original_output)
 
         for k in range(self.top_k):
-            indices = topk_indices[:, k]  # [batch]
-            vals = topk_vals[:, k]        # [batch]
+            indices = topk_indices[:, k]  # [N]
+            vals = topk_vals[:, k]        # [N]
             for expert in range(self.num_experts):
                 mask = (indices == expert)
                 if mask.any():
-                    x_expert = x[mask] # porra estranha do caralho, testar usar só x sem x[mask]
+                    x_expert = x_flat[mask]
                     adjust = self.experts[expert](x_expert)
                     expert_adjust[mask] += adjust * vals[mask].unsqueeze(-1)
 
-        return original_output + expert_adjust
-
+        result = original_output + expert_adjust
+        if x.dim() > 2:
+            return result.view(*orig_shape[:-1], -1)
+        else:
+            return result
+        
+        
 class PlainMultiheadAttentionLoRA(nn.Module):
     def __init__(
             self,
@@ -187,11 +200,15 @@ class PlainMultiheadAttentionLoRA(nn.Module):
             r: int = 0, 
             lora_alpha: int = 1, 
             dropout_rate:float = 0.,
+            num_experts = 4,
+            top_k = 2,
             **kwargs
         ):
         super().__init__()
         
         self.dropout = 0 # this module is not used to retrain the main block
+        self.num_experts = num_experts
+        self.top_k = top_k
         self.embed_dim = existing_mha.embed_dim
         self.kdim = existing_mha.kdim
         self.vdim = existing_mha.vdim
@@ -240,29 +257,41 @@ class PlainMultiheadAttentionLoRA(nn.Module):
         # Init qkv as a new lora linear layer 
         for item in enable_lora:
             if item == 'q':
-                self.q_proj = LinearLoRA(self.q_proj,
+                self.q_proj = MultiLinearLoRA(self.q_proj,
                                          r=r,
                                          lora_alpha=lora_alpha,
                                          fan_in_fan_out=False,
-                                         dropout_rate = dropout_rate)
+                                         dropout_rate = dropout_rate,
+                                         num_experts=num_experts,
+                                         top_k=top_k
+                                         )
             elif item == 'k':
-                self.k_proj = LinearLoRA(self.k_proj,
+                self.k_proj = MultiLinearLoRA(self.k_proj,
                                          r=r,
                                          lora_alpha=lora_alpha,
                                          fan_in_fan_out=False,
-                                         dropout_rate = dropout_rate)
+                                         dropout_rate = dropout_rate,
+                                         num_experts=num_experts,
+                                         top_k=top_k
+                                         )
             elif item == 'v':
-                self.v_proj = LinearLoRA(self.v_proj,
+                self.v_proj = MultiLinearLoRA(self.v_proj,
                                          r=r,
                                          lora_alpha=lora_alpha,
                                          fan_in_fan_out=False,
-                                         dropout_rate = dropout_rate)
+                                         dropout_rate = dropout_rate,
+                                         num_experts=num_experts,
+                                         top_k=top_k
+                                         )
             elif item == 'o':
-                self.proj = LinearLoRA(self.proj,
+                self.proj = MultiLinearLoRA(self.proj,
                                          r=r,
                                          lora_alpha=lora_alpha,
                                          fan_in_fan_out=False,
-                                         dropout_rate = dropout_rate)
+                                         dropout_rate = dropout_rate,
+                                         num_experts=num_experts,
+                                         top_k=top_k
+                                         )
         
     def forward_module(
             self,
