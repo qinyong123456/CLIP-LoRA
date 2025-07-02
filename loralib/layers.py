@@ -70,20 +70,6 @@ class LoRALayer():
         lora_name = self.params_with_lora[param_name]
         return self.transpose((eval(f'self.{lora_name}_lora_B') @ eval(f'self.{lora_name}_lora_A')).view(eval(f'self.{param_name}').shape))
 
-    
-   
-
-    def add_lora_data(self):
-        r"""NOT differentiable"""
-        for param_name, lora_name in self.params_with_lora.items():
-            eval(f'self.{param_name}').data += self.merge_BA(param_name) * self.scaling
-    
-    def sub_lora_data(self):
-        r"""NOT differentiable"""
-        for param_name, lora_name in self.params_with_lora.items():
-            eval(f'self.{param_name}').data -= self.merge_BA(param_name) * self.scaling
-            
-    
     def lora_train(self, mode: bool = True):   
         self.merged = False        
 
@@ -92,18 +78,18 @@ class LoRALayer():
 class LinearLoRA(nn.Linear, LoRALayer):
     # LoRA implemented in a Linear layer
     def __init__(
-        self, 
+        self,
         existing_linear: nn.Linear,
-        r: int = 0, 
-        lora_alpha: int = 1, 
+        r: int = 0,
+        lora_alpha: int = 1,
         fan_in_fan_out: bool = False,
         dropout_rate = 0.,
         **kwargs
     ):
         super().__init__(
-            in_features=existing_linear.in_features, 
+            in_features=existing_linear.in_features,
             out_features=existing_linear.out_features)
-        
+
         self.load_state_dict(existing_linear.state_dict())
         LoRALayer.__init__(self, r=r, lora_alpha=lora_alpha, fan_in_fan_out=fan_in_fan_out)
 
@@ -119,32 +105,79 @@ class LinearLoRA(nn.Linear, LoRALayer):
             self.dropout = None
 
     def train(self, mode: bool = True):
-        super().train(mode)     
+        super().train(mode)
         self.lora_train(mode)
 
-        
+
     def forward(self, x: torch.Tensor, **kwargs):
-        
 
-
-            
-
-        # Compute the original linear transformation
-        original_output = nn.Linear.forward(self, x)
-
-        if self.training and self.dropout.p > 0:
-            x = self.dropout(x)
-        
         if self.r > 0 and not self.merged:
-            lora_adjustment = torch.matmul(x,self.merge_BA('weight').transpose(0, 1)) * self.scaling 
-            result = original_output + lora_adjustment
+            lora_adjustment = torch.matmul(x,self.merge_BA('weight').transpose(0, 1)) * self.scaling
+            return lora_adjustment
         else:
-            result = original_output
-        return result
+            return x
 
 
+class Router(nn.Module):
+    def __init__(self, in_features, num_experts):
+        super().__init__()
+        self.gate = nn.Linear(in_features, num_experts, bias=False) 
+
+    def forward(self, x):
+        logits = self.gate(x)
+        probs = F.softmax(logits, dim=-1)
+        return probs
 
 
+class MultiLinearLoRA(nn.Linear, LoRALayer):
+    def __init__(
+        self,
+        existing_linear: nn.Linear,
+        r: int = 0,
+        lora_alpha: int = 1,
+        fan_in_fan_out: bool = False,
+        dropout_rate = 0.,
+        num_experts = 4,
+        top_k = 1,
+        **kwargs
+    ):
+        super().__init__(
+            in_features=existing_linear.in_features,
+            out_features=existing_linear.out_features
+        )
+        self.load_state_dict(existing_linear.state_dict())
+        LoRALayer.__init__(self, r=r, lora_alpha=lora_alpha, fan_in_fan_out=fan_in_fan_out)
+        self.router = Router(existing_linear.in_features, num_experts)
+        self.experts = nn.ModuleList([
+            LinearLoRA(existing_linear, r=r, lora_alpha=lora_alpha, dropout_rate=dropout_rate)
+            for _ in range(num_experts)
+        ])
+        self.num_experts = num_experts
+        self.top_k = top_k
+        self.dropout = nn.Dropout(dropout_rate) if dropout_rate > 0 else None
+
+    def forward(self, x: torch.Tensor, **kwargs):
+        original_output = nn.Linear.forward(self, x)
+        if self.training and self.dropout is not None:
+            x = self.dropout(x)
+        if self.r == 0 or self.merged:
+            return original_output
+
+        router_logits = self.router(x)  # [batch, num_experts]
+        topk_vals, topk_indices = torch.topk(router_logits, self.top_k, dim=-1)  # [batch, top_k]
+        expert_adjust = torch.zeros_like(original_output)
+
+        for k in range(self.top_k):
+            indices = topk_indices[:, k]  # [batch]
+            vals = topk_vals[:, k]        # [batch]
+            for expert in range(self.num_experts):
+                mask = (indices == expert)
+                if mask.any():
+                    x_expert = x[mask] # porra estranha do caralho, testar usar só x sem x[mask]
+                    adjust = self.experts[expert](x_expert)
+                    expert_adjust[mask] += adjust * vals[mask].unsqueeze(-1)
+
+        return original_output + expert_adjust
 
 class PlainMultiheadAttentionLoRA(nn.Module):
     def __init__(
