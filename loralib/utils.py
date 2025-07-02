@@ -44,9 +44,11 @@ INDEX_POSITIONS_VISION = {
 }
 
 
-def mark_only_lora_as_trainable(model: nn.Module, bias: str = 'none') -> None:
+def mark_only_lora_as_trainable(model: nn.Module, bias: str = 'none', train_router: bool = True) -> None:
     for n, p in model.named_parameters():
-        if 'lora_' not in n:
+        if 'lora_' in n or (train_router and 'router' in n):
+            p.requires_grad = True
+        else:
             p.requires_grad = False
     if bias == 'none':
         return
