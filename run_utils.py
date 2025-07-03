@@ -40,6 +40,10 @@ def get_arguments():
     parser.add_argument('--filename', default='lora_weights', help='file name to save the lora weights (.pt extension will be added)')
     
     parser.add_argument('--eval_only', default=False, action='store_true', help='only evaluate the LoRA modules (save_path should not be None)')
+    # Moe arguments
+    parser.add_argument('--num_experts', default=4, type=int, help='number of LoRA Experts')
+    parser.add_argument('--topk', default=2, type=int, help='the gate will chose topk LoRAs to work')
+
     args = parser.parse_args()
 
     return args
