@@ -21,6 +21,6 @@ PYTHONWARNINGS="ignore" python3 main.py \
 --seed 1 \
 --shots 1 \
 --save_path weights \
---num_experts 4\
+--num_experts 4 \
 --filename "CLIP-MoLE_oxford_pets"
     
