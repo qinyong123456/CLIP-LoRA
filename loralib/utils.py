@@ -85,24 +85,33 @@ def lora_state_dict(model: nn.Module, bias: str = 'none') -> Dict[str, torch.Ten
         raise NotImplementedError
 
 
-def get_lora_parameters(model, bias='none'):
+def get_lora_parameters(model, bias='none', include_router=True):
     params = []
+    param_names = []
     for name, param in model.named_parameters():
+        is_lora = 'lora_' in name
+        is_router = include_router and 'router' in name
         if bias == 'none':
-            if 'lora_' in name:
+            if is_lora or is_router:
                 params.append(param)
+                param_names.append(name)
         elif bias == 'all':
-            if 'lora_' in name or 'bias' in name:
+            if is_lora or is_router or 'bias' in name:
                 params.append(param)
+                param_names.append(name)
         elif bias == 'lora_only':
-            if 'lora_' in name:
+            if is_lora or is_router:
                 params.append(param)
-                bias_name = name.split('lora_')[0] + 'bias'
-                if bias_name in model.state_dict():
-                    bias_param = dict(model.named_parameters())[bias_name]
-                    params.append(bias_param)
+                param_names.append(name)
+                if is_lora:
+                    bias_name = name.split('lora_')[0] + 'bias'
+                    if bias_name in model.state_dict():
+                        bias_param = dict(model.named_parameters())[bias_name]
+                        params.append(bias_param)
+                        param_names.append(bias_name)
         else:
             raise NotImplementedError
+    print('Trainable parameters:', param_names)
     return params
 
 
@@ -117,7 +126,7 @@ def apply_lora(args, clip_model):
                 for name, submodule in block.named_children():
                     if isinstance(submodule, nn.MultiheadAttention):
                         new_multi_head_lora = PlainMultiheadAttentionLoRA(
-                            submodule, enable_lora=args.params, r=args.r, lora_alpha=args.alpha, dropout_rate=args.dropout_rate)
+                            submodule, enable_lora=args.params, r=args.r, lora_alpha=args.alpha, dropout_rate=args.dropout_rate, num_experts=args.num_experts, top_k=args.topk)
                         setattr(block, name, new_multi_head_lora)
                         list_lora_layers.append(new_multi_head_lora)
 
@@ -135,32 +144,20 @@ def apply_lora(args, clip_model):
                         list_lora_layers.append(new_multi_head_lora)
     return list_lora_layers
 
-
 def save_lora(args, list_lora_layers):
     weights = {}
     for i, layer in enumerate(list_lora_layers):
         layer_weights = {}
-        if 'q' in args.params:
-            layer_weights['q_proj'] = {
-                'w_lora_A': layer.q_proj.w_lora_A.data,
-                'w_lora_B': layer.q_proj.w_lora_B.data
-            }
-        if 'k' in args.params:
-            layer_weights['k_proj'] = {
-                'w_lora_A': layer.k_proj.w_lora_A.data,
-                'w_lora_B': layer.k_proj.w_lora_B.data
-            }
-        if 'v' in args.params:
-            layer_weights['v_proj'] = {
-                'w_lora_A': layer.v_proj.w_lora_A.data,
-                'w_lora_B': layer.v_proj.w_lora_B.data
-            }
-        if 'o' in args.params:
-            layer_weights['proj'] = {
-                'w_lora_A': layer.proj.w_lora_A.data,
-                'w_lora_B': layer.proj.w_lora_B.data
-            }
-
+        for proj_name in ['q_proj', 'k_proj', 'v_proj', 'proj']:
+            if proj_name[0] in args.params:
+                proj_module = getattr(layer, proj_name)
+                expert_weights = {}
+                for idx, expert in enumerate(proj_module.experts):
+                    expert_weights[f'expert_{idx}'] = {
+                        'w_lora_A': expert.w_lora_A.data.clone(),
+                        'w_lora_B': expert.w_lora_B.data.clone()
+                    }
+                layer_weights[proj_name] = expert_weights
         weights[f'layer_{i}'] = layer_weights
 
     metadata = {
@@ -168,7 +165,9 @@ def save_lora(args, list_lora_layers):
         'alpha': args.alpha,
         'encoder': args.encoder,
         'params': args.params,
-        'position': args.position
+        'position': args.position,
+        'num_experts': list_lora_layers[0].q_proj.num_experts,  # assume todos iguais
+        'top_k': list_lora_layers[0].q_proj.top_k
     }
 
     save_data = {
@@ -176,9 +175,8 @@ def save_lora(args, list_lora_layers):
         'metadata': metadata
     }
 
-    # to manage names like ViT-B/16
     backbone = args.backbone.replace('/', '').replace('-', '').lower()
-    save_dir = f'{args.save_path}/{backbone}/{args.dataset}/{args.shots}shots/seed{args.seed}'
+    save_dir = f'{args.save_path}/{backbone}/{args.dataset}/{args.shots}shots/{args.num_experts}experts/seed{args.seed}'
     os.makedirs(save_dir, exist_ok=True)
 
     save_path = f'{save_dir}/{args.filename}.pt'
@@ -189,7 +187,7 @@ def save_lora(args, list_lora_layers):
 def load_lora(args, list_lora_layers):
     # to manage names like ViT-B/16
     backbone = args.backbone.replace('/', '').replace('-', '').lower()
-    load_path = f'{args.save_path}/{backbone}/{args.dataset}/{args.shots}shots/seed{args.seed}/{args.filename}.pt'
+    load_path = f'{args.save_path}/{backbone}/{args.dataset}/{args.shots}shots/{args.num_experts}experts/seed{args.seed}/{args.filename}.pt'
 
     if not os.path.exists(load_path):
         raise FileNotFoundError(f'File {load_path} does not exist.')
@@ -198,41 +196,28 @@ def load_lora(args, list_lora_layers):
 
     metadata = loaded_data['metadata']
     if metadata['r'] != args.r:
-        raise ValueError(
-            f"r mismatch: expected {args.r}, found {metadata['r']}")
+        raise ValueError(f"r mismatch: expected {args.r}, found {metadata['r']}")
     if metadata['alpha'] != args.alpha:
-        raise ValueError(
-            f"alpha mismatch: expected {args.alpha}, found {metadata['alpha']}")
+        raise ValueError(f"alpha mismatch: expected {args.alpha}, found {metadata['alpha']}")
     if metadata['encoder'] != args.encoder:
-        raise ValueError(
-            f"Encoder mismatch: expected {args.encoder}, found {metadata['encoder']}")
+        raise ValueError(f"Encoder mismatch: expected {args.encoder}, found {metadata['encoder']}")
     if metadata['params'] != args.params:
-        raise ValueError(
-            f"Params mismatch: expected {args.params}, found {metadata['params']}")
+        raise ValueError(f"Params mismatch: expected {args.params}, found {metadata['params']}")
     if metadata['position'] != args.position:
-        raise ValueError(
-            f"Position mismatch: expected {args.position}, found {metadata['position']}")
+        raise ValueError(f"Position mismatch: expected {args.position}, found {metadata['position']}")
 
     weights = loaded_data['weights']
     for i, layer in enumerate(list_lora_layers):
-        layer_weights = weights[f'layer_{i}']
-        if 'q' in args.params and 'q_proj' in layer_weights:
-            layer.q_proj.w_lora_A.data.copy_(
-                layer_weights['q_proj']['w_lora_A'])
-            layer.q_proj.w_lora_B.data.copy_(
-                layer_weights['q_proj']['w_lora_B'])
-        if 'k' in args.params and 'k_proj' in layer_weights:
-            layer.k_proj.w_lora_A.data.copy_(
-                layer_weights['k_proj']['w_lora_A'])
-            layer.k_proj.w_lora_B.data.copy_(
-                layer_weights['k_proj']['w_lora_B'])
-        if 'v' in args.params and 'v_proj' in layer_weights:
-            layer.v_proj.w_lora_A.data.copy_(
-                layer_weights['v_proj']['w_lora_A'])
-            layer.v_proj.w_lora_B.data.copy_(
-                layer_weights['v_proj']['w_lora_B'])
-        if 'o' in args.params and 'proj' in layer_weights:
-            layer.proj.w_lora_A.data.copy_(layer_weights['proj']['w_lora_A'])
-            layer.proj.w_lora_B.data.copy_(layer_weights['proj']['w_lora_B'])
+        layer_weights = weights.get(f'layer_{i}', {})
+        for proj_name in ['q_proj', 'k_proj', 'v_proj', 'proj']:
+            if proj_name[0] in args.params and proj_name in layer_weights:
+                proj_module = getattr(layer, proj_name)
+                expert_weights = layer_weights[proj_name]
+                for idx, expert in enumerate(proj_module.experts):
+                    if f'expert_{idx}' not in expert_weights:
+                        raise ValueError(f'Missing weights for {proj_name} expert_{idx} in layer_{i}')
+                    expert_data = expert_weights[f'expert_{idx}']
+                    expert.w_lora_A.data.copy_(expert_data['w_lora_A'])
+                    expert.w_lora_B.data.copy_(expert_data['w_lora_B'])
 
     print(f'LoRA weights loaded from {load_path}')
