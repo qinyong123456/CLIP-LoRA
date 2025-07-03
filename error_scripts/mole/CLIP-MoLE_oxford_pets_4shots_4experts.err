@@ -1,0 +1,9 @@
+usage: main.py [-h] [--seed SEED] [--root_path ROOT_PATH] [--dataset DATASET]
+               [--shots SHOTS] [--backbone BACKBONE] [--lr LR]
+               [--n_iters N_ITERS] [--batch_size BATCH_SIZE]
+               [--position {bottom,mid,up,half-up,half-bottom,all,top3}]
+               [--encoder {text,vision,both}] [--params N [N ...]] [--r R]
+               [--alpha ALPHA] [--dropout_rate DROPOUT_RATE]
+               [--save_path SAVE_PATH] [--filename FILENAME] [--eval_only]
+               [--num_experts NUM_EXPERTS] [--topk TOPK]
+main.py: error: argument --num_experts: invalid int value: '4--filename'
