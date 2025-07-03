@@ -50,7 +50,7 @@ PYTHONWARNINGS="ignore" python3 main.py \\
 --seed {seed} \\
 --shots {shots} \\
 --save_path weights \\
---num_experts {num_experts}\\
+--num_experts {num_experts} \\
 --filename "{method}_{dataset}"
     """
 
