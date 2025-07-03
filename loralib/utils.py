@@ -130,7 +130,7 @@ def apply_lora(args, clip_model):
                 for name, submodule in block.named_children():
                     if isinstance(submodule, nn.MultiheadAttention):
                         new_multi_head_lora = PlainMultiheadAttentionLoRA(
-                            submodule, enable_lora=args.params, r=args.r, lora_alpha=args.alpha, dropout_rate=args.dropout_rate)
+                            submodule, enable_lora=args.params, r=args.r, lora_alpha=args.alpha, dropout_rate=args.dropout_rate, num_experts=args.num_experts, top_k=args.topk)
                         setattr(block, name, new_multi_head_lora)
                         list_lora_layers.append(new_multi_head_lora)
     return list_lora_layers
