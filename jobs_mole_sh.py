@@ -7,7 +7,7 @@ methods = [
 datasets = [
 "oxford_pets"
 ]
-shots_list = [1, 2, 4, 8]
+shots_list = [1, 2, 4]
 seeds = [1]
 num_experts_list = [2, 4, 6]
 
