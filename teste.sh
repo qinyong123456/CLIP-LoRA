@@ -1,9 +1,9 @@
 #!/bin/bash
-#SBATCH --job-name=teste_eval
-#SBATCH --output=teste1.out
-#SBATCH --error=teste1.err
+#SBATCH --job-name=MoleTeste
+#SBATCH --output=Moleteste.out
+#SBATCH --error=Moleteste.err
 #SBATCH --mem=32G
-#SBATCH --time=02:00:00
+#SBATCH --time=02:30:00
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=4
 #SBATCH --gpus-per-node=1
@@ -19,7 +19,7 @@ PYTHONWARNINGS="ignore" python3 main.py \
 --root_path /home/pedro36/projects/def-leszek/pedro36/datasets/DATA \
 --dataset eurosat \
 --seed 1 \
---shots 1 \
+--shots 8 \
 --save_path weights \
---filename "CLIP-LoRA_eurosat"
+--filename "CLIP-MoLE_eurosat"
     
