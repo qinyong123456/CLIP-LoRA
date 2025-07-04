@@ -156,6 +156,8 @@ class MultiLinearLoRA(nn.Linear, LoRALayer):
         self.num_experts = num_experts
         self.top_k = top_k
         self.dropout = nn.Dropout(dropout_rate) if dropout_rate > 0 else None
+        # Parâmetro de ruído do router
+        self.router_noise_std = kwargs.get('router_noise_std', 1.0)
 
     
 
@@ -183,6 +185,10 @@ class MultiLinearLoRA(nn.Linear, LoRALayer):
                 return original_output
 
         router_logits = self.router(x_flat)  # [N, num_experts]
+        # Adiciona ruído gaussiano aos logits do router durante o treinamento
+        if self.training and self.router_noise_std > 0:
+            noise = torch.randn_like(router_logits) * self.router_noise_std
+            router_logits = router_logits + noise
         topk_vals, topk_indices = torch.topk(router_logits, self.top_k, dim=-1)  # [N, top_k]
 
         # Imprime a cada 100 iterações (por exemplo)
@@ -353,9 +359,25 @@ class PlainMultiheadAttentionLoRA(nn.Module):
         q, k, v = qkv[0], qkv[1], qkv[2]
         """
         
-        q, q_balance = self.q_proj(query)
-        k, k_balance = self.k_proj(key)
-        v, v_balance = self.v_proj(value)
+        # Substitui chamadas para aceitar ambos os casos (tupla ou tensor)
+        q_proj_out = self.q_proj(query)
+        if isinstance(q_proj_out, tuple):
+            q, q_balance = q_proj_out
+        else:
+            q = q_proj_out
+            q_balance = 0.0
+        k_proj_out = self.k_proj(key)
+        if isinstance(k_proj_out, tuple):
+            k, k_balance = k_proj_out
+        else:
+            k = k_proj_out
+            k_balance = 0.0
+        v_proj_out = self.v_proj(value)
+        if isinstance(v_proj_out, tuple):
+            v, v_balance = v_proj_out
+        else:
+            v = v_proj_out
+            v_balance = 0.0
 
         attn_mask = F._canonical_mask(
             mask=attn_mask,
@@ -400,7 +422,12 @@ class PlainMultiheadAttentionLoRA(nn.Module):
 
         attn_output = self.scaled_dot_product_attention(q, k, v, attn_mask, dropout_p, is_causal)
         attn_output = attn_output.permute(2, 0, 1, 3).contiguous().view(bsz * tgt_len, embed_dim)
-        o, o_balance = self.proj(attn_output)
+        proj_out = self.proj(attn_output)
+        if isinstance(proj_out, tuple):
+            o, o_balance = proj_out
+        else:
+            o = proj_out
+            o_balance = 0.0
         o = o.view(tgt_len, bsz, o.size(-1))
         total_balance = q_balance + k_balance + v_balance + o_balance
         if self.batch_first and is_batched:
