@@ -36,6 +36,9 @@ def run_lora(args, clip_model, logit_scale, dataset, train_loader, val_loader, t
     
     VALIDATION = False
     
+    # Peso do balance loss
+    lambda_balance = 0.01
+    
     # Textual features
     print("\nGetting textual features as CLIP's classifier.")
     textual_features = clip_classifier(dataset.classnames, dataset.template, clip_model)
@@ -94,15 +97,26 @@ def run_lora(args, clip_model, logit_scale, dataset, train_loader, val_loader, t
             template = dataset.template[0]
             texts = [template.format(classname.replace('_', ' ')) for classname in dataset.classnames]
             images, target = images.cuda(), target.cuda()
+            balance_loss = 0.0
             if args.encoder == 'text' or args.encoder == 'both':
                 with torch.amp.autocast(device_type="cuda", dtype=torch.float16):
                     texts = clip.tokenize(texts).cuda()
-                    class_embeddings = clip_model.encode_text(texts)
+                    text_out = clip_model.encode_text(texts)
+                if isinstance(text_out, tuple):
+                    class_embeddings, balance_loss_text = text_out
+                    balance_loss = balance_loss + balance_loss_text
+                else:
+                    class_embeddings = text_out
                 text_features = class_embeddings/class_embeddings.norm(dim=-1, keepdim=True)
                 
             if args.encoder == 'vision' or args.encoder == 'both':
                 with torch.amp.autocast(device_type="cuda", dtype=torch.float16):
-                    image_features = clip_model.encode_image(images)
+                    image_out = clip_model.encode_image(images)
+                if isinstance(image_out, tuple):
+                    image_features, balance_loss_img = image_out
+                    balance_loss = balance_loss + balance_loss_img
+                else:
+                    image_features = image_out
             else:
                 with torch.no_grad():
                     with torch.amp.autocast(device_type="cuda", dtype=torch.float16):
@@ -111,6 +125,8 @@ def run_lora(args, clip_model, logit_scale, dataset, train_loader, val_loader, t
             
             cosine_similarity = logit_scale * image_features @ text_features.t()
             loss = F.cross_entropy(cosine_similarity, target)
+            if balance_loss != 0.0:
+                loss = loss + lambda_balance * balance_loss
             acc_train += cls_acc(cosine_similarity, target) * target.shape[0]
             loss_epoch += loss.item() * target.shape[0]
             tot_samples += target.shape[0]
@@ -146,6 +162,6 @@ def run_lora(args, clip_model, logit_scale, dataset, train_loader, val_loader, t
     if args.save_path != None:
         save_lora(args, list_lora_layers)
     return
-            
-    
-            
+
+
+
