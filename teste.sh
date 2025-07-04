@@ -3,7 +3,7 @@
 #SBATCH --output=Moleteste.out
 #SBATCH --error=Moleteste.err
 #SBATCH --mem=32G
-#SBATCH --time=00:30:00
+#SBATCH --time=00:40:00
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=4
 #SBATCH --gpus-per-node=1
@@ -17,12 +17,11 @@ export TQDM_DISABLE=1
 
 PYTHONWARNINGS="ignore" python3 main.py \
 --root_path /home/pedro36/projects/def-leszek/pedro36/datasets/DATA \
---dataset eurosat \
+--dataset oxford_pets \
 --seed 1 \
 --shots 1 \
 --num_experts 4 \
---topk 3 \
---eval_only \
+--topk 2 \
 --save_path weights \
---filename "CLIP-MoLE_eurosat"
+--filename "CLIP-MoLE_oxford_pets"
     
