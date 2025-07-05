@@ -43,6 +43,7 @@ def get_arguments():
     # Moe arguments
     parser.add_argument('--num_experts', default=4, type=int, help='number of LoRA Experts')
     parser.add_argument('--topk', default=2, type=int, help='the gate will chose topk LoRAs to work')
+    parser.add_argument('--lambda_balance', default=0.01, type=float, help='hiperparameter router balance loss')
 
     args = parser.parse_args()
 

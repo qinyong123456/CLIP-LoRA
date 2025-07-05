@@ -38,7 +38,7 @@ def run_lora(args, clip_model, logit_scale, dataset, train_loader, val_loader, t
     VALIDATION = False
     
     # Peso do balance loss
-    lambda_balance = 0.01
+    lambda_balance = args.lambda_balance
     
     # Textual features
     print("\nGetting textual features as CLIP's classifier.")
