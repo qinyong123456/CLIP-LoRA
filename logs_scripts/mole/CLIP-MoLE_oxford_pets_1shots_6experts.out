@@ -1,10 +1,10 @@
-created virtual environment CPython3.10.13.final.0-64 in 48687ms
-  creator CPython3Posix(dest=/localscratch/pedro36.57070898.0/env, clear=False, no_vcs_ignore=False, global=False)
+created virtual environment CPython3.10.13.final.0-64 in 61031ms
+  creator CPython3Posix(dest=/localscratch/pedro36.57112846.0/env, clear=False, no_vcs_ignore=False, global=False)
   seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=/home/pedro36/.local/share/virtualenv)
     added seed packages: pip==25.1.1, setuptools==80.7.1, wheel==0.45.1+computecanada
   activators BashActivator,CShellActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator
 Looking in links: /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/x86-64-v4, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/x86-64-v3, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/generic, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic
-Requirement already satisfied: pip in /localscratch/pedro36.57070898.0/env/lib/python3.10/site-packages (25.1.1)
+Requirement already satisfied: pip in /localscratch/pedro36.57112846.0/env/lib/python3.10/site-packages (25.1.1)
 Looking in links: /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/x86-64-v4, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/x86-64-v3, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/generic, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic
 Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/x86-64-v3/torch-2.6.0+computecanada-cp310-cp310-linux_x86_64.whl
 Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/generic/torchvision-0.21.0+computecanada-cp310-cp310-linux_x86_64.whl
@@ -345,255 +345,5365 @@ Residual Attention Block 11: ResidualAttentionBlock(
   (ln_2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
 )
 Trainable parameters: ['visual.transformer.resblocks.0.attn.q_proj.router.gate.weight', 'visual.transformer.resblocks.0.attn.q_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.0.attn.q_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.0.attn.q_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.0.attn.q_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.0.attn.q_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.0.attn.q_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.0.attn.q_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.0.attn.q_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.0.attn.q_proj.experts.4.w_lora_A', 'visual.transformer.resblocks.0.attn.q_proj.experts.4.w_lora_B', 'visual.transformer.resblocks.0.attn.q_proj.experts.5.w_lora_A', 'visual.transformer.resblocks.0.attn.q_proj.experts.5.w_lora_B', 'visual.transformer.resblocks.0.attn.k_proj.router.gate.weight', 'visual.transformer.resblocks.0.attn.k_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.0.attn.k_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.0.attn.k_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.0.attn.k_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.0.attn.k_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.0.attn.k_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.0.attn.k_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.0.attn.k_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.0.attn.k_proj.experts.4.w_lora_A', 'visual.transformer.resblocks.0.attn.k_proj.experts.4.w_lora_B', 'visual.transformer.resblocks.0.attn.k_proj.experts.5.w_lora_A', 'visual.transformer.resblocks.0.attn.k_proj.experts.5.w_lora_B', 'visual.transformer.resblocks.0.attn.v_proj.router.gate.weight', 'visual.transformer.resblocks.0.attn.v_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.0.attn.v_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.0.attn.v_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.0.attn.v_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.0.attn.v_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.0.attn.v_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.0.attn.v_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.0.attn.v_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.0.attn.v_proj.experts.4.w_lora_A', 'visual.transformer.resblocks.0.attn.v_proj.experts.4.w_lora_B', 'visual.transformer.resblocks.0.attn.v_proj.experts.5.w_lora_A', 'visual.transformer.resblocks.0.attn.v_proj.experts.5.w_lora_B', 'visual.transformer.resblocks.1.attn.q_proj.router.gate.weight', 'visual.transformer.resblocks.1.attn.q_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.1.attn.q_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.1.attn.q_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.1.attn.q_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.1.attn.q_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.1.attn.q_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.1.attn.q_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.1.attn.q_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.1.attn.q_proj.experts.4.w_lora_A', 'visual.transformer.resblocks.1.attn.q_proj.experts.4.w_lora_B', 'visual.transformer.resblocks.1.attn.q_proj.experts.5.w_lora_A', 'visual.transformer.resblocks.1.attn.q_proj.experts.5.w_lora_B', 'visual.transformer.resblocks.1.attn.k_proj.router.gate.weight', 'visual.transformer.resblocks.1.attn.k_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.1.attn.k_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.1.attn.k_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.1.attn.k_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.1.attn.k_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.1.attn.k_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.1.attn.k_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.1.attn.k_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.1.attn.k_proj.experts.4.w_lora_A', 'visual.transformer.resblocks.1.attn.k_proj.experts.4.w_lora_B', 'visual.transformer.resblocks.1.attn.k_proj.experts.5.w_lora_A', 'visual.transformer.resblocks.1.attn.k_proj.experts.5.w_lora_B', 'visual.transformer.resblocks.1.attn.v_proj.router.gate.weight', 'visual.transformer.resblocks.1.attn.v_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.1.attn.v_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.1.attn.v_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.1.attn.v_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.1.attn.v_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.1.attn.v_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.1.attn.v_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.1.attn.v_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.1.attn.v_proj.experts.4.w_lora_A', 'visual.transformer.resblocks.1.attn.v_proj.experts.4.w_lora_B', 'visual.transformer.resblocks.1.attn.v_proj.experts.5.w_lora_A', 'visual.transformer.resblocks.1.attn.v_proj.experts.5.w_lora_B', 'visual.transformer.resblocks.2.attn.q_proj.router.gate.weight', 'visual.transformer.resblocks.2.attn.q_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.2.attn.q_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.2.attn.q_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.2.attn.q_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.2.attn.q_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.2.attn.q_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.2.attn.q_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.2.attn.q_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.2.attn.q_proj.experts.4.w_lora_A', 'visual.transformer.resblocks.2.attn.q_proj.experts.4.w_lora_B', 'visual.transformer.resblocks.2.attn.q_proj.experts.5.w_lora_A', 'visual.transformer.resblocks.2.attn.q_proj.experts.5.w_lora_B', 'visual.transformer.resblocks.2.attn.k_proj.router.gate.weight', 'visual.transformer.resblocks.2.attn.k_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.2.attn.k_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.2.attn.k_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.2.attn.k_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.2.attn.k_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.2.attn.k_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.2.attn.k_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.2.attn.k_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.2.attn.k_proj.experts.4.w_lora_A', 'visual.transformer.resblocks.2.attn.k_proj.experts.4.w_lora_B', 'visual.transformer.resblocks.2.attn.k_proj.experts.5.w_lora_A', 'visual.transformer.resblocks.2.attn.k_proj.experts.5.w_lora_B', 'visual.transformer.resblocks.2.attn.v_proj.router.gate.weight', 'visual.transformer.resblocks.2.attn.v_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.2.attn.v_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.2.attn.v_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.2.attn.v_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.2.attn.v_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.2.attn.v_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.2.attn.v_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.2.attn.v_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.2.attn.v_proj.experts.4.w_lora_A', 'visual.transformer.resblocks.2.attn.v_proj.experts.4.w_lora_B', 'visual.transformer.resblocks.2.attn.v_proj.experts.5.w_lora_A', 'visual.transformer.resblocks.2.attn.v_proj.experts.5.w_lora_B', 'visual.transformer.resblocks.3.attn.q_proj.router.gate.weight', 'visual.transformer.resblocks.3.attn.q_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.3.attn.q_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.3.attn.q_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.3.attn.q_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.3.attn.q_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.3.attn.q_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.3.attn.q_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.3.attn.q_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.3.attn.q_proj.experts.4.w_lora_A', 'visual.transformer.resblocks.3.attn.q_proj.experts.4.w_lora_B', 'visual.transformer.resblocks.3.attn.q_proj.experts.5.w_lora_A', 'visual.transformer.resblocks.3.attn.q_proj.experts.5.w_lora_B', 'visual.transformer.resblocks.3.attn.k_proj.router.gate.weight', 'visual.transformer.resblocks.3.attn.k_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.3.attn.k_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.3.attn.k_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.3.attn.k_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.3.attn.k_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.3.attn.k_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.3.attn.k_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.3.attn.k_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.3.attn.k_proj.experts.4.w_lora_A', 'visual.transformer.resblocks.3.attn.k_proj.experts.4.w_lora_B', 'visual.transformer.resblocks.3.attn.k_proj.experts.5.w_lora_A', 'visual.transformer.resblocks.3.attn.k_proj.experts.5.w_lora_B', 'visual.transformer.resblocks.3.attn.v_proj.router.gate.weight', 'visual.transformer.resblocks.3.attn.v_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.3.attn.v_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.3.attn.v_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.3.attn.v_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.3.attn.v_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.3.attn.v_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.3.attn.v_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.3.attn.v_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.3.attn.v_proj.experts.4.w_lora_A', 'visual.transformer.resblocks.3.attn.v_proj.experts.4.w_lora_B', 'visual.transformer.resblocks.3.attn.v_proj.experts.5.w_lora_A', 'visual.transformer.resblocks.3.attn.v_proj.experts.5.w_lora_B', 'visual.transformer.resblocks.4.attn.q_proj.router.gate.weight', 'visual.transformer.resblocks.4.attn.q_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.4.attn.q_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.4.attn.q_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.4.attn.q_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.4.attn.q_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.4.attn.q_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.4.attn.q_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.4.attn.q_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.4.attn.q_proj.experts.4.w_lora_A', 'visual.transformer.resblocks.4.attn.q_proj.experts.4.w_lora_B', 'visual.transformer.resblocks.4.attn.q_proj.experts.5.w_lora_A', 'visual.transformer.resblocks.4.attn.q_proj.experts.5.w_lora_B', 'visual.transformer.resblocks.4.attn.k_proj.router.gate.weight', 'visual.transformer.resblocks.4.attn.k_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.4.attn.k_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.4.attn.k_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.4.attn.k_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.4.attn.k_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.4.attn.k_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.4.attn.k_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.4.attn.k_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.4.attn.k_proj.experts.4.w_lora_A', 'visual.transformer.resblocks.4.attn.k_proj.experts.4.w_lora_B', 'visual.transformer.resblocks.4.attn.k_proj.experts.5.w_lora_A', 'visual.transformer.resblocks.4.attn.k_proj.experts.5.w_lora_B', 'visual.transformer.resblocks.4.attn.v_proj.router.gate.weight', 'visual.transformer.resblocks.4.attn.v_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.4.attn.v_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.4.attn.v_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.4.attn.v_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.4.attn.v_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.4.attn.v_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.4.attn.v_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.4.attn.v_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.4.attn.v_proj.experts.4.w_lora_A', 'visual.transformer.resblocks.4.attn.v_proj.experts.4.w_lora_B', 'visual.transformer.resblocks.4.attn.v_proj.experts.5.w_lora_A', 'visual.transformer.resblocks.4.attn.v_proj.experts.5.w_lora_B', 'visual.transformer.resblocks.5.attn.q_proj.router.gate.weight', 'visual.transformer.resblocks.5.attn.q_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.5.attn.q_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.5.attn.q_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.5.attn.q_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.5.attn.q_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.5.attn.q_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.5.attn.q_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.5.attn.q_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.5.attn.q_proj.experts.4.w_lora_A', 'visual.transformer.resblocks.5.attn.q_proj.experts.4.w_lora_B', 'visual.transformer.resblocks.5.attn.q_proj.experts.5.w_lora_A', 'visual.transformer.resblocks.5.attn.q_proj.experts.5.w_lora_B', 'visual.transformer.resblocks.5.attn.k_proj.router.gate.weight', 'visual.transformer.resblocks.5.attn.k_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.5.attn.k_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.5.attn.k_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.5.attn.k_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.5.attn.k_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.5.attn.k_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.5.attn.k_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.5.attn.k_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.5.attn.k_proj.experts.4.w_lora_A', 'visual.transformer.resblocks.5.attn.k_proj.experts.4.w_lora_B', 'visual.transformer.resblocks.5.attn.k_proj.experts.5.w_lora_A', 'visual.transformer.resblocks.5.attn.k_proj.experts.5.w_lora_B', 'visual.transformer.resblocks.5.attn.v_proj.router.gate.weight', 'visual.transformer.resblocks.5.attn.v_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.5.attn.v_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.5.attn.v_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.5.attn.v_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.5.attn.v_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.5.attn.v_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.5.attn.v_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.5.attn.v_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.5.attn.v_proj.experts.4.w_lora_A', 'visual.transformer.resblocks.5.attn.v_proj.experts.4.w_lora_B', 'visual.transformer.resblocks.5.attn.v_proj.experts.5.w_lora_A', 'visual.transformer.resblocks.5.attn.v_proj.experts.5.w_lora_B', 'visual.transformer.resblocks.6.attn.q_proj.router.gate.weight', 'visual.transformer.resblocks.6.attn.q_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.6.attn.q_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.6.attn.q_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.6.attn.q_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.6.attn.q_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.6.attn.q_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.6.attn.q_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.6.attn.q_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.6.attn.q_proj.experts.4.w_lora_A', 'visual.transformer.resblocks.6.attn.q_proj.experts.4.w_lora_B', 'visual.transformer.resblocks.6.attn.q_proj.experts.5.w_lora_A', 'visual.transformer.resblocks.6.attn.q_proj.experts.5.w_lora_B', 'visual.transformer.resblocks.6.attn.k_proj.router.gate.weight', 'visual.transformer.resblocks.6.attn.k_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.6.attn.k_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.6.attn.k_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.6.attn.k_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.6.attn.k_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.6.attn.k_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.6.attn.k_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.6.attn.k_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.6.attn.k_proj.experts.4.w_lora_A', 'visual.transformer.resblocks.6.attn.k_proj.experts.4.w_lora_B', 'visual.transformer.resblocks.6.attn.k_proj.experts.5.w_lora_A', 'visual.transformer.resblocks.6.attn.k_proj.experts.5.w_lora_B', 'visual.transformer.resblocks.6.attn.v_proj.router.gate.weight', 'visual.transformer.resblocks.6.attn.v_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.6.attn.v_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.6.attn.v_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.6.attn.v_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.6.attn.v_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.6.attn.v_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.6.attn.v_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.6.attn.v_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.6.attn.v_proj.experts.4.w_lora_A', 'visual.transformer.resblocks.6.attn.v_proj.experts.4.w_lora_B', 'visual.transformer.resblocks.6.attn.v_proj.experts.5.w_lora_A', 'visual.transformer.resblocks.6.attn.v_proj.experts.5.w_lora_B', 'visual.transformer.resblocks.7.attn.q_proj.router.gate.weight', 'visual.transformer.resblocks.7.attn.q_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.7.attn.q_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.7.attn.q_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.7.attn.q_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.7.attn.q_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.7.attn.q_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.7.attn.q_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.7.attn.q_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.7.attn.q_proj.experts.4.w_lora_A', 'visual.transformer.resblocks.7.attn.q_proj.experts.4.w_lora_B', 'visual.transformer.resblocks.7.attn.q_proj.experts.5.w_lora_A', 'visual.transformer.resblocks.7.attn.q_proj.experts.5.w_lora_B', 'visual.transformer.resblocks.7.attn.k_proj.router.gate.weight', 'visual.transformer.resblocks.7.attn.k_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.7.attn.k_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.7.attn.k_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.7.attn.k_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.7.attn.k_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.7.attn.k_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.7.attn.k_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.7.attn.k_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.7.attn.k_proj.experts.4.w_lora_A', 'visual.transformer.resblocks.7.attn.k_proj.experts.4.w_lora_B', 'visual.transformer.resblocks.7.attn.k_proj.experts.5.w_lora_A', 'visual.transformer.resblocks.7.attn.k_proj.experts.5.w_lora_B', 'visual.transformer.resblocks.7.attn.v_proj.router.gate.weight', 'visual.transformer.resblocks.7.attn.v_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.7.attn.v_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.7.attn.v_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.7.attn.v_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.7.attn.v_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.7.attn.v_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.7.attn.v_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.7.attn.v_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.7.attn.v_proj.experts.4.w_lora_A', 'visual.transformer.resblocks.7.attn.v_proj.experts.4.w_lora_B', 'visual.transformer.resblocks.7.attn.v_proj.experts.5.w_lora_A', 'visual.transformer.resblocks.7.attn.v_proj.experts.5.w_lora_B', 'visual.transformer.resblocks.8.attn.q_proj.router.gate.weight', 'visual.transformer.resblocks.8.attn.q_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.8.attn.q_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.8.attn.q_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.8.attn.q_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.8.attn.q_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.8.attn.q_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.8.attn.q_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.8.attn.q_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.8.attn.q_proj.experts.4.w_lora_A', 'visual.transformer.resblocks.8.attn.q_proj.experts.4.w_lora_B', 'visual.transformer.resblocks.8.attn.q_proj.experts.5.w_lora_A', 'visual.transformer.resblocks.8.attn.q_proj.experts.5.w_lora_B', 'visual.transformer.resblocks.8.attn.k_proj.router.gate.weight', 'visual.transformer.resblocks.8.attn.k_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.8.attn.k_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.8.attn.k_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.8.attn.k_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.8.attn.k_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.8.attn.k_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.8.attn.k_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.8.attn.k_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.8.attn.k_proj.experts.4.w_lora_A', 'visual.transformer.resblocks.8.attn.k_proj.experts.4.w_lora_B', 'visual.transformer.resblocks.8.attn.k_proj.experts.5.w_lora_A', 'visual.transformer.resblocks.8.attn.k_proj.experts.5.w_lora_B', 'visual.transformer.resblocks.8.attn.v_proj.router.gate.weight', 'visual.transformer.resblocks.8.attn.v_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.8.attn.v_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.8.attn.v_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.8.attn.v_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.8.attn.v_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.8.attn.v_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.8.attn.v_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.8.attn.v_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.8.attn.v_proj.experts.4.w_lora_A', 'visual.transformer.resblocks.8.attn.v_proj.experts.4.w_lora_B', 'visual.transformer.resblocks.8.attn.v_proj.experts.5.w_lora_A', 'visual.transformer.resblocks.8.attn.v_proj.experts.5.w_lora_B', 'visual.transformer.resblocks.9.attn.q_proj.router.gate.weight', 'visual.transformer.resblocks.9.attn.q_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.9.attn.q_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.9.attn.q_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.9.attn.q_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.9.attn.q_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.9.attn.q_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.9.attn.q_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.9.attn.q_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.9.attn.q_proj.experts.4.w_lora_A', 'visual.transformer.resblocks.9.attn.q_proj.experts.4.w_lora_B', 'visual.transformer.resblocks.9.attn.q_proj.experts.5.w_lora_A', 'visual.transformer.resblocks.9.attn.q_proj.experts.5.w_lora_B', 'visual.transformer.resblocks.9.attn.k_proj.router.gate.weight', 'visual.transformer.resblocks.9.attn.k_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.9.attn.k_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.9.attn.k_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.9.attn.k_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.9.attn.k_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.9.attn.k_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.9.attn.k_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.9.attn.k_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.9.attn.k_proj.experts.4.w_lora_A', 'visual.transformer.resblocks.9.attn.k_proj.experts.4.w_lora_B', 'visual.transformer.resblocks.9.attn.k_proj.experts.5.w_lora_A', 'visual.transformer.resblocks.9.attn.k_proj.experts.5.w_lora_B', 'visual.transformer.resblocks.9.attn.v_proj.router.gate.weight', 'visual.transformer.resblocks.9.attn.v_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.9.attn.v_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.9.attn.v_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.9.attn.v_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.9.attn.v_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.9.attn.v_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.9.attn.v_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.9.attn.v_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.9.attn.v_proj.experts.4.w_lora_A', 'visual.transformer.resblocks.9.attn.v_proj.experts.4.w_lora_B', 'visual.transformer.resblocks.9.attn.v_proj.experts.5.w_lora_A', 'visual.transformer.resblocks.9.attn.v_proj.experts.5.w_lora_B', 'visual.transformer.resblocks.10.attn.q_proj.router.gate.weight', 'visual.transformer.resblocks.10.attn.q_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.10.attn.q_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.10.attn.q_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.10.attn.q_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.10.attn.q_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.10.attn.q_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.10.attn.q_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.10.attn.q_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.10.attn.q_proj.experts.4.w_lora_A', 'visual.transformer.resblocks.10.attn.q_proj.experts.4.w_lora_B', 'visual.transformer.resblocks.10.attn.q_proj.experts.5.w_lora_A', 'visual.transformer.resblocks.10.attn.q_proj.experts.5.w_lora_B', 'visual.transformer.resblocks.10.attn.k_proj.router.gate.weight', 'visual.transformer.resblocks.10.attn.k_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.10.attn.k_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.10.attn.k_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.10.attn.k_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.10.attn.k_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.10.attn.k_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.10.attn.k_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.10.attn.k_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.10.attn.k_proj.experts.4.w_lora_A', 'visual.transformer.resblocks.10.attn.k_proj.experts.4.w_lora_B', 'visual.transformer.resblocks.10.attn.k_proj.experts.5.w_lora_A', 'visual.transformer.resblocks.10.attn.k_proj.experts.5.w_lora_B', 'visual.transformer.resblocks.10.attn.v_proj.router.gate.weight', 'visual.transformer.resblocks.10.attn.v_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.10.attn.v_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.10.attn.v_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.10.attn.v_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.10.attn.v_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.10.attn.v_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.10.attn.v_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.10.attn.v_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.10.attn.v_proj.experts.4.w_lora_A', 'visual.transformer.resblocks.10.attn.v_proj.experts.4.w_lora_B', 'visual.transformer.resblocks.10.attn.v_proj.experts.5.w_lora_A', 'visual.transformer.resblocks.10.attn.v_proj.experts.5.w_lora_B', 'visual.transformer.resblocks.11.attn.q_proj.router.gate.weight', 'visual.transformer.resblocks.11.attn.q_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.11.attn.q_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.11.attn.q_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.11.attn.q_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.11.attn.q_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.11.attn.q_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.11.attn.q_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.11.attn.q_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.11.attn.q_proj.experts.4.w_lora_A', 'visual.transformer.resblocks.11.attn.q_proj.experts.4.w_lora_B', 'visual.transformer.resblocks.11.attn.q_proj.experts.5.w_lora_A', 'visual.transformer.resblocks.11.attn.q_proj.experts.5.w_lora_B', 'visual.transformer.resblocks.11.attn.k_proj.router.gate.weight', 'visual.transformer.resblocks.11.attn.k_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.11.attn.k_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.11.attn.k_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.11.attn.k_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.11.attn.k_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.11.attn.k_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.11.attn.k_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.11.attn.k_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.11.attn.k_proj.experts.4.w_lora_A', 'visual.transformer.resblocks.11.attn.k_proj.experts.4.w_lora_B', 'visual.transformer.resblocks.11.attn.k_proj.experts.5.w_lora_A', 'visual.transformer.resblocks.11.attn.k_proj.experts.5.w_lora_B', 'visual.transformer.resblocks.11.attn.v_proj.router.gate.weight', 'visual.transformer.resblocks.11.attn.v_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.11.attn.v_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.11.attn.v_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.11.attn.v_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.11.attn.v_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.11.attn.v_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.11.attn.v_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.11.attn.v_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.11.attn.v_proj.experts.4.w_lora_A', 'visual.transformer.resblocks.11.attn.v_proj.experts.4.w_lora_B', 'visual.transformer.resblocks.11.attn.v_proj.experts.5.w_lora_A', 'visual.transformer.resblocks.11.attn.v_proj.experts.5.w_lora_B', 'transformer.resblocks.0.attn.q_proj.router.gate.weight', 'transformer.resblocks.0.attn.q_proj.experts.0.w_lora_A', 'transformer.resblocks.0.attn.q_proj.experts.0.w_lora_B', 'transformer.resblocks.0.attn.q_proj.experts.1.w_lora_A', 'transformer.resblocks.0.attn.q_proj.experts.1.w_lora_B', 'transformer.resblocks.0.attn.q_proj.experts.2.w_lora_A', 'transformer.resblocks.0.attn.q_proj.experts.2.w_lora_B', 'transformer.resblocks.0.attn.q_proj.experts.3.w_lora_A', 'transformer.resblocks.0.attn.q_proj.experts.3.w_lora_B', 'transformer.resblocks.0.attn.q_proj.experts.4.w_lora_A', 'transformer.resblocks.0.attn.q_proj.experts.4.w_lora_B', 'transformer.resblocks.0.attn.q_proj.experts.5.w_lora_A', 'transformer.resblocks.0.attn.q_proj.experts.5.w_lora_B', 'transformer.resblocks.0.attn.k_proj.router.gate.weight', 'transformer.resblocks.0.attn.k_proj.experts.0.w_lora_A', 'transformer.resblocks.0.attn.k_proj.experts.0.w_lora_B', 'transformer.resblocks.0.attn.k_proj.experts.1.w_lora_A', 'transformer.resblocks.0.attn.k_proj.experts.1.w_lora_B', 'transformer.resblocks.0.attn.k_proj.experts.2.w_lora_A', 'transformer.resblocks.0.attn.k_proj.experts.2.w_lora_B', 'transformer.resblocks.0.attn.k_proj.experts.3.w_lora_A', 'transformer.resblocks.0.attn.k_proj.experts.3.w_lora_B', 'transformer.resblocks.0.attn.k_proj.experts.4.w_lora_A', 'transformer.resblocks.0.attn.k_proj.experts.4.w_lora_B', 'transformer.resblocks.0.attn.k_proj.experts.5.w_lora_A', 'transformer.resblocks.0.attn.k_proj.experts.5.w_lora_B', 'transformer.resblocks.0.attn.v_proj.router.gate.weight', 'transformer.resblocks.0.attn.v_proj.experts.0.w_lora_A', 'transformer.resblocks.0.attn.v_proj.experts.0.w_lora_B', 'transformer.resblocks.0.attn.v_proj.experts.1.w_lora_A', 'transformer.resblocks.0.attn.v_proj.experts.1.w_lora_B', 'transformer.resblocks.0.attn.v_proj.experts.2.w_lora_A', 'transformer.resblocks.0.attn.v_proj.experts.2.w_lora_B', 'transformer.resblocks.0.attn.v_proj.experts.3.w_lora_A', 'transformer.resblocks.0.attn.v_proj.experts.3.w_lora_B', 'transformer.resblocks.0.attn.v_proj.experts.4.w_lora_A', 'transformer.resblocks.0.attn.v_proj.experts.4.w_lora_B', 'transformer.resblocks.0.attn.v_proj.experts.5.w_lora_A', 'transformer.resblocks.0.attn.v_proj.experts.5.w_lora_B', 'transformer.resblocks.1.attn.q_proj.router.gate.weight', 'transformer.resblocks.1.attn.q_proj.experts.0.w_lora_A', 'transformer.resblocks.1.attn.q_proj.experts.0.w_lora_B', 'transformer.resblocks.1.attn.q_proj.experts.1.w_lora_A', 'transformer.resblocks.1.attn.q_proj.experts.1.w_lora_B', 'transformer.resblocks.1.attn.q_proj.experts.2.w_lora_A', 'transformer.resblocks.1.attn.q_proj.experts.2.w_lora_B', 'transformer.resblocks.1.attn.q_proj.experts.3.w_lora_A', 'transformer.resblocks.1.attn.q_proj.experts.3.w_lora_B', 'transformer.resblocks.1.attn.q_proj.experts.4.w_lora_A', 'transformer.resblocks.1.attn.q_proj.experts.4.w_lora_B', 'transformer.resblocks.1.attn.q_proj.experts.5.w_lora_A', 'transformer.resblocks.1.attn.q_proj.experts.5.w_lora_B', 'transformer.resblocks.1.attn.k_proj.router.gate.weight', 'transformer.resblocks.1.attn.k_proj.experts.0.w_lora_A', 'transformer.resblocks.1.attn.k_proj.experts.0.w_lora_B', 'transformer.resblocks.1.attn.k_proj.experts.1.w_lora_A', 'transformer.resblocks.1.attn.k_proj.experts.1.w_lora_B', 'transformer.resblocks.1.attn.k_proj.experts.2.w_lora_A', 'transformer.resblocks.1.attn.k_proj.experts.2.w_lora_B', 'transformer.resblocks.1.attn.k_proj.experts.3.w_lora_A', 'transformer.resblocks.1.attn.k_proj.experts.3.w_lora_B', 'transformer.resblocks.1.attn.k_proj.experts.4.w_lora_A', 'transformer.resblocks.1.attn.k_proj.experts.4.w_lora_B', 'transformer.resblocks.1.attn.k_proj.experts.5.w_lora_A', 'transformer.resblocks.1.attn.k_proj.experts.5.w_lora_B', 'transformer.resblocks.1.attn.v_proj.router.gate.weight', 'transformer.resblocks.1.attn.v_proj.experts.0.w_lora_A', 'transformer.resblocks.1.attn.v_proj.experts.0.w_lora_B', 'transformer.resblocks.1.attn.v_proj.experts.1.w_lora_A', 'transformer.resblocks.1.attn.v_proj.experts.1.w_lora_B', 'transformer.resblocks.1.attn.v_proj.experts.2.w_lora_A', 'transformer.resblocks.1.attn.v_proj.experts.2.w_lora_B', 'transformer.resblocks.1.attn.v_proj.experts.3.w_lora_A', 'transformer.resblocks.1.attn.v_proj.experts.3.w_lora_B', 'transformer.resblocks.1.attn.v_proj.experts.4.w_lora_A', 'transformer.resblocks.1.attn.v_proj.experts.4.w_lora_B', 'transformer.resblocks.1.attn.v_proj.experts.5.w_lora_A', 'transformer.resblocks.1.attn.v_proj.experts.5.w_lora_B', 'transformer.resblocks.2.attn.q_proj.router.gate.weight', 'transformer.resblocks.2.attn.q_proj.experts.0.w_lora_A', 'transformer.resblocks.2.attn.q_proj.experts.0.w_lora_B', 'transformer.resblocks.2.attn.q_proj.experts.1.w_lora_A', 'transformer.resblocks.2.attn.q_proj.experts.1.w_lora_B', 'transformer.resblocks.2.attn.q_proj.experts.2.w_lora_A', 'transformer.resblocks.2.attn.q_proj.experts.2.w_lora_B', 'transformer.resblocks.2.attn.q_proj.experts.3.w_lora_A', 'transformer.resblocks.2.attn.q_proj.experts.3.w_lora_B', 'transformer.resblocks.2.attn.q_proj.experts.4.w_lora_A', 'transformer.resblocks.2.attn.q_proj.experts.4.w_lora_B', 'transformer.resblocks.2.attn.q_proj.experts.5.w_lora_A', 'transformer.resblocks.2.attn.q_proj.experts.5.w_lora_B', 'transformer.resblocks.2.attn.k_proj.router.gate.weight', 'transformer.resblocks.2.attn.k_proj.experts.0.w_lora_A', 'transformer.resblocks.2.attn.k_proj.experts.0.w_lora_B', 'transformer.resblocks.2.attn.k_proj.experts.1.w_lora_A', 'transformer.resblocks.2.attn.k_proj.experts.1.w_lora_B', 'transformer.resblocks.2.attn.k_proj.experts.2.w_lora_A', 'transformer.resblocks.2.attn.k_proj.experts.2.w_lora_B', 'transformer.resblocks.2.attn.k_proj.experts.3.w_lora_A', 'transformer.resblocks.2.attn.k_proj.experts.3.w_lora_B', 'transformer.resblocks.2.attn.k_proj.experts.4.w_lora_A', 'transformer.resblocks.2.attn.k_proj.experts.4.w_lora_B', 'transformer.resblocks.2.attn.k_proj.experts.5.w_lora_A', 'transformer.resblocks.2.attn.k_proj.experts.5.w_lora_B', 'transformer.resblocks.2.attn.v_proj.router.gate.weight', 'transformer.resblocks.2.attn.v_proj.experts.0.w_lora_A', 'transformer.resblocks.2.attn.v_proj.experts.0.w_lora_B', 'transformer.resblocks.2.attn.v_proj.experts.1.w_lora_A', 'transformer.resblocks.2.attn.v_proj.experts.1.w_lora_B', 'transformer.resblocks.2.attn.v_proj.experts.2.w_lora_A', 'transformer.resblocks.2.attn.v_proj.experts.2.w_lora_B', 'transformer.resblocks.2.attn.v_proj.experts.3.w_lora_A', 'transformer.resblocks.2.attn.v_proj.experts.3.w_lora_B', 'transformer.resblocks.2.attn.v_proj.experts.4.w_lora_A', 'transformer.resblocks.2.attn.v_proj.experts.4.w_lora_B', 'transformer.resblocks.2.attn.v_proj.experts.5.w_lora_A', 'transformer.resblocks.2.attn.v_proj.experts.5.w_lora_B', 'transformer.resblocks.3.attn.q_proj.router.gate.weight', 'transformer.resblocks.3.attn.q_proj.experts.0.w_lora_A', 'transformer.resblocks.3.attn.q_proj.experts.0.w_lora_B', 'transformer.resblocks.3.attn.q_proj.experts.1.w_lora_A', 'transformer.resblocks.3.attn.q_proj.experts.1.w_lora_B', 'transformer.resblocks.3.attn.q_proj.experts.2.w_lora_A', 'transformer.resblocks.3.attn.q_proj.experts.2.w_lora_B', 'transformer.resblocks.3.attn.q_proj.experts.3.w_lora_A', 'transformer.resblocks.3.attn.q_proj.experts.3.w_lora_B', 'transformer.resblocks.3.attn.q_proj.experts.4.w_lora_A', 'transformer.resblocks.3.attn.q_proj.experts.4.w_lora_B', 'transformer.resblocks.3.attn.q_proj.experts.5.w_lora_A', 'transformer.resblocks.3.attn.q_proj.experts.5.w_lora_B', 'transformer.resblocks.3.attn.k_proj.router.gate.weight', 'transformer.resblocks.3.attn.k_proj.experts.0.w_lora_A', 'transformer.resblocks.3.attn.k_proj.experts.0.w_lora_B', 'transformer.resblocks.3.attn.k_proj.experts.1.w_lora_A', 'transformer.resblocks.3.attn.k_proj.experts.1.w_lora_B', 'transformer.resblocks.3.attn.k_proj.experts.2.w_lora_A', 'transformer.resblocks.3.attn.k_proj.experts.2.w_lora_B', 'transformer.resblocks.3.attn.k_proj.experts.3.w_lora_A', 'transformer.resblocks.3.attn.k_proj.experts.3.w_lora_B', 'transformer.resblocks.3.attn.k_proj.experts.4.w_lora_A', 'transformer.resblocks.3.attn.k_proj.experts.4.w_lora_B', 'transformer.resblocks.3.attn.k_proj.experts.5.w_lora_A', 'transformer.resblocks.3.attn.k_proj.experts.5.w_lora_B', 'transformer.resblocks.3.attn.v_proj.router.gate.weight', 'transformer.resblocks.3.attn.v_proj.experts.0.w_lora_A', 'transformer.resblocks.3.attn.v_proj.experts.0.w_lora_B', 'transformer.resblocks.3.attn.v_proj.experts.1.w_lora_A', 'transformer.resblocks.3.attn.v_proj.experts.1.w_lora_B', 'transformer.resblocks.3.attn.v_proj.experts.2.w_lora_A', 'transformer.resblocks.3.attn.v_proj.experts.2.w_lora_B', 'transformer.resblocks.3.attn.v_proj.experts.3.w_lora_A', 'transformer.resblocks.3.attn.v_proj.experts.3.w_lora_B', 'transformer.resblocks.3.attn.v_proj.experts.4.w_lora_A', 'transformer.resblocks.3.attn.v_proj.experts.4.w_lora_B', 'transformer.resblocks.3.attn.v_proj.experts.5.w_lora_A', 'transformer.resblocks.3.attn.v_proj.experts.5.w_lora_B', 'transformer.resblocks.4.attn.q_proj.router.gate.weight', 'transformer.resblocks.4.attn.q_proj.experts.0.w_lora_A', 'transformer.resblocks.4.attn.q_proj.experts.0.w_lora_B', 'transformer.resblocks.4.attn.q_proj.experts.1.w_lora_A', 'transformer.resblocks.4.attn.q_proj.experts.1.w_lora_B', 'transformer.resblocks.4.attn.q_proj.experts.2.w_lora_A', 'transformer.resblocks.4.attn.q_proj.experts.2.w_lora_B', 'transformer.resblocks.4.attn.q_proj.experts.3.w_lora_A', 'transformer.resblocks.4.attn.q_proj.experts.3.w_lora_B', 'transformer.resblocks.4.attn.q_proj.experts.4.w_lora_A', 'transformer.resblocks.4.attn.q_proj.experts.4.w_lora_B', 'transformer.resblocks.4.attn.q_proj.experts.5.w_lora_A', 'transformer.resblocks.4.attn.q_proj.experts.5.w_lora_B', 'transformer.resblocks.4.attn.k_proj.router.gate.weight', 'transformer.resblocks.4.attn.k_proj.experts.0.w_lora_A', 'transformer.resblocks.4.attn.k_proj.experts.0.w_lora_B', 'transformer.resblocks.4.attn.k_proj.experts.1.w_lora_A', 'transformer.resblocks.4.attn.k_proj.experts.1.w_lora_B', 'transformer.resblocks.4.attn.k_proj.experts.2.w_lora_A', 'transformer.resblocks.4.attn.k_proj.experts.2.w_lora_B', 'transformer.resblocks.4.attn.k_proj.experts.3.w_lora_A', 'transformer.resblocks.4.attn.k_proj.experts.3.w_lora_B', 'transformer.resblocks.4.attn.k_proj.experts.4.w_lora_A', 'transformer.resblocks.4.attn.k_proj.experts.4.w_lora_B', 'transformer.resblocks.4.attn.k_proj.experts.5.w_lora_A', 'transformer.resblocks.4.attn.k_proj.experts.5.w_lora_B', 'transformer.resblocks.4.attn.v_proj.router.gate.weight', 'transformer.resblocks.4.attn.v_proj.experts.0.w_lora_A', 'transformer.resblocks.4.attn.v_proj.experts.0.w_lora_B', 'transformer.resblocks.4.attn.v_proj.experts.1.w_lora_A', 'transformer.resblocks.4.attn.v_proj.experts.1.w_lora_B', 'transformer.resblocks.4.attn.v_proj.experts.2.w_lora_A', 'transformer.resblocks.4.attn.v_proj.experts.2.w_lora_B', 'transformer.resblocks.4.attn.v_proj.experts.3.w_lora_A', 'transformer.resblocks.4.attn.v_proj.experts.3.w_lora_B', 'transformer.resblocks.4.attn.v_proj.experts.4.w_lora_A', 'transformer.resblocks.4.attn.v_proj.experts.4.w_lora_B', 'transformer.resblocks.4.attn.v_proj.experts.5.w_lora_A', 'transformer.resblocks.4.attn.v_proj.experts.5.w_lora_B', 'transformer.resblocks.5.attn.q_proj.router.gate.weight', 'transformer.resblocks.5.attn.q_proj.experts.0.w_lora_A', 'transformer.resblocks.5.attn.q_proj.experts.0.w_lora_B', 'transformer.resblocks.5.attn.q_proj.experts.1.w_lora_A', 'transformer.resblocks.5.attn.q_proj.experts.1.w_lora_B', 'transformer.resblocks.5.attn.q_proj.experts.2.w_lora_A', 'transformer.resblocks.5.attn.q_proj.experts.2.w_lora_B', 'transformer.resblocks.5.attn.q_proj.experts.3.w_lora_A', 'transformer.resblocks.5.attn.q_proj.experts.3.w_lora_B', 'transformer.resblocks.5.attn.q_proj.experts.4.w_lora_A', 'transformer.resblocks.5.attn.q_proj.experts.4.w_lora_B', 'transformer.resblocks.5.attn.q_proj.experts.5.w_lora_A', 'transformer.resblocks.5.attn.q_proj.experts.5.w_lora_B', 'transformer.resblocks.5.attn.k_proj.router.gate.weight', 'transformer.resblocks.5.attn.k_proj.experts.0.w_lora_A', 'transformer.resblocks.5.attn.k_proj.experts.0.w_lora_B', 'transformer.resblocks.5.attn.k_proj.experts.1.w_lora_A', 'transformer.resblocks.5.attn.k_proj.experts.1.w_lora_B', 'transformer.resblocks.5.attn.k_proj.experts.2.w_lora_A', 'transformer.resblocks.5.attn.k_proj.experts.2.w_lora_B', 'transformer.resblocks.5.attn.k_proj.experts.3.w_lora_A', 'transformer.resblocks.5.attn.k_proj.experts.3.w_lora_B', 'transformer.resblocks.5.attn.k_proj.experts.4.w_lora_A', 'transformer.resblocks.5.attn.k_proj.experts.4.w_lora_B', 'transformer.resblocks.5.attn.k_proj.experts.5.w_lora_A', 'transformer.resblocks.5.attn.k_proj.experts.5.w_lora_B', 'transformer.resblocks.5.attn.v_proj.router.gate.weight', 'transformer.resblocks.5.attn.v_proj.experts.0.w_lora_A', 'transformer.resblocks.5.attn.v_proj.experts.0.w_lora_B', 'transformer.resblocks.5.attn.v_proj.experts.1.w_lora_A', 'transformer.resblocks.5.attn.v_proj.experts.1.w_lora_B', 'transformer.resblocks.5.attn.v_proj.experts.2.w_lora_A', 'transformer.resblocks.5.attn.v_proj.experts.2.w_lora_B', 'transformer.resblocks.5.attn.v_proj.experts.3.w_lora_A', 'transformer.resblocks.5.attn.v_proj.experts.3.w_lora_B', 'transformer.resblocks.5.attn.v_proj.experts.4.w_lora_A', 'transformer.resblocks.5.attn.v_proj.experts.4.w_lora_B', 'transformer.resblocks.5.attn.v_proj.experts.5.w_lora_A', 'transformer.resblocks.5.attn.v_proj.experts.5.w_lora_B', 'transformer.resblocks.6.attn.q_proj.router.gate.weight', 'transformer.resblocks.6.attn.q_proj.experts.0.w_lora_A', 'transformer.resblocks.6.attn.q_proj.experts.0.w_lora_B', 'transformer.resblocks.6.attn.q_proj.experts.1.w_lora_A', 'transformer.resblocks.6.attn.q_proj.experts.1.w_lora_B', 'transformer.resblocks.6.attn.q_proj.experts.2.w_lora_A', 'transformer.resblocks.6.attn.q_proj.experts.2.w_lora_B', 'transformer.resblocks.6.attn.q_proj.experts.3.w_lora_A', 'transformer.resblocks.6.attn.q_proj.experts.3.w_lora_B', 'transformer.resblocks.6.attn.q_proj.experts.4.w_lora_A', 'transformer.resblocks.6.attn.q_proj.experts.4.w_lora_B', 'transformer.resblocks.6.attn.q_proj.experts.5.w_lora_A', 'transformer.resblocks.6.attn.q_proj.experts.5.w_lora_B', 'transformer.resblocks.6.attn.k_proj.router.gate.weight', 'transformer.resblocks.6.attn.k_proj.experts.0.w_lora_A', 'transformer.resblocks.6.attn.k_proj.experts.0.w_lora_B', 'transformer.resblocks.6.attn.k_proj.experts.1.w_lora_A', 'transformer.resblocks.6.attn.k_proj.experts.1.w_lora_B', 'transformer.resblocks.6.attn.k_proj.experts.2.w_lora_A', 'transformer.resblocks.6.attn.k_proj.experts.2.w_lora_B', 'transformer.resblocks.6.attn.k_proj.experts.3.w_lora_A', 'transformer.resblocks.6.attn.k_proj.experts.3.w_lora_B', 'transformer.resblocks.6.attn.k_proj.experts.4.w_lora_A', 'transformer.resblocks.6.attn.k_proj.experts.4.w_lora_B', 'transformer.resblocks.6.attn.k_proj.experts.5.w_lora_A', 'transformer.resblocks.6.attn.k_proj.experts.5.w_lora_B', 'transformer.resblocks.6.attn.v_proj.router.gate.weight', 'transformer.resblocks.6.attn.v_proj.experts.0.w_lora_A', 'transformer.resblocks.6.attn.v_proj.experts.0.w_lora_B', 'transformer.resblocks.6.attn.v_proj.experts.1.w_lora_A', 'transformer.resblocks.6.attn.v_proj.experts.1.w_lora_B', 'transformer.resblocks.6.attn.v_proj.experts.2.w_lora_A', 'transformer.resblocks.6.attn.v_proj.experts.2.w_lora_B', 'transformer.resblocks.6.attn.v_proj.experts.3.w_lora_A', 'transformer.resblocks.6.attn.v_proj.experts.3.w_lora_B', 'transformer.resblocks.6.attn.v_proj.experts.4.w_lora_A', 'transformer.resblocks.6.attn.v_proj.experts.4.w_lora_B', 'transformer.resblocks.6.attn.v_proj.experts.5.w_lora_A', 'transformer.resblocks.6.attn.v_proj.experts.5.w_lora_B', 'transformer.resblocks.7.attn.q_proj.router.gate.weight', 'transformer.resblocks.7.attn.q_proj.experts.0.w_lora_A', 'transformer.resblocks.7.attn.q_proj.experts.0.w_lora_B', 'transformer.resblocks.7.attn.q_proj.experts.1.w_lora_A', 'transformer.resblocks.7.attn.q_proj.experts.1.w_lora_B', 'transformer.resblocks.7.attn.q_proj.experts.2.w_lora_A', 'transformer.resblocks.7.attn.q_proj.experts.2.w_lora_B', 'transformer.resblocks.7.attn.q_proj.experts.3.w_lora_A', 'transformer.resblocks.7.attn.q_proj.experts.3.w_lora_B', 'transformer.resblocks.7.attn.q_proj.experts.4.w_lora_A', 'transformer.resblocks.7.attn.q_proj.experts.4.w_lora_B', 'transformer.resblocks.7.attn.q_proj.experts.5.w_lora_A', 'transformer.resblocks.7.attn.q_proj.experts.5.w_lora_B', 'transformer.resblocks.7.attn.k_proj.router.gate.weight', 'transformer.resblocks.7.attn.k_proj.experts.0.w_lora_A', 'transformer.resblocks.7.attn.k_proj.experts.0.w_lora_B', 'transformer.resblocks.7.attn.k_proj.experts.1.w_lora_A', 'transformer.resblocks.7.attn.k_proj.experts.1.w_lora_B', 'transformer.resblocks.7.attn.k_proj.experts.2.w_lora_A', 'transformer.resblocks.7.attn.k_proj.experts.2.w_lora_B', 'transformer.resblocks.7.attn.k_proj.experts.3.w_lora_A', 'transformer.resblocks.7.attn.k_proj.experts.3.w_lora_B', 'transformer.resblocks.7.attn.k_proj.experts.4.w_lora_A', 'transformer.resblocks.7.attn.k_proj.experts.4.w_lora_B', 'transformer.resblocks.7.attn.k_proj.experts.5.w_lora_A', 'transformer.resblocks.7.attn.k_proj.experts.5.w_lora_B', 'transformer.resblocks.7.attn.v_proj.router.gate.weight', 'transformer.resblocks.7.attn.v_proj.experts.0.w_lora_A', 'transformer.resblocks.7.attn.v_proj.experts.0.w_lora_B', 'transformer.resblocks.7.attn.v_proj.experts.1.w_lora_A', 'transformer.resblocks.7.attn.v_proj.experts.1.w_lora_B', 'transformer.resblocks.7.attn.v_proj.experts.2.w_lora_A', 'transformer.resblocks.7.attn.v_proj.experts.2.w_lora_B', 'transformer.resblocks.7.attn.v_proj.experts.3.w_lora_A', 'transformer.resblocks.7.attn.v_proj.experts.3.w_lora_B', 'transformer.resblocks.7.attn.v_proj.experts.4.w_lora_A', 'transformer.resblocks.7.attn.v_proj.experts.4.w_lora_B', 'transformer.resblocks.7.attn.v_proj.experts.5.w_lora_A', 'transformer.resblocks.7.attn.v_proj.experts.5.w_lora_B', 'transformer.resblocks.8.attn.q_proj.router.gate.weight', 'transformer.resblocks.8.attn.q_proj.experts.0.w_lora_A', 'transformer.resblocks.8.attn.q_proj.experts.0.w_lora_B', 'transformer.resblocks.8.attn.q_proj.experts.1.w_lora_A', 'transformer.resblocks.8.attn.q_proj.experts.1.w_lora_B', 'transformer.resblocks.8.attn.q_proj.experts.2.w_lora_A', 'transformer.resblocks.8.attn.q_proj.experts.2.w_lora_B', 'transformer.resblocks.8.attn.q_proj.experts.3.w_lora_A', 'transformer.resblocks.8.attn.q_proj.experts.3.w_lora_B', 'transformer.resblocks.8.attn.q_proj.experts.4.w_lora_A', 'transformer.resblocks.8.attn.q_proj.experts.4.w_lora_B', 'transformer.resblocks.8.attn.q_proj.experts.5.w_lora_A', 'transformer.resblocks.8.attn.q_proj.experts.5.w_lora_B', 'transformer.resblocks.8.attn.k_proj.router.gate.weight', 'transformer.resblocks.8.attn.k_proj.experts.0.w_lora_A', 'transformer.resblocks.8.attn.k_proj.experts.0.w_lora_B', 'transformer.resblocks.8.attn.k_proj.experts.1.w_lora_A', 'transformer.resblocks.8.attn.k_proj.experts.1.w_lora_B', 'transformer.resblocks.8.attn.k_proj.experts.2.w_lora_A', 'transformer.resblocks.8.attn.k_proj.experts.2.w_lora_B', 'transformer.resblocks.8.attn.k_proj.experts.3.w_lora_A', 'transformer.resblocks.8.attn.k_proj.experts.3.w_lora_B', 'transformer.resblocks.8.attn.k_proj.experts.4.w_lora_A', 'transformer.resblocks.8.attn.k_proj.experts.4.w_lora_B', 'transformer.resblocks.8.attn.k_proj.experts.5.w_lora_A', 'transformer.resblocks.8.attn.k_proj.experts.5.w_lora_B', 'transformer.resblocks.8.attn.v_proj.router.gate.weight', 'transformer.resblocks.8.attn.v_proj.experts.0.w_lora_A', 'transformer.resblocks.8.attn.v_proj.experts.0.w_lora_B', 'transformer.resblocks.8.attn.v_proj.experts.1.w_lora_A', 'transformer.resblocks.8.attn.v_proj.experts.1.w_lora_B', 'transformer.resblocks.8.attn.v_proj.experts.2.w_lora_A', 'transformer.resblocks.8.attn.v_proj.experts.2.w_lora_B', 'transformer.resblocks.8.attn.v_proj.experts.3.w_lora_A', 'transformer.resblocks.8.attn.v_proj.experts.3.w_lora_B', 'transformer.resblocks.8.attn.v_proj.experts.4.w_lora_A', 'transformer.resblocks.8.attn.v_proj.experts.4.w_lora_B', 'transformer.resblocks.8.attn.v_proj.experts.5.w_lora_A', 'transformer.resblocks.8.attn.v_proj.experts.5.w_lora_B', 'transformer.resblocks.9.attn.q_proj.router.gate.weight', 'transformer.resblocks.9.attn.q_proj.experts.0.w_lora_A', 'transformer.resblocks.9.attn.q_proj.experts.0.w_lora_B', 'transformer.resblocks.9.attn.q_proj.experts.1.w_lora_A', 'transformer.resblocks.9.attn.q_proj.experts.1.w_lora_B', 'transformer.resblocks.9.attn.q_proj.experts.2.w_lora_A', 'transformer.resblocks.9.attn.q_proj.experts.2.w_lora_B', 'transformer.resblocks.9.attn.q_proj.experts.3.w_lora_A', 'transformer.resblocks.9.attn.q_proj.experts.3.w_lora_B', 'transformer.resblocks.9.attn.q_proj.experts.4.w_lora_A', 'transformer.resblocks.9.attn.q_proj.experts.4.w_lora_B', 'transformer.resblocks.9.attn.q_proj.experts.5.w_lora_A', 'transformer.resblocks.9.attn.q_proj.experts.5.w_lora_B', 'transformer.resblocks.9.attn.k_proj.router.gate.weight', 'transformer.resblocks.9.attn.k_proj.experts.0.w_lora_A', 'transformer.resblocks.9.attn.k_proj.experts.0.w_lora_B', 'transformer.resblocks.9.attn.k_proj.experts.1.w_lora_A', 'transformer.resblocks.9.attn.k_proj.experts.1.w_lora_B', 'transformer.resblocks.9.attn.k_proj.experts.2.w_lora_A', 'transformer.resblocks.9.attn.k_proj.experts.2.w_lora_B', 'transformer.resblocks.9.attn.k_proj.experts.3.w_lora_A', 'transformer.resblocks.9.attn.k_proj.experts.3.w_lora_B', 'transformer.resblocks.9.attn.k_proj.experts.4.w_lora_A', 'transformer.resblocks.9.attn.k_proj.experts.4.w_lora_B', 'transformer.resblocks.9.attn.k_proj.experts.5.w_lora_A', 'transformer.resblocks.9.attn.k_proj.experts.5.w_lora_B', 'transformer.resblocks.9.attn.v_proj.router.gate.weight', 'transformer.resblocks.9.attn.v_proj.experts.0.w_lora_A', 'transformer.resblocks.9.attn.v_proj.experts.0.w_lora_B', 'transformer.resblocks.9.attn.v_proj.experts.1.w_lora_A', 'transformer.resblocks.9.attn.v_proj.experts.1.w_lora_B', 'transformer.resblocks.9.attn.v_proj.experts.2.w_lora_A', 'transformer.resblocks.9.attn.v_proj.experts.2.w_lora_B', 'transformer.resblocks.9.attn.v_proj.experts.3.w_lora_A', 'transformer.resblocks.9.attn.v_proj.experts.3.w_lora_B', 'transformer.resblocks.9.attn.v_proj.experts.4.w_lora_A', 'transformer.resblocks.9.attn.v_proj.experts.4.w_lora_B', 'transformer.resblocks.9.attn.v_proj.experts.5.w_lora_A', 'transformer.resblocks.9.attn.v_proj.experts.5.w_lora_B', 'transformer.resblocks.10.attn.q_proj.router.gate.weight', 'transformer.resblocks.10.attn.q_proj.experts.0.w_lora_A', 'transformer.resblocks.10.attn.q_proj.experts.0.w_lora_B', 'transformer.resblocks.10.attn.q_proj.experts.1.w_lora_A', 'transformer.resblocks.10.attn.q_proj.experts.1.w_lora_B', 'transformer.resblocks.10.attn.q_proj.experts.2.w_lora_A', 'transformer.resblocks.10.attn.q_proj.experts.2.w_lora_B', 'transformer.resblocks.10.attn.q_proj.experts.3.w_lora_A', 'transformer.resblocks.10.attn.q_proj.experts.3.w_lora_B', 'transformer.resblocks.10.attn.q_proj.experts.4.w_lora_A', 'transformer.resblocks.10.attn.q_proj.experts.4.w_lora_B', 'transformer.resblocks.10.attn.q_proj.experts.5.w_lora_A', 'transformer.resblocks.10.attn.q_proj.experts.5.w_lora_B', 'transformer.resblocks.10.attn.k_proj.router.gate.weight', 'transformer.resblocks.10.attn.k_proj.experts.0.w_lora_A', 'transformer.resblocks.10.attn.k_proj.experts.0.w_lora_B', 'transformer.resblocks.10.attn.k_proj.experts.1.w_lora_A', 'transformer.resblocks.10.attn.k_proj.experts.1.w_lora_B', 'transformer.resblocks.10.attn.k_proj.experts.2.w_lora_A', 'transformer.resblocks.10.attn.k_proj.experts.2.w_lora_B', 'transformer.resblocks.10.attn.k_proj.experts.3.w_lora_A', 'transformer.resblocks.10.attn.k_proj.experts.3.w_lora_B', 'transformer.resblocks.10.attn.k_proj.experts.4.w_lora_A', 'transformer.resblocks.10.attn.k_proj.experts.4.w_lora_B', 'transformer.resblocks.10.attn.k_proj.experts.5.w_lora_A', 'transformer.resblocks.10.attn.k_proj.experts.5.w_lora_B', 'transformer.resblocks.10.attn.v_proj.router.gate.weight', 'transformer.resblocks.10.attn.v_proj.experts.0.w_lora_A', 'transformer.resblocks.10.attn.v_proj.experts.0.w_lora_B', 'transformer.resblocks.10.attn.v_proj.experts.1.w_lora_A', 'transformer.resblocks.10.attn.v_proj.experts.1.w_lora_B', 'transformer.resblocks.10.attn.v_proj.experts.2.w_lora_A', 'transformer.resblocks.10.attn.v_proj.experts.2.w_lora_B', 'transformer.resblocks.10.attn.v_proj.experts.3.w_lora_A', 'transformer.resblocks.10.attn.v_proj.experts.3.w_lora_B', 'transformer.resblocks.10.attn.v_proj.experts.4.w_lora_A', 'transformer.resblocks.10.attn.v_proj.experts.4.w_lora_B', 'transformer.resblocks.10.attn.v_proj.experts.5.w_lora_A', 'transformer.resblocks.10.attn.v_proj.experts.5.w_lora_B', 'transformer.resblocks.11.attn.q_proj.router.gate.weight', 'transformer.resblocks.11.attn.q_proj.experts.0.w_lora_A', 'transformer.resblocks.11.attn.q_proj.experts.0.w_lora_B', 'transformer.resblocks.11.attn.q_proj.experts.1.w_lora_A', 'transformer.resblocks.11.attn.q_proj.experts.1.w_lora_B', 'transformer.resblocks.11.attn.q_proj.experts.2.w_lora_A', 'transformer.resblocks.11.attn.q_proj.experts.2.w_lora_B', 'transformer.resblocks.11.attn.q_proj.experts.3.w_lora_A', 'transformer.resblocks.11.attn.q_proj.experts.3.w_lora_B', 'transformer.resblocks.11.attn.q_proj.experts.4.w_lora_A', 'transformer.resblocks.11.attn.q_proj.experts.4.w_lora_B', 'transformer.resblocks.11.attn.q_proj.experts.5.w_lora_A', 'transformer.resblocks.11.attn.q_proj.experts.5.w_lora_B', 'transformer.resblocks.11.attn.k_proj.router.gate.weight', 'transformer.resblocks.11.attn.k_proj.experts.0.w_lora_A', 'transformer.resblocks.11.attn.k_proj.experts.0.w_lora_B', 'transformer.resblocks.11.attn.k_proj.experts.1.w_lora_A', 'transformer.resblocks.11.attn.k_proj.experts.1.w_lora_B', 'transformer.resblocks.11.attn.k_proj.experts.2.w_lora_A', 'transformer.resblocks.11.attn.k_proj.experts.2.w_lora_B', 'transformer.resblocks.11.attn.k_proj.experts.3.w_lora_A', 'transformer.resblocks.11.attn.k_proj.experts.3.w_lora_B', 'transformer.resblocks.11.attn.k_proj.experts.4.w_lora_A', 'transformer.resblocks.11.attn.k_proj.experts.4.w_lora_B', 'transformer.resblocks.11.attn.k_proj.experts.5.w_lora_A', 'transformer.resblocks.11.attn.k_proj.experts.5.w_lora_B', 'transformer.resblocks.11.attn.v_proj.router.gate.weight', 'transformer.resblocks.11.attn.v_proj.experts.0.w_lora_A', 'transformer.resblocks.11.attn.v_proj.experts.0.w_lora_B', 'transformer.resblocks.11.attn.v_proj.experts.1.w_lora_A', 'transformer.resblocks.11.attn.v_proj.experts.1.w_lora_B', 'transformer.resblocks.11.attn.v_proj.experts.2.w_lora_A', 'transformer.resblocks.11.attn.v_proj.experts.2.w_lora_B', 'transformer.resblocks.11.attn.v_proj.experts.3.w_lora_A', 'transformer.resblocks.11.attn.v_proj.experts.3.w_lora_B', 'transformer.resblocks.11.attn.v_proj.experts.4.w_lora_A', 'transformer.resblocks.11.attn.v_proj.experts.4.w_lora_B', 'transformer.resblocks.11.attn.v_proj.experts.5.w_lora_A', 'transformer.resblocks.11.attn.v_proj.experts.5.w_lora_B']
+[Iteração 100] Top-k expert indices: [[0 4]
+ [4 2]
+ [2 3]
+ ...
+ [2 0]
+ [1 5]
+ [2 0]]
+[Iteração 100] Top-k vals (probs): [[1.5030186  0.7364791 ]
+ [2.351352   1.4839369 ]
+ [2.7226803  2.2472274 ]
+ ...
+ [1.7165685  1.0615274 ]
+ [2.0245068  0.87432337]
+ [2.3522296  0.44152102]]
 LR: 0.000200, Acc: 62.1622, Loss: 1.0366
-LR: 0.000200, Acc: 75.6757, Loss: 0.8000
-LR: 0.000200, Acc: 72.9730, Loss: 1.0732
-LR: 0.000200, Acc: 67.5676, Loss: 0.9582
-LR: 0.000200, Acc: 75.6757, Loss: 0.7017
-LR: 0.000200, Acc: 78.3784, Loss: 0.9355
-LR: 0.000200, Acc: 72.9730, Loss: 0.8680
-LR: 0.000199, Acc: 70.2703, Loss: 0.9141
-LR: 0.000199, Acc: 86.4865, Loss: 0.7072
-LR: 0.000199, Acc: 86.4865, Loss: 0.6333
-LR: 0.000199, Acc: 78.3784, Loss: 0.7885
-LR: 0.000199, Acc: 78.3784, Loss: 0.6371
-LR: 0.000199, Acc: 81.0811, Loss: 0.6190
-LR: 0.000198, Acc: 86.4865, Loss: 0.6174
-LR: 0.000198, Acc: 83.7838, Loss: 0.5392
-LR: 0.000198, Acc: 78.3784, Loss: 0.6493
-LR: 0.000198, Acc: 89.1892, Loss: 0.3663
-LR: 0.000197, Acc: 83.7838, Loss: 0.5529
-LR: 0.000197, Acc: 89.1892, Loss: 0.5174
-LR: 0.000197, Acc: 83.7838, Loss: 0.3451
-LR: 0.000197, Acc: 81.0811, Loss: 0.4777
-LR: 0.000196, Acc: 100.0000, Loss: 0.1368
-LR: 0.000196, Acc: 89.1892, Loss: 0.3346
-LR: 0.000196, Acc: 91.8919, Loss: 0.3546
-LR: 0.000195, Acc: 83.7838, Loss: 0.4974
-LR: 0.000195, Acc: 78.3784, Loss: 0.5768
-LR: 0.000194, Acc: 86.4865, Loss: 0.5747
-LR: 0.000194, Acc: 94.5946, Loss: 0.2483
-LR: 0.000193, Acc: 89.1892, Loss: 0.3911
-LR: 0.000193, Acc: 89.1892, Loss: 0.3745
-LR: 0.000193, Acc: 91.8919, Loss: 0.3095
-LR: 0.000192, Acc: 89.1892, Loss: 0.4612
-LR: 0.000192, Acc: 94.5946, Loss: 0.3724
-LR: 0.000191, Acc: 91.8919, Loss: 0.3032
-LR: 0.000191, Acc: 91.8919, Loss: 0.3999
-LR: 0.000190, Acc: 97.2973, Loss: 0.1040
-LR: 0.000189, Acc: 91.8919, Loss: 0.2383
-LR: 0.000189, Acc: 97.2973, Loss: 0.1092
-LR: 0.000188, Acc: 86.4865, Loss: 0.4561
-LR: 0.000188, Acc: 89.1892, Loss: 0.2551
-LR: 0.000187, Acc: 94.5946, Loss: 0.1655
-LR: 0.000186, Acc: 94.5946, Loss: 0.2161
-LR: 0.000186, Acc: 89.1892, Loss: 0.2520
-LR: 0.000185, Acc: 97.2973, Loss: 0.1490
-LR: 0.000185, Acc: 89.1892, Loss: 0.3499
-LR: 0.000184, Acc: 81.0811, Loss: 0.7177
-LR: 0.000183, Acc: 86.4865, Loss: 0.2570
-LR: 0.000182, Acc: 89.1892, Loss: 0.3287
-LR: 0.000182, Acc: 91.8919, Loss: 0.2948
-LR: 0.000181, Acc: 94.5946, Loss: 0.2244
-LR: 0.000180, Acc: 94.5946, Loss: 0.1935
-LR: 0.000180, Acc: 97.2973, Loss: 0.1151
-LR: 0.000179, Acc: 91.8919, Loss: 0.3363
-LR: 0.000178, Acc: 97.2973, Loss: 0.1270
-LR: 0.000177, Acc: 94.5946, Loss: 0.1442
-LR: 0.000176, Acc: 94.5946, Loss: 0.1054
-LR: 0.000176, Acc: 97.2973, Loss: 0.2688
-LR: 0.000175, Acc: 91.8919, Loss: 0.2270
-LR: 0.000174, Acc: 100.0000, Loss: 0.0362
-LR: 0.000173, Acc: 100.0000, Loss: 0.1019
-LR: 0.000172, Acc: 94.5946, Loss: 0.1966
-LR: 0.000171, Acc: 94.5946, Loss: 0.2724
-LR: 0.000170, Acc: 91.8919, Loss: 0.1371
-LR: 0.000170, Acc: 100.0000, Loss: 0.0595
-LR: 0.000169, Acc: 94.5946, Loss: 0.3681
-LR: 0.000168, Acc: 94.5946, Loss: 0.1779
-LR: 0.000167, Acc: 94.5946, Loss: 0.2768
-LR: 0.000166, Acc: 100.0000, Loss: 0.0319
-LR: 0.000165, Acc: 97.2973, Loss: 0.1402
-LR: 0.000164, Acc: 97.2973, Loss: 0.1317
-LR: 0.000163, Acc: 97.2973, Loss: 0.0499
-LR: 0.000162, Acc: 97.2973, Loss: 0.1816
-LR: 0.000161, Acc: 94.5946, Loss: 0.1209
-LR: 0.000160, Acc: 91.8919, Loss: 0.2601
-LR: 0.000159, Acc: 97.2973, Loss: 0.1847
-LR: 0.000158, Acc: 100.0000, Loss: 0.0353
-LR: 0.000157, Acc: 100.0000, Loss: 0.0753
-LR: 0.000156, Acc: 94.5946, Loss: 0.1976
-LR: 0.000155, Acc: 97.2973, Loss: 0.1173
-LR: 0.000154, Acc: 97.2973, Loss: 0.1945
-LR: 0.000153, Acc: 97.2973, Loss: 0.1584
-LR: 0.000152, Acc: 100.0000, Loss: 0.0317
-LR: 0.000151, Acc: 100.0000, Loss: 0.0241
-LR: 0.000150, Acc: 97.2973, Loss: 0.1716
-LR: 0.000148, Acc: 94.5946, Loss: 0.3159
-LR: 0.000147, Acc: 97.2973, Loss: 0.1178
-LR: 0.000146, Acc: 100.0000, Loss: 0.0158
-LR: 0.000145, Acc: 89.1892, Loss: 0.3131
-LR: 0.000144, Acc: 94.5946, Loss: 0.1024
-LR: 0.000143, Acc: 94.5946, Loss: 0.1533
-LR: 0.000142, Acc: 100.0000, Loss: 0.0410
-LR: 0.000141, Acc: 97.2973, Loss: 0.0769
-LR: 0.000139, Acc: 94.5946, Loss: 0.1303
-LR: 0.000138, Acc: 97.2973, Loss: 0.2666
-LR: 0.000137, Acc: 100.0000, Loss: 0.0282
-LR: 0.000136, Acc: 97.2973, Loss: 0.0984
-LR: 0.000135, Acc: 100.0000, Loss: 0.0094
-LR: 0.000134, Acc: 100.0000, Loss: 0.0472
-LR: 0.000132, Acc: 97.2973, Loss: 0.1914
-LR: 0.000131, Acc: 97.2973, Loss: 0.1742
-LR: 0.000130, Acc: 97.2973, Loss: 0.1985
-LR: 0.000129, Acc: 100.0000, Loss: 0.0461
-LR: 0.000128, Acc: 100.0000, Loss: 0.0355
-LR: 0.000126, Acc: 94.5946, Loss: 0.2383
-LR: 0.000125, Acc: 100.0000, Loss: 0.0149
-LR: 0.000124, Acc: 94.5946, Loss: 0.1423
-LR: 0.000123, Acc: 97.2973, Loss: 0.1558
-LR: 0.000122, Acc: 94.5946, Loss: 0.2170
-LR: 0.000120, Acc: 91.8919, Loss: 0.2850
-LR: 0.000119, Acc: 100.0000, Loss: 0.0528
-LR: 0.000118, Acc: 100.0000, Loss: 0.0200
-LR: 0.000117, Acc: 97.2973, Loss: 0.0643
-LR: 0.000115, Acc: 97.2973, Loss: 0.0876
-LR: 0.000114, Acc: 89.1892, Loss: 0.3280
-LR: 0.000113, Acc: 94.5946, Loss: 0.1250
-LR: 0.000112, Acc: 100.0000, Loss: 0.0088
-LR: 0.000110, Acc: 97.2973, Loss: 0.1467
-LR: 0.000109, Acc: 100.0000, Loss: 0.0767
-LR: 0.000108, Acc: 91.8919, Loss: 0.1621
-LR: 0.000107, Acc: 97.2973, Loss: 0.1942
-LR: 0.000105, Acc: 97.2973, Loss: 0.0812
-LR: 0.000104, Acc: 91.8919, Loss: 0.1921
-LR: 0.000103, Acc: 100.0000, Loss: 0.0305
-LR: 0.000102, Acc: 100.0000, Loss: 0.0299
-LR: 0.000100, Acc: 97.2973, Loss: 0.0958
-LR: 0.000099, Acc: 100.0000, Loss: 0.0071
-LR: 0.000098, Acc: 97.2973, Loss: 0.0913
-LR: 0.000097, Acc: 94.5946, Loss: 0.2334
-LR: 0.000096, Acc: 94.5946, Loss: 0.1656
-LR: 0.000094, Acc: 97.2973, Loss: 0.0815
-LR: 0.000093, Acc: 94.5946, Loss: 0.1144
-LR: 0.000092, Acc: 97.2973, Loss: 0.0536
-LR: 0.000091, Acc: 97.2973, Loss: 0.1973
-LR: 0.000089, Acc: 100.0000, Loss: 0.0059
-LR: 0.000088, Acc: 100.0000, Loss: 0.0519
-LR: 0.000087, Acc: 91.8919, Loss: 0.1207
-LR: 0.000086, Acc: 100.0000, Loss: 0.0186
-LR: 0.000084, Acc: 100.0000, Loss: 0.0188
-LR: 0.000083, Acc: 100.0000, Loss: 0.0034
-LR: 0.000082, Acc: 100.0000, Loss: 0.0241
-LR: 0.000081, Acc: 97.2973, Loss: 0.1037
-LR: 0.000079, Acc: 100.0000, Loss: 0.0078
-LR: 0.000078, Acc: 94.5946, Loss: 0.1314
-LR: 0.000077, Acc: 83.7838, Loss: 0.5066
-LR: 0.000076, Acc: 97.2973, Loss: 0.0575
-LR: 0.000075, Acc: 91.8919, Loss: 0.2169
-LR: 0.000073, Acc: 94.5946, Loss: 0.1445
-LR: 0.000072, Acc: 97.2973, Loss: 0.1712
-LR: 0.000071, Acc: 97.2973, Loss: 0.0776
-LR: 0.000070, Acc: 97.2973, Loss: 0.0960
-LR: 0.000069, Acc: 97.2973, Loss: 0.1344
-LR: 0.000067, Acc: 97.2973, Loss: 0.0952
-LR: 0.000066, Acc: 97.2973, Loss: 0.0726
-LR: 0.000065, Acc: 100.0000, Loss: 0.0369
-LR: 0.000064, Acc: 97.2973, Loss: 0.1787
-LR: 0.000063, Acc: 97.2973, Loss: 0.2050
-LR: 0.000062, Acc: 100.0000, Loss: 0.0400
-LR: 0.000060, Acc: 100.0000, Loss: 0.0281
-LR: 0.000059, Acc: 100.0000, Loss: 0.0584
-LR: 0.000058, Acc: 97.2973, Loss: 0.0841
-LR: 0.000057, Acc: 97.2973, Loss: 0.0971
-LR: 0.000056, Acc: 100.0000, Loss: 0.0093
-LR: 0.000055, Acc: 97.2973, Loss: 0.0382
-LR: 0.000054, Acc: 100.0000, Loss: 0.0183
-LR: 0.000053, Acc: 100.0000, Loss: 0.0037
-LR: 0.000051, Acc: 100.0000, Loss: 0.0099
-LR: 0.000050, Acc: 100.0000, Loss: 0.0557
-LR: 0.000049, Acc: 94.5946, Loss: 0.2583
-LR: 0.000048, Acc: 100.0000, Loss: 0.0552
-LR: 0.000047, Acc: 97.2973, Loss: 0.0757
-LR: 0.000046, Acc: 86.4865, Loss: 0.3353
-LR: 0.000045, Acc: 97.2973, Loss: 0.0887
-LR: 0.000044, Acc: 100.0000, Loss: 0.0524
-LR: 0.000043, Acc: 100.0000, Loss: 0.0750
-LR: 0.000042, Acc: 100.0000, Loss: 0.0554
-LR: 0.000041, Acc: 100.0000, Loss: 0.0094
-LR: 0.000040, Acc: 94.5946, Loss: 0.1931
-LR: 0.000039, Acc: 100.0000, Loss: 0.0387
-LR: 0.000038, Acc: 97.2973, Loss: 0.0322
-LR: 0.000037, Acc: 100.0000, Loss: 0.0099
-LR: 0.000036, Acc: 91.8919, Loss: 0.3258
-LR: 0.000035, Acc: 100.0000, Loss: 0.0652
-LR: 0.000034, Acc: 97.2973, Loss: 0.0882
-LR: 0.000033, Acc: 100.0000, Loss: 0.0072
-LR: 0.000032, Acc: 97.2973, Loss: 0.0588
-LR: 0.000031, Acc: 97.2973, Loss: 0.1029
-LR: 0.000031, Acc: 100.0000, Loss: 0.0047
-LR: 0.000030, Acc: 97.2973, Loss: 0.0722
-LR: 0.000029, Acc: 94.5946, Loss: 0.2397
-LR: 0.000028, Acc: 100.0000, Loss: 0.0183
-LR: 0.000027, Acc: 94.5946, Loss: 0.1832
-LR: 0.000026, Acc: 100.0000, Loss: 0.0060
-LR: 0.000025, Acc: 94.5946, Loss: 0.1099
-LR: 0.000025, Acc: 94.5946, Loss: 0.3049
-LR: 0.000024, Acc: 100.0000, Loss: 0.0057
-LR: 0.000023, Acc: 100.0000, Loss: 0.0108
-LR: 0.000022, Acc: 94.5946, Loss: 0.1794
-LR: 0.000021, Acc: 91.8919, Loss: 0.4656
-LR: 0.000021, Acc: 100.0000, Loss: 0.0289
-LR: 0.000020, Acc: 97.2973, Loss: 0.1300
-LR: 0.000019, Acc: 94.5946, Loss: 0.3584
-LR: 0.000019, Acc: 97.2973, Loss: 0.1500
-LR: 0.000018, Acc: 91.8919, Loss: 0.1808
-LR: 0.000017, Acc: 100.0000, Loss: 0.0203
-LR: 0.000016, Acc: 100.0000, Loss: 0.0244
-LR: 0.000016, Acc: 97.2973, Loss: 0.1320
-LR: 0.000015, Acc: 100.0000, Loss: 0.0390
-LR: 0.000015, Acc: 97.2973, Loss: 0.1192
-LR: 0.000014, Acc: 100.0000, Loss: 0.0124
-LR: 0.000013, Acc: 94.5946, Loss: 0.1176
-LR: 0.000013, Acc: 97.2973, Loss: 0.0492
-LR: 0.000012, Acc: 97.2973, Loss: 0.2357
-LR: 0.000012, Acc: 97.2973, Loss: 0.0519
-LR: 0.000011, Acc: 100.0000, Loss: 0.0170
-LR: 0.000010, Acc: 97.2973, Loss: 0.0384
-LR: 0.000010, Acc: 97.2973, Loss: 0.1198
-LR: 0.000009, Acc: 100.0000, Loss: 0.0190
-LR: 0.000009, Acc: 100.0000, Loss: 0.0104
-LR: 0.000008, Acc: 100.0000, Loss: 0.0353
-LR: 0.000008, Acc: 100.0000, Loss: 0.0227
-LR: 0.000008, Acc: 97.2973, Loss: 0.0996
-LR: 0.000007, Acc: 94.5946, Loss: 0.1204
-LR: 0.000007, Acc: 100.0000, Loss: 0.0060
-LR: 0.000006, Acc: 100.0000, Loss: 0.0067
-LR: 0.000006, Acc: 97.2973, Loss: 0.1224
-LR: 0.000005, Acc: 97.2973, Loss: 0.0735
-LR: 0.000005, Acc: 100.0000, Loss: 0.0095
-LR: 0.000005, Acc: 97.2973, Loss: 0.1069
-LR: 0.000004, Acc: 100.0000, Loss: 0.0183
-LR: 0.000004, Acc: 94.5946, Loss: 0.2753
-LR: 0.000004, Acc: 100.0000, Loss: 0.0042
-LR: 0.000004, Acc: 100.0000, Loss: 0.0084
-LR: 0.000003, Acc: 97.2973, Loss: 0.0510
-LR: 0.000003, Acc: 100.0000, Loss: 0.0176
-LR: 0.000003, Acc: 94.5946, Loss: 0.2065
-LR: 0.000003, Acc: 89.1892, Loss: 0.4119
-LR: 0.000002, Acc: 100.0000, Loss: 0.0334
-LR: 0.000002, Acc: 100.0000, Loss: 0.0281
-LR: 0.000002, Acc: 97.2973, Loss: 0.0617
-LR: 0.000002, Acc: 97.2973, Loss: 0.0876
-LR: 0.000002, Acc: 91.8919, Loss: 0.2600
-LR: 0.000002, Acc: 97.2973, Loss: 0.0880
-LR: 0.000001, Acc: 97.2973, Loss: 0.0590
-LR: 0.000001, Acc: 97.2973, Loss: 0.1309
-LR: 0.000001, Acc: 97.2973, Loss: 0.0668
-LR: 0.000001, Acc: 97.2973, Loss: 0.0939
-LR: 0.000001, Acc: 100.0000, Loss: 0.0213
-LR: 0.000001, Acc: 97.2973, Loss: 0.0695
-LR: 0.000001, Acc: 94.5946, Loss: 0.1202
-**** Final test accuracy: 89.89. ****
+[Iteração 200] Top-k expert indices: [[4 2]
+ [2 0]
+ [4 5]
+ ...
+ [4 3]
+ [4 3]
+ [3 0]]
+[Iteração 200] Top-k vals (probs): [[ 1.5539652   1.5413852 ]
+ [ 0.84324837  0.47432694]
+ [ 1.5143094   0.52735865]
+ ...
+ [ 0.24293715  0.20335177]
+ [ 1.8207102  -0.10604823]
+ [ 1.4698455   1.0588515 ]]
+LR: 0.000200, Acc: 75.6757, Loss: 0.8004
+[Iteração 300] Top-k expert indices: [[4 2]
+ [1 2]
+ [5 4]
+ ...
+ [0 2]
+ [4 1]
+ [5 1]]
+[Iteração 300] Top-k vals (probs): [[1.2400212  0.50837874]
+ [1.3058953  0.7272888 ]
+ [1.5324756  1.2219646 ]
+ ...
+ [2.728493   1.356616  ]
+ [1.1181133  0.74264705]
+ [1.1309296  0.29232904]]
+[Iteração 400] Top-k expert indices: [[4 1]
+ [5 1]
+ [4 2]
+ ...
+ [5 2]
+ [5 1]
+ [3 0]]
+[Iteração 400] Top-k vals (probs): [[1.0598867  1.048699  ]
+ [0.9895957  0.961235  ]
+ [1.5399472  1.0118462 ]
+ ...
+ [0.99286187 0.59642404]
+ [1.7902564  1.5600163 ]
+ [0.92530966 0.75748104]]
+LR: 0.000200, Acc: 72.9730, Loss: 1.0679
+[Iteração 500] Top-k expert indices: [[1 3]
+ [4 3]
+ [1 2]
+ ...
+ [4 5]
+ [2 5]
+ [4 0]]
+[Iteração 500] Top-k vals (probs): [[1.6137149 0.8662493]
+ [1.8484921 1.0753064]
+ [1.30749   1.2308211]
+ ...
+ [1.7802278 0.6690729]
+ [0.9831321 0.9529619]
+ [1.4268112 0.7853116]]
+LR: 0.000200, Acc: 67.5676, Loss: 0.9453
+[Iteração 600] Top-k expert indices: [[2 0]
+ [1 3]
+ [0 5]
+ ...
+ [5 0]
+ [1 4]
+ [2 1]]
+[Iteração 600] Top-k vals (probs): [[0.7275287  0.72324425]
+ [2.0490794  0.7085215 ]
+ [1.4583188  0.78084016]
+ ...
+ [2.250943   0.9849787 ]
+ [1.3845577  0.9876462 ]
+ [1.9747095  1.2017952 ]]
+[Iteração 700] Top-k expert indices: [[2 5]
+ [5 4]
+ [3 0]
+ ...
+ [5 3]
+ [5 0]
+ [2 4]]
+[Iteração 700] Top-k vals (probs): [[2.4313009  1.5807296 ]
+ [0.09655866 0.09053041]
+ [0.93202716 0.43634143]
+ ...
+ [0.94031525 0.9088427 ]
+ [2.3799376  1.2101641 ]
+ [1.9387605  1.2415808 ]]
+LR: 0.000200, Acc: 78.3784, Loss: 0.6795
+[Iteração 800] Top-k expert indices: [[1 5]
+ [5 2]
+ [4 5]
+ ...
+ [2 3]
+ [3 4]
+ [2 5]]
+[Iteração 800] Top-k vals (probs): [[1.8512006  1.3254322 ]
+ [1.5000622  0.80001533]
+ [1.1300232  0.4248175 ]
+ ...
+ [1.3329314  0.43398124]
+ [1.1610545  1.0036243 ]
+ [1.4616259  0.7052233 ]]
+LR: 0.000200, Acc: 78.3784, Loss: 0.9096
+[Iteração 900] Top-k expert indices: [[5 1]
+ [1 5]
+ [0 2]
+ ...
+ [0 5]
+ [5 3]
+ [2 4]]
+[Iteração 900] Top-k vals (probs): [[0.40582964 0.2257266 ]
+ [0.9468502  0.79761827]
+ [1.5058653  1.0861895 ]
+ ...
+ [2.3577337  1.3346997 ]
+ [2.6139176  0.6486546 ]
+ [0.9819512  0.7657492 ]]
+[Iteração 1000] Top-k expert indices: [[2 5]
+ [5 0]
+ [5 4]
+ ...
+ [2 1]
+ [3 2]
+ [5 2]]
+[Iteração 1000] Top-k vals (probs): [[2.0258594  0.9572014 ]
+ [1.2840778  0.46024087]
+ [1.2643336  0.09328371]
+ ...
+ [0.861299   0.42548588]
+ [1.9855853  1.3489091 ]
+ [2.092517   1.546989  ]]
+LR: 0.000200, Acc: 72.9730, Loss: 0.8350
+[Iteração 1100] Top-k expert indices: [[3 1]
+ [2 1]
+ [4 2]
+ ...
+ [5 1]
+ [5 3]
+ [5 3]]
+[Iteração 1100] Top-k vals (probs): [[ 0.2800997  -0.10356055]
+ [ 1.9225552   1.6296797 ]
+ [ 1.981744    1.8680681 ]
+ ...
+ [ 0.04873563  0.02714362]
+ [ 1.3903402   0.3839941 ]
+ [ 0.9009364   0.31491697]]
+LR: 0.000199, Acc: 70.2703, Loss: 0.8838
+[Iteração 1200] Top-k expert indices: [[3 5]
+ [5 3]
+ [1 4]
+ ...
+ [4 1]
+ [5 2]
+ [4 3]]
+[Iteração 1200] Top-k vals (probs): [[1.21058    1.0263697 ]
+ [1.115044   1.100202  ]
+ [0.92085403 0.28529915]
+ ...
+ [1.8283299  1.6567981 ]
+ [1.3392823  1.2713004 ]
+ [1.4908562  0.446702  ]]
+LR: 0.000199, Acc: 89.1892, Loss: 0.6821
+[Iteração 1300] Top-k expert indices: [[0 5]
+ [2 4]
+ [3 2]
+ ...
+ [5 4]
+ [0 4]
+ [4 1]]
+[Iteração 1300] Top-k vals (probs): [[ 1.2116687   0.34505725]
+ [ 0.52223355  0.3080343 ]
+ [ 1.1599873  -0.43675244]
+ ...
+ [ 1.3917717   0.52820635]
+ [ 1.2653936   0.48906982]
+ [ 1.008748    0.61054033]]
+[Iteração 1400] Top-k expert indices: [[3 5]
+ [5 1]
+ [4 2]
+ ...
+ [4 3]
+ [4 5]
+ [1 2]]
+[Iteração 1400] Top-k vals (probs): [[ 1.1822156   1.0705944 ]
+ [ 1.3721775   0.65708196]
+ [ 2.3614547   1.5010226 ]
+ ...
+ [ 0.9338007   0.78987294]
+ [ 2.4209228   0.1371231 ]
+ [ 1.3510816  -0.79740983]]
+LR: 0.000199, Acc: 86.4865, Loss: 0.6009
+[Iteração 1500] Top-k expert indices: [[5 0]
+ [4 1]
+ [4 1]
+ ...
+ [2 3]
+ [3 4]
+ [1 0]]
+[Iteração 1500] Top-k vals (probs): [[1.5081923  1.3677756 ]
+ [1.1310978  0.09051557]
+ [2.4327362  0.6855173 ]
+ ...
+ [3.2619317  1.0216215 ]
+ [1.8795316  1.6328785 ]
+ [1.2083726  1.0112056 ]]
+LR: 0.000199, Acc: 78.3784, Loss: 0.7797
+[Iteração 1600] Top-k expert indices: [[0 3]
+ [4 5]
+ [1 4]
+ ...
+ [4 5]
+ [4 2]
+ [1 5]]
+[Iteração 1600] Top-k vals (probs): [[1.2729067  1.1193182 ]
+ [0.94430494 0.8297649 ]
+ [0.46912572 0.34522986]
+ ...
+ [1.6948767  1.1379752 ]
+ [1.0050603  0.22153763]
+ [0.8476937  0.6405837 ]]
+[Iteração 1700] Top-k expert indices: [[1 0]
+ [4 2]
+ [4 3]
+ ...
+ [0 3]
+ [0 3]
+ [5 3]]
+[Iteração 1700] Top-k vals (probs): [[1.6979234  1.4596441 ]
+ [2.497731   1.6849567 ]
+ [1.0543004  0.7808747 ]
+ ...
+ [2.423996   0.7959388 ]
+ [0.26774213 0.01376177]
+ [1.6967467  0.54191256]]
+LR: 0.000199, Acc: 81.0811, Loss: 0.6296
+[Iteração 1800] Top-k expert indices: [[1 3]
+ [4 5]
+ [1 3]
+ ...
+ [2 0]
+ [1 3]
+ [5 2]]
+[Iteração 1800] Top-k vals (probs): [[1.4120507  1.0252688 ]
+ [1.3998059  0.8415118 ]
+ [0.26344278 0.13174906]
+ ...
+ [0.40126985 0.13232478]
+ [2.3912258  0.41665816]
+ [2.1866255  0.6122384 ]]
+LR: 0.000199, Acc: 83.7838, Loss: 0.6221
+[Iteração 1900] Top-k expert indices: [[2 3]
+ [5 0]
+ [3 0]
+ ...
+ [1 2]
+ [4 2]
+ [3 1]]
+[Iteração 1900] Top-k vals (probs): [[0.5884024  0.48692608]
+ [1.9694843  0.4246053 ]
+ [1.7991905  0.3838362 ]
+ ...
+ [1.1484745  0.7932781 ]
+ [1.0531535  0.9600311 ]
+ [2.0400376  0.38979822]]
+[Iteração 2000] Top-k expert indices: [[4 5]
+ [3 5]
+ [1 2]
+ ...
+ [2 1]
+ [1 3]
+ [5 2]]
+[Iteração 2000] Top-k vals (probs): [[ 1.1309165   0.7692612 ]
+ [ 2.6176326   1.5479894 ]
+ [ 0.55622464  0.2649247 ]
+ ...
+ [ 1.8385367   0.41028032]
+ [ 0.8090438   0.771159  ]
+ [ 1.140942   -0.19047683]]
+LR: 0.000198, Acc: 86.4865, Loss: 0.6159
+[Iteração 2100] Top-k expert indices: [[2 5]
+ [3 2]
+ [4 3]
+ ...
+ [3 0]
+ [1 4]
+ [4 3]]
+[Iteração 2100] Top-k vals (probs): [[0.9053557  0.6059546 ]
+ [1.1960005  0.5362094 ]
+ [2.1751137  1.2530807 ]
+ ...
+ [1.60914    1.0355681 ]
+ [1.3950087  0.46117675]
+ [1.5296484  1.4516873 ]]
+LR: 0.000198, Acc: 83.7838, Loss: 0.5343
+[Iteração 2200] Top-k expert indices: [[5 4]
+ [3 0]
+ [5 2]
+ ...
+ [1 4]
+ [1 2]
+ [4 0]]
+[Iteração 2200] Top-k vals (probs): [[0.41990036 0.35619408]
+ [2.798056   0.92591596]
+ [1.5439553  1.258476  ]
+ ...
+ [0.8858071  0.7316562 ]
+ [0.91960526 0.31292173]
+ [1.9528091  0.94919145]]
+[Iteração 2300] Top-k expert indices: [[0 2]
+ [3 4]
+ [4 1]
+ ...
+ [1 4]
+ [2 3]
+ [4 3]]
+[Iteração 2300] Top-k vals (probs): [[0.9097507  0.8451882 ]
+ [1.8431469  0.15787314]
+ [1.3215528  0.34263724]
+ ...
+ [1.2743931  1.2221127 ]
+ [1.1166996  1.0627997 ]
+ [1.8738016  0.46928105]]
+LR: 0.000198, Acc: 78.3784, Loss: 0.6762
+[Iteração 2400] Top-k expert indices: [[3 2]
+ [1 0]
+ [0 1]
+ ...
+ [5 4]
+ [3 4]
+ [1 4]]
+[Iteração 2400] Top-k vals (probs): [[ 0.88115746 -0.14014004]
+ [ 1.3908713   0.835029  ]
+ [ 1.4812559   0.8920281 ]
+ ...
+ [ 2.5320458   0.8934524 ]
+ [ 1.7761109   1.2431841 ]
+ [ 2.0811903   0.97491944]]
+LR: 0.000198, Acc: 83.7838, Loss: 0.3963
+[Iteração 2500] Top-k expert indices: [[0 2]
+ [4 3]
+ [2 1]
+ ...
+ [4 1]
+ [4 5]
+ [2 4]]
+[Iteração 2500] Top-k vals (probs): [[2.0266328  0.49934384]
+ [2.3494937  0.46965048]
+ [1.3565819  0.39616376]
+ ...
+ [1.5391853  1.1435735 ]
+ [2.2465374  2.169766  ]
+ [0.3762432  0.16227147]]
+LR: 0.000197, Acc: 81.0811, Loss: 0.5704
+[Iteração 2600] Top-k expert indices: [[4 0]
+ [0 2]
+ [2 4]
+ ...
+ [5 0]
+ [0 3]
+ [4 0]]
+[Iteração 2600] Top-k vals (probs): [[2.1377835  1.7949129 ]
+ [1.5901842  0.86884534]
+ [1.1868197  1.1334963 ]
+ ...
+ [2.154911   1.9165103 ]
+ [2.6054544  1.2718096 ]
+ [0.535935   0.4127219 ]]
+[Iteração 2700] Top-k expert indices: [[5 3]
+ [3 4]
+ [4 1]
+ ...
+ [4 0]
+ [5 4]
+ [0 3]]
+[Iteração 2700] Top-k vals (probs): [[0.4137795  0.10096645]
+ [1.3543756  0.41686884]
+ [1.1007634  0.39428687]
+ ...
+ [1.8829185  0.42592692]
+ [0.88062215 0.7442912 ]
+ [0.7242019  0.7075288 ]]
+LR: 0.000197, Acc: 83.7838, Loss: 0.5498
+[Iteração 2800] Top-k expert indices: [[1 3]
+ [1 2]
+ [2 3]
+ ...
+ [0 4]
+ [4 0]
+ [1 2]]
+[Iteração 2800] Top-k vals (probs): [[1.1577135  0.20028247]
+ [1.8478036  0.65457654]
+ [2.1666129  1.8543129 ]
+ ...
+ [1.9999775  0.8470199 ]
+ [1.9425571  1.070981  ]
+ [2.7693872  1.4738564 ]]
+LR: 0.000197, Acc: 78.3784, Loss: 0.3880
+[Iteração 2900] Top-k expert indices: [[3 2]
+ [2 3]
+ [2 3]
+ ...
+ [3 2]
+ [0 4]
+ [2 3]]
+[Iteração 2900] Top-k vals (probs): [[0.559682   0.1689453 ]
+ [0.7636417  0.6177216 ]
+ [0.9700521  0.67422634]
+ ...
+ [1.3035572  0.0441597 ]
+ [1.750108   0.41624737]
+ [1.0878574  0.8093791 ]]
+[Iteração 3000] Top-k expert indices: [[2 0]
+ [4 3]
+ [0 5]
+ ...
+ [4 0]
+ [1 3]
+ [2 5]]
+[Iteração 3000] Top-k vals (probs): [[ 1.0206485   0.996136  ]
+ [ 2.0300307   1.6849489 ]
+ [ 1.5021684   1.251766  ]
+ ...
+ [ 1.3856611   0.7799899 ]
+ [ 1.3957005  -0.01779252]
+ [ 0.6300764   0.5705678 ]]
+LR: 0.000197, Acc: 81.0811, Loss: 0.4995
+[Iteração 3100] Top-k expert indices: [[4 2]
+ [4 3]
+ [3 2]
+ ...
+ [4 5]
+ [4 3]
+ [2 3]]
+[Iteração 3100] Top-k vals (probs): [[ 1.2672633   0.78167117]
+ [ 1.177321    0.26651868]
+ [ 0.21304785 -0.0658901 ]
+ ...
+ [ 1.4549177   0.7939391 ]
+ [ 2.5416806   1.6253726 ]
+ [ 1.7487556   1.3518555 ]]
+LR: 0.000196, Acc: 100.0000, Loss: 0.1505
+[Iteração 3200] Top-k expert indices: [[2 1]
+ [3 4]
+ [3 1]
+ ...
+ [0 5]
+ [4 3]
+ [4 5]]
+[Iteração 3200] Top-k vals (probs): [[2.2121034  1.0713316 ]
+ [1.3984402  0.5159906 ]
+ [1.0468507  0.71597666]
+ ...
+ [0.811591   0.7644625 ]
+ [1.7916892  0.84583855]
+ [1.8087952  1.3827764 ]]
+[Iteração 3300] Top-k expert indices: [[0 5]
+ [5 4]
+ [0 5]
+ ...
+ [5 1]
+ [4 2]
+ [3 4]]
+[Iteração 3300] Top-k vals (probs): [[1.0885987 0.5241102]
+ [0.9660994 0.8357495]
+ [1.1581858 0.8267404]
+ ...
+ [2.754397  1.644418 ]
+ [0.9832276 0.5272483]
+ [1.6066422 1.0411465]]
+LR: 0.000196, Acc: 86.4865, Loss: 0.3508
+[Iteração 3400] Top-k expert indices: [[5 1]
+ [3 0]
+ [1 2]
+ ...
+ [2 3]
+ [4 1]
+ [2 0]]
+[Iteração 3400] Top-k vals (probs): [[1.8500422  1.2249504 ]
+ [1.2538838  1.1168139 ]
+ [0.76958627 0.6397676 ]
+ ...
+ [0.7881775  0.6666914 ]
+ [1.5573009  1.0066888 ]
+ [1.4136604  0.885535  ]]
+LR: 0.000196, Acc: 89.1892, Loss: 0.3630
+[Iteração 3500] Top-k expert indices: [[5 4]
+ [1 5]
+ [0 5]
+ ...
+ [1 2]
+ [3 2]
+ [0 4]]
+[Iteração 3500] Top-k vals (probs): [[ 1.234502    0.674752  ]
+ [ 2.1692805   1.4087074 ]
+ [ 0.8586395   0.41137975]
+ ...
+ [ 2.5381606   1.6045623 ]
+ [ 1.2382154   0.03333835]
+ [ 1.2579154  -0.08013739]]
+[Iteração 3600] Top-k expert indices: [[2 3]
+ [4 0]
+ [3 2]
+ ...
+ [5 4]
+ [1 4]
+ [4 2]]
+[Iteração 3600] Top-k vals (probs): [[1.1982323  0.52631265]
+ [1.1874362  0.66844743]
+ [1.1999929  0.66290903]
+ ...
+ [2.390911   1.2528055 ]
+ [1.2828529  0.37302017]
+ [1.506601   1.3094776 ]]
+LR: 0.000195, Acc: 86.4865, Loss: 0.5081
+[Iteração 3700] Top-k expert indices: [[3 2]
+ [5 4]
+ [3 2]
+ ...
+ [2 3]
+ [2 4]
+ [0 2]]
+[Iteração 3700] Top-k vals (probs): [[ 1.6866984   1.1927973 ]
+ [ 0.19093835  0.16813433]
+ [ 2.8659704   1.6778406 ]
+ ...
+ [ 2.2661533   1.3241947 ]
+ [ 1.7795178  -0.05840205]
+ [ 2.9926398   0.68162507]]
+LR: 0.000195, Acc: 78.3784, Loss: 0.5851
+[Iteração 3800] Top-k expert indices: [[2 1]
+ [4 0]
+ [0 1]
+ ...
+ [1 2]
+ [2 4]
+ [1 4]]
+[Iteração 3800] Top-k vals (probs): [[ 1.9032568   1.0597621 ]
+ [ 1.8371853   0.6269161 ]
+ [ 1.129155    0.9694823 ]
+ ...
+ [ 1.8669183  -0.02952105]
+ [ 2.036943    1.1787616 ]
+ [ 1.1456739   0.96174103]]
+LR: 0.000194, Acc: 83.7838, Loss: 0.6066
+[Iteração 3900] Top-k expert indices: [[4 2]
+ [5 0]
+ [2 5]
+ ...
+ [0 4]
+ [4 5]
+ [5 1]]
+[Iteração 3900] Top-k vals (probs): [[1.165862   0.5971217 ]
+ [1.6236304  1.4459721 ]
+ [1.4502363  0.44197312]
+ ...
+ [1.7338549  1.688526  ]
+ [2.0550535  1.9357786 ]
+ [1.0961121  0.82575655]]
+[Iteração 4000] Top-k expert indices: [[2 4]
+ [2 1]
+ [4 3]
+ ...
+ [3 1]
+ [4 5]
+ [1 0]]
+[Iteração 4000] Top-k vals (probs): [[ 1.0247157   0.48658115]
+ [ 2.9360166   1.4570503 ]
+ [ 0.27300876 -0.20544696]
+ ...
+ [ 1.3379284   0.76961195]
+ [ 2.8447356   0.9911451 ]
+ [ 0.46799034  0.45518452]]
+LR: 0.000194, Acc: 91.8919, Loss: 0.2604
+[Iteração 4100] Top-k expert indices: [[3 5]
+ [2 4]
+ [3 2]
+ ...
+ [1 2]
+ [0 2]
+ [0 1]]
+[Iteração 4100] Top-k vals (probs): [[ 0.8416873  -0.23918326]
+ [ 1.5622818  -0.00714471]
+ [ 2.9175954   2.294001  ]
+ ...
+ [ 1.7626841   1.2004    ]
+ [ 1.0630255  -0.07255959]
+ [ 2.4866767   1.1155742 ]]
+LR: 0.000193, Acc: 89.1892, Loss: 0.3889
+[Iteração 4200] Top-k expert indices: [[5 0]
+ [3 2]
+ [2 0]
+ ...
+ [0 5]
+ [0 5]
+ [0 4]]
+[Iteração 4200] Top-k vals (probs): [[1.4374206  1.1861095 ]
+ [1.6949337  1.1544992 ]
+ [0.67444265 0.35994476]
+ ...
+ [3.547931   2.2351904 ]
+ [0.6926994  0.1478965 ]
+ [1.2495441  1.241994  ]]
+[Iteração 4300] Top-k expert indices: [[3 4]
+ [1 2]
+ [5 3]
+ ...
+ [3 4]
+ [1 5]
+ [1 0]]
+[Iteração 4300] Top-k vals (probs): [[2.7633953  1.0035284 ]
+ [1.3533275  0.7115941 ]
+ [2.467464   1.0634077 ]
+ ...
+ [1.2354519  0.59712803]
+ [1.807908   0.5858737 ]
+ [0.68993485 0.62893534]]
+LR: 0.000193, Acc: 89.1892, Loss: 0.3917
+[Iteração 4400] Top-k expert indices: [[3 1]
+ [0 2]
+ [3 0]
+ ...
+ [1 0]
+ [4 3]
+ [4 0]]
+[Iteração 4400] Top-k vals (probs): [[0.86235785 0.83737856]
+ [0.3792066  0.14448589]
+ [1.1069565  0.70939857]
+ ...
+ [1.7299863  1.6000937 ]
+ [0.49503106 0.4247412 ]
+ [1.2674296  0.6093949 ]]
+LR: 0.000193, Acc: 91.8919, Loss: 0.3266
+[Iteração 4500] Top-k expert indices: [[4 1]
+ [1 2]
+ [5 4]
+ ...
+ [2 4]
+ [1 4]
+ [1 3]]
+[Iteração 4500] Top-k vals (probs): [[2.0344465  0.4068039 ]
+ [1.3586339  1.3386441 ]
+ [1.8826413  0.73785317]
+ ...
+ [1.5553896  0.95590454]
+ [1.2083799  0.96313804]
+ [0.6711826  0.45804697]]
+[Iteração 4600] Top-k expert indices: [[1 2]
+ [1 3]
+ [3 1]
+ ...
+ [3 2]
+ [5 1]
+ [3 4]]
+[Iteração 4600] Top-k vals (probs): [[0.8462734  0.8235479 ]
+ [1.7496717  1.182813  ]
+ [1.1847513  0.48617628]
+ ...
+ [1.5288702  1.1288497 ]
+ [0.5990083  0.26932862]
+ [1.20319    1.1606593 ]]
+LR: 0.000192, Acc: 86.4865, Loss: 0.5130
+[Iteração 4700] Top-k expert indices: [[2 0]
+ [5 4]
+ [5 0]
+ ...
+ [5 0]
+ [0 3]
+ [3 1]]
+[Iteração 4700] Top-k vals (probs): [[1.6587602  0.68000984]
+ [2.4392257  1.0567907 ]
+ [2.4408526  1.7469893 ]
+ ...
+ [1.1108645  0.46335244]
+ [1.7976745  1.369068  ]
+ [0.5777958  0.24815726]]
+LR: 0.000192, Acc: 91.8919, Loss: 0.3991
+[Iteração 4800] Top-k expert indices: [[1 3]
+ [2 1]
+ [1 5]
+ ...
+ [5 1]
+ [5 3]
+ [0 1]]
+[Iteração 4800] Top-k vals (probs): [[1.3288181  0.93981063]
+ [1.4868642  0.84995496]
+ [1.9962703  1.8260367 ]
+ ...
+ [0.7117058  0.11986738]
+ [1.3826346  1.0550348 ]
+ [0.7517308  0.35413462]]
+LR: 0.000191, Acc: 89.1892, Loss: 0.3335
+[Iteração 4900] Top-k expert indices: [[5 1]
+ [4 2]
+ [1 0]
+ ...
+ [4 0]
+ [4 3]
+ [2 1]]
+[Iteração 4900] Top-k vals (probs): [[1.6703371  1.5588362 ]
+ [0.754687   0.03907123]
+ [0.9762276  0.15703648]
+ ...
+ [1.4689382  1.364014  ]
+ [1.8944978  1.6630048 ]
+ [1.8347129  1.1081916 ]]
+[Iteração 5000] Top-k expert indices: [[4 2]
+ [1 0]
+ [1 5]
+ ...
+ [4 0]
+ [4 5]
+ [5 2]]
+[Iteração 5000] Top-k vals (probs): [[1.6886208  0.48739657]
+ [0.9037823  0.79558504]
+ [2.0938413  1.2610997 ]
+ ...
+ [0.7634037  0.6081966 ]
+ [0.9943147  0.7344754 ]
+ [0.7760422  0.34519312]]
+LR: 0.000191, Acc: 89.1892, Loss: 0.4329
+[Iteração 5100] Top-k expert indices: [[3 4]
+ [3 5]
+ [3 4]
+ ...
+ [2 0]
+ [3 1]
+ [2 0]]
+[Iteração 5100] Top-k vals (probs): [[0.5624659  0.23080376]
+ [2.2093577  1.6573609 ]
+ [1.8061652  1.0450811 ]
+ ...
+ [1.3426963  0.75081754]
+ [0.88675797 0.49648988]
+ [1.3606598  1.0314347 ]]
+LR: 0.000190, Acc: 97.2973, Loss: 0.1267
+[Iteração 5200] Top-k expert indices: [[4 2]
+ [3 1]
+ [3 4]
+ ...
+ [0 4]
+ [1 5]
+ [1 2]]
+[Iteração 5200] Top-k vals (probs): [[ 0.98275065  0.91707987]
+ [ 0.71632516  0.4773086 ]
+ [ 0.53558964 -0.02106723]
+ ...
+ [ 1.5678854   0.6340524 ]
+ [ 1.1919576   1.1414937 ]
+ [ 1.9684457   1.0485901 ]]
+[Iteração 5300] Top-k expert indices: [[4 0]
+ [3 4]
+ [2 3]
+ ...
+ [0 1]
+ [0 2]
+ [4 2]]
+[Iteração 5300] Top-k vals (probs): [[1.3733664  0.32894844]
+ [1.1116916  1.0650324 ]
+ [1.7645715  0.51131576]
+ ...
+ [0.9645512  0.9100987 ]
+ [1.0546565  0.55265707]
+ [0.90492725 0.62244225]]
+LR: 0.000189, Acc: 89.1892, Loss: 0.2759
+[Iteração 5400] Top-k expert indices: [[1 3]
+ [3 0]
+ [1 5]
+ ...
+ [2 5]
+ [5 0]
+ [3 4]]
+[Iteração 5400] Top-k vals (probs): [[1.7553377  1.3929703 ]
+ [1.0276856  0.6388769 ]
+ [0.550115   0.3084327 ]
+ ...
+ [1.9838253  1.6208475 ]
+ [3.2822933  0.85275376]
+ [0.9471094  0.9151597 ]]
+LR: 0.000189, Acc: 97.2973, Loss: 0.1485
+[Iteração 5500] Top-k expert indices: [[1 0]
+ [2 4]
+ [0 1]
+ ...
+ [0 2]
+ [3 1]
+ [2 5]]
+[Iteração 5500] Top-k vals (probs): [[0.9467103  0.7476718 ]
+ [1.4419622  0.59559715]
+ [2.0040727  1.802182  ]
+ ...
+ [1.8503199  1.0316305 ]
+ [2.0932097  1.1804954 ]
+ [1.1327381  0.8876046 ]]
+[Iteração 5600] Top-k expert indices: [[2 0]
+ [5 4]
+ [2 4]
+ ...
+ [1 4]
+ [5 2]
+ [0 2]]
+[Iteração 5600] Top-k vals (probs): [[2.0997324  1.2194109 ]
+ [2.0501812  0.9672566 ]
+ [1.2789948  0.9151007 ]
+ ...
+ [1.0020438  0.820827  ]
+ [1.2871251  0.49843764]
+ [0.76628256 0.49751195]]
+LR: 0.000188, Acc: 83.7838, Loss: 0.5315
+[Iteração 5700] Top-k expert indices: [[0 1]
+ [1 0]
+ [0 4]
+ ...
+ [0 3]
+ [1 2]
+ [4 5]]
+[Iteração 5700] Top-k vals (probs): [[1.7407932  1.4512731 ]
+ [0.17382221 0.06507294]
+ [1.0662024  0.9473656 ]
+ ...
+ [1.175786   1.0954151 ]
+ [1.6513261  0.74722993]
+ [0.61283886 0.37521577]]
+LR: 0.000188, Acc: 89.1892, Loss: 0.2938
+[Iteração 5800] Top-k expert indices: [[3 4]
+ [0 5]
+ [2 3]
+ ...
+ [3 2]
+ [3 5]
+ [3 1]]
+[Iteração 5800] Top-k vals (probs): [[1.8899386  1.0893959 ]
+ [1.4967548  1.442633  ]
+ [0.2560116  0.06807957]
+ ...
+ [1.0518179  0.21473765]
+ [1.6905769  0.40178153]
+ [0.69529676 0.1128582 ]]
+[Iteração 5900] Top-k expert indices: [[2 3]
+ [3 5]
+ [2 3]
+ ...
+ [4 1]
+ [3 0]
+ [4 2]]
+[Iteração 5900] Top-k vals (probs): [[ 1.6762788   0.6340834 ]
+ [ 0.86752033 -0.40472442]
+ [ 0.9103957   0.6037813 ]
+ ...
+ [ 1.263408    1.2249502 ]
+ [ 1.2057763   0.23004192]
+ [ 1.0599574   1.0197058 ]]
+LR: 0.000187, Acc: 94.5946, Loss: 0.1723
+[Iteração 6000] Top-k expert indices: [[0 5]
+ [0 4]
+ [0 1]
+ ...
+ [5 4]
+ [3 5]
+ [0 5]]
+[Iteração 6000] Top-k vals (probs): [[1.4713361  1.1746906 ]
+ [0.917517   0.3099008 ]
+ [1.1772045  0.9435542 ]
+ ...
+ [0.71835566 0.05550694]
+ [2.336328   0.86350834]
+ [1.5071427  0.86095047]]
+LR: 0.000186, Acc: 94.5946, Loss: 0.2290
+[Iteração 6100] Top-k expert indices: [[3 4]
+ [0 3]
+ [4 0]
+ ...
+ [3 5]
+ [2 3]
+ [5 3]]
+[Iteração 6100] Top-k vals (probs): [[1.7120303  1.6109756 ]
+ [2.1417341  0.61482054]
+ [0.9855821  0.2359791 ]
+ ...
+ [1.7278514  1.6397347 ]
+ [1.7837281  1.1718025 ]
+ [1.6217818  1.4289576 ]]
+LR: 0.000186, Acc: 89.1892, Loss: 0.3068
+[Iteração 6200] Top-k expert indices: [[0 1]
+ [0 3]
+ [4 2]
+ ...
+ [5 4]
+ [0 2]
+ [2 1]]
+[Iteração 6200] Top-k vals (probs): [[1.5387415  0.23386861]
+ [0.831725   0.3320849 ]
+ [0.48514158 0.478225  ]
+ ...
+ [2.0619433  0.27007973]
+ [0.99065745 0.5356137 ]
+ [1.5706712  1.4161445 ]]
+[Iteração 6300] Top-k expert indices: [[3 0]
+ [2 1]
+ [2 1]
+ ...
+ [0 3]
+ [0 2]
+ [1 0]]
+[Iteração 6300] Top-k vals (probs): [[1.2648478  0.84819555]
+ [1.6720808  1.3715972 ]
+ [0.7266832  0.46493882]
+ ...
+ [2.8478053  0.7554351 ]
+ [2.214715   1.2427359 ]
+ [1.8015522  0.8739614 ]]
+LR: 0.000185, Acc: 97.2973, Loss: 0.1878
+[Iteração 6400] Top-k expert indices: [[5 1]
+ [1 0]
+ [1 5]
+ ...
+ [2 4]
+ [4 5]
+ [1 2]]
+[Iteração 6400] Top-k vals (probs): [[1.4442246  1.186527  ]
+ [0.7317211  0.3343085 ]
+ [2.0753381  0.7615415 ]
+ ...
+ [2.1179879  1.7556224 ]
+ [0.68260837 0.67632097]
+ [0.8250196  0.8177463 ]]
+LR: 0.000185, Acc: 89.1892, Loss: 0.3760
+[Iteração 6500] Top-k expert indices: [[0 3]
+ [3 5]
+ [2 1]
+ ...
+ [2 3]
+ [3 0]
+ [2 0]]
+[Iteração 6500] Top-k vals (probs): [[1.7580252  1.5714266 ]
+ [0.55670327 0.10938936]
+ [1.7889285  1.5547826 ]
+ ...
+ [1.3033899  1.1188343 ]
+ [1.5731938  0.27673638]
+ [1.2747631  0.956787  ]]
+[Iteração 6600] Top-k expert indices: [[4 5]
+ [4 5]
+ [2 4]
+ ...
+ [3 4]
+ [4 3]
+ [5 3]]
+[Iteração 6600] Top-k vals (probs): [[1.3346883  1.0974525 ]
+ [1.8380829  0.9194548 ]
+ [1.121616   0.5126871 ]
+ ...
+ [2.1767032  0.9423794 ]
+ [1.0802226  0.33845964]
+ [1.3896148  1.3143177 ]]
+LR: 0.000184, Acc: 81.0811, Loss: 0.6896
+[Iteração 6700] Top-k expert indices: [[5 0]
+ [4 2]
+ [1 4]
+ ...
+ [5 3]
+ [3 0]
+ [0 2]]
+[Iteração 6700] Top-k vals (probs): [[ 0.61810577  0.14585902]
+ [ 1.5395241   0.7099812 ]
+ [-0.25524387 -0.28448164]
+ ...
+ [ 1.3656853   1.3471255 ]
+ [ 2.2116861  -0.20088404]
+ [ 1.4433728   1.2312484 ]]
+LR: 0.000183, Acc: 81.0811, Loss: 0.3482
+[Iteração 6800] Top-k expert indices: [[5 3]
+ [3 2]
+ [1 4]
+ ...
+ [1 3]
+ [1 2]
+ [0 4]]
+[Iteração 6800] Top-k vals (probs): [[1.0155534  0.66248876]
+ [1.2167693  0.5118301 ]
+ [1.3857242  1.3510466 ]
+ ...
+ [1.091607   0.6304616 ]
+ [1.1412652  0.6525901 ]
+ [1.5988044  1.0243813 ]]
+[Iteração 6900] Top-k expert indices: [[1 2]
+ [1 5]
+ [4 2]
+ ...
+ [2 4]
+ [5 2]
+ [5 2]]
+[Iteração 6900] Top-k vals (probs): [[1.2963417  0.71226966]
+ [1.654009   0.48923218]
+ [1.5181705  1.1440698 ]
+ ...
+ [1.5952718  0.34451383]
+ [1.199759   1.0297319 ]
+ [1.4361404  0.35334033]]
+LR: 0.000182, Acc: 89.1892, Loss: 0.4186
+[Iteração 7000] Top-k expert indices: [[1 0]
+ [2 0]
+ [4 5]
+ ...
+ [2 3]
+ [5 1]
+ [4 2]]
+[Iteração 7000] Top-k vals (probs): [[1.923668   1.758411  ]
+ [1.0892687  0.8303049 ]
+ [1.7994522  1.6814995 ]
+ ...
+ [1.1525247  0.49785256]
+ [1.5100998  1.1071544 ]
+ [1.9716463  0.37722304]]
+LR: 0.000182, Acc: 89.1892, Loss: 0.3419
+[Iteração 7100] Top-k expert indices: [[2 4]
+ [1 2]
+ [2 5]
+ ...
+ [0 1]
+ [0 1]
+ [2 4]]
+[Iteração 7100] Top-k vals (probs): [[1.5277983  1.4859197 ]
+ [0.5330263  0.5107435 ]
+ [0.60563666 0.18407714]
+ ...
+ [2.1525257  0.9622812 ]
+ [0.78695834 0.78690004]
+ [1.7019668  1.3270594 ]]
+[Iteração 7200] Top-k expert indices: [[1 5]
+ [0 3]
+ [3 1]
+ ...
+ [3 1]
+ [4 1]
+ [5 2]]
+[Iteração 7200] Top-k vals (probs): [[2.3205433  2.2961957 ]
+ [1.4731655  1.3864926 ]
+ [2.1229765  1.8132787 ]
+ ...
+ [0.9935279  0.46127972]
+ [2.1075368  0.91527915]
+ [2.9680748  1.1200905 ]]
+LR: 0.000181, Acc: 94.5946, Loss: 0.2673
+[Iteração 7300] Top-k expert indices: [[2 4]
+ [4 5]
+ [5 3]
+ ...
+ [2 3]
+ [3 4]
+ [1 4]]
+[Iteração 7300] Top-k vals (probs): [[ 0.9847395  -0.11610056]
+ [ 1.1019465   1.0188414 ]
+ [ 1.332926    1.2332461 ]
+ ...
+ [ 1.106673    1.101684  ]
+ [ 1.9129754   0.88898164]
+ [ 0.657784    0.28840375]]
+LR: 0.000180, Acc: 94.5946, Loss: 0.2245
+[Iteração 7400] Top-k expert indices: [[4 5]
+ [0 1]
+ [2 5]
+ ...
+ [5 1]
+ [4 3]
+ [1 5]]
+[Iteração 7400] Top-k vals (probs): [[0.864752   0.6453605 ]
+ [2.2334661  0.76180696]
+ [1.0430453  0.7469485 ]
+ ...
+ [1.3190308  0.39505047]
+ [1.9600589  1.5062304 ]
+ [2.451025   1.6942601 ]]
+LR: 0.000180, Acc: 97.2973, Loss: 0.1254
+[Iteração 7500] Top-k expert indices: [[0 4]
+ [2 1]
+ [2 1]
+ ...
+ [2 4]
+ [4 3]
+ [4 0]]
+[Iteração 7500] Top-k vals (probs): [[0.51861745 0.5002552 ]
+ [0.88464916 0.54683787]
+ [0.8471376  0.08386918]
+ ...
+ [2.1551993  1.1855283 ]
+ [0.35523662 0.30071428]
+ [1.2046661  0.7323845 ]]
+[Iteração 7600] Top-k expert indices: [[5 3]
+ [1 4]
+ [0 4]
+ ...
+ [0 1]
+ [1 4]
+ [1 4]]
+[Iteração 7600] Top-k vals (probs): [[1.1861465  0.87960315]
+ [1.3437409  0.9232584 ]
+ [2.1342235  1.7014676 ]
+ ...
+ [1.5982356  0.6288109 ]
+ [1.3873086  0.42443886]
+ [2.6318944  1.7678604 ]]
+LR: 0.000179, Acc: 86.4865, Loss: 0.4203
+[Iteração 7700] Top-k expert indices: [[2 1]
+ [4 2]
+ [3 0]
+ ...
+ [2 4]
+ [0 2]
+ [0 5]]
+[Iteração 7700] Top-k vals (probs): [[1.8562584  1.3780454 ]
+ [1.1238413  0.2287114 ]
+ [1.4825377  0.64344037]
+ ...
+ [1.3335567  0.47137794]
+ [1.0445113  0.09961475]
+ [1.0368972  0.9971486 ]]
+LR: 0.000178, Acc: 97.2973, Loss: 0.1674
+[Iteração 7800] Top-k expert indices: [[4 1]
+ [5 2]
+ [5 1]
+ ...
+ [5 1]
+ [4 5]
+ [3 1]]
+[Iteração 7800] Top-k vals (probs): [[1.6959145  1.102882  ]
+ [1.637296   1.5729564 ]
+ [1.1216413  0.6329464 ]
+ ...
+ [1.6703502  0.3496635 ]
+ [0.74101746 0.5806715 ]
+ [1.2596414  0.81308234]]
+[Iteração 7900] Top-k expert indices: [[3 2]
+ [4 3]
+ [3 2]
+ ...
+ [0 4]
+ [3 4]
+ [2 1]]
+[Iteração 7900] Top-k vals (probs): [[ 1.9003656   0.02211414]
+ [ 0.852665    0.7404704 ]
+ [ 1.7822204   0.68104345]
+ ...
+ [ 1.0560218  -0.10627307]
+ [ 2.3723595   1.7163123 ]
+ [ 1.9349434   1.9058864 ]]
+LR: 0.000177, Acc: 91.8919, Loss: 0.2306
+[Iteração 8000] Top-k expert indices: [[2 0]
+ [5 2]
+ [3 4]
+ ...
+ [4 0]
+ [3 4]
+ [1 3]]
+[Iteração 8000] Top-k vals (probs): [[0.8682339  0.16356304]
+ [1.5490967  1.5372322 ]
+ [2.3093634  1.7309377 ]
+ ...
+ [0.7096114  0.03347495]
+ [2.671105   1.5745001 ]
+ [1.4136996  0.79826355]]
+LR: 0.000176, Acc: 94.5946, Loss: 0.1481
+[Iteração 8100] Top-k expert indices: [[5 2]
+ [2 3]
+ [3 0]
+ ...
+ [5 2]
+ [4 5]
+ [5 0]]
+[Iteração 8100] Top-k vals (probs): [[ 1.0304447   0.4941786 ]
+ [ 1.8154128   1.0539134 ]
+ [ 1.990728    0.9333185 ]
+ ...
+ [ 0.23894578  0.15259664]
+ [ 0.5552815   0.17465296]
+ [ 1.8547599  -0.01460801]]
+[Iteração 8200] Top-k expert indices: [[5 1]
+ [4 1]
+ [1 4]
+ ...
+ [3 5]
+ [1 3]
+ [2 5]]
+[Iteração 8200] Top-k vals (probs): [[0.6100858  0.25140262]
+ [1.920536   1.7828859 ]
+ [1.1081657  1.0752056 ]
+ ...
+ [1.6047771  1.5468049 ]
+ [1.0688212  0.19653842]
+ [0.59753674 0.22917727]]
+LR: 0.000176, Acc: 91.8919, Loss: 0.3915
+[Iteração 8300] Top-k expert indices: [[1 4]
+ [3 2]
+ [2 4]
+ ...
+ [5 3]
+ [0 5]
+ [2 0]]
+[Iteração 8300] Top-k vals (probs): [[0.810143   0.29768533]
+ [1.9088359  0.31853062]
+ [2.085061   0.57442707]
+ ...
+ [1.8991532  1.0364976 ]
+ [2.4260955  0.78846836]
+ [2.1907668  1.86876   ]]
+LR: 0.000175, Acc: 97.2973, Loss: 0.2294
+[Iteração 8400] Top-k expert indices: [[3 5]
+ [2 4]
+ [5 3]
+ ...
+ [2 3]
+ [2 4]
+ [4 1]]
+[Iteração 8400] Top-k vals (probs): [[1.5841588  0.3062443 ]
+ [1.6432524  1.5261344 ]
+ [2.2710824  0.5795458 ]
+ ...
+ [0.63205177 0.583756  ]
+ [0.70647687 0.37680197]
+ [1.0739821  0.88283515]]
+LR: 0.000174, Acc: 100.0000, Loss: 0.0631
+[Iteração 8500] Top-k expert indices: [[1 4]
+ [2 1]
+ [5 1]
+ ...
+ [1 0]
+ [3 4]
+ [1 2]]
+[Iteração 8500] Top-k vals (probs): [[1.2117846  0.6715481 ]
+ [1.2739747  0.73603743]
+ [1.7953342  0.81776184]
+ ...
+ [2.386456   1.8128973 ]
+ [0.6573755  0.28600073]
+ [1.704643   1.5708482 ]]
+[Iteração 8600] Top-k expert indices: [[2 1]
+ [3 5]
+ [3 2]
+ ...
+ [5 1]
+ [2 1]
+ [2 1]]
+[Iteração 8600] Top-k vals (probs): [[1.0800403  1.0277264 ]
+ [2.9743552  0.6709226 ]
+ [1.7241963  1.0398586 ]
+ ...
+ [1.4352726  0.59294355]
+ [0.6526141  0.25103456]
+ [1.9277811  1.610445  ]]
+LR: 0.000173, Acc: 94.5946, Loss: 0.1657
+[Iteração 8700] Top-k expert indices: [[5 0]
+ [3 2]
+ [5 1]
+ ...
+ [3 2]
+ [1 2]
+ [2 0]]
+[Iteração 8700] Top-k vals (probs): [[1.447458   0.9970374 ]
+ [1.4240881  0.8943406 ]
+ [2.2715259  0.98618346]
+ ...
+ [1.3295181  0.6939305 ]
+ [2.6371572  0.46400502]
+ [0.20107429 0.06795902]]
+LR: 0.000172, Acc: 91.8919, Loss: 0.2665
+[Iteração 8800] Top-k expert indices: [[5 4]
+ [2 4]
+ [2 1]
+ ...
+ [5 0]
+ [2 3]
+ [2 5]]
+[Iteração 8800] Top-k vals (probs): [[1.3301532  1.0265164 ]
+ [2.354143   1.2229842 ]
+ [0.7884355  0.75393325]
+ ...
+ [0.9444203  0.48177075]
+ [2.1898506  1.3282706 ]
+ [1.8834108  1.3776118 ]]
+[Iteração 8900] Top-k expert indices: [[0 4]
+ [2 0]
+ [5 3]
+ ...
+ [3 1]
+ [2 0]
+ [1 2]]
+[Iteração 8900] Top-k vals (probs): [[1.7465309 1.3201156]
+ [1.8517964 1.0343628]
+ [1.7692147 0.9130903]
+ ...
+ [0.9417405 0.3773731]
+ [1.7333164 1.3536232]
+ [1.2035053 0.4099241]]
+LR: 0.000171, Acc: 94.5946, Loss: 0.2618
+[Iteração 9000] Top-k expert indices: [[5 2]
+ [1 4]
+ [0 1]
+ ...
+ [5 4]
+ [3 4]
+ [4 1]]
+[Iteração 9000] Top-k vals (probs): [[ 1.298729    0.52640855]
+ [ 1.148717    0.926596  ]
+ [ 1.4426999   0.82051605]
+ ...
+ [ 1.6692878   0.9855992 ]
+ [ 1.8035389   0.83178395]
+ [ 0.9079373  -0.06321424]]
+LR: 0.000170, Acc: 91.8919, Loss: 0.1507
+[Iteração 9100] Top-k expert indices: [[2 3]
+ [2 4]
+ [2 1]
+ ...
+ [0 5]
+ [4 5]
+ [4 5]]
+[Iteração 9100] Top-k vals (probs): [[0.8980752  0.6571668 ]
+ [1.1091917  0.8990967 ]
+ [1.5442698  0.9424175 ]
+ ...
+ [1.8773272  0.92614704]
+ [1.0137763  0.80701274]
+ [0.6067716  0.20997345]]
+[Iteração 9200] Top-k expert indices: [[4 3]
+ [3 5]
+ [3 2]
+ ...
+ [3 4]
+ [1 5]
+ [1 4]]
+[Iteração 9200] Top-k vals (probs): [[0.78006905 0.6865169 ]
+ [0.6496805  0.4801975 ]
+ [0.1816606  0.07006458]
+ ...
+ [0.6174079  0.1660276 ]
+ [1.3506422  0.7456393 ]
+ [0.91942704 0.7945827 ]]
+LR: 0.000170, Acc: 100.0000, Loss: 0.0899
+[Iteração 9300] Top-k expert indices: [[4 5]
+ [5 0]
+ [5 3]
+ ...
+ [4 2]
+ [2 0]
+ [3 4]]
+[Iteração 9300] Top-k vals (probs): [[0.95437336 0.87833744]
+ [2.2354014  1.8959082 ]
+ [2.1969955  0.18642801]
+ ...
+ [1.6141587  0.10041354]
+ [1.3105484  0.7256076 ]
+ [2.134965   1.028418  ]]
+LR: 0.000169, Acc: 94.5946, Loss: 0.4184
+[Iteração 9400] Top-k expert indices: [[3 5]
+ [4 2]
+ [2 5]
+ ...
+ [4 3]
+ [1 0]
+ [5 4]]
+[Iteração 9400] Top-k vals (probs): [[1.1146454  0.56296843]
+ [1.0855912  0.10605961]
+ [2.1847053  0.35382998]
+ ...
+ [1.6916211  1.5118189 ]
+ [1.5671227  0.66609824]
+ [1.460941   0.96290433]]
+[Iteração 9500] Top-k expert indices: [[2 3]
+ [0 2]
+ [2 3]
+ ...
+ [4 3]
+ [3 1]
+ [3 5]]
+[Iteração 9500] Top-k vals (probs): [[1.3297694  0.73610145]
+ [1.2218071  0.66661024]
+ [1.4646395  0.4934833 ]
+ ...
+ [1.0842932  0.7087376 ]
+ [2.2151713  1.3988975 ]
+ [1.1877072  0.92031157]]
+LR: 0.000168, Acc: 94.5946, Loss: 0.2081
+[Iteração 9600] Top-k expert indices: [[3 4]
+ [3 0]
+ [3 5]
+ ...
+ [0 2]
+ [5 1]
+ [1 4]]
+[Iteração 9600] Top-k vals (probs): [[1.1639777  0.19834113]
+ [1.2994754  0.81164247]
+ [1.2688268  1.2189502 ]
+ ...
+ [1.555478   0.40241104]
+ [1.1156266  0.36529848]
+ [0.46079624 0.36417997]]
+LR: 0.000167, Acc: 91.8919, Loss: 0.4054
+[Iteração 9700] Top-k expert indices: [[5 3]
+ [1 5]
+ [5 4]
+ ...
+ [0 5]
+ [3 0]
+ [2 5]]
+[Iteração 9700] Top-k vals (probs): [[1.6241277  0.96384203]
+ [1.7005428  0.8595551 ]
+ [2.4120824  0.24370667]
+ ...
+ [1.7703133  1.6270628 ]
+ [1.2178484  0.9110278 ]
+ [0.63728124 0.2563834 ]]
+LR: 0.000166, Acc: 100.0000, Loss: 0.0451
+[Iteração 9800] Top-k expert indices: [[5 1]
+ [0 5]
+ [1 3]
+ ...
+ [4 3]
+ [3 1]
+ [3 0]]
+[Iteração 9800] Top-k vals (probs): [[-0.05513034 -0.10745329]
+ [ 1.4356875  -0.2571504 ]
+ [ 0.7422657   0.70225513]
+ ...
+ [ 1.0073389   0.91477025]
+ [ 0.9338438   0.10910298]
+ [ 1.4818239   1.274575  ]]
+[Iteração 9900] Top-k expert indices: [[4 0]
+ [2 5]
+ [0 2]
+ ...
+ [2 1]
+ [5 4]
+ [0 2]]
+[Iteração 9900] Top-k vals (probs): [[0.65297693 0.62819326]
+ [0.9417625  0.45451945]
+ [0.9076333  0.31790137]
+ ...
+ [1.0540094  0.78734004]
+ [1.6666622  0.2582144 ]
+ [1.5540594  0.8365644 ]]
+LR: 0.000165, Acc: 94.5946, Loss: 0.2241
+[Iteração 10000] Top-k expert indices: [[1 0]
+ [1 3]
+ [0 4]
+ ...
+ [2 4]
+ [2 1]
+ [5 0]]
+[Iteração 10000] Top-k vals (probs): [[2.2648833 1.9303614]
+ [1.5512486 1.029088 ]
+ [1.2351931 1.0233933]
+ ...
+ [1.3842947 0.9268322]
+ [2.5656085 1.8470557]
+ [0.3766144 0.2916935]]
+LR: 0.000164, Acc: 91.8919, Loss: 0.2331
+[Iteração 10100] Top-k expert indices: [[5 1]
+ [1 5]
+ [1 0]
+ ...
+ [1 0]
+ [0 4]
+ [2 3]]
+[Iteração 10100] Top-k vals (probs): [[ 2.12273     1.3122978 ]
+ [ 2.0126593  -0.30938286]
+ [ 1.3422271   0.630936  ]
+ ...
+ [ 1.7832505   1.1315511 ]
+ [ 2.2111561   1.6937122 ]
+ [ 1.875694    0.35358304]]
+[Iteração 10200] Top-k expert indices: [[5 2]
+ [3 5]
+ [4 1]
+ ...
+ [0 1]
+ [5 1]
+ [0 4]]
+[Iteração 10200] Top-k vals (probs): [[ 1.8502694   1.0519428 ]
+ [ 1.6867616   1.1757462 ]
+ [ 0.5120386  -0.20485447]
+ ...
+ [ 1.5149788   0.25150347]
+ [ 2.7433102   1.9052732 ]
+ [ 1.0801637   0.6665684 ]]
+LR: 0.000163, Acc: 100.0000, Loss: 0.0898
+[Iteração 10300] Top-k expert indices: [[2 3]
+ [4 0]
+ [1 4]
+ ...
+ [5 1]
+ [4 2]
+ [1 2]]
+[Iteração 10300] Top-k vals (probs): [[1.7685966  1.3531524 ]
+ [0.6333591  0.4818772 ]
+ [0.7756747  0.28056067]
+ ...
+ [2.121019   0.758565  ]
+ [1.1790832  0.6594181 ]
+ [1.2123542  0.72646874]]
+LR: 0.000162, Acc: 94.5946, Loss: 0.2446
+[Iteração 10400] Top-k expert indices: [[5 2]
+ [3 5]
+ [0 4]
+ ...
+ [5 1]
+ [0 4]
+ [5 0]]
+[Iteração 10400] Top-k vals (probs): [[1.6448869  0.97357845]
+ [2.0387444  1.071164  ]
+ [0.79145396 0.7904069 ]
+ ...
+ [1.2622871  1.0957236 ]
+ [0.29258636 0.25476706]
+ [2.385607   1.6296299 ]]
+[Iteração 10500] Top-k expert indices: [[5 0]
+ [1 2]
+ [4 1]
+ ...
+ [3 4]
+ [3 2]
+ [3 2]]
+[Iteração 10500] Top-k vals (probs): [[3.286241   0.12153573]
+ [1.0266654  0.27695766]
+ [1.6719216  0.4857028 ]
+ ...
+ [0.7916138  0.5631996 ]
+ [1.6711648  0.40247223]
+ [1.0817566  0.59705913]]
+LR: 0.000161, Acc: 97.2973, Loss: 0.1278
+[Iteração 10600] Top-k expert indices: [[2 4]
+ [4 3]
+ [2 3]
+ ...
+ [3 1]
+ [3 4]
+ [2 3]]
+[Iteração 10600] Top-k vals (probs): [[1.5735627  0.49002123]
+ [1.2331967  0.82451904]
+ [1.482071   1.0625002 ]
+ ...
+ [0.82124496 0.3663932 ]
+ [1.4750568  1.3923248 ]
+ [0.5810694  0.42726123]]
+LR: 0.000160, Acc: 91.8919, Loss: 0.2826
+[Iteração 10700] Top-k expert indices: [[1 5]
+ [2 1]
+ [3 2]
+ ...
+ [0 3]
+ [5 4]
+ [5 0]]
+[Iteração 10700] Top-k vals (probs): [[0.7186109  0.692725  ]
+ [1.987677   1.5878636 ]
+ [1.4972916  1.1830939 ]
+ ...
+ [2.8608205  1.5542772 ]
+ [0.5080013  0.03923237]
+ [1.0215613  1.0128632 ]]
+[Iteração 10800] Top-k expert indices: [[4 5]
+ [2 5]
+ [3 2]
+ ...
+ [4 3]
+ [4 3]
+ [0 5]]
+[Iteração 10800] Top-k vals (probs): [[1.9707754  1.0566967 ]
+ [0.99071014 0.49744284]
+ [2.6003246  1.3657014 ]
+ ...
+ [1.8882084  0.91469526]
+ [1.194961   1.0626761 ]
+ [0.52617204 0.09188211]]
+LR: 0.000159, Acc: 91.8919, Loss: 0.2349
+[Iteração 10900] Top-k expert indices: [[4 3]
+ [2 4]
+ [4 1]
+ ...
+ [4 1]
+ [1 0]
+ [2 1]]
+[Iteração 10900] Top-k vals (probs): [[1.903682   1.1234367 ]
+ [1.7070466  0.6377261 ]
+ [1.5706159  1.3858749 ]
+ ...
+ [2.2094312  0.21993735]
+ [0.96159667 0.7182876 ]
+ [2.0529432  1.4330333 ]]
+LR: 0.000158, Acc: 100.0000, Loss: 0.0580
+[Iteração 11000] Top-k expert indices: [[0 5]
+ [1 4]
+ [1 3]
+ ...
+ [5 3]
+ [4 2]
+ [3 0]]
+[Iteração 11000] Top-k vals (probs): [[2.0497942  1.2314804 ]
+ [0.55552244 0.2068775 ]
+ [1.182468   0.24698475]
+ ...
+ [1.6221099  1.4646156 ]
+ [1.1195788  0.65555483]
+ [1.342102   0.18481871]]
+LR: 0.000157, Acc: 94.5946, Loss: 0.1367
+[Iteração 11100] Top-k expert indices: [[4 5]
+ [4 1]
+ [4 1]
+ ...
+ [0 2]
+ [5 1]
+ [4 0]]
+[Iteração 11100] Top-k vals (probs): [[2.6776822  1.292023  ]
+ [1.3335855  1.1764225 ]
+ [1.0042467  0.72436506]
+ ...
+ [1.0148187  0.95825857]
+ [1.3413348  1.2662601 ]
+ [1.4864203  1.4134861 ]]
+[Iteração 11200] Top-k expert indices: [[0 2]
+ [2 3]
+ [4 2]
+ ...
+ [4 3]
+ [4 3]
+ [5 3]]
+[Iteração 11200] Top-k vals (probs): [[1.5981926  1.5160213 ]
+ [0.7388737  0.6230769 ]
+ [1.5837914  0.86465335]
+ ...
+ [1.4798456  1.2888677 ]
+ [0.5702023  0.47471035]
+ [1.8513162  1.1044451 ]]
+LR: 0.000156, Acc: 94.5946, Loss: 0.2694
+[Iteração 11300] Top-k expert indices: [[3 0]
+ [2 3]
+ [0 2]
+ ...
+ [2 0]
+ [0 3]
+ [3 2]]
+[Iteração 11300] Top-k vals (probs): [[ 1.1761808   0.7726643 ]
+ [ 1.2062598   0.89634615]
+ [ 0.80659294  0.33615032]
+ ...
+ [-0.00538867 -0.3650573 ]
+ [ 1.6132306   0.6412778 ]
+ [ 1.3542796   0.8430149 ]]
+LR: 0.000155, Acc: 94.5946, Loss: 0.1598
+[Iteração 11400] Top-k expert indices: [[0 3]
+ [1 0]
+ [5 4]
+ ...
+ [1 2]
+ [4 5]
+ [1 2]]
+[Iteração 11400] Top-k vals (probs): [[1.5034331  0.7369733 ]
+ [1.4130616  1.337746  ]
+ [1.3178304  1.0881479 ]
+ ...
+ [1.750626   1.4442097 ]
+ [2.1915085  0.37271985]
+ [1.1252202  0.5353749 ]]
+[Iteração 11500] Top-k expert indices: [[3 5]
+ [2 4]
+ [3 2]
+ ...
+ [5 4]
+ [0 1]
+ [1 0]]
+[Iteração 11500] Top-k vals (probs): [[1.0668262  0.23000392]
+ [1.7919213  1.3490263 ]
+ [1.1145627  0.5875673 ]
+ ...
+ [2.6125839  1.7559013 ]
+ [2.226758   0.71332633]
+ [1.1727195  0.9644697 ]]
+LR: 0.000154, Acc: 94.5946, Loss: 0.2125
+[Iteração 11600] Top-k expert indices: [[3 1]
+ [5 1]
+ [4 2]
+ ...
+ [2 0]
+ [4 0]
+ [2 1]]
+[Iteração 11600] Top-k vals (probs): [[1.223198   1.1151851 ]
+ [0.42922404 0.04575104]
+ [1.6398993  0.9591997 ]
+ ...
+ [0.9014943  0.76994693]
+ [0.41625726 0.40631223]
+ [2.3692055  0.7923477 ]]
+LR: 0.000153, Acc: 89.1892, Loss: 0.2255
+[Iteração 11700] Top-k expert indices: [[0 4]
+ [3 5]
+ [0 5]
+ ...
+ [3 4]
+ [1 0]
+ [0 1]]
+[Iteração 11700] Top-k vals (probs): [[ 1.7684498   1.0147295 ]
+ [ 1.8168621   0.5226645 ]
+ [ 0.70182276  0.5297594 ]
+ ...
+ [ 0.02005237 -0.57631636]
+ [ 0.8449743   0.8020124 ]
+ [ 2.1468463   1.3278644 ]]
+[Iteração 11800] Top-k expert indices: [[5 3]
+ [1 4]
+ [3 5]
+ ...
+ [2 0]
+ [5 2]
+ [4 2]]
+[Iteração 11800] Top-k vals (probs): [[0.8848808  0.68288463]
+ [1.7115924  1.6243675 ]
+ [0.83035016 0.64972824]
+ ...
+ [0.7600748  0.5491722 ]
+ [1.4676322  1.0071312 ]
+ [1.8451598  1.1656326 ]]
+LR: 0.000152, Acc: 100.0000, Loss: 0.0417
+[Iteração 11900] Top-k expert indices: [[3 4]
+ [0 2]
+ [3 1]
+ ...
+ [1 2]
+ [2 0]
+ [1 0]]
+[Iteração 11900] Top-k vals (probs): [[1.5594321  1.199772  ]
+ [0.604478   0.4006201 ]
+ [2.7382805  0.6850317 ]
+ ...
+ [1.573325   0.5799516 ]
+ [3.3700378  1.0723381 ]
+ [1.5440578  0.98110753]]
+LR: 0.000151, Acc: 100.0000, Loss: 0.0253
+[Iteração 12000] Top-k expert indices: [[4 2]
+ [5 2]
+ [0 1]
+ ...
+ [2 4]
+ [3 5]
+ [3 5]]
+[Iteração 12000] Top-k vals (probs): [[1.7812905  1.5706002 ]
+ [1.8647823  0.94486475]
+ [1.8493975  1.8043677 ]
+ ...
+ [0.7264161  0.5984788 ]
+ [2.370355   1.8947816 ]
+ [2.5564532  1.7852753 ]]
+LR: 0.000150, Acc: 94.5946, Loss: 0.2187
+[Iteração 12100] Top-k expert indices: [[1 3]
+ [4 3]
+ [2 5]
+ ...
+ [1 5]
+ [2 4]
+ [2 4]]
+[Iteração 12100] Top-k vals (probs): [[ 0.85671604  0.79255354]
+ [ 1.635167    1.1129221 ]
+ [ 3.3256195   1.064465  ]
+ ...
+ [-0.10392074 -0.32211524]
+ [ 1.2612286   1.0875225 ]
+ [ 1.1783372   1.1665088 ]]
+[Iteração 12200] Top-k expert indices: [[2 5]
+ [2 1]
+ [2 4]
+ ...
+ [4 5]
+ [0 1]
+ [2 1]]
+[Iteração 12200] Top-k vals (probs): [[1.8043263  0.7966738 ]
+ [2.4183562  0.834284  ]
+ [2.6572087  0.9820257 ]
+ ...
+ [2.8984847  0.73615307]
+ [1.4354504  0.08624437]
+ [0.93982303 0.08301024]]
+LR: 0.000148, Acc: 91.8919, Loss: 0.4171
+[Iteração 12300] Top-k expert indices: [[2 1]
+ [3 2]
+ [1 0]
+ ...
+ [3 4]
+ [5 2]
+ [5 2]]
+[Iteração 12300] Top-k vals (probs): [[0.6395649  0.15217529]
+ [2.0306892  1.6878139 ]
+ [0.8594297  0.53324676]
+ ...
+ [1.3797526  1.3096393 ]
+ [1.1274264  1.0390522 ]
+ [0.8624371  0.18554619]]
+LR: 0.000147, Acc: 91.8919, Loss: 0.1821
+[Iteração 12400] Top-k expert indices: [[2 0]
+ [0 5]
+ [3 2]
+ ...
+ [0 5]
+ [0 3]
+ [4 3]]
+[Iteração 12400] Top-k vals (probs): [[1.551694   0.4138015 ]
+ [1.1558113  0.32686818]
+ [1.0298862  0.965781  ]
+ ...
+ [0.65874577 0.39942604]
+ [0.5367778  0.11256123]
+ [0.91664076 0.51702225]]
+[Iteração 12500] Top-k expert indices: [[1 4]
+ [4 3]
+ [3 4]
+ ...
+ [1 3]
+ [4 3]
+ [4 3]]
+[Iteração 12500] Top-k vals (probs): [[1.2213794  1.159561  ]
+ [0.46091348 0.4009961 ]
+ [0.68877405 0.62473464]
+ ...
+ [2.523506   1.4131441 ]
+ [0.2533511  0.19847412]
+ [0.36568335 0.12201965]]
+LR: 0.000146, Acc: 100.0000, Loss: 0.0255
+[Iteração 12600] Top-k expert indices: [[3 1]
+ [1 3]
+ [1 5]
+ ...
+ [5 0]
+ [5 1]
+ [0 4]]
+[Iteração 12600] Top-k vals (probs): [[2.3051765  1.1899791 ]
+ [2.6438591  0.47629806]
+ [1.7846875  1.3441154 ]
+ ...
+ [1.185377   0.9942632 ]
+ [1.8700399  1.1904099 ]
+ [1.8811333  1.5634786 ]]
+LR: 0.000145, Acc: 86.4865, Loss: 0.3905
+[Iteração 12700] Top-k expert indices: [[4 1]
+ [3 2]
+ [1 0]
+ ...
+ [4 3]
+ [2 1]
+ [4 0]]
+[Iteração 12700] Top-k vals (probs): [[1.7617254  1.4589574 ]
+ [1.5479845  0.8111636 ]
+ [0.9478077  0.637246  ]
+ ...
+ [2.1772885  0.03943001]
+ [0.8037778  0.18581946]
+ [2.4255967  0.06208929]]
+[Iteração 12800] Top-k expert indices: [[0 3]
+ [1 5]
+ [3 4]
+ ...
+ [1 3]
+ [2 1]
+ [0 1]]
+[Iteração 12800] Top-k vals (probs): [[ 2.4755044   1.623105  ]
+ [ 0.49593222 -0.17067777]
+ [ 2.3894575   0.94566137]
+ ...
+ [ 1.091091    1.0112336 ]
+ [ 1.1188885  -0.08322561]
+ [ 0.02951306 -0.04056641]]
+LR: 0.000144, Acc: 94.5946, Loss: 0.1282
+[Iteração 12900] Top-k expert indices: [[3 5]
+ [2 1]
+ [2 5]
+ ...
+ [5 4]
+ [2 3]
+ [1 0]]
+[Iteração 12900] Top-k vals (probs): [[2.524564  1.2186958]
+ [2.245165  1.4438679]
+ [1.8152792 0.4357977]
+ ...
+ [1.7227532 1.2647388]
+ [1.8680464 1.3106141]
+ [1.649907  1.4677151]]
+LR: 0.000143, Acc: 91.8919, Loss: 0.1949
+[Iteração 13000] Top-k expert indices: [[3 4]
+ [5 2]
+ [4 1]
+ ...
+ [0 4]
+ [2 3]
+ [4 3]]
+[Iteração 13000] Top-k vals (probs): [[ 1.5016506   0.89521736]
+ [ 2.3983188   1.6032058 ]
+ [ 0.5487289  -0.02942206]
+ ...
+ [ 0.8681425   0.67977536]
+ [ 1.0905508   0.6154386 ]
+ [ 0.3058874  -0.11464517]]
+[Iteração 13100] Top-k expert indices: [[2 1]
+ [5 2]
+ [2 5]
+ ...
+ [0 2]
+ [1 0]
+ [4 1]]
+[Iteração 13100] Top-k vals (probs): [[1.5873415  1.0044909 ]
+ [1.1025844  0.8678956 ]
+ [2.3359416  1.3510972 ]
+ ...
+ [2.0892591  2.0550888 ]
+ [0.2259065  0.13782734]
+ [1.1493471  0.51252216]]
+LR: 0.000142, Acc: 97.2973, Loss: 0.0795
+[Iteração 13200] Top-k expert indices: [[4 3]
+ [1 4]
+ [1 5]
+ ...
+ [2 1]
+ [4 2]
+ [3 0]]
+[Iteração 13200] Top-k vals (probs): [[0.8937106  0.3526678 ]
+ [1.227372   0.92896324]
+ [1.1667761  0.24569896]
+ ...
+ [1.3457818  1.1809165 ]
+ [1.1926066  0.5391487 ]
+ [1.2525628  1.1038535 ]]
+LR: 0.000141, Acc: 97.2973, Loss: 0.1023
+[Iteração 13300] Top-k expert indices: [[1 2]
+ [4 5]
+ [0 5]
+ ...
+ [5 1]
+ [4 5]
+ [5 1]]
+[Iteração 13300] Top-k vals (probs): [[0.8646823  0.21754433]
+ [0.9509996  0.7716437 ]
+ [1.7692078  1.7668401 ]
+ ...
+ [1.988876   0.9231382 ]
+ [3.0300784  1.3073099 ]
+ [0.7251352  0.27674872]]
+LR: 0.000139, Acc: 89.1892, Loss: 0.2096
+[Iteração 13400] Top-k expert indices: [[1 3]
+ [5 4]
+ [2 5]
+ ...
+ [2 1]
+ [4 0]
+ [1 2]]
+[Iteração 13400] Top-k vals (probs): [[1.0670404  0.58756447]
+ [1.2641813  1.1866807 ]
+ [1.7074057  1.1463434 ]
+ ...
+ [2.1195903  1.0553274 ]
+ [1.7528424  0.30271748]
+ [1.4509027  0.9657005 ]]
+[Iteração 13500] Top-k expert indices: [[5 0]
+ [3 4]
+ [2 3]
+ ...
+ [0 3]
+ [1 0]
+ [2 5]]
+[Iteração 13500] Top-k vals (probs): [[ 1.2204963   1.0322006 ]
+ [ 1.3386488   0.2564428 ]
+ [ 1.8545015   1.4913788 ]
+ ...
+ [ 1.4800687   0.9974266 ]
+ [ 0.8262867  -0.48346967]
+ [ 0.8746111   0.8360338 ]]
+LR: 0.000138, Acc: 97.2973, Loss: 0.3188
+[Iteração 13600] Top-k expert indices: [[3 5]
+ [0 3]
+ [2 3]
+ ...
+ [3 2]
+ [4 2]
+ [2 4]]
+[Iteração 13600] Top-k vals (probs): [[1.5676266  0.8229095 ]
+ [1.8270389  1.1472332 ]
+ [1.550617   1.041028  ]
+ ...
+ [1.4685725  1.386244  ]
+ [1.0488635  0.46963575]
+ [1.5120206  0.535368  ]]
+LR: 0.000137, Acc: 97.2973, Loss: 0.0684
+[Iteração 13700] Top-k expert indices: [[2 3]
+ [2 4]
+ [4 0]
+ ...
+ [0 1]
+ [3 4]
+ [4 0]]
+[Iteração 13700] Top-k vals (probs): [[0.97125566 0.83050346]
+ [1.0542958  0.5636459 ]
+ [2.7515314  1.6549399 ]
+ ...
+ [2.9187622  2.9050348 ]
+ [2.073512   1.2303333 ]
+ [1.9112107  1.699117  ]]
+[Iteração 13800] Top-k expert indices: [[3 2]
+ [2 1]
+ [5 3]
+ ...
+ [0 5]
+ [4 0]
+ [5 3]]
+[Iteração 13800] Top-k vals (probs): [[1.0999196  0.58236885]
+ [0.7307047  0.15813756]
+ [0.8510435  0.68427587]
+ ...
+ [1.2179569  1.1877217 ]
+ [1.9773021  1.7620443 ]
+ [0.66752946 0.1545684 ]]
+LR: 0.000136, Acc: 97.2973, Loss: 0.1183
+[Iteração 13900] Top-k expert indices: [[3 2]
+ [0 1]
+ [5 4]
+ ...
+ [0 5]
+ [0 5]
+ [4 3]]
+[Iteração 13900] Top-k vals (probs): [[1.9245902  0.9702551 ]
+ [1.2186043  0.4440816 ]
+ [1.2027653  0.78031015]
+ ...
+ [1.4067407  1.2589872 ]
+ [0.5993738  0.5247197 ]
+ [0.07641345 0.07469437]]
+LR: 0.000135, Acc: 100.0000, Loss: 0.0266
+[Iteração 14000] Top-k expert indices: [[2 1]
+ [0 3]
+ [5 2]
+ ...
+ [5 1]
+ [0 3]
+ [3 1]]
+[Iteração 14000] Top-k vals (probs): [[0.8477572  0.61342084]
+ [0.86477345 0.5021892 ]
+ [1.1676747  0.58405775]
+ ...
+ [2.3910284  1.9934301 ]
+ [1.6927657  0.3843932 ]
+ [1.821569   0.92351353]]
+[Iteração 14100] Top-k expert indices: [[5 1]
+ [2 3]
+ [3 2]
+ ...
+ [0 3]
+ [2 5]
+ [0 1]]
+[Iteração 14100] Top-k vals (probs): [[0.67509377 0.09910772]
+ [1.4016494  1.081617  ]
+ [1.5118442  1.3623153 ]
+ ...
+ [2.2590737  0.29444146]
+ [3.1113532  1.2673451 ]
+ [2.1387928  0.19368264]]
+LR: 0.000134, Acc: 97.2973, Loss: 0.0775
+[Iteração 14200] Top-k expert indices: [[3 5]
+ [2 0]
+ [3 2]
+ ...
+ [2 4]
+ [3 5]
+ [1 5]]
+[Iteração 14200] Top-k vals (probs): [[0.92506576 0.70534873]
+ [0.64270055 0.55157363]
+ [2.5711882  0.49664712]
+ ...
+ [1.6286856  1.3428684 ]
+ [1.1987796  0.769737  ]
+ [0.6278701  0.47834274]]
+LR: 0.000132, Acc: 97.2973, Loss: 0.2347
+[Iteração 14300] Top-k expert indices: [[4 2]
+ [2 3]
+ [0 5]
+ ...
+ [2 0]
+ [3 1]
+ [4 0]]
+[Iteração 14300] Top-k vals (probs): [[1.545083   0.8175178 ]
+ [2.2264867  0.37057272]
+ [0.5238465  0.3735897 ]
+ ...
+ [0.5663     0.38825455]
+ [1.1392292  0.32137448]
+ [1.6347648  1.0471166 ]]
+[Iteração 14400] Top-k expert indices: [[5 4]
+ [1 5]
+ [1 2]
+ ...
+ [5 4]
+ [3 4]
+ [3 2]]
+[Iteração 14400] Top-k vals (probs): [[2.479216   2.0799477 ]
+ [1.3619174  0.9037395 ]
+ [1.4415903  1.2472386 ]
+ ...
+ [2.4712248  1.8224592 ]
+ [2.2554965  1.5787306 ]
+ [0.9523277  0.36841652]]
+LR: 0.000131, Acc: 97.2973, Loss: 0.2117
+[Iteração 14500] Top-k expert indices: [[0 5]
+ [4 2]
+ [1 3]
+ ...
+ [2 5]
+ [2 5]
+ [4 1]]
+[Iteração 14500] Top-k vals (probs): [[ 1.9044142   0.7869237 ]
+ [ 1.1741666   0.8236788 ]
+ [ 0.13022344 -0.15246877]
+ ...
+ [ 1.820186    1.0653875 ]
+ [ 1.1976368   0.4434855 ]
+ [ 1.0676956   1.0054011 ]]
+LR: 0.000130, Acc: 97.2973, Loss: 0.2373
+[Iteração 14600] Top-k expert indices: [[1 3]
+ [1 3]
+ [0 2]
+ ...
+ [3 0]
+ [2 1]
+ [2 3]]
+[Iteração 14600] Top-k vals (probs): [[1.707694   1.22068   ]
+ [2.1224737  0.7582003 ]
+ [1.884134   0.95707905]
+ ...
+ [1.6449919  1.0674096 ]
+ [1.6204578  0.9579072 ]
+ [1.075609   0.8878506 ]]
+LR: 0.000129, Acc: 97.2973, Loss: 0.1025
+[Iteração 14700] Top-k expert indices: [[3 2]
+ [4 1]
+ [3 4]
+ ...
+ [2 4]
+ [1 5]
+ [1 0]]
+[Iteração 14700] Top-k vals (probs): [[ 1.2760873   0.9040891 ]
+ [ 1.4387388   1.1015347 ]
+ [ 0.81088614 -0.17502975]
+ ...
+ [ 2.7052574   1.058703  ]
+ [ 0.5453186   0.42646757]
+ [ 1.2631326   1.0344014 ]]
+[Iteração 14800] Top-k expert indices: [[0 4]
+ [2 1]
+ [3 1]
+ ...
+ [2 4]
+ [5 3]
+ [2 3]]
+[Iteração 14800] Top-k vals (probs): [[ 1.4835321   0.02463168]
+ [ 0.7841953   0.51303685]
+ [ 1.3275268   0.85831404]
+ ...
+ [ 1.8005376   0.49917144]
+ [ 1.1319509   0.97089994]
+ [ 0.79361707 -0.0530892 ]]
+LR: 0.000128, Acc: 94.5946, Loss: 0.0851
+[Iteração 14900] Top-k expert indices: [[5 3]
+ [2 4]
+ [2 5]
+ ...
+ [0 5]
+ [5 4]
+ [4 1]]
+[Iteração 14900] Top-k vals (probs): [[1.1617022  1.118482  ]
+ [2.2497542  0.00318942]
+ [1.6324155  1.5276982 ]
+ ...
+ [1.8925364  0.83370745]
+ [1.3536338  0.6943551 ]
+ [2.0320458  2.0219114 ]]
+LR: 0.000126, Acc: 94.5946, Loss: 0.2458
+[Iteração 15000] Top-k expert indices: [[1 0]
+ [0 1]
+ [2 0]
+ ...
+ [2 4]
+ [5 0]
+ [2 5]]
+[Iteração 15000] Top-k vals (probs): [[0.65055025 0.13608156]
+ [1.564946   1.3423148 ]
+ [2.2311578  0.40534496]
+ ...
+ [1.1375885  1.050721  ]
+ [2.2186332  0.65849775]
+ [1.4318463  1.3938643 ]]
+[Iteração 15100] Top-k expert indices: [[1 4]
+ [5 4]
+ [4 5]
+ ...
+ [2 1]
+ [1 3]
+ [4 5]]
+[Iteração 15100] Top-k vals (probs): [[0.9550891  0.8228654 ]
+ [2.1742032  2.0192444 ]
+ [1.6933308  0.48953044]
+ ...
+ [0.4447028  0.15605213]
+ [0.99198234 0.89622563]
+ [0.79163074 0.5536656 ]]
+LR: 0.000125, Acc: 100.0000, Loss: 0.0381
+[Iteração 15200] Top-k expert indices: [[4 3]
+ [3 2]
+ [2 4]
+ ...
+ [3 0]
+ [3 5]
+ [4 5]]
+[Iteração 15200] Top-k vals (probs): [[1.3029978  1.0832536 ]
+ [1.4411006  1.2722206 ]
+ [1.3907835  0.46540546]
+ ...
+ [2.1546829  0.9769953 ]
+ [0.92625743 0.8110764 ]
+ [0.79670906 0.35527265]]
+LR: 0.000124, Acc: 91.8919, Loss: 0.1865
+[Iteração 15300] Top-k expert indices: [[5 2]
+ [1 2]
+ [0 5]
+ ...
+ [3 0]
+ [1 4]
+ [4 0]]
+[Iteração 15300] Top-k vals (probs): [[ 1.1847475   0.8196188 ]
+ [ 0.7357824   0.62079847]
+ [ 2.2964764   1.2360568 ]
+ ...
+ [ 0.5754679   0.04317741]
+ [ 0.791868   -0.20642938]
+ [ 1.8784386   1.3310077 ]]
+[Iteração 15400] Top-k expert indices: [[0 3]
+ [4 5]
+ [0 1]
+ ...
+ [4 5]
+ [3 4]
+ [2 5]]
+[Iteração 15400] Top-k vals (probs): [[ 1.4685555   1.0307733 ]
+ [ 1.1332129   0.44109523]
+ [ 0.48674792 -0.23040968]
+ ...
+ [ 1.1977354   0.5751333 ]
+ [ 0.79714125 -0.17362551]
+ [ 2.225647    0.60642374]]
+LR: 0.000123, Acc: 94.5946, Loss: 0.2003
+[Iteração 15500] Top-k expert indices: [[5 3]
+ [0 3]
+ [4 2]
+ ...
+ [4 5]
+ [5 1]
+ [2 4]]
+[Iteração 15500] Top-k vals (probs): [[0.8306042  0.52208495]
+ [2.321071   0.6076259 ]
+ [0.6395765  0.49285766]
+ ...
+ [2.008334   0.3841656 ]
+ [1.6928823  1.5159729 ]
+ [1.6555319  1.2778146 ]]
+LR: 0.000122, Acc: 89.1892, Loss: 0.3319
+[Iteração 15600] Top-k expert indices: [[3 5]
+ [4 0]
+ [5 3]
+ ...
+ [2 1]
+ [1 5]
+ [1 4]]
+[Iteração 15600] Top-k vals (probs): [[2.6891427  1.4562055 ]
+ [0.22888336 0.05925519]
+ [1.3367457  0.5482546 ]
+ ...
+ [1.5234461  0.6645923 ]
+ [1.1869439  0.97478056]
+ [1.387902   0.38945433]]
+LR: 0.000120, Acc: 91.8919, Loss: 0.3301
+[Iteração 15700] Top-k expert indices: [[1 4]
+ [4 2]
+ [1 0]
+ ...
+ [3 5]
+ [3 1]
+ [4 0]]
+[Iteração 15700] Top-k vals (probs): [[1.8289933  0.54178965]
+ [1.6718678  1.4495168 ]
+ [1.2382373  0.99222434]
+ ...
+ [0.6422137  0.61640626]
+ [0.28020328 0.21482915]
+ [1.0982109  1.0176814 ]]
+[Iteração 15800] Top-k expert indices: [[4 1]
+ [1 2]
+ [5 1]
+ ...
+ [3 0]
+ [4 5]
+ [4 2]]
+[Iteração 15800] Top-k vals (probs): [[2.097348   1.485956  ]
+ [0.5468184  0.54275584]
+ [1.5966249  0.9844135 ]
+ ...
+ [1.4390398  0.8963914 ]
+ [1.60648    0.74657595]
+ [2.0177288  1.6437098 ]]
+LR: 0.000119, Acc: 100.0000, Loss: 0.0715
+[Iteração 15900] Top-k expert indices: [[4 5]
+ [4 3]
+ [4 0]
+ ...
+ [0 3]
+ [2 3]
+ [3 5]]
+[Iteração 15900] Top-k vals (probs): [[0.81746054 0.6146735 ]
+ [2.2526135  1.9463525 ]
+ [1.6172606  0.9468527 ]
+ ...
+ [1.3793128  0.4798794 ]
+ [0.8598051  0.3044936 ]
+ [0.8080927  0.29426175]]
+LR: 0.000118, Acc: 94.5946, Loss: 0.0912
+[Iteração 16000] Top-k expert indices: [[1 2]
+ [3 1]
+ [5 3]
+ ...
+ [5 2]
+ [1 5]
+ [3 1]]
+[Iteração 16000] Top-k vals (probs): [[2.7295923  1.3332031 ]
+ [1.0682198  0.8333486 ]
+ [1.0518277  0.66674256]
+ ...
+ [1.0762464  0.96781874]
+ [1.6173074  0.7511054 ]
+ [0.8886637  0.7860981 ]]
+[Iteração 16100] Top-k expert indices: [[1 2]
+ [4 1]
+ [3 1]
+ ...
+ [2 3]
+ [0 4]
+ [5 0]]
+[Iteração 16100] Top-k vals (probs): [[1.9104744  1.8022709 ]
+ [2.3895183  1.1513689 ]
+ [1.1528287  1.0341895 ]
+ ...
+ [0.73526025 0.05554852]
+ [2.582738   1.811224  ]
+ [1.1343616  1.037346  ]]
+LR: 0.000117, Acc: 97.2973, Loss: 0.0979
+[Iteração 16200] Top-k expert indices: [[1 0]
+ [4 2]
+ [1 3]
+ ...
+ [4 2]
+ [1 2]
+ [0 3]]
+[Iteração 16200] Top-k vals (probs): [[2.899038   0.62672853]
+ [1.6401255  0.71998674]
+ [1.5625275  1.1261727 ]
+ ...
+ [2.079432   0.6370309 ]
+ [0.89743507 0.5542189 ]
+ [3.2219028  2.0571349 ]]
+LR: 0.000115, Acc: 97.2973, Loss: 0.1220
+[Iteração 16300] Top-k expert indices: [[2 1]
+ [1 4]
+ [3 5]
+ ...
+ [1 5]
+ [0 5]
+ [0 2]]
+[Iteração 16300] Top-k vals (probs): [[1.4901396  1.1148108 ]
+ [1.2107273  1.0718307 ]
+ [0.40144384 0.10584893]
+ ...
+ [0.5746331  0.51337475]
+ [1.3325967  0.89392656]
+ [0.6883942  0.607515  ]]
+[Iteração 16400] Top-k expert indices: [[2 5]
+ [0 3]
+ [3 1]
+ ...
+ [5 1]
+ [5 4]
+ [4 0]]
+[Iteração 16400] Top-k vals (probs): [[1.749825   0.834838  ]
+ [1.0709691  0.58608025]
+ [1.8681188  1.3379005 ]
+ ...
+ [1.0166616  0.92580914]
+ [1.7633877  1.3915254 ]
+ [2.6843061  0.81363356]]
+LR: 0.000114, Acc: 83.7838, Loss: 0.5543
+[Iteração 16500] Top-k expert indices: [[3 0]
+ [0 2]
+ [2 0]
+ ...
+ [3 4]
+ [2 1]
+ [3 4]]
+[Iteração 16500] Top-k vals (probs): [[2.028816   1.2793095 ]
+ [1.5091786  1.4281434 ]
+ [1.4925576  0.75466704]
+ ...
+ [1.3715519  1.2257683 ]
+ [1.3769139  1.1056178 ]
+ [2.674237   1.5217543 ]]
+LR: 0.000113, Acc: 94.5946, Loss: 0.1690
+[Iteração 16600] Top-k expert indices: [[0 1]
+ [5 4]
+ [5 2]
+ ...
+ [1 5]
+ [5 2]
+ [0 3]]
+[Iteração 16600] Top-k vals (probs): [[1.3693556  0.4699682 ]
+ [1.0223856  0.6632302 ]
+ [1.4939429  1.1184617 ]
+ ...
+ [1.5498831  1.3319224 ]
+ [0.4887243  0.20674177]
+ [2.5041702  1.1299151 ]]
+[Iteração 16700] Top-k expert indices: [[5 2]
+ [4 5]
+ [0 3]
+ ...
+ [5 0]
+ [1 4]
+ [3 4]]
+[Iteração 16700] Top-k vals (probs): [[ 0.24738853  0.17751563]
+ [ 0.74552673  0.16127202]
+ [ 0.32881266  0.18751638]
+ ...
+ [ 0.44376597 -0.23489599]
+ [ 1.3111608   1.2335784 ]
+ [ 1.8401569   1.1907938 ]]
+LR: 0.000112, Acc: 100.0000, Loss: 0.0202
+[Iteração 16800] Top-k expert indices: [[1 0]
+ [2 3]
+ [0 1]
+ ...
+ [0 4]
+ [2 1]
+ [5 3]]
+[Iteração 16800] Top-k vals (probs): [[1.2271503  0.7514252 ]
+ [0.65328217 0.5699978 ]
+ [0.7005503  0.20850468]
+ ...
+ [0.88099    0.7609671 ]
+ [1.44693    1.0882343 ]
+ [2.489273   1.3359274 ]]
+LR: 0.000110, Acc: 97.2973, Loss: 0.1814
+[Iteração 16900] Top-k expert indices: [[0 2]
+ [1 0]
+ [5 0]
+ ...
+ [4 3]
+ [2 4]
+ [0 3]]
+[Iteração 16900] Top-k vals (probs): [[1.8430028  0.24538577]
+ [0.7765632  0.55116034]
+ [3.2148352  0.8706568 ]
+ ...
+ [1.5912802  0.89774203]
+ [1.6379606  0.46463117]
+ [1.3452954  1.2357727 ]]
+LR: 0.000109, Acc: 97.2973, Loss: 0.1200
+[Iteração 17000] Top-k expert indices: [[2 4]
+ [4 3]
+ [1 0]
+ ...
+ [4 5]
+ [4 1]
+ [3 5]]
+[Iteração 17000] Top-k vals (probs): [[ 1.5057654   1.3474834 ]
+ [ 1.7505959   1.6321425 ]
+ [ 1.980476    1.3393344 ]
+ ...
+ [ 1.155255   -0.21594913]
+ [ 3.1719954   0.13871431]
+ [ 1.5440757  -0.25854182]]
+[Iteração 17100] Top-k expert indices: [[0 4]
+ [3 1]
+ [1 5]
+ ...
+ [2 5]
+ [3 4]
+ [5 1]]
+[Iteração 17100] Top-k vals (probs): [[ 0.49948096  0.4925076 ]
+ [ 0.54409033 -0.49564844]
+ [ 0.8987971   0.27261934]
+ ...
+ [ 0.9782086   0.51074255]
+ [ 2.123134    0.6970095 ]
+ [ 1.4561297   0.2822908 ]]
+LR: 0.000108, Acc: 94.5946, Loss: 0.1505
+[Iteração 17200] Top-k expert indices: [[5 2]
+ [2 4]
+ [2 3]
+ ...
+ [0 3]
+ [0 1]
+ [5 4]]
+[Iteração 17200] Top-k vals (probs): [[ 1.9384592  1.7706283]
+ [ 1.1389633  0.5359078]
+ [ 0.9019949 -0.5027034]
+ ...
+ [ 0.6992955  0.6933025]
+ [ 1.6261874  1.0006615]
+ [ 1.0668648  0.5664887]]
+LR: 0.000107, Acc: 94.5946, Loss: 0.2301
+[Iteração 17300] Top-k expert indices: [[4 5]
+ [4 3]
+ [3 5]
+ ...
+ [4 5]
+ [4 1]
+ [1 5]]
+[Iteração 17300] Top-k vals (probs): [[1.1082605  0.7628913 ]
+ [1.5746576  0.8809763 ]
+ [2.2260747  0.02931938]
+ ...
+ [1.3881276  1.137046  ]
+ [1.1940063  0.9896329 ]
+ [1.1710659  0.53335905]]
+[Iteração 17400] Top-k expert indices: [[2 5]
+ [5 0]
+ [1 5]
+ ...
+ [4 0]
+ [5 2]
+ [3 4]]
+[Iteração 17400] Top-k vals (probs): [[1.3430196 1.3197322]
+ [0.8252305 0.7086732]
+ [2.1299558 1.462348 ]
+ ...
+ [1.0811797 0.9953369]
+ [1.8015863 1.7356945]
+ [1.0068159 0.8922756]]
+LR: 0.000105, Acc: 97.2973, Loss: 0.1002
+[Iteração 17500] Top-k expert indices: [[1 2]
+ [3 0]
+ [4 0]
+ ...
+ [1 4]
+ [1 2]
+ [2 0]]
+[Iteração 17500] Top-k vals (probs): [[ 1.0783602   0.97938114]
+ [ 1.5595394   1.1807352 ]
+ [-0.26073015 -0.35577846]
+ ...
+ [ 1.514152    1.479414  ]
+ [ 2.3400962   1.1823957 ]
+ [ 2.3409116   1.0669092 ]]
+LR: 0.000104, Acc: 91.8919, Loss: 0.2427
+[Iteração 17600] Top-k expert indices: [[0 5]
+ [1 3]
+ [4 2]
+ ...
+ [3 1]
+ [1 0]
+ [2 4]]
+[Iteração 17600] Top-k vals (probs): [[ 2.8036942   1.1439087 ]
+ [ 2.7251446   0.6525907 ]
+ [ 1.068844    1.0205901 ]
+ ...
+ [ 2.0655537  -0.05511029]
+ [ 1.7906893   1.2124742 ]
+ [ 2.3874822   0.39080727]]
+[Iteração 17700] Top-k expert indices: [[3 0]
+ [3 4]
+ [2 5]
+ ...
+ [0 5]
+ [1 2]
+ [1 4]]
+[Iteração 17700] Top-k vals (probs): [[0.21593931 0.03921717]
+ [0.8882061  0.8409537 ]
+ [1.937929   1.1568884 ]
+ ...
+ [1.6835978  0.82062554]
+ [1.4765574  0.4513343 ]
+ [1.8796091  1.2760208 ]]
+LR: 0.000103, Acc: 100.0000, Loss: 0.0532
+[Iteração 17800] Top-k expert indices: [[3 5]
+ [4 0]
+ [1 0]
+ ...
+ [0 4]
+ [5 3]
+ [2 4]]
+[Iteração 17800] Top-k vals (probs): [[ 1.3581047  -0.00848894]
+ [ 0.12041156 -0.14715885]
+ [ 0.3837213   0.06069438]
+ ...
+ [ 1.3143373   0.15598   ]
+ [ 1.2585833   0.7472851 ]
+ [ 0.8242801   0.3872824 ]]
+LR: 0.000102, Acc: 97.2973, Loss: 0.0765
+[Iteração 17900] Top-k expert indices: [[3 2]
+ [2 5]
+ [3 1]
+ ...
+ [5 1]
+ [4 1]
+ [2 3]]
+[Iteração 17900] Top-k vals (probs): [[1.3082161  0.11648808]
+ [2.0524402  0.6281312 ]
+ [1.4483014  0.470469  ]
+ ...
+ [1.583883   1.5696142 ]
+ [1.9033784  1.2993984 ]
+ [1.8163819  0.7117534 ]]
+[Iteração 18000] Top-k expert indices: [[0 5]
+ [5 2]
+ [1 3]
+ ...
+ [4 1]
+ [1 3]
+ [2 4]]
+[Iteração 18000] Top-k vals (probs): [[1.6599591  1.2800956 ]
+ [1.3924441  0.4258411 ]
+ [1.177966   0.37706566]
+ ...
+ [1.2039528  0.90609723]
+ [1.7567412  1.1565948 ]
+ [1.7852602  1.1298679 ]]
+LR: 0.000100, Acc: 94.5946, Loss: 0.2100
+[Iteração 18100] Top-k expert indices: [[0 2]
+ [4 3]
+ [1 2]
+ ...
+ [5 4]
+ [5 1]
+ [2 1]]
+[Iteração 18100] Top-k vals (probs): [[1.3863719  1.2988018 ]
+ [0.62365437 0.39388317]
+ [2.4315417  1.8777448 ]
+ ...
+ [1.1602681  1.0475404 ]
+ [2.1704688  0.7724473 ]
+ [0.4011181  0.29622966]]
+LR: 0.000099, Acc: 100.0000, Loss: 0.0237
+[Iteração 18200] Top-k expert indices: [[4 5]
+ [4 5]
+ [2 5]
+ ...
+ [0 2]
+ [5 4]
+ [2 5]]
+[Iteração 18200] Top-k vals (probs): [[ 0.75107706 -0.02091938]
+ [ 0.8057861   0.32588133]
+ [ 1.1197186   0.23252885]
+ ...
+ [ 1.9492313   1.4100208 ]
+ [ 1.2076861   1.1151352 ]
+ [ 1.4984896   0.9097475 ]]
+LR: 0.000098, Acc: 97.2973, Loss: 0.1129
+[Iteração 18300] Top-k expert indices: [[4 5]
+ [1 4]
+ [5 1]
+ ...
+ [4 3]
+ [4 1]
+ [0 3]]
+[Iteração 18300] Top-k vals (probs): [[1.4031682  1.3587153 ]
+ [1.0287294  0.40473682]
+ [0.95186234 0.9238776 ]
+ ...
+ [0.7676132  0.5071278 ]
+ [0.87515044 0.20556715]
+ [1.9065471  1.7583772 ]]
+[Iteração 18400] Top-k expert indices: [[0 4]
+ [0 2]
+ [1 5]
+ ...
+ [0 2]
+ [4 0]
+ [3 0]]
+[Iteração 18400] Top-k vals (probs): [[2.3622217  2.2039857 ]
+ [1.0735322  0.33967862]
+ [0.7203889  0.5738615 ]
+ ...
+ [2.4124377  0.94663954]
+ [1.559441   0.41077563]
+ [2.3880756  0.630033  ]]
+LR: 0.000097, Acc: 94.5946, Loss: 0.2317
+[Iteração 18500] Top-k expert indices: [[2 5]
+ [4 5]
+ [2 5]
+ ...
+ [4 3]
+ [0 4]
+ [3 4]]
+[Iteração 18500] Top-k vals (probs): [[3.5602512 1.690623 ]
+ [1.3854429 0.9890256]
+ [2.0765154 1.0842763]
+ ...
+ [1.4511068 1.2386194]
+ [2.094821  2.0359132]
+ [2.4918375 2.058662 ]]
+LR: 0.000096, Acc: 94.5946, Loss: 0.2451
+[Iteração 18600] Top-k expert indices: [[1 0]
+ [2 4]
+ [5 1]
+ ...
+ [5 2]
+ [4 0]
+ [4 5]]
+[Iteração 18600] Top-k vals (probs): [[1.7540838  1.1455731 ]
+ [2.6286557  1.4592819 ]
+ [1.8300261  0.02028871]
+ ...
+ [1.3609449  0.73327315]
+ [1.6454587  0.8648242 ]
+ [1.799539   1.6976324 ]]
+[Iteração 18700] Top-k expert indices: [[3 5]
+ [0 5]
+ [0 3]
+ ...
+ [5 1]
+ [0 1]
+ [0 3]]
+[Iteração 18700] Top-k vals (probs): [[2.4596894  0.3441279 ]
+ [1.4638518  0.83668196]
+ [1.79347    1.5378364 ]
+ ...
+ [1.0540992  0.99225223]
+ [1.3160686  1.0851744 ]
+ [1.52865    1.0253772 ]]
+LR: 0.000094, Acc: 97.2973, Loss: 0.1020
+[Iteração 18800] Top-k expert indices: [[1 2]
+ [1 4]
+ [1 2]
+ ...
+ [4 1]
+ [1 0]
+ [2 3]]
+[Iteração 18800] Top-k vals (probs): [[0.5652438  0.40816355]
+ [3.0365372  1.5743784 ]
+ [1.0826361  0.75254893]
+ ...
+ [1.5729332  1.2959751 ]
+ [1.9330004  1.5740521 ]
+ [2.1915162  1.9222916 ]]
+LR: 0.000093, Acc: 97.2973, Loss: 0.1363
+[Iteração 18900] Top-k expert indices: [[4 1]
+ [5 2]
+ [5 2]
+ ...
+ [0 4]
+ [1 5]
+ [3 5]]
+[Iteração 18900] Top-k vals (probs): [[1.4780624 0.4010526]
+ [1.5422046 0.4859851]
+ [1.9530742 1.6959611]
+ ...
+ [1.3549693 0.9015083]
+ [0.5357684 0.513981 ]
+ [1.3297381 1.1023813]]
+[Iteração 19000] Top-k expert indices: [[1 3]
+ [4 3]
+ [4 3]
+ ...
+ [5 4]
+ [3 1]
+ [3 2]]
+[Iteração 19000] Top-k vals (probs): [[2.4540396  1.5780823 ]
+ [1.4999154  0.31088167]
+ [0.6434328  0.07771847]
+ ...
+ [2.662897   2.465414  ]
+ [1.9263636  0.8261478 ]
+ [1.5068359  0.8600676 ]]
+LR: 0.000092, Acc: 97.2973, Loss: 0.0782
+[Iteração 19100] Top-k expert indices: [[1 4]
+ [5 2]
+ [5 1]
+ ...
+ [3 0]
+ [0 3]
+ [3 5]]
+[Iteração 19100] Top-k vals (probs): [[1.0704659  0.7361564 ]
+ [1.9743872  1.9325701 ]
+ [1.4180136  1.0538654 ]
+ ...
+ [1.116798   1.0716844 ]
+ [1.5328758  0.63161635]
+ [1.7428126  0.8449977 ]]
+LR: 0.000091, Acc: 94.5946, Loss: 0.3027
+[Iteração 19200] Top-k expert indices: [[5 4]
+ [3 4]
+ [2 0]
+ ...
+ [5 1]
+ [0 5]
+ [1 3]]
+[Iteração 19200] Top-k vals (probs): [[1.6236087 1.1880815]
+ [1.1985387 1.0370481]
+ [1.5104426 1.4842415]
+ ...
+ [1.1886392 0.8077817]
+ [1.4030457 1.359431 ]
+ [2.1511161 1.0917419]]
+LR: 0.000089, Acc: 100.0000, Loss: 0.0160
+[Iteração 19300] Top-k expert indices: [[2 3]
+ [2 5]
+ [1 0]
+ ...
+ [0 3]
+ [4 5]
+ [3 5]]
+[Iteração 19300] Top-k vals (probs): [[ 1.1043937   0.68647176]
+ [ 1.7873416   1.1156046 ]
+ [ 0.5772183   0.26929814]
+ ...
+ [ 1.2594812   0.6122431 ]
+ [ 1.6437764  -0.36791357]
+ [ 1.5445999   1.0132327 ]]
+[Iteração 19400] Top-k expert indices: [[4 2]
+ [1 5]
+ [4 5]
+ ...
+ [5 3]
+ [0 1]
+ [4 0]]
+[Iteração 19400] Top-k vals (probs): [[ 1.3286513   0.10287379]
+ [ 0.4598663   0.36097488]
+ [ 1.1777705  -0.02610746]
+ ...
+ [ 0.91469586  0.78044975]
+ [ 0.77400416  0.5561742 ]
+ [ 1.523801    0.99067986]]
+LR: 0.000088, Acc: 97.2973, Loss: 0.1019
+[Iteração 19500] Top-k expert indices: [[3 2]
+ [1 5]
+ [2 5]
+ ...
+ [3 5]
+ [4 3]
+ [1 2]]
+[Iteração 19500] Top-k vals (probs): [[ 2.0481403   1.560218  ]
+ [ 1.986553    0.4585814 ]
+ [ 1.7315489   0.13026854]
+ ...
+ [ 0.2565713  -0.7860489 ]
+ [ 2.8774579   1.9127938 ]
+ [ 2.6248033   0.26833388]]
+LR: 0.000087, Acc: 91.8919, Loss: 0.2030
+[Iteração 19600] Top-k expert indices: [[2 4]
+ [5 4]
+ [0 3]
+ ...
+ [0 2]
+ [0 3]
+ [0 1]]
+[Iteração 19600] Top-k vals (probs): [[ 0.6578357   0.05280757]
+ [ 2.2899663   1.2997086 ]
+ [ 2.026278    1.690819  ]
+ ...
+ [ 1.1977336   0.5784477 ]
+ [ 1.5935969   1.2243989 ]
+ [ 1.4013965  -0.15122253]]
+[Iteração 19700] Top-k expert indices: [[3 5]
+ [3 1]
+ [0 2]
+ ...
+ [2 1]
+ [3 4]
+ [2 5]]
+[Iteração 19700] Top-k vals (probs): [[1.0057278  0.49707946]
+ [2.041548   0.4361058 ]
+ [1.0504746  0.22918686]
+ ...
+ [0.70406973 0.45921344]
+ [1.0358664  0.7775369 ]
+ [1.8618166  1.2600168 ]]
+LR: 0.000086, Acc: 100.0000, Loss: 0.0270
+[Iteração 19800] Top-k expert indices: [[0 3]
+ [3 2]
+ [5 3]
+ ...
+ [5 3]
+ [3 4]
+ [5 0]]
+[Iteração 19800] Top-k vals (probs): [[2.0437438  0.9297436 ]
+ [1.4389209  0.03881667]
+ [2.024966   0.8284804 ]
+ ...
+ [1.4420656  0.8260754 ]
+ [1.5332029  0.7390011 ]
+ [0.8912636  0.42515928]]
+LR: 0.000084, Acc: 100.0000, Loss: 0.0466
+[Iteração 19900] Top-k expert indices: [[1 0]
+ [4 2]
+ [5 0]
+ ...
+ [2 4]
+ [4 5]
+ [5 0]]
+[Iteração 19900] Top-k vals (probs): [[0.726813   0.693617  ]
+ [2.049354   1.5496521 ]
+ [0.98801965 0.40426356]
+ ...
+ [1.4814795  1.422644  ]
+ [1.2362728  0.9069772 ]
+ [2.7480261  1.0953214 ]]
+[Iteração 20000] Top-k expert indices: [[0 1]
+ [3 5]
+ [0 1]
+ ...
+ [1 0]
+ [2 0]
+ [0 5]]
+[Iteração 20000] Top-k vals (probs): [[ 1.7008219   1.214884  ]
+ [ 1.708698   -0.20870712]
+ [ 0.7069739   0.4930374 ]
+ ...
+ [ 0.40956742  0.27565044]
+ [ 0.58269984  0.44344532]
+ [ 1.1254181   0.34944806]]
+LR: 0.000083, Acc: 100.0000, Loss: 0.0077
+[Iteração 20100] Top-k expert indices: [[2 3]
+ [3 1]
+ [1 0]
+ ...
+ [1 2]
+ [3 1]
+ [0 4]]
+[Iteração 20100] Top-k vals (probs): [[0.9548545  0.8476201 ]
+ [1.5252032  1.4791214 ]
+ [0.977756   0.34685543]
+ ...
+ [1.6547859  1.5542226 ]
+ [2.584814   0.08400205]
+ [0.7851695  0.45322302]]
+LR: 0.000082, Acc: 97.2973, Loss: 0.0706
+[Iteração 20200] Top-k expert indices: [[2 4]
+ [1 0]
+ [3 5]
+ ...
+ [5 2]
+ [5 1]
+ [4 1]]
+[Iteração 20200] Top-k vals (probs): [[-0.6024082  -0.76830894]
+ [ 1.0732334   0.70561516]
+ [ 1.5925688   1.406393  ]
+ ...
+ [ 1.611791    0.816289  ]
+ [ 2.499425    0.87637603]
+ [ 2.2592053   0.47273326]]
+[Iteração 20300] Top-k expert indices: [[5 3]
+ [1 0]
+ [4 1]
+ ...
+ [2 4]
+ [5 2]
+ [0 4]]
+[Iteração 20300] Top-k vals (probs): [[1.9747827  1.9340727 ]
+ [2.4498289  1.513162  ]
+ [1.0555369  0.70547223]
+ ...
+ [0.8719101  0.54593354]
+ [0.47626197 0.14574832]
+ [2.489263   0.9468952 ]]
+LR: 0.000081, Acc: 97.2973, Loss: 0.1467
+[Iteração 20400] Top-k expert indices: [[3 5]
+ [5 3]
+ [2 4]
+ ...
+ [2 4]
+ [0 3]
+ [5 2]]
+[Iteração 20400] Top-k vals (probs): [[2.013605   1.5030938 ]
+ [2.0828714  1.1225538 ]
+ [1.6346202  0.2608478 ]
+ ...
+ [0.74558127 0.2561791 ]
+ [1.3897953  0.55264956]
+ [1.5735111  1.3057135 ]]
+LR: 0.000079, Acc: 100.0000, Loss: 0.0140
+[Iteração 20500] Top-k expert indices: [[5 0]
+ [3 1]
+ [5 4]
+ ...
+ [4 2]
+ [0 1]
+ [4 2]]
+[Iteração 20500] Top-k vals (probs): [[1.529639   1.2164999 ]
+ [2.1088645  1.2960923 ]
+ [0.31023383 0.22524771]
+ ...
+ [2.5714405  0.6463757 ]
+ [1.824185   1.6472468 ]
+ [1.163211   0.50433207]]
+LR: 0.000078, Acc: 94.5946, Loss: 0.1936
+[Iteração 20600] Top-k expert indices: [[1 0]
+ [5 0]
+ [3 4]
+ ...
+ [2 0]
+ [2 0]
+ [5 2]]
+[Iteração 20600] Top-k vals (probs): [[0.9187349  0.88219655]
+ [1.3988935  0.4123761 ]
+ [1.4741874  0.5916121 ]
+ ...
+ [1.260297   1.2078491 ]
+ [1.0726432  0.9287405 ]
+ [1.583542   0.48476228]]
+[Iteração 20700] Top-k expert indices: [[5 3]
+ [5 1]
+ [4 0]
+ ...
+ [5 4]
+ [2 0]
+ [0 4]]
+[Iteração 20700] Top-k vals (probs): [[ 1.5094645   1.4341384 ]
+ [ 1.2122377  -0.586576  ]
+ [ 2.0871546   0.764122  ]
+ ...
+ [ 1.4051232   0.6575649 ]
+ [ 1.9466759   1.2155447 ]
+ [ 0.86031485  0.7324743 ]]
+LR: 0.000077, Acc: 83.7838, Loss: 0.6414
+[Iteração 20800] Top-k expert indices: [[5 1]
+ [3 4]
+ [2 1]
+ ...
+ [2 0]
+ [4 5]
+ [4 5]]
+[Iteração 20800] Top-k vals (probs): [[1.735642   1.5801247 ]
+ [0.80237305 0.28006843]
+ [1.5958191  1.2278053 ]
+ ...
+ [1.9028686  0.8804536 ]
+ [1.4972012  0.03747813]
+ [1.9741616  0.71797675]]
+LR: 0.000076, Acc: 97.2973, Loss: 0.0686
+[Iteração 20900] Top-k expert indices: [[4 1]
+ [3 4]
+ [2 3]
+ ...
+ [2 0]
+ [0 2]
+ [0 4]]
+[Iteração 20900] Top-k vals (probs): [[ 0.5762947   0.5039936 ]
+ [ 1.5037143   0.77877223]
+ [ 1.9718368   0.6053119 ]
+ ...
+ [ 0.17212601 -0.49348998]
+ [ 0.8421044   0.34796688]
+ [ 1.7511998   1.3876104 ]]
+[Iteração 21000] Top-k expert indices: [[4 1]
+ [4 2]
+ [0 2]
+ ...
+ [1 4]
+ [2 1]
+ [1 4]]
+[Iteração 21000] Top-k vals (probs): [[ 0.6657368   0.4241563 ]
+ [ 2.2515404   1.0029367 ]
+ [ 1.1474136   0.50411713]
+ ...
+ [ 1.1039315   0.29066283]
+ [ 0.95562935 -0.04339117]
+ [ 1.9179897   0.6426358 ]]
+LR: 0.000075, Acc: 91.8919, Loss: 0.2983
+[Iteração 21100] Top-k expert indices: [[3 5]
+ [1 0]
+ [0 5]
+ ...
+ [4 2]
+ [5 2]
+ [1 3]]
+[Iteração 21100] Top-k vals (probs): [[1.3458476  1.3297708 ]
+ [0.85064965 0.6921132 ]
+ [1.2467588  0.9596726 ]
+ ...
+ [1.3540351  1.2028617 ]
+ [2.3276048  0.7669493 ]
+ [1.3992002  0.85623777]]
+LR: 0.000073, Acc: 94.5946, Loss: 0.2469
+[Iteração 21200] Top-k expert indices: [[4 0]
+ [4 5]
+ [3 4]
+ ...
+ [1 5]
+ [1 4]
+ [5 1]]
+[Iteração 21200] Top-k vals (probs): [[1.2703973 0.6009569]
+ [1.1045632 0.5471289]
+ [1.415229  1.2095674]
+ ...
+ [1.245686  0.9258504]
+ [1.0923955 0.8251827]
+ [0.6887891 0.5231048]]
+[Iteração 21300] Top-k expert indices: [[5 3]
+ [5 2]
+ [5 2]
+ ...
+ [3 1]
+ [2 5]
+ [0 3]]
+[Iteração 21300] Top-k vals (probs): [[0.86125714 0.29341185]
+ [1.4218926  0.48542115]
+ [1.060243   0.7428766 ]
+ ...
+ [1.8252228  0.63306236]
+ [2.6329632  0.6176115 ]
+ [1.9304096  1.0432794 ]]
+LR: 0.000072, Acc: 94.5946, Loss: 0.2482
+[Iteração 21400] Top-k expert indices: [[5 3]
+ [1 4]
+ [5 1]
+ ...
+ [2 1]
+ [4 3]
+ [1 3]]
+[Iteração 21400] Top-k vals (probs): [[0.30799508 0.12313934]
+ [1.0149742  0.12840754]
+ [1.6087183  0.5303248 ]
+ ...
+ [2.121381   0.45862833]
+ [3.0432608  1.1080925 ]
+ [1.0710119  0.6129763 ]]
+LR: 0.000071, Acc: 94.5946, Loss: 0.1357
+[Iteração 21500] Top-k expert indices: [[5 3]
+ [1 3]
+ [2 1]
+ ...
+ [1 5]
+ [5 2]
+ [2 5]]
+[Iteração 21500] Top-k vals (probs): [[ 1.2865483   1.0761719 ]
+ [ 2.3926425   1.2251234 ]
+ [ 1.5711327   1.0434676 ]
+ ...
+ [ 2.247218    1.4713129 ]
+ [ 0.38617522 -0.48730397]
+ [ 0.4392677   0.24963734]]
+[Iteração 21600] Top-k expert indices: [[2 1]
+ [1 4]
+ [0 3]
+ ...
+ [4 5]
+ [2 0]
+ [5 0]]
+[Iteração 21600] Top-k vals (probs): [[1.5879321  1.2303159 ]
+ [1.3703649  0.9008595 ]
+ [1.0218471  0.88204193]
+ ...
+ [1.8867877  1.7469875 ]
+ [2.3247402  1.7651205 ]
+ [2.2604682  1.4669654 ]]
+LR: 0.000070, Acc: 97.2973, Loss: 0.1438
+[Iteração 21700] Top-k expert indices: [[4 0]
+ [2 5]
+ [0 1]
+ ...
+ [3 2]
+ [4 5]
+ [2 4]]
+[Iteração 21700] Top-k vals (probs): [[ 0.05970541 -0.6636511 ]
+ [ 1.7588158   0.6465989 ]
+ [ 0.9840678   0.58460295]
+ ...
+ [ 1.2645802   0.5817374 ]
+ [ 1.2241993  -0.07712011]
+ [ 2.102396    0.6418559 ]]
+LR: 0.000069, Acc: 97.2973, Loss: 0.1685
+[Iteração 21800] Top-k expert indices: [[5 1]
+ [5 1]
+ [1 0]
+ ...
+ [2 1]
+ [5 1]
+ [2 1]]
+[Iteração 21800] Top-k vals (probs): [[1.220396   0.13187528]
+ [0.45470494 0.45108572]
+ [1.5412849  1.3328583 ]
+ ...
+ [0.659474   0.5050651 ]
+ [1.9381021  0.9533203 ]
+ [1.5347581  1.5071565 ]]
+LR: 0.000067, Acc: 94.5946, Loss: 0.2277
+[Iteração 21900] Top-k expert indices: [[0 5]
+ [1 4]
+ [5 4]
+ ...
+ [1 3]
+ [3 1]
+ [2 3]]
+[Iteração 21900] Top-k vals (probs): [[1.9387579  0.33814567]
+ [1.7648398  0.74687845]
+ [2.073452   1.0508618 ]
+ ...
+ [1.0526267  0.9278204 ]
+ [1.3529527  0.51204425]
+ [1.0144606  0.54280126]]
+[Iteração 22000] Top-k expert indices: [[1 2]
+ [3 4]
+ [4 1]
+ ...
+ [3 2]
+ [5 2]
+ [3 5]]
+[Iteração 22000] Top-k vals (probs): [[0.47207713 0.41399682]
+ [1.3495007  0.9455373 ]
+ [1.9142463  1.2145153 ]
+ ...
+ [1.9284444  1.5363537 ]
+ [1.9722492  1.7133007 ]
+ [0.7568581  0.45965958]]
+LR: 0.000066, Acc: 97.2973, Loss: 0.0624
+[Iteração 22100] Top-k expert indices: [[2 5]
+ [4 5]
+ [0 4]
+ ...
+ [0 2]
+ [2 3]
+ [0 3]]
+[Iteração 22100] Top-k vals (probs): [[1.384556   0.84966254]
+ [2.009227   1.2441146 ]
+ [2.033463   1.5270185 ]
+ ...
+ [1.5147872  1.3814993 ]
+ [0.64179343 0.55703026]
+ [1.1051966  1.0115633 ]]
+LR: 0.000065, Acc: 94.5946, Loss: 0.1056
+[Iteração 22200] Top-k expert indices: [[3 4]
+ [1 3]
+ [2 3]
+ ...
+ [0 5]
+ [5 3]
+ [5 4]]
+[Iteração 22200] Top-k vals (probs): [[ 0.84230375  0.5311498 ]
+ [ 1.5053205   0.3984441 ]
+ [ 0.03532591 -0.24919078]
+ ...
+ [ 1.8530427   1.0010282 ]
+ [ 1.5870883   0.7857326 ]
+ [ 0.47584757  0.39494863]]
+[Iteração 22300] Top-k expert indices: [[3 2]
+ [5 3]
+ [0 2]
+ ...
+ [5 3]
+ [1 0]
+ [3 5]]
+[Iteração 22300] Top-k vals (probs): [[ 0.59886765  0.42420298]
+ [ 1.4979619   1.026113  ]
+ [ 0.9507791  -0.13288154]
+ ...
+ [ 1.4119166   0.7445878 ]
+ [ 1.3111827   0.11056375]
+ [ 1.3947567   0.57510835]]
+LR: 0.000064, Acc: 94.5946, Loss: 0.1908
+[Iteração 22400] Top-k expert indices: [[4 2]
+ [1 0]
+ [4 0]
+ ...
+ [3 4]
+ [2 4]
+ [1 0]]
+[Iteração 22400] Top-k vals (probs): [[1.1893253  0.45455703]
+ [1.8478814  0.3300645 ]
+ [0.7060056  0.26928592]
+ ...
+ [1.3063469  0.7598996 ]
+ [1.9016057  0.6298343 ]
+ [1.0555792  0.9713595 ]]
+LR: 0.000063, Acc: 94.5946, Loss: 0.2585
+[Iteração 22500] Top-k expert indices: [[3 4]
+ [3 4]
+ [0 3]
+ ...
+ [0 5]
+ [4 2]
+ [3 1]]
+[Iteração 22500] Top-k vals (probs): [[1.1587782  0.99449813]
+ [1.482596   0.44048893]
+ [0.5962176  0.5207999 ]
+ ...
+ [1.0370414  0.21907726]
+ [1.7551209  1.1462694 ]
+ [0.9908485  0.44931445]]
+[Iteração 22600] Top-k expert indices: [[0 3]
+ [0 3]
+ [0 1]
+ ...
+ [2 0]
+ [0 4]
+ [5 2]]
+[Iteração 22600] Top-k vals (probs): [[ 1.3921578   0.80924565]
+ [ 1.9938967   1.8373429 ]
+ [ 1.1303197   0.7904476 ]
+ ...
+ [ 1.0899383   1.0699033 ]
+ [ 1.6744775  -0.04178786]
+ [ 2.0174556   0.80914176]]
+LR: 0.000062, Acc: 100.0000, Loss: 0.0658
+[Iteração 22700] Top-k expert indices: [[3 5]
+ [1 0]
+ [4 1]
+ ...
+ [5 1]
+ [3 2]
+ [3 2]]
+[Iteração 22700] Top-k vals (probs): [[ 2.9672828   1.6924734 ]
+ [ 2.201343    1.7664083 ]
+ [ 2.008616    1.9772179 ]
+ ...
+ [ 1.4547648   0.09451696]
+ [ 2.9177704   0.52758837]
+ [ 2.330894   -0.15669067]]
+LR: 0.000060, Acc: 97.2973, Loss: 0.0945
+[Iteração 22800] Top-k expert indices: [[3 4]
+ [4 0]
+ [0 2]
+ ...
+ [4 5]
+ [4 1]
+ [1 4]]
+[Iteração 22800] Top-k vals (probs): [[2.2650015  1.0106809 ]
+ [0.35123396 0.2878321 ]
+ [1.4371486  0.38859195]
+ ...
+ [1.3218119  1.1666776 ]
+ [1.455561   1.201917  ]
+ [0.6176977  0.20007344]]
+LR: 0.000059, Acc: 94.5946, Loss: 0.1275
+[Iteração 22900] Top-k expert indices: [[1 2]
+ [0 2]
+ [4 5]
+ ...
+ [0 3]
+ [1 3]
+ [5 2]]
+[Iteração 22900] Top-k vals (probs): [[2.3754735  0.56916547]
+ [1.856699   1.539821  ]
+ [1.2979858  1.1323088 ]
+ ...
+ [2.3234804  1.2922692 ]
+ [1.9606873  1.4624557 ]
+ [1.2852244  0.43834966]]
+[Iteração 23000] Top-k expert indices: [[2 1]
+ [1 3]
+ [1 0]
+ ...
+ [3 0]
+ [5 4]
+ [1 4]]
+[Iteração 23000] Top-k vals (probs): [[ 2.2817826  -0.12203713]
+ [ 0.868089    0.8134742 ]
+ [ 1.1158584   0.8376282 ]
+ ...
+ [ 2.1084056   0.70863605]
+ [ 1.3388916   0.29320067]
+ [ 0.9159414   0.9040928 ]]
+LR: 0.000058, Acc: 97.2973, Loss: 0.1271
+[Iteração 23100] Top-k expert indices: [[5 1]
+ [5 2]
+ [2 1]
+ ...
+ [0 4]
+ [4 5]
+ [1 0]]
+[Iteração 23100] Top-k vals (probs): [[2.2704434  0.50799525]
+ [1.6533612  1.4532466 ]
+ [0.7594802  0.27749002]
+ ...
+ [1.7569402  1.5305429 ]
+ [0.44849434 0.29338533]
+ [2.2144473  1.7278318 ]]
+LR: 0.000057, Acc: 97.2973, Loss: 0.1642
+[Iteração 23200] Top-k expert indices: [[1 4]
+ [1 5]
+ [3 1]
+ ...
+ [5 2]
+ [0 1]
+ [3 0]]
+[Iteração 23200] Top-k vals (probs): [[1.174902   0.9220389 ]
+ [1.1937437  0.72404814]
+ [0.5858114  0.4945581 ]
+ ...
+ [2.2915034  0.7649338 ]
+ [0.58539796 0.500286  ]
+ [1.5372343  0.8039641 ]]
+[Iteração 23300] Top-k expert indices: [[4 5]
+ [2 3]
+ [2 3]
+ ...
+ [5 2]
+ [1 4]
+ [3 4]]
+[Iteração 23300] Top-k vals (probs): [[ 1.2240827   0.69977826]
+ [ 1.0017414   0.28657424]
+ [ 1.7555109  -0.10980584]
+ ...
+ [ 2.8776474   1.4530977 ]
+ [ 1.7591946   0.9499349 ]
+ [ 1.4155774   0.83782506]]
+LR: 0.000056, Acc: 100.0000, Loss: 0.0203
+[Iteração 23400] Top-k expert indices: [[2 1]
+ [1 0]
+ [5 1]
+ ...
+ [5 0]
+ [3 1]
+ [4 5]]
+[Iteração 23400] Top-k vals (probs): [[0.9660115  0.37207928]
+ [1.359742   1.0379893 ]
+ [1.4993522  0.4747183 ]
+ ...
+ [1.1299113  0.6849382 ]
+ [1.7432512  0.86152285]
+ [1.4359114  0.0771471 ]]
+LR: 0.000055, Acc: 97.2973, Loss: 0.0725
+[Iteração 23500] Top-k expert indices: [[0 2]
+ [3 0]
+ [1 5]
+ ...
+ [1 0]
+ [1 2]
+ [0 3]]
+[Iteração 23500] Top-k vals (probs): [[2.1090782 1.5697387]
+ [2.009359  0.9209264]
+ [1.431142  0.6079618]
+ ...
+ [1.2773182 0.9660078]
+ [1.9901787 0.7974432]
+ [2.416152  0.8038703]]
+[Iteração 23600] Top-k expert indices: [[5 4]
+ [2 4]
+ [3 2]
+ ...
+ [5 0]
+ [3 5]
+ [1 5]]
+[Iteração 23600] Top-k vals (probs): [[1.944719   0.3599425 ]
+ [1.635872   1.0392168 ]
+ [1.6002295  0.69374716]
+ ...
+ [1.0971245  1.0426483 ]
+ [2.4021301  0.29315534]
+ [1.8737202  1.0415752 ]]
+LR: 0.000054, Acc: 100.0000, Loss: 0.0275
+[Iteração 23700] Top-k expert indices: [[1 0]
+ [3 1]
+ [1 0]
+ ...
+ [4 3]
+ [4 3]
+ [2 4]]
+[Iteração 23700] Top-k vals (probs): [[1.1222782  0.82566196]
+ [1.5617341  1.4665293 ]
+ [2.7787693  1.4930074 ]
+ ...
+ [0.9823253  0.50940096]
+ [1.1492878  0.45040777]
+ [2.3723857  1.133966  ]]
+LR: 0.000053, Acc: 100.0000, Loss: 0.0057
+[Iteração 23800] Top-k expert indices: [[1 0]
+ [1 4]
+ [4 2]
+ ...
+ [4 1]
+ [4 1]
+ [2 5]]
+[Iteração 23800] Top-k vals (probs): [[ 2.3069665   1.9444449 ]
+ [ 1.8057183  -0.04918867]
+ [ 2.0831394   1.6038889 ]
+ ...
+ [ 1.165811    0.9957528 ]
+ [ 1.5666956   0.90966976]
+ [ 0.5401341   0.19781259]]
+[Iteração 23900] Top-k expert indices: [[5 3]
+ [2 1]
+ [2 4]
+ ...
+ [0 1]
+ [4 2]
+ [4 2]]
+[Iteração 23900] Top-k vals (probs): [[1.1782117  0.9812249 ]
+ [1.2121917  1.1409472 ]
+ [1.7832704  1.7309467 ]
+ ...
+ [2.484179   1.8088418 ]
+ [1.2986835  0.63301486]
+ [0.6311145  0.2704674 ]]
+LR: 0.000051, Acc: 100.0000, Loss: 0.0188
+[Iteração 24000] Top-k expert indices: [[5 2]
+ [4 0]
+ [1 0]
+ ...
+ [1 4]
+ [1 2]
+ [2 0]]
+[Iteração 24000] Top-k vals (probs): [[1.5491871  0.06414774]
+ [1.2327019  0.8552635 ]
+ [0.46465296 0.0414108 ]
+ ...
+ [0.4660896  0.30625737]
+ [1.8639765  0.45099264]
+ [1.2106775  0.1877043 ]]
+LR: 0.000050, Acc: 94.5946, Loss: 0.0949
+[Iteração 24100] Top-k expert indices: [[0 4]
+ [0 3]
+ [3 0]
+ ...
+ [4 2]
+ [1 0]
+ [1 3]]
+[Iteração 24100] Top-k vals (probs): [[1.883947  1.1791855]
+ [1.8743888 1.365151 ]
+ [0.8498564 0.2948215]
+ ...
+ [1.216375  0.843626 ]
+ [1.353178  1.1285214]
+ [1.4982256 1.3368348]]
+LR: 0.000049, Acc: 94.5946, Loss: 0.2793
+[Iteração 24200] Top-k expert indices: [[2 1]
+ [2 4]
+ [0 2]
+ ...
+ [2 0]
+ [3 5]
+ [5 3]]
+[Iteração 24200] Top-k vals (probs): [[1.6534619  1.0404608 ]
+ [0.69333327 0.45056224]
+ [0.48020726 0.31271744]
+ ...
+ [1.9358233  0.8604214 ]
+ [2.4706097  0.6839183 ]
+ [1.648589   1.0546145 ]]
+[Iteração 24300] Top-k expert indices: [[3 5]
+ [2 0]
+ [1 0]
+ ...
+ [4 5]
+ [1 5]
+ [3 1]]
+[Iteração 24300] Top-k vals (probs): [[1.5436597  1.291391  ]
+ [1.1639633  0.8721794 ]
+ [1.9612429  0.84747136]
+ ...
+ [1.0929966  0.8004171 ]
+ [0.68228483 0.42362165]
+ [1.3606163  0.7595478 ]]
+LR: 0.000048, Acc: 100.0000, Loss: 0.0761
+[Iteração 24400] Top-k expert indices: [[1 3]
+ [2 4]
+ [2 0]
+ ...
+ [4 5]
+ [3 2]
+ [3 5]]
+[Iteração 24400] Top-k vals (probs): [[1.8733481  0.5169129 ]
+ [0.89035493 0.3621138 ]
+ [1.713947   1.0713091 ]
+ ...
+ [0.29996905 0.13821512]
+ [1.3103307  0.6283071 ]
+ [2.148255   0.5171309 ]]
+LR: 0.000047, Acc: 94.5946, Loss: 0.1363
+[Iteração 24500] Top-k expert indices: [[2 1]
+ [5 2]
+ [4 1]
+ ...
+ [1 2]
+ [1 4]
+ [1 2]]
+[Iteração 24500] Top-k vals (probs): [[1.7448808  1.2694336 ]
+ [1.4978878  0.9815662 ]
+ [1.941322   0.404316  ]
+ ...
+ [0.2948124  0.2580991 ]
+ [0.510827   0.01472233]
+ [2.4052188  1.4900215 ]]
+[Iteração 24600] Top-k expert indices: [[2 0]
+ [0 2]
+ [4 2]
+ ...
+ [3 0]
+ [1 0]
+ [0 1]]
+[Iteração 24600] Top-k vals (probs): [[0.69297135 0.45363393]
+ [2.264787   1.285974  ]
+ [2.9910192  1.7103428 ]
+ ...
+ [1.360294   0.34099537]
+ [1.7632556  1.4936092 ]
+ [2.0427935  1.7272614 ]]
+LR: 0.000046, Acc: 89.1892, Loss: 0.4387
+[Iteração 24700] Top-k expert indices: [[0 1]
+ [5 1]
+ [0 1]
+ ...
+ [2 4]
+ [2 0]
+ [0 5]]
+[Iteração 24700] Top-k vals (probs): [[1.1405698  0.49674165]
+ [1.349314   0.54255664]
+ [1.744128   1.6782101 ]
+ ...
+ [0.72433126 0.63336086]
+ [1.9928094  1.8900626 ]
+ [2.3613443  1.8772829 ]]
+LR: 0.000045, Acc: 97.2973, Loss: 0.1227
+[Iteração 24800] Top-k expert indices: [[2 5]
+ [0 5]
+ [4 3]
+ ...
+ [1 4]
+ [5 0]
+ [3 1]]
+[Iteração 24800] Top-k vals (probs): [[ 2.1316395   1.7361253 ]
+ [ 1.915557    1.1718343 ]
+ [ 1.1534399   0.97301495]
+ ...
+ [ 2.1124158   2.0984797 ]
+ [ 0.22108844 -0.20153975]
+ [ 1.2930902   1.1212059 ]]
+[Iteração 24900] Top-k expert indices: [[0 1]
+ [4 3]
+ [3 1]
+ ...
+ [1 5]
+ [3 1]
+ [2 5]]
+[Iteração 24900] Top-k vals (probs): [[0.71803206 0.37778616]
+ [0.46671104 0.1124329 ]
+ [1.7075851  0.7982538 ]
+ ...
+ [1.6292372  0.754868  ]
+ [1.5216143  1.3567313 ]
+ [1.2291236  1.1128659 ]]
+LR: 0.000044, Acc: 97.2973, Loss: 0.1066
+[Iteração 25000] Top-k expert indices: [[1 5]
+ [0 5]
+ [5 4]
+ ...
+ [1 3]
+ [4 1]
+ [2 4]]
+[Iteração 25000] Top-k vals (probs): [[1.1296201  1.0909992 ]
+ [0.8639931  0.16417593]
+ [1.124583   0.13796511]
+ ...
+ [1.0066189  0.9155412 ]
+ [1.7689742  1.5885155 ]
+ [1.9162587  0.47998065]]
+LR: 0.000043, Acc: 94.5946, Loss: 0.1773
+[Iteração 25100] Top-k expert indices: [[1 4]
+ [1 4]
+ [2 4]
+ ...
+ [2 1]
+ [0 5]
+ [0 1]]
+[Iteração 25100] Top-k vals (probs): [[ 0.93225926 -0.15665041]
+ [ 1.6577985   0.91755307]
+ [ 1.8858848   1.8153936 ]
+ ...
+ [ 1.2331358   0.7009747 ]
+ [ 1.1277263   0.5921863 ]
+ [ 1.6851022   1.5657054 ]]
+[Iteração 25200] Top-k expert indices: [[1 4]
+ [5 2]
+ [4 1]
+ ...
+ [0 1]
+ [5 0]
+ [4 2]]
+[Iteração 25200] Top-k vals (probs): [[0.8744969  0.16521724]
+ [0.8980222  0.82194805]
+ [1.0172136  0.7007687 ]
+ ...
+ [2.8971846  1.0688533 ]
+ [2.1035159  0.33187032]
+ [1.4805243  1.034717  ]]
+LR: 0.000042, Acc: 97.2973, Loss: 0.0868
+[Iteração 25300] Top-k expert indices: [[5 2]
+ [3 1]
+ [0 1]
+ ...
+ [3 2]
+ [2 5]
+ [3 2]]
+[Iteração 25300] Top-k vals (probs): [[ 1.4436021   1.0009769 ]
+ [ 1.2643983   0.709272  ]
+ [ 0.36878687 -0.4605895 ]
+ ...
+ [ 1.7624629   1.368934  ]
+ [ 3.1455524   1.3897665 ]
+ [ 1.1593366   0.88207084]]
+LR: 0.000041, Acc: 100.0000, Loss: 0.0237
+[Iteração 25400] Top-k expert indices: [[2 3]
+ [3 2]
+ [3 2]
+ ...
+ [2 3]
+ [2 0]
+ [2 4]]
+[Iteração 25400] Top-k vals (probs): [[ 1.390308    1.3124286 ]
+ [ 1.8327016   1.1384133 ]
+ [ 2.8970199   1.2478939 ]
+ ...
+ [ 1.4496725  -0.483172  ]
+ [ 1.298897    0.6262514 ]
+ [ 1.011701    0.90148056]]
+LR: 0.000040, Acc: 91.8919, Loss: 0.2585
+[Iteração 25500] Top-k expert indices: [[0 2]
+ [3 0]
+ [0 2]
+ ...
+ [2 1]
+ [2 4]
+ [1 2]]
+[Iteração 25500] Top-k vals (probs): [[1.9204428  0.5808225 ]
+ [0.58421063 0.04604966]
+ [1.4475828  1.4439414 ]
+ ...
+ [1.2903357  1.0826478 ]
+ [0.9020142  0.6031486 ]
+ [2.5807133  0.9413648 ]]
+[Iteração 25600] Top-k expert indices: [[5 1]
+ [3 0]
+ [1 3]
+ ...
+ [1 4]
+ [5 3]
+ [2 5]]
+[Iteração 25600] Top-k vals (probs): [[ 1.4398092   0.68584526]
+ [ 1.0594218   0.88499093]
+ [ 2.298975    1.9393104 ]
+ ...
+ [ 1.5956174   0.92772526]
+ [ 0.18709922 -0.00455037]
+ [ 1.5279391   0.43224144]]
+LR: 0.000039, Acc: 97.2973, Loss: 0.0907
+[Iteração 25700] Top-k expert indices: [[2 0]
+ [2 5]
+ [2 3]
+ ...
+ [5 4]
+ [3 1]
+ [0 2]]
+[Iteração 25700] Top-k vals (probs): [[ 1.6017046   0.63056284]
+ [ 0.60061896 -0.28230268]
+ [ 1.8986571   0.89956766]
+ ...
+ [ 1.4593338   1.1800976 ]
+ [ 0.50978756  0.19355823]
+ [ 1.3373865   0.8409517 ]]
+LR: 0.000038, Acc: 97.2973, Loss: 0.0559
+[Iteração 25800] Top-k expert indices: [[2 0]
+ [3 1]
+ [0 4]
+ ...
+ [1 4]
+ [4 3]
+ [0 5]]
+[Iteração 25800] Top-k vals (probs): [[1.0357263 0.7339649]
+ [1.8740989 0.8961741]
+ [0.7712765 0.6341278]
+ ...
+ [2.1584687 1.8102409]
+ [0.7868459 0.5821095]
+ [2.0233734 0.6332224]]
+[Iteração 25900] Top-k expert indices: [[3 1]
+ [3 0]
+ [4 3]
+ ...
+ [1 3]
+ [1 3]
+ [0 4]]
+[Iteração 25900] Top-k vals (probs): [[ 0.9966509   0.65310645]
+ [ 2.0584738   0.4796599 ]
+ [ 2.2454054   1.1748977 ]
+ ...
+ [ 1.8534911   0.87326205]
+ [ 1.6177604  -0.5208129 ]
+ [ 2.3443315   0.59030986]]
+LR: 0.000037, Acc: 100.0000, Loss: 0.0272
+[Iteração 26000] Top-k expert indices: [[3 4]
+ [2 3]
+ [0 3]
+ ...
+ [5 2]
+ [1 0]
+ [2 1]]
+[Iteração 26000] Top-k vals (probs): [[ 1.9853544  -0.38075155]
+ [ 1.7376977   1.5449904 ]
+ [ 1.5936632   0.6479628 ]
+ ...
+ [ 0.43734032  0.14790882]
+ [ 1.2483776   0.5283486 ]
+ [ 1.1616862   1.092313  ]]
+LR: 0.000036, Acc: 91.8919, Loss: 0.3581
+[Iteração 26100] Top-k expert indices: [[5 0]
+ [0 3]
+ [1 5]
+ ...
+ [3 0]
+ [3 4]
+ [1 4]]
+[Iteração 26100] Top-k vals (probs): [[1.7330849  1.5450577 ]
+ [1.8028938  1.7785826 ]
+ [1.8118007  0.26352406]
+ ...
+ [2.3449864  1.746539  ]
+ [2.2717206  0.71155417]
+ [0.9427342  0.80156064]]
+[Iteração 26200] Top-k expert indices: [[1 3]
+ [1 4]
+ [1 2]
+ ...
+ [1 4]
+ [5 2]
+ [5 0]]
+[Iteração 26200] Top-k vals (probs): [[0.5601205  0.3063423 ]
+ [0.5751257  0.39401796]
+ [1.9900403  1.7690421 ]
+ ...
+ [1.3389742  0.9515339 ]
+ [1.2473558  1.1447042 ]
+ [1.7617115  1.0346564 ]]
+LR: 0.000035, Acc: 94.5946, Loss: 0.1276
+[Iteração 26300] Top-k expert indices: [[4 0]
+ [3 5]
+ [2 3]
+ ...
+ [4 5]
+ [3 1]
+ [5 1]]
+[Iteração 26300] Top-k vals (probs): [[1.7582802  1.6544007 ]
+ [0.63782585 0.32288623]
+ [1.9620297  0.61062425]
+ ...
+ [1.4517674  1.3570938 ]
+ [0.48322216 0.098727  ]
+ [2.1878052  1.620516  ]]
+LR: 0.000034, Acc: 94.5946, Loss: 0.1326
+[Iteração 26400] Top-k expert indices: [[1 4]
+ [5 1]
+ [1 0]
+ ...
+ [5 0]
+ [3 4]
+ [0 5]]
+[Iteração 26400] Top-k vals (probs): [[0.76721823 0.71124494]
+ [2.1350307  1.3686646 ]
+ [1.552686   0.45763618]
+ ...
+ [1.3983145  1.3164222 ]
+ [1.9854615  1.449218  ]
+ [1.2466832  0.8372746 ]]
+LR: 0.000033, Acc: 100.0000, Loss: 0.0191
+[Iteração 26500] Top-k expert indices: [[5 0]
+ [2 0]
+ [5 3]
+ ...
+ [5 4]
+ [5 3]
+ [5 2]]
+[Iteração 26500] Top-k vals (probs): [[1.9892024  0.58780473]
+ [0.93793684 0.75113034]
+ [2.1632955  0.860952  ]
+ ...
+ [2.8621094  1.6272006 ]
+ [1.1696584  0.90460604]
+ [1.1594727  1.0646478 ]]
+[Iteração 26600] Top-k expert indices: [[5 3]
+ [1 4]
+ [0 5]
+ ...
+ [3 2]
+ [4 1]
+ [3 2]]
+[Iteração 26600] Top-k vals (probs): [[1.5276132  0.25326112]
+ [1.4176521  0.19718266]
+ [0.34483367 0.05464596]
+ ...
+ [1.4875085  0.6205641 ]
+ [3.7279494  0.6862687 ]
+ [1.5139861  0.56087494]]
+LR: 0.000032, Acc: 97.2973, Loss: 0.1371
+[Iteração 26700] Top-k expert indices: [[2 4]
+ [5 0]
+ [0 5]
+ ...
+ [4 1]
+ [0 5]
+ [4 1]]
+[Iteração 26700] Top-k vals (probs): [[0.8830802  0.4800288 ]
+ [1.912402   1.4230256 ]
+ [0.764054   0.08871409]
+ ...
+ [1.1444328  0.15475774]
+ [1.0708354  0.9661831 ]
+ [2.0039876  1.845742  ]]
+LR: 0.000031, Acc: 97.2973, Loss: 0.1379
+[Iteração 26800] Top-k expert indices: [[5 4]
+ [5 2]
+ [1 4]
+ ...
+ [1 4]
+ [0 2]
+ [1 5]]
+[Iteração 26800] Top-k vals (probs): [[1.5993617  1.534055  ]
+ [2.596977   1.1084834 ]
+ [1.253822   0.89476013]
+ ...
+ [1.7649498  0.5624936 ]
+ [1.6448205  0.96111906]
+ [0.8817569  0.46336308]]
+[Iteração 26900] Top-k expert indices: [[4 2]
+ [3 0]
+ [3 4]
+ ...
+ [4 1]
+ [2 4]
+ [5 0]]
+[Iteração 26900] Top-k vals (probs): [[ 1.3882735   0.15865614]
+ [ 1.1567254   0.8727167 ]
+ [ 2.367007    1.1499565 ]
+ ...
+ [ 1.4367282   0.41250962]
+ [ 0.3485828  -0.03878728]
+ [ 1.4778693   1.290978  ]]
+LR: 0.000031, Acc: 100.0000, Loss: 0.0251
+[Iteração 27000] Top-k expert indices: [[2 1]
+ [0 5]
+ [0 4]
+ ...
+ [4 5]
+ [3 4]
+ [4 0]]
+[Iteração 27000] Top-k vals (probs): [[1.0815845  0.7326919 ]
+ [0.9583366  0.7894871 ]
+ [1.3954533  1.3198723 ]
+ ...
+ [1.1067506  1.0238734 ]
+ [2.1970859  1.9080509 ]
+ [1.1642115  0.91754603]]
+LR: 0.000030, Acc: 91.8919, Loss: 0.1275
+[Iteração 27100] Top-k expert indices: [[0 2]
+ [4 0]
+ [1 0]
+ ...
+ [1 0]
+ [4 3]
+ [4 5]]
+[Iteração 27100] Top-k vals (probs): [[2.779323   1.5254562 ]
+ [1.3780246  1.1137892 ]
+ [0.39750934 0.3636033 ]
+ ...
+ [1.5980915  1.4267542 ]
+ [1.0836372  1.05739   ]
+ [1.1475766  0.33198214]]
+[Iteração 27200] Top-k expert indices: [[1 5]
+ [2 1]
+ [0 3]
+ ...
+ [0 4]
+ [4 2]
+ [2 5]]
+[Iteração 27200] Top-k vals (probs): [[1.0142175  0.8049053 ]
+ [1.9341354  0.6705373 ]
+ [1.7867527  1.7378082 ]
+ ...
+ [1.2547002  0.49795422]
+ [1.294988   1.0704325 ]
+ [1.74251    0.2645509 ]]
+LR: 0.000029, Acc: 91.8919, Loss: 0.3006
+[Iteração 27300] Top-k expert indices: [[2 4]
+ [2 4]
+ [4 5]
+ ...
+ [5 1]
+ [4 0]
+ [2 0]]
+[Iteração 27300] Top-k vals (probs): [[1.075196   0.16705766]
+ [1.1005989  0.11698392]
+ [2.3973606  0.98951143]
+ ...
+ [0.8348828  0.7211868 ]
+ [1.2779325  0.78132236]
+ [2.0348542  1.3797864 ]]
+LR: 0.000028, Acc: 100.0000, Loss: 0.0347
+[Iteração 27400] Top-k expert indices: [[2 0]
+ [3 4]
+ [0 3]
+ ...
+ [5 2]
+ [2 3]
+ [3 1]]
+[Iteração 27400] Top-k vals (probs): [[0.40552503 0.01126024]
+ [1.6826034  1.2281076 ]
+ [1.5077896  1.2313696 ]
+ ...
+ [0.8372505  0.46169734]
+ [0.95328224 0.5780041 ]
+ [1.4500108  1.216253  ]]
+[Iteração 27500] Top-k expert indices: [[2 3]
+ [2 5]
+ [3 2]
+ ...
+ [1 4]
+ [2 0]
+ [1 0]]
+[Iteração 27500] Top-k vals (probs): [[ 1.5853205   0.8685083 ]
+ [ 1.3789797   1.1266515 ]
+ [ 2.0534098   1.8273954 ]
+ ...
+ [ 0.6144572   0.45828578]
+ [ 2.053975    1.3035767 ]
+ [ 1.7903388  -0.67118406]]
+LR: 0.000027, Acc: 91.8919, Loss: 0.2451
+[Iteração 27600] Top-k expert indices: [[3 0]
+ [0 1]
+ [4 1]
+ ...
+ [5 2]
+ [0 4]
+ [4 3]]
+[Iteração 27600] Top-k vals (probs): [[2.136696   1.2408577 ]
+ [0.98717344 0.38049114]
+ [2.3772526  2.0828173 ]
+ ...
+ [1.5329607  1.3217028 ]
+ [2.4922593  2.0050385 ]
+ [1.2571242  0.92653507]]
+LR: 0.000026, Acc: 100.0000, Loss: 0.0205
+[Iteração 27700] Top-k expert indices: [[5 3]
+ [5 2]
+ [5 1]
+ ...
+ [1 2]
+ [3 5]
+ [0 1]]
+[Iteração 27700] Top-k vals (probs): [[2.310189   0.9872411 ]
+ [1.5891359  1.1270629 ]
+ [1.9069164  0.8126901 ]
+ ...
+ [1.5433547  1.0413251 ]
+ [1.5969744  1.5026976 ]
+ [0.8706454  0.58102447]]
+LR: 0.000025, Acc: 94.5946, Loss: 0.1713
+[Iteração 27800] Top-k expert indices: [[1 3]
+ [3 5]
+ [4 1]
+ ...
+ [2 1]
+ [3 0]
+ [2 4]]
+[Iteração 27800] Top-k vals (probs): [[ 3.1812425   0.19668159]
+ [ 2.738717   -0.12390807]
+ [ 1.7046721  -0.01948602]
+ ...
+ [ 0.93166643  0.698374  ]
+ [ 2.7098854   0.36662868]
+ [ 1.9677436   0.82673013]]
+[Iteração 27900] Top-k expert indices: [[0 3]
+ [0 4]
+ [5 1]
+ ...
+ [0 3]
+ [5 1]
+ [1 3]]
+[Iteração 27900] Top-k vals (probs): [[ 2.2117648   1.8129698 ]
+ [ 0.89168346  0.85516584]
+ [ 1.3703346   1.2210375 ]
+ ...
+ [ 1.2069322  -0.2651513 ]
+ [ 0.83047897  0.7130182 ]
+ [ 1.2090462  -0.01213765]]
+LR: 0.000025, Acc: 89.1892, Loss: 0.3663
+[Iteração 28000] Top-k expert indices: [[2 3]
+ [1 2]
+ [0 1]
+ ...
+ [2 4]
+ [3 1]
+ [2 0]]
+[Iteração 28000] Top-k vals (probs): [[1.5963084  0.32976574]
+ [1.7509948  0.7698802 ]
+ [0.9756802  0.9277556 ]
+ ...
+ [1.2209291  1.0524238 ]
+ [1.5696611  1.1068068 ]
+ [2.2434115  1.1958976 ]]
+LR: 0.000024, Acc: 100.0000, Loss: 0.0147
+[Iteração 28100] Top-k expert indices: [[3 5]
+ [0 2]
+ [4 1]
+ ...
+ [4 0]
+ [5 3]
+ [5 1]]
+[Iteração 28100] Top-k vals (probs): [[ 1.5844755   1.0011048 ]
+ [ 0.69744706  0.6285771 ]
+ [ 0.7408693  -0.9978547 ]
+ ...
+ [ 2.3855336   0.5891126 ]
+ [ 1.3616979   1.1752867 ]
+ [ 1.0446651   0.88033384]]
+[Iteração 28200] Top-k expert indices: [[3 5]
+ [1 2]
+ [3 1]
+ ...
+ [1 2]
+ [4 3]
+ [0 1]]
+[Iteração 28200] Top-k vals (probs): [[ 1.7991714   1.1201024 ]
+ [ 0.5430728   0.26296896]
+ [ 0.90868014  0.3090337 ]
+ ...
+ [ 1.6825756  -0.08811323]
+ [ 1.9012336   1.6701741 ]
+ [ 1.4320581   0.82568604]]
+LR: 0.000023, Acc: 100.0000, Loss: 0.0220
+[Iteração 28300] Top-k expert indices: [[4 1]
+ [3 5]
+ [0 4]
+ ...
+ [2 3]
+ [5 2]
+ [4 3]]
+[Iteração 28300] Top-k vals (probs): [[2.0875924  1.2218735 ]
+ [2.1596296  1.3812261 ]
+ [2.5552633  0.8370944 ]
+ ...
+ [0.89872783 0.2672745 ]
+ [1.1422349  0.68453866]
+ [1.0712962  0.5527218 ]]
+LR: 0.000022, Acc: 94.5946, Loss: 0.2127
+[Iteração 28400] Top-k expert indices: [[5 3]
+ [3 0]
+ [2 5]
+ ...
+ [0 3]
+ [0 2]
+ [4 5]]
+[Iteração 28400] Top-k vals (probs): [[1.3751794e+00 1.2759671e+00]
+ [1.1433361e+00 3.3316016e-04]
+ [6.3015068e-01 3.1495100e-01]
+ ...
+ [3.0672956e+00 1.5891582e+00]
+ [1.0490589e+00 5.1865691e-01]
+ [2.0668714e+00 1.0346667e+00]]
+[Iteração 28500] Top-k expert indices: [[2 4]
+ [3 1]
+ [4 1]
+ ...
+ [5 3]
+ [3 4]
+ [0 3]]
+[Iteração 28500] Top-k vals (probs): [[2.1752803  0.8474833 ]
+ [1.7411987  1.308569  ]
+ [2.1648495  0.28834155]
+ ...
+ [1.7768874  0.75743645]
+ [2.8629954  1.7220114 ]
+ [1.6685656  1.0910498 ]]
+LR: 0.000021, Acc: 86.4865, Loss: 0.5048
+[Iteração 28600] Top-k expert indices: [[0 4]
+ [3 2]
+ [1 3]
+ ...
+ [1 5]
+ [3 5]
+ [0 4]]
+[Iteração 28600] Top-k vals (probs): [[ 1.2634095   0.8870278 ]
+ [ 0.80377996  0.29974657]
+ [ 0.26125467  0.01909266]
+ ...
+ [ 2.0861614  -0.10310809]
+ [ 1.1438683   0.68398654]
+ [ 1.6696186   0.4446051 ]]
+LR: 0.000021, Acc: 100.0000, Loss: 0.0309
+[Iteração 28700] Top-k expert indices: [[4 2]
+ [5 4]
+ [3 5]
+ ...
+ [3 0]
+ [0 2]
+ [2 1]]
+[Iteração 28700] Top-k vals (probs): [[3.7159188  2.6912274 ]
+ [0.854334   0.6293752 ]
+ [1.3774719  1.1073896 ]
+ ...
+ [0.910659   0.61262596]
+ [1.727727   0.45818627]
+ [2.2081077  1.0537851 ]]
+[Iteração 28800] Top-k expert indices: [[1 5]
+ [1 5]
+ [1 4]
+ ...
+ [4 5]
+ [0 1]
+ [4 3]]
+[Iteração 28800] Top-k vals (probs): [[2.028377   1.2230641 ]
+ [1.9317129  0.97019094]
+ [0.9843354  0.52090746]
+ ...
+ [1.2800024  0.28251106]
+ [1.6861852  1.626835  ]
+ [2.0061376  0.8557716 ]]
+LR: 0.000020, Acc: 94.5946, Loss: 0.1817
+[Iteração 28900] Top-k expert indices: [[0 5]
+ [1 4]
+ [4 5]
+ ...
+ [2 1]
+ [3 5]
+ [2 4]]
+[Iteração 28900] Top-k vals (probs): [[1.4952233  0.8941479 ]
+ [1.1220161  0.7000084 ]
+ [1.1876504  0.83809423]
+ ...
+ [2.127768   1.2691789 ]
+ [3.1778383  1.6889006 ]
+ [1.4832383  1.4077368 ]]
+LR: 0.000019, Acc: 91.8919, Loss: 0.3909
+[Iteração 29000] Top-k expert indices: [[4 1]
+ [4 1]
+ [2 1]
+ ...
+ [4 1]
+ [2 0]
+ [3 4]]
+[Iteração 29000] Top-k vals (probs): [[0.6161288  0.4668145 ]
+ [0.64088005 0.580953  ]
+ [0.8573928  0.5882549 ]
+ ...
+ [0.7594887  0.64044005]
+ [1.9897164  1.2694957 ]
+ [1.5568968  1.1823606 ]]
+LR: 0.000019, Acc: 94.5946, Loss: 0.1846
+[Iteração 29100] Top-k expert indices: [[4 5]
+ [0 4]
+ [1 4]
+ ...
+ [4 0]
+ [5 2]
+ [5 1]]
+[Iteração 29100] Top-k vals (probs): [[ 1.5874385   1.4369314 ]
+ [ 1.4215211   1.3067744 ]
+ [ 0.9073896   0.54729414]
+ ...
+ [ 1.2954233  -0.00727528]
+ [ 0.56895304  0.24725127]
+ [ 1.296935    0.90026635]]
+[Iteração 29200] Top-k expert indices: [[0 1]
+ [2 5]
+ [4 1]
+ ...
+ [3 4]
+ [2 5]
+ [3 4]]
+[Iteração 29200] Top-k vals (probs): [[ 1.1466514  -0.222465  ]
+ [ 1.1823685   1.0584952 ]
+ [ 0.96683663  0.7787381 ]
+ ...
+ [ 0.6316268   0.26523978]
+ [ 1.2826793   0.6337377 ]
+ [ 1.9677107   0.461532  ]]
+LR: 0.000018, Acc: 91.8919, Loss: 0.2512
+[Iteração 29300] Top-k expert indices: [[2 3]
+ [1 0]
+ [4 5]
+ ...
+ [2 4]
+ [4 0]
+ [5 1]]
+[Iteração 29300] Top-k vals (probs): [[1.542625   1.2219365 ]
+ [1.0449609  0.5092587 ]
+ [0.22442007 0.18649338]
+ ...
+ [1.4695634  0.20479089]
+ [1.8499998  0.8642433 ]
+ [1.9260145  1.0528107 ]]
+LR: 0.000017, Acc: 97.2973, Loss: 0.0486
+[Iteração 29400] Top-k expert indices: [[2 5]
+ [2 4]
+ [1 2]
+ ...
+ [5 2]
+ [2 1]
+ [0 4]]
+[Iteração 29400] Top-k vals (probs): [[1.578434   0.96723   ]
+ [1.700433   1.0683017 ]
+ [1.7322425  1.1348382 ]
+ ...
+ [1.0272439  0.88213974]
+ [1.6084651  1.40713   ]
+ [1.2371813  1.2118363 ]]
+[Iteração 29500] Top-k expert indices: [[3 5]
+ [5 1]
+ [5 0]
+ ...
+ [2 4]
+ [0 2]
+ [0 1]]
+[Iteração 29500] Top-k vals (probs): [[1.6953733  1.1810606 ]
+ [1.3547297  0.6779985 ]
+ [1.1921291  0.6031319 ]
+ ...
+ [1.0778917  0.64744604]
+ [1.1453569  0.9253125 ]
+ [0.95116097 0.8245741 ]]
+LR: 0.000016, Acc: 97.2973, Loss: 0.0440
+[Iteração 29600] Top-k expert indices: [[1 0]
+ [2 1]
+ [0 5]
+ ...
+ [1 0]
+ [4 5]
+ [1 2]]
+[Iteração 29600] Top-k vals (probs): [[1.4623207  0.71685886]
+ [1.6913764  1.6438332 ]
+ [2.3974948  1.8392209 ]
+ ...
+ [0.823612   0.4922644 ]
+ [2.0421135  1.0924864 ]
+ [2.0855293  1.9297185 ]]
+LR: 0.000016, Acc: 94.5946, Loss: 0.2452
+[Iteração 29700] Top-k expert indices: [[3 4]
+ [1 2]
+ [1 2]
+ ...
+ [5 2]
+ [1 0]
+ [3 1]]
+[Iteração 29700] Top-k vals (probs): [[2.1973584  0.59982544]
+ [2.1498854  1.0885514 ]
+ [0.97449696 0.68036985]
+ ...
+ [1.5392807  1.4240254 ]
+ [2.3560007  0.29806378]
+ [0.91662365 0.6280718 ]]
+[Iteração 29800] Top-k expert indices: [[0 1]
+ [0 2]
+ [5 1]
+ ...
+ [4 5]
+ [2 4]
+ [0 1]]
+[Iteração 29800] Top-k vals (probs): [[1.8651135  1.0895656 ]
+ [1.1403147  0.6535207 ]
+ [1.391381   1.3379269 ]
+ ...
+ [0.6068542  0.49345258]
+ [1.2556969  0.50834984]
+ [1.1858842  0.36946067]]
+LR: 0.000015, Acc: 97.2973, Loss: 0.0869
+[Iteração 29900] Top-k expert indices: [[3 0]
+ [3 1]
+ [3 0]
+ ...
+ [2 1]
+ [2 1]
+ [5 0]]
+[Iteração 29900] Top-k vals (probs): [[2.7485514 1.2093673]
+ [1.6210647 1.231056 ]
+ [0.7978902 0.4526463]
+ ...
+ [1.58083   0.7809685]
+ [1.8889829 0.7581354]
+ [1.2387208 1.1264561]]
+LR: 0.000015, Acc: 91.8919, Loss: 0.2073
+[Iteração 30000] Top-k expert indices: [[0 3]
+ [4 1]
+ [4 5]
+ ...
+ [1 4]
+ [0 2]
+ [1 3]]
+[Iteração 30000] Top-k vals (probs): [[0.86382204 0.2606597 ]
+ [1.6792395  0.84281206]
+ [1.4278823  1.1481607 ]
+ ...
+ [1.3928041  0.9840621 ]
+ [2.152769   0.83460015]
+ [2.0473568  0.5699299 ]]
+LR: 0.000014, Acc: 100.0000, Loss: 0.0413
+[Iteração 30100] Top-k expert indices: [[1 2]
+ [1 5]
+ [4 3]
+ ...
+ [4 5]
+ [5 0]
+ [3 2]]
+[Iteração 30100] Top-k vals (probs): [[0.43158197 0.18905601]
+ [0.90158176 0.44218105]
+ [1.8018202  0.34978122]
+ ...
+ [0.48658782 0.41045868]
+ [2.4017148  1.5711377 ]
+ [1.475044   0.8963121 ]]
+[Iteração 30200] Top-k expert indices: [[0 5]
+ [2 1]
+ [4 1]
+ ...
+ [1 0]
+ [0 5]
+ [4 5]]
+[Iteração 30200] Top-k vals (probs): [[ 1.0143473   0.8986564 ]
+ [ 1.8142235  -0.13888639]
+ [ 2.1557243   1.1783415 ]
+ ...
+ [ 1.1681129   0.21670926]
+ [ 3.2500691   2.0875628 ]
+ [ 2.127602    2.0015519 ]]
+LR: 0.000013, Acc: 94.5946, Loss: 0.1592
+[Iteração 30300] Top-k expert indices: [[0 2]
+ [1 2]
+ [0 5]
+ ...
+ [1 2]
+ [5 4]
+ [0 4]]
+[Iteração 30300] Top-k vals (probs): [[1.9938135  0.9139456 ]
+ [2.0868945  0.82348555]
+ [1.0472192  0.50724447]
+ ...
+ [1.8230833  0.9927791 ]
+ [1.0169886  0.69639003]
+ [0.8174634  0.55127466]]
+LR: 0.000013, Acc: 97.2973, Loss: 0.1219
+[Iteração 30400] Top-k expert indices: [[3 5]
+ [0 3]
+ [2 1]
+ ...
+ [1 3]
+ [4 1]
+ [3 0]]
+[Iteração 30400] Top-k vals (probs): [[1.3088667  1.2439803 ]
+ [3.2369287  1.1156108 ]
+ [1.3614028  1.0446455 ]
+ ...
+ [1.2224615  0.91160023]
+ [0.8869149  0.8440992 ]
+ [0.8308987  0.5773211 ]]
+[Iteração 30500] Top-k expert indices: [[4 1]
+ [2 3]
+ [0 2]
+ ...
+ [2 1]
+ [2 0]
+ [1 0]]
+[Iteração 30500] Top-k vals (probs): [[1.4562404 1.0748372]
+ [1.3966742 1.1439483]
+ [1.382788  1.1828098]
+ ...
+ [1.353447  1.2592702]
+ [1.4513683 0.3321959]
+ [1.3339012 0.2016976]]
+LR: 0.000012, Acc: 97.2973, Loss: 0.2126
+[Iteração 30600] Top-k expert indices: [[4 1]
+ [1 5]
+ [1 3]
+ ...
+ [1 2]
+ [5 1]
+ [4 2]]
+[Iteração 30600] Top-k vals (probs): [[0.88436973 0.5790444 ]
+ [2.9300585  0.73454535]
+ [0.7954166  0.05545321]
+ ...
+ [1.1695726  1.094679  ]
+ [1.9245377  1.1430129 ]
+ [1.5689963  1.4402262 ]]
+LR: 0.000012, Acc: 97.2973, Loss: 0.0925
+[Iteração 30700] Top-k expert indices: [[5 0]
+ [2 5]
+ [3 1]
+ ...
+ [2 3]
+ [1 5]
+ [1 3]]
+[Iteração 30700] Top-k vals (probs): [[0.486983   0.30858135]
+ [1.0614364  0.7366328 ]
+ [0.81749415 0.23873156]
+ ...
+ [2.0295746  0.2570558 ]
+ [1.4519728  0.844068  ]
+ [2.0297294  1.4942123 ]]
+[Iteração 30800] Top-k expert indices: [[4 3]
+ [4 2]
+ [5 4]
+ ...
+ [3 4]
+ [2 1]
+ [2 3]]
+[Iteração 30800] Top-k vals (probs): [[1.9579182  1.602573  ]
+ [1.3391734  1.1144677 ]
+ [1.5016981  0.9336448 ]
+ ...
+ [1.6765523  0.4650921 ]
+ [2.1442654  0.85022694]
+ [2.5578413  0.38687947]]
+LR: 0.000011, Acc: 100.0000, Loss: 0.0490
+[Iteração 30900] Top-k expert indices: [[3 1]
+ [5 4]
+ [2 5]
+ ...
+ [5 3]
+ [2 3]
+ [5 2]]
+[Iteração 30900] Top-k vals (probs): [[ 1.5809828  -0.09167446]
+ [ 0.99858576  0.6719221 ]
+ [ 1.0904176   0.17242552]
+ ...
+ [ 0.91752994  0.6933105 ]
+ [ 0.32194287 -0.09249345]
+ [ 1.5665873   1.373317  ]]
+LR: 0.000010, Acc: 97.2973, Loss: 0.0496
+[Iteração 31000] Top-k expert indices: [[3 5]
+ [4 1]
+ [2 4]
+ ...
+ [5 0]
+ [0 3]
+ [5 2]]
+[Iteração 31000] Top-k vals (probs): [[ 0.90679896  0.75181615]
+ [ 1.7458774   1.2809739 ]
+ [ 2.6595721   0.7392338 ]
+ ...
+ [ 2.6447523  -1.011469  ]
+ [ 1.3058555   0.8324272 ]
+ [ 1.1354473   0.19203982]]
+[Iteração 31100] Top-k expert indices: [[4 2]
+ [0 2]
+ [4 2]
+ ...
+ [4 2]
+ [4 2]
+ [0 1]]
+[Iteração 31100] Top-k vals (probs): [[ 1.0201006   0.557357  ]
+ [ 2.611096    1.99617   ]
+ [ 0.94810593  0.7432445 ]
+ ...
+ [ 1.512502    0.5985504 ]
+ [ 1.0318916  -0.35744247]
+ [ 1.439326    0.56951267]]
+LR: 0.000010, Acc: 94.5946, Loss: 0.1835
+[Iteração 31200] Top-k expert indices: [[0 5]
+ [2 3]
+ [2 5]
+ ...
+ [1 4]
+ [2 5]
+ [5 2]]
+[Iteração 31200] Top-k vals (probs): [[1.2261354  0.8674036 ]
+ [2.3035617  1.1051894 ]
+ [0.8925774  0.39568835]
+ ...
+ [1.6645423  0.46479416]
+ [1.6075952  1.4566547 ]
+ [0.98724556 0.8126566 ]]
+LR: 0.000009, Acc: 100.0000, Loss: 0.0285
+[Iteração 31300] Top-k expert indices: [[0 1]
+ [5 3]
+ [5 2]
+ ...
+ [5 0]
+ [1 3]
+ [5 3]]
+[Iteração 31300] Top-k vals (probs): [[ 0.99947757  0.9711811 ]
+ [ 1.5174083   0.6132157 ]
+ [ 0.76455307  0.64177734]
+ ...
+ [ 1.7644149   1.4885187 ]
+ [ 2.3024817   1.8714731 ]
+ [ 2.3191025  -0.05654134]]
+LR: 0.000009, Acc: 100.0000, Loss: 0.0145
+[Iteração 31400] Top-k expert indices: [[0 2]
+ [4 2]
+ [3 1]
+ ...
+ [3 1]
+ [2 5]
+ [2 4]]
+[Iteração 31400] Top-k vals (probs): [[ 0.64040226  0.34315065]
+ [ 1.790467    0.915622  ]
+ [ 1.3531195   0.34974474]
+ ...
+ [ 1.1855183   1.086897  ]
+ [ 1.0852675   0.07831682]
+ [ 1.5805943  -0.03486601]]
+[Iteração 31500] Top-k expert indices: [[0 5]
+ [3 5]
+ [1 5]
+ ...
+ [1 2]
+ [1 4]
+ [5 4]]
+[Iteração 31500] Top-k vals (probs): [[ 1.6361767   1.0006828 ]
+ [ 0.9771501   0.9550328 ]
+ [ 1.6298614   1.1811662 ]
+ ...
+ [ 0.9267265  -0.04584637]
+ [ 0.55476105  0.10797137]
+ [ 1.6610734   1.4576267 ]]
+LR: 0.000008, Acc: 97.2973, Loss: 0.0596
+[Iteração 31600] Top-k expert indices: [[0 1]
+ [0 5]
+ [1 2]
+ ...
+ [1 2]
+ [3 2]
+ [0 2]]
+[Iteração 31600] Top-k vals (probs): [[ 0.731091    0.422716  ]
+ [ 2.337746   -0.16531274]
+ [ 1.8062751  -0.45473176]
+ ...
+ [ 0.910772    0.27507827]
+ [ 0.5292669   0.07669294]
+ [ 1.1501545   1.0505047 ]]
+LR: 0.000008, Acc: 94.5946, Loss: 0.1246
+[Iteração 31700] Top-k expert indices: [[3 2]
+ [3 2]
+ [0 5]
+ ...
+ [5 1]
+ [1 2]
+ [1 0]]
+[Iteração 31700] Top-k vals (probs): [[1.023563   0.7358138 ]
+ [2.2561042  0.95131314]
+ [0.7814428  0.65275156]
+ ...
+ [2.3673522  1.5032872 ]
+ [1.7427039  0.95978856]
+ [0.77478206 0.23792884]]
+[Iteração 31800] Top-k expert indices: [[0 5]
+ [1 5]
+ [3 5]
+ ...
+ [5 4]
+ [3 0]
+ [1 2]]
+[Iteração 31800] Top-k vals (probs): [[2.3544555  1.7920007 ]
+ [0.75624645 0.68967634]
+ [0.47026598 0.3782991 ]
+ ...
+ [1.5630659  1.44534   ]
+ [1.6900796  1.4771309 ]
+ [0.81438583 0.7346887 ]]
+LR: 0.000008, Acc: 97.2973, Loss: 0.0939
+[Iteração 31900] Top-k expert indices: [[2 3]
+ [0 5]
+ [3 4]
+ ...
+ [3 1]
+ [3 4]
+ [3 1]]
+[Iteração 31900] Top-k vals (probs): [[ 3.1912265   0.6256177 ]
+ [ 0.7164965   0.67643595]
+ [ 0.90644664 -0.02597034]
+ ...
+ [ 1.2406807   0.7532674 ]
+ [ 2.5530844   1.862368  ]
+ [ 2.17224     0.15858194]]
+LR: 0.000007, Acc: 94.5946, Loss: 0.1479
+[Iteração 32000] Top-k expert indices: [[3 0]
+ [3 1]
+ [3 1]
+ ...
+ [3 2]
+ [3 5]
+ [1 0]]
+[Iteração 32000] Top-k vals (probs): [[ 0.4031133  -0.24265368]
+ [ 1.1995119   0.9879194 ]
+ [ 1.3638495   1.073181  ]
+ ...
+ [ 0.93950045  0.4412046 ]
+ [ 0.76608247 -0.15748101]
+ [ 0.7770864   0.7254212 ]]
+[Iteração 32100] Top-k expert indices: [[1 5]
+ [1 4]
+ [2 0]
+ ...
+ [0 5]
+ [5 1]
+ [4 1]]
+[Iteração 32100] Top-k vals (probs): [[ 1.3364656   1.1018475 ]
+ [ 0.99458766  0.9401234 ]
+ [ 1.4474174   1.2971139 ]
+ ...
+ [-0.03338087 -0.10679908]
+ [ 1.8390588   0.85646045]
+ [ 1.2318397   0.754585  ]]
+LR: 0.000007, Acc: 100.0000, Loss: 0.0141
+[Iteração 32200] Top-k expert indices: [[1 2]
+ [5 3]
+ [3 2]
+ ...
+ [1 5]
+ [0 5]
+ [3 0]]
+[Iteração 32200] Top-k vals (probs): [[ 1.3954118  -0.04355626]
+ [ 1.9617703   0.36814356]
+ [ 1.168684    1.157623  ]
+ ...
+ [ 0.95506394  0.68962204]
+ [ 1.1268908   1.0813134 ]
+ [ 1.4111223   0.9854871 ]]
+LR: 0.000006, Acc: 100.0000, Loss: 0.0197
+[Iteração 32300] Top-k expert indices: [[0 1]
+ [1 2]
+ [4 5]
+ ...
+ [1 0]
+ [2 5]
+ [1 5]]
+[Iteração 32300] Top-k vals (probs): [[ 0.7110728   0.67373127]
+ [ 0.8087616   0.58714706]
+ [ 1.7752781   1.4014884 ]
+ ...
+ [ 1.3260939  -0.3682493 ]
+ [ 1.0810736   0.783663  ]
+ [ 1.8196394   0.40406108]]
+[Iteração 32400] Top-k expert indices: [[3 1]
+ [1 4]
+ [1 5]
+ ...
+ [4 2]
+ [0 2]
+ [1 4]]
+[Iteração 32400] Top-k vals (probs): [[1.1577176  0.67245907]
+ [3.568418   0.82408845]
+ [2.1739001  1.159997  ]
+ ...
+ [2.1133785  0.02239089]
+ [0.55411273 0.27980906]
+ [3.1268232  1.7859521 ]]
+LR: 0.000006, Acc: 97.2973, Loss: 0.1868
+[Iteração 32500] Top-k expert indices: [[5 2]
+ [4 1]
+ [5 2]
+ ...
+ [4 1]
+ [3 4]
+ [2 3]]
+[Iteração 32500] Top-k vals (probs): [[1.1922808  0.56428367]
+ [1.8994491  0.7302908 ]
+ [1.2433542  1.0274234 ]
+ ...
+ [1.2280482  1.09359   ]
+ [1.3932332  0.63881123]
+ [1.4499773  0.6163249 ]]
+LR: 0.000005, Acc: 97.2973, Loss: 0.1251
+[Iteração 32600] Top-k expert indices: [[2 0]
+ [0 4]
+ [0 2]
+ ...
+ [4 5]
+ [5 4]
+ [3 0]]
+[Iteração 32600] Top-k vals (probs): [[ 0.9011161  -0.09462055]
+ [ 2.0341506   0.36216807]
+ [ 1.1779181   0.77665395]
+ ...
+ [ 0.2986684   0.2441951 ]
+ [ 0.6955346  -0.06651981]
+ [ 1.4016738   0.7320112 ]]
+LR: 0.000005, Acc: 100.0000, Loss: 0.0218
+[Iteração 32700] Top-k expert indices: [[2 1]
+ [1 2]
+ [5 3]
+ ...
+ [0 5]
+ [0 5]
+ [5 0]]
+[Iteração 32700] Top-k vals (probs): [[ 0.920861    0.6975701 ]
+ [ 2.5251148  -0.00364596]
+ [ 1.6868056   0.8605116 ]
+ ...
+ [ 1.1527108   0.21114495]
+ [ 0.7560365   0.46546885]
+ [ 1.6974021   0.91142213]]
+[Iteração 32800] Top-k expert indices: [[2 0]
+ [3 1]
+ [4 1]
+ ...
+ [1 2]
+ [2 5]
+ [5 0]]
+[Iteração 32800] Top-k vals (probs): [[1.6244878  1.427206  ]
+ [1.3809483  0.81762385]
+ [1.484107   1.0356565 ]
+ ...
+ [0.99613583 0.89138824]
+ [1.4728953  1.0796198 ]
+ [1.9336721  1.5860158 ]]
+LR: 0.000005, Acc: 97.2973, Loss: 0.1236
+[Iteração 32900] Top-k expert indices: [[1 3]
+ [2 0]
+ [4 3]
+ ...
+ [3 1]
+ [1 4]
+ [2 4]]
+[Iteração 32900] Top-k vals (probs): [[0.69988155 0.3305932 ]
+ [0.7987998  0.447441  ]
+ [1.386522   0.92683035]
+ ...
+ [1.8435143  1.3075439 ]
+ [1.6523854  1.0760126 ]
+ [1.2738419  0.8781417 ]]
+LR: 0.000004, Acc: 100.0000, Loss: 0.0361
+[Iteração 33000] Top-k expert indices: [[5 2]
+ [5 0]
+ [2 4]
+ ...
+ [3 1]
+ [3 2]
+ [0 4]]
+[Iteração 33000] Top-k vals (probs): [[ 1.9848102   0.7856366 ]
+ [ 0.10300781 -0.06983636]
+ [ 2.1938038   0.8174877 ]
+ ...
+ [ 1.3527422   0.90130955]
+ [ 1.0388105   0.89979655]
+ [ 0.8223474   0.67431194]]
+[Iteração 33100] Top-k expert indices: [[2 3]
+ [1 4]
+ [4 0]
+ ...
+ [4 5]
+ [4 2]
+ [5 1]]
+[Iteração 33100] Top-k vals (probs): [[1.5871543  0.55121034]
+ [1.0470018  0.9177985 ]
+ [0.60993356 0.22877297]
+ ...
+ [2.1438842  1.6425716 ]
+ [0.87114304 0.7506846 ]
+ [1.1481502  0.8218558 ]]
+LR: 0.000004, Acc: 91.8919, Loss: 0.3551
+[Iteração 33200] Top-k expert indices: [[4 3]
+ [2 0]
+ [5 1]
+ ...
+ [1 2]
+ [0 5]
+ [2 1]]
+[Iteração 33200] Top-k vals (probs): [[1.701507   0.36988932]
+ [1.5182673  0.9129716 ]
+ [1.1812994  1.1725427 ]
+ ...
+ [1.217432   0.87713253]
+ [1.1974021  0.970837  ]
+ [1.1676764  0.8550567 ]]
+LR: 0.000004, Acc: 100.0000, Loss: 0.0116
+[Iteração 33300] Top-k expert indices: [[1 0]
+ [1 5]
+ [5 3]
+ ...
+ [0 5]
+ [0 1]
+ [1 5]]
+[Iteração 33300] Top-k vals (probs): [[1.502916   0.5832608 ]
+ [2.0914683  0.8969656 ]
+ [1.1341127  0.33661342]
+ ...
+ [1.5721233  1.0648305 ]
+ [1.5773449  0.6209871 ]
+ [2.1852558  1.1394513 ]]
+[Iteração 33400] Top-k expert indices: [[0 1]
+ [1 4]
+ [4 1]
+ ...
+ [4 0]
+ [4 1]
+ [3 0]]
+[Iteração 33400] Top-k vals (probs): [[1.2191586  1.1503817 ]
+ [2.2388573  0.68028796]
+ [1.068049   0.14136398]
+ ...
+ [1.447945   0.1554163 ]
+ [2.3908157  0.80813426]
+ [1.5025558  1.109153  ]]
+LR: 0.000004, Acc: 100.0000, Loss: 0.0241
+[Iteração 33500] Top-k expert indices: [[5 0]
+ [1 5]
+ [0 5]
+ ...
+ [0 3]
+ [3 5]
+ [0 3]]
+[Iteração 33500] Top-k vals (probs): [[2.527768   0.9591137 ]
+ [1.4793277  0.10321602]
+ [0.6944232  0.13265325]
+ ...
+ [1.7018802  0.7223784 ]
+ [1.4022051  0.7857944 ]
+ [2.4900117  1.1697367 ]]
+LR: 0.000003, Acc: 100.0000, Loss: 0.0685
+[Iteração 33600] Top-k expert indices: [[5 2]
+ [4 3]
+ [3 2]
+ ...
+ [5 4]
+ [2 1]
+ [1 0]]
+[Iteração 33600] Top-k vals (probs): [[2.133283   1.2162668 ]
+ [0.45107982 0.431616  ]
+ [0.48467907 0.23231673]
+ ...
+ [0.91474456 0.73595375]
+ [2.8248096  1.1061332 ]
+ [1.5672052  1.0161309 ]]
+LR: 0.000003, Acc: 100.0000, Loss: 0.0538
+[Iteração 33700] Top-k expert indices: [[0 4]
+ [5 0]
+ [3 4]
+ ...
+ [0 3]
+ [3 4]
+ [5 2]]
+[Iteração 33700] Top-k vals (probs): [[1.5209193  1.4344834 ]
+ [2.687658   1.7174448 ]
+ [1.5617175  1.4054704 ]
+ ...
+ [1.3306248  0.9192226 ]
+ [1.716012   1.6283932 ]
+ [1.1919624  0.35268772]]
+[Iteração 33800] Top-k expert indices: [[4 1]
+ [5 2]
+ [3 5]
+ ...
+ [3 4]
+ [2 4]
+ [0 1]]
+[Iteração 33800] Top-k vals (probs): [[0.68763626 0.5609199 ]
+ [1.676563   1.2293195 ]
+ [1.8802524  1.1292381 ]
+ ...
+ [1.1696821  0.64926356]
+ [1.9628558  0.6212787 ]
+ [0.94318914 0.52091724]]
+LR: 0.000003, Acc: 94.5946, Loss: 0.1973
+[Iteração 33900] Top-k expert indices: [[1 0]
+ [0 1]
+ [5 1]
+ ...
+ [2 1]
+ [1 2]
+ [0 4]]
+[Iteração 33900] Top-k vals (probs): [[ 2.2169259   0.6293742 ]
+ [ 2.9951265   1.8607159 ]
+ [ 1.1243517  -0.03138614]
+ ...
+ [ 0.6463053   0.43105713]
+ [ 2.5918756   0.9259169 ]
+ [ 0.8932986   0.78491175]]
+LR: 0.000003, Acc: 86.4865, Loss: 0.5109
+[Iteração 34000] Top-k expert indices: [[2 4]
+ [4 1]
+ [0 4]
+ ...
+ [4 1]
+ [3 1]
+ [4 1]]
+[Iteração 34000] Top-k vals (probs): [[0.8761385  0.4302916 ]
+ [1.4505115  0.32933125]
+ [2.252768   1.1704104 ]
+ ...
+ [0.9116193  0.37200788]
+ [1.0739348  0.8499826 ]
+ [1.3865136  0.6382158 ]]
+[Iteração 34100] Top-k expert indices: [[5 1]
+ [5 3]
+ [3 0]
+ ...
+ [0 5]
+ [1 0]
+ [1 0]]
+[Iteração 34100] Top-k vals (probs): [[2.2230625  1.9518284 ]
+ [2.294017   0.79127645]
+ [2.7107837  1.7294123 ]
+ ...
+ [1.2337164  0.45811355]
+ [0.917557   0.80500513]
+ [1.4962546  0.9179535 ]]
+LR: 0.000002, Acc: 97.2973, Loss: 0.0694
+[Iteração 34200] Top-k expert indices: [[1 5]
+ [1 3]
+ [1 0]
+ ...
+ [0 4]
+ [5 1]
+ [2 3]]
+[Iteração 34200] Top-k vals (probs): [[1.797571   0.6184938 ]
+ [1.3575226  0.3973908 ]
+ [0.80731356 0.4452091 ]
+ ...
+ [1.4821459  1.4541335 ]
+ [0.533125   0.3526286 ]
+ [1.0242251  1.0218276 ]]
+LR: 0.000002, Acc: 97.2973, Loss: 0.0932
+[Iteração 34300] Top-k expert indices: [[1 2]
+ [3 0]
+ [1 3]
+ ...
+ [0 5]
+ [5 2]
+ [4 1]]
+[Iteração 34300] Top-k vals (probs): [[0.80168664 0.51704824]
+ [1.561051   0.6991035 ]
+ [1.7990463  0.653292  ]
+ ...
+ [1.8768473  1.2080799 ]
+ [1.4113228  0.19397332]
+ [1.5911083  1.5384898 ]]
+[Iteração 34400] Top-k expert indices: [[4 1]
+ [2 4]
+ [1 2]
+ ...
+ [4 1]
+ [2 4]
+ [0 3]]
+[Iteração 34400] Top-k vals (probs): [[2.0398831  1.7761137 ]
+ [0.33067158 0.22204673]
+ [1.6646262  1.6202159 ]
+ ...
+ [2.1867266  1.1300814 ]
+ [2.64701    2.3527472 ]
+ [0.78886044 0.6338515 ]]
+LR: 0.000002, Acc: 97.2973, Loss: 0.0973
+[Iteração 34500] Top-k expert indices: [[2 0]
+ [3 4]
+ [5 2]
+ ...
+ [4 0]
+ [3 5]
+ [4 1]]
+[Iteração 34500] Top-k vals (probs): [[ 0.8779856   0.67535955]
+ [ 2.8364131   0.3642553 ]
+ [ 0.3571105  -0.18869063]
+ ...
+ [ 1.4749674   1.2184647 ]
+ [ 0.54472584  0.5258704 ]
+ [ 1.198733    0.8882133 ]]
+LR: 0.000002, Acc: 94.5946, Loss: 0.1432
+[Iteração 34600] Top-k expert indices: [[0 4]
+ [0 2]
+ [3 2]
+ ...
+ [0 2]
+ [1 3]
+ [1 4]]
+[Iteração 34600] Top-k vals (probs): [[ 1.0224195  -0.06291313]
+ [ 2.8480072   1.7162681 ]
+ [ 2.8095767   2.3490572 ]
+ ...
+ [ 0.9544696   0.9441104 ]
+ [ 0.62190384  0.3819131 ]
+ [ 1.2046108   0.9969293 ]]
+[Iteração 34700] Top-k expert indices: [[2 5]
+ [5 4]
+ [0 2]
+ ...
+ [3 0]
+ [5 2]
+ [1 4]]
+[Iteração 34700] Top-k vals (probs): [[1.0478184  0.1253586 ]
+ [0.8770598  0.64725953]
+ [0.97419345 0.8291844 ]
+ ...
+ [2.304132   0.37530193]
+ [1.5966083  0.5902903 ]
+ [0.30314857 0.27705008]]
+LR: 0.000002, Acc: 89.1892, Loss: 0.4183
+[Iteração 34800] Top-k expert indices: [[2 1]
+ [3 2]
+ [0 4]
+ ...
+ [0 3]
+ [4 5]
+ [4 5]]
+[Iteração 34800] Top-k vals (probs): [[2.6297162  2.204122  ]
+ [1.7064421  0.87489855]
+ [1.371604   0.96866465]
+ ...
+ [2.014105   1.6794218 ]
+ [0.88601947 0.60072094]
+ [1.9680625  1.1318858 ]]
+LR: 0.000002, Acc: 97.2973, Loss: 0.0743
+[Iteração 34900] Top-k expert indices: [[3 0]
+ [5 2]
+ [5 4]
+ ...
+ [2 3]
+ [2 3]
+ [0 3]]
+[Iteração 34900] Top-k vals (probs): [[1.4315422  0.7158792 ]
+ [1.2637075  0.32622755]
+ [2.182684   1.530177  ]
+ ...
+ [0.49596226 0.05910252]
+ [0.5995314  0.58132815]
+ [2.4460187  0.9886646 ]]
+LR: 0.000001, Acc: 97.2973, Loss: 0.1024
+[Iteração 35000] Top-k expert indices: [[1 4]
+ [3 0]
+ [1 5]
+ ...
+ [5 2]
+ [5 0]
+ [1 2]]
+[Iteração 35000] Top-k vals (probs): [[2.226568   0.6836207 ]
+ [0.7943912  0.65713996]
+ [0.7775851  0.48650503]
+ ...
+ [2.7527192  2.18196   ]
+ [0.6249677  0.4268982 ]
+ [2.9125316  2.256115  ]]
+[Iteração 35100] Top-k expert indices: [[3 5]
+ [2 1]
+ [0 5]
+ ...
+ [4 1]
+ [1 4]
+ [4 2]]
+[Iteração 35100] Top-k vals (probs): [[2.245001   1.7560215 ]
+ [0.88931656 0.11288954]
+ [2.275595   1.2990551 ]
+ ...
+ [1.3043879  0.9554536 ]
+ [1.8073395  1.0673902 ]
+ [1.826804   0.22822744]]
+LR: 0.000001, Acc: 97.2973, Loss: 0.1716
+[Iteração 35200] Top-k expert indices: [[0 1]
+ [1 0]
+ [5 0]
+ ...
+ [5 2]
+ [4 2]
+ [4 5]]
+[Iteração 35200] Top-k vals (probs): [[1.195035  0.5253086]
+ [0.8293769 0.7598536]
+ [1.7827224 1.1138978]
+ ...
+ [2.8153915 1.3411417]
+ [0.8967356 0.5349188]
+ [2.5524929 1.8507495]]
+LR: 0.000001, Acc: 97.2973, Loss: 0.0870
+[Iteração 35300] Top-k expert indices: [[2 1]
+ [5 2]
+ [0 1]
+ ...
+ [3 5]
+ [2 1]
+ [0 4]]
+[Iteração 35300] Top-k vals (probs): [[1.9310557  1.2705168 ]
+ [1.7969158  0.19978242]
+ [1.8553011  1.6323923 ]
+ ...
+ [1.3017503  1.2941469 ]
+ [1.1387556  0.2008237 ]
+ [1.2359638  0.01832637]]
+[Iteração 35400] Top-k expert indices: [[3 5]
+ [4 5]
+ [5 4]
+ ...
+ [5 1]
+ [3 4]
+ [4 3]]
+[Iteração 35400] Top-k vals (probs): [[2.5616033  2.286746  ]
+ [1.4608496  1.1900177 ]
+ [2.6119018  0.76715624]
+ ...
+ [1.41644    1.3720986 ]
+ [1.7036746  0.03972489]
+ [0.8023534  0.6908757 ]]
+LR: 0.000001, Acc: 97.2973, Loss: 0.1217
+[Iteração 35500] Top-k expert indices: [[5 1]
+ [0 2]
+ [2 5]
+ ...
+ [2 3]
+ [2 4]
+ [2 5]]
+[Iteração 35500] Top-k vals (probs): [[3.6591904  1.2323744 ]
+ [2.1097622  0.12447475]
+ [1.6319524  1.4145472 ]
+ ...
+ [1.671851   1.5272305 ]
+ [1.4937313  1.1210314 ]
+ [1.8132757  1.537157  ]]
+LR: 0.000001, Acc: 100.0000, Loss: 0.0435
+[Iteração 35600] Top-k expert indices: [[2 4]
+ [5 0]
+ [3 2]
+ ...
+ [1 5]
+ [4 3]
+ [2 5]]
+[Iteração 35600] Top-k vals (probs): [[1.7622972  0.9427029 ]
+ [2.077019   1.4867468 ]
+ [0.48614803 0.16415688]
+ ...
+ [2.4719093  0.9466344 ]
+ [1.002443   0.3336856 ]
+ [2.2253163  0.80059516]]
+[Iteração 35700] Top-k expert indices: [[3 0]
+ [5 2]
+ [2 1]
+ ...
+ [2 4]
+ [0 2]
+ [0 4]]
+[Iteração 35700] Top-k vals (probs): [[ 1.4662876   0.9184511 ]
+ [ 1.7536261   0.76251435]
+ [ 1.2971476  -0.0267583 ]
+ ...
+ [ 1.8552653   0.4951871 ]
+ [ 1.8361695   0.5165077 ]
+ [ 1.1799141   1.1076379 ]]
+LR: 0.000001, Acc: 94.5946, Loss: 0.1489
+[Iteração 35800] Top-k expert indices: [[4 2]
+ [3 5]
+ [2 4]
+ ...
+ [2 0]
+ [4 1]
+ [3 2]]
+[Iteração 35800] Top-k vals (probs): [[1.0049436  0.9613515 ]
+ [0.82509935 0.46141264]
+ [1.0334961  0.48060378]
+ ...
+ [1.5686442  1.4980899 ]
+ [1.6921657  0.11697928]
+ [0.7718735  0.04908178]]
+LR: 0.000001, Acc: 94.5946, Loss: 0.2216
+[Iteração 35900] Top-k expert indices: [[4 2]
+ [0 5]
+ [0 5]
+ ...
+ [0 5]
+ [4 5]
+ [1 4]]
+[Iteração 35900] Top-k vals (probs): [[2.394225   0.9615041 ]
+ [1.3276782  1.0090724 ]
+ [2.6107144  1.3907045 ]
+ ...
+ [1.826514   1.7630831 ]
+ [1.1467344  0.6938232 ]
+ [0.5703981  0.12532209]]
+[Iteração 36000] Top-k expert indices: [[3 5]
+ [3 5]
+ [0 4]
+ ...
+ [4 3]
+ [2 0]
+ [0 3]]
+[Iteração 36000] Top-k vals (probs): [[ 0.6997086   0.06602577]
+ [ 0.9457619   0.64490885]
+ [-0.04948146 -0.11284135]
+ ...
+ [ 1.0541179   1.0298843 ]
+ [ 2.259908    1.0352398 ]
+ [ 1.9771537   1.3932227 ]]
+[Iteração 36100] Top-k expert indices: [[1 3]
+ [1 3]
+ [1 3]
+ ...
+ [0 2]
+ [5 2]
+ [0 4]]
+[Iteração 36100] Top-k vals (probs): [[0.95231754 0.02198463]
+ [0.91807437 0.02773698]
+ [0.8997337  0.03659642]
+ ...
+ [0.3170595  0.3091105 ]
+ [0.31185892 0.27151057]
+ [0.32552943 0.25526157]]
+[Iteração 36200] Top-k expert indices: [[5 3]
+ [5 1]
+ [1 5]
+ ...
+ [2 3]
+ [5 1]
+ [2 3]]
+[Iteração 36200] Top-k vals (probs): [[0.26705697 0.23021749]
+ [0.29102528 0.17975569]
+ [0.2960558  0.21019141]
+ ...
+ [0.36601135 0.23585358]
+ [0.2701056  0.2234885 ]
+ [0.40586576 0.3016138 ]]
+[Iteração 36300] Top-k expert indices: [[5 3]
+ [5 3]
+ [5 3]
+ ...
+ [5 1]
+ [1 5]
+ [5 4]]
+[Iteração 36300] Top-k vals (probs): [[0.26604825 0.242358  ]
+ [0.27680853 0.25302348]
+ [0.28651398 0.21701257]
+ ...
+ [0.28506434 0.24670263]
+ [0.4541543  0.14466114]
+ [0.43514466 0.1911011 ]]
+[Iteração 36400] Top-k expert indices: [[2 0]
+ [2 0]
+ [2 0]
+ ...
+ [4 1]
+ [4 3]
+ [5 4]]
+[Iteração 36400] Top-k vals (probs): [[0.2795192  0.22658272]
+ [0.2715205  0.23532586]
+ [0.2737202  0.22903706]
+ ...
+ [0.2473271  0.22574437]
+ [0.32832474 0.19471602]
+ [0.30423597 0.24214388]]
+[Iteração 36500] Top-k expert indices: [[2 3]
+ [2 3]
+ [2 3]
+ ...
+ [4 2]
+ [0 3]
+ [1 2]]
+[Iteração 36500] Top-k vals (probs): [[0.74621314 0.13549796]
+ [0.6865561  0.16251494]
+ [0.64169383 0.16327876]
+ ...
+ [0.45460728 0.27278712]
+ [0.58411837 0.3712882 ]
+ [0.41549388 0.21242087]]
+**** Final test accuracy: 92.94. ****
 
 LoRA weights saved to weights/vitb16/oxford_pets/1shots/6experts/seed1/CLIP-MoLE_oxford_pets.pt
