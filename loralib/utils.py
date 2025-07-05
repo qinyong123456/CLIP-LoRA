@@ -66,6 +66,17 @@ def mark_only_lora_as_trainable(model: nn.Module, bias: str = 'none', train_rout
         raise NotImplementedError
 
 
+def mark_only_router_as_trainable(model: nn.Module, train_router: bool = True) -> None:
+    for n, p in model.named_parameters():
+        if (train_router and 'router' in n):
+            p.requires_grad = True
+        else:
+            p.requires_grad = False
+
+
+
+
+
 def lora_state_dict(model: nn.Module, bias: str = 'none') -> Dict[str, torch.Tensor]:
     my_state_dict = model.state_dict()
     if bias == 'none':

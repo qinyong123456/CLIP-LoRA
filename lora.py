@@ -5,6 +5,7 @@ from utils import *
 
 from loralib.utils import mark_only_lora_as_trainable, apply_lora, get_lora_parameters, lora_state_dict, save_lora, load_lora
 from loralib import layers as lora_layers
+from loralib.utils import mark_only_router_as_trainable
 
 def evaluate_lora(args, clip_model, loader, dataset):
     clip_model.eval()
@@ -85,6 +86,10 @@ def run_lora(args, clip_model, logit_scale, dataset, train_loader, val_loader, t
     scaler = torch.cuda.amp.GradScaler()
     count_iters = 0
     finish = False
+    # Flag para evitar múltiplas trocas
+    if not hasattr(args, 'router_phase'):
+        args.router_phase = False
+    freeze_point = int(0.95 * total_iters)
     while count_iters < total_iters:
         clip_model.train()
         acc_train = 0
@@ -93,7 +98,19 @@ def run_lora(args, clip_model, logit_scale, dataset, train_loader, val_loader, t
         if args.encoder == 'vision': 
             text_features = textual_features.t().half()
         for i, (images, target) in enumerate(tqdm(train_loader)):
-            
+            # Quando atingir 95% das iterações, congela LoRA e libera só o router
+            if count_iters >= freeze_point and not args.router_phase:
+                print(">>> Switching to ROUTER-ONLY finetuning <<<")
+                mark_only_router_as_trainable(clip_model, train_router=True)
+                optimizer = torch.optim.AdamW(
+                    filter(lambda p: p.requires_grad, clip_model.parameters()),
+                    weight_decay=1e-2, betas=(0.9, 0.999), lr=args.lr
+                )
+                scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(
+                    optimizer, total_iters - count_iters, eta_min=1e-6
+                )
+                args.router_phase = True
+
             template = dataset.template[0]
             texts = [template.format(classname.replace('_', ' ')) for classname in dataset.classnames]
             images, target = images.cuda(), target.cuda()
