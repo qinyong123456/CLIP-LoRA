@@ -89,7 +89,7 @@ def run_lora(args, clip_model, logit_scale, dataset, train_loader, val_loader, t
     # Flag para evitar múltiplas trocas
     if not hasattr(args, 'router_phase'):
         args.router_phase = False
-    freeze_point = int(0.95 * total_iters)
+    freeze_point = int(0.90 * total_iters)
     while count_iters < total_iters:
         clip_model.train()
         acc_train = 0
