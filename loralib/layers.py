@@ -130,7 +130,6 @@ class Router(nn.Module):
 
 
 class MultiLinearLoRA(nn.Linear, LoRALayer):
-    print_counter = 0  # contador de classe
     def __init__(
         self,
         existing_linear: nn.Linear,
@@ -190,12 +189,6 @@ class MultiLinearLoRA(nn.Linear, LoRALayer):
             noise = torch.randn_like(router_logits) * self.router_noise_std
             router_logits = router_logits + noise
         topk_vals, topk_indices = torch.topk(router_logits, self.top_k, dim=-1)  # [N, top_k]
-
-        # Imprime a cada 100 iterações (por exemplo)
-        MultiLinearLoRA.print_counter += 1
-        if MultiLinearLoRA.print_counter % 100 == 0:
-            print(f"[Iteração {MultiLinearLoRA.print_counter}] Top-k expert indices:", topk_indices.detach().cpu().numpy())
-            print(f"[Iteração {MultiLinearLoRA.print_counter}] Top-k vals (probs):", topk_vals.detach().cpu().numpy())
 
         expert_adjust = torch.zeros_like(original_output)
 
