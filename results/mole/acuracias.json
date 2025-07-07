@@ -3,63 +3,63 @@
     "shots": 1,
     "experts": 6,
     "zero_shot": 88.2,
-    "final": 92.94
+    "final": 93.0
   },
   "CLIP-MoLE_oxford_pets_8shots_2experts.out": {
     "shots": 8,
     "experts": 2,
-    "final": 92.83
+    "final": 93.08
   },
   "CLIP-MoLE_oxford_pets_1shots_4experts.out": {
     "shots": 1,
     "experts": 4,
     "zero_shot": 88.2,
-    "final": 93.65
+    "final": 93.73
   },
   "CLIP-MoLE_oxford_pets_2shots_2experts.out": {
     "shots": 2,
     "experts": 2,
-    "final": 92.1
+    "final": 92.04
   },
   "CLIP-MoLE_oxford_pets_4shots_2experts.out": {
     "shots": 4,
     "experts": 2,
-    "final": 92.04
+    "final": 91.96
   },
   "CLIP-MoLE_oxford_pets_2shots_4experts.out": {
     "shots": 2,
     "experts": 4,
-    "final": 92.48
+    "final": 92.29
   },
   "CLIP-MoLE_oxford_pets_8shots_6experts.out": {
     "shots": 8,
     "experts": 6,
-    "final": 93.4
+    "final": 93.49
   },
   "CLIP-MoLE_oxford_pets_1shots_2experts.out": {
     "shots": 1,
     "experts": 2,
     "zero_shot": 88.2,
-    "final": 92.72
+    "final": 92.78
   },
   "CLIP-MoLE_oxford_pets_4shots_4experts.out": {
     "shots": 4,
     "experts": 4,
-    "final": 92.83
+    "final": 92.75
   },
   "CLIP-MoLE_oxford_pets_8shots_4experts.out": {
     "shots": 8,
     "experts": 4,
-    "final": 93.3
+    "final": 93.43
   },
   "CLIP-MoLE_oxford_pets_2shots_6experts.out": {
     "shots": 2,
     "experts": 6,
-    "final": 92.04
+    "final": 92.18
   },
   "CLIP-MoLE_oxford_pets_4shots_6experts.out": {
     "shots": 4,
     "experts": 6,
-    "final": 92.5
+    "final": 92.42
   }
 }

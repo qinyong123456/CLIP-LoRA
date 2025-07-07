@@ -1,50 +1,47 @@
 {
-  "CLIP-LoRA_oxford_flowers_4shots.out": {
-    "final": 93.79
+  "CLIP-LoRA_eurosat_2shots.out": {
+    "final": 85.11
+  },
+  "CLIP-LoRA_oxford_flowers_8shots.out": {
+    "final": 96.43
+  },
+  "CLIP-LoRA_oxford_pets_16shots.out": {
+    "final": 91.66
+  },
+  "CLIP-LoRA_oxford_pets_4shots.out": {
+    "final": 90.27
+  },
+  "CLIP-LoRA_oxford_pets_2shots.out": {
+    "final": 90.95
+  },
+  "CLIP-LoRA_oxford_flowers_1shots.out": {
+    "final": 81.53
+  },
+  "CLIP-LoRA_eurosat_16shots.out": {
+    "final": 90.79
+  },
+  "CLIP-LoRA_eurosat_4shots.out": {
+    "final": 87.4
+  },
+  "CLIP-LoRA_oxford_flowers_2shots.out": {
+    "final": 89.57
+  },
+  "CLIP-LoRA_eurosat_8shots.out": {
+    "final": 90.78
+  },
+  "CLIP-LoRA_oxford_flowers_16shots.out": {
+    "final": 98.13
+  },
+  "CLIP-LoRA_oxford_pets_1shots.out": {
+    "final": 92.12
   },
   "CLIP-LoRA_oxford_pets_8shots.out": {
     "final": 92.1
   },
   "CLIP-LoRA_eurosat_1shots.out": {
-    "zero_shot": 42.25,
     "final": 72.37
   },
-  "CLIP-LoRA_eurosat_8shots.out": {
-    "final": 90.78
-  },
-  "CLIP-LoRA_oxford_pets_1shots.out": {
-    "zero_shot": 88.2,
-    "final": 92.12
-  },
-  "CLIP-LoRA_oxford_flowers_2shots.out": {
-    "final": 89.57
-  },
-  "CLIP-LoRA_oxford_flowers_1shots.out": {
-    "zero_shot": 67.36,
-    "final": 81.53
-  },
-  "CLIP-LoRA_oxford_pets_2shots.out": {
-    "final": 90.95
-  },
-  "CLIP-LoRA_eurosat_4shots.out": {
-    "final": 87.4
-  },
-  "CLIP-LoRA_eurosat_16shots.out": {
-    "final": 90.79
-  },
-  "CLIP-LoRA_oxford_flowers_16shots.out": {
-    "final": 98.13
-  },
-  "CLIP-LoRA_oxford_pets_16shots.out": {
-    "final": 91.66
-  },
-  "CLIP-LoRA_eurosat_2shots.out": {
-    "final": 85.11
-  },
-  "CLIP-LoRA_oxford_pets_4shots.out": {
-    "final": 90.27
-  },
-  "CLIP-LoRA_oxford_flowers_8shots.out": {
-    "final": 96.43
+  "CLIP-LoRA_oxford_flowers_4shots.out": {
+    "final": 93.79
   }
 }

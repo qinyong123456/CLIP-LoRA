@@ -4,7 +4,7 @@ from fnmatch import fnmatch    # importa o coringa estilo shell
 import matplotlib.pyplot as plt
 from collections import defaultdict
 
-def coletar_acuracias(pasta_out: str, saida_json: str = "acuracias.json") -> None:
+def coletar_acuracias_mole(pasta_out: str, saida_json: str = "acuracias.json") -> None:
     padrao_final = re.compile(r"Final test accuracy:\s*([0-9]+(?:\.[0-9]+)?)")
     padrao_zero  = re.compile(r"Zero-shot CLIP's test accuracy:\s*([0-9]+(?:\.[0-9]+)?)")
 
@@ -42,9 +42,37 @@ def coletar_acuracias(pasta_out: str, saida_json: str = "acuracias.json") -> Non
 
     print(f"✅ JSON salvo em {saida_json} com {len(resultados)} arquivos.")
 
+def coletar_acuracias_lora(pasta_out: str, saida_json: str = "acuracias.json") -> None:
+    padrao_final   = re.compile(r"Final test accuracy:\s*([0-9]+(?:\.[0-9]+)?)")
+    padrao_zero    = re.compile(r"Zero-shot CLIP's test accuracy:\s*([0-9]+(?:\.[0-9]+)?)")
 
-coletar_acuracias("logs_scripts/mole", "results/mole/acuracias.json")
-coletar_acuracias("logs_scripts/lora", "results/lora/acuracias.json")
+    resultados = {}
+
+    for caminho in Path(pasta_out).glob("*.out"):
+        with caminho.open("r", encoding="utf-8", errors="ignore") as f:
+            texto = f.read()
+
+        resultados[caminho.name] = {}
+
+        if fnmatch(caminho.name, "CLIP-MoLE_*_1shots.out"):
+            if (m := padrao_zero.search(texto)):
+                resultados[caminho.name]["zero_shot"] = float(m.group(1))
+
+        if (m := padrao_final.search(texto)):
+            resultados[caminho.name]["final"] = float(m.group(1))
+
+        if not resultados[caminho.name]:
+            resultados.pop(caminho.name)
+
+    Path(saida_json).parent.mkdir(parents=True, exist_ok=True)
+    with open(saida_json, "w", encoding="utf-8") as fp:
+        json.dump(resultados, fp, ensure_ascii=False, indent=2)
+
+    print(f"✅ JSON salvo em {saida_json} com {len(resultados)} arquivos.")
+
+
+coletar_acuracias_mole("logs_scripts/mole", "results/mole/acuracias.json")
+coletar_acuracias_lora("logs_scripts/lora", "results/lora/acuracias.json")
 
 
 
