@@ -22,6 +22,7 @@ PYTHONWARNINGS="ignore" python3 main.py \
 --shots 1 \
 --num_experts 4 \
 --topk 2 \
+--lambda_balance 0.1 \
 --save_path weights \
 --filename "CLIP-MoLE_oxford_pets"
     

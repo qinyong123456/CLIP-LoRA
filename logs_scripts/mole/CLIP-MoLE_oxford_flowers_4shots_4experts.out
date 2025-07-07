@@ -1,0 +1,504 @@
+created virtual environment CPython3.10.13.final.0-64 in 31448ms
+  creator CPython3Posix(dest=/localscratch/pedro36.57161263.0/env, clear=False, no_vcs_ignore=False, global=False)
+  seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=/home/pedro36/.local/share/virtualenv)
+    added seed packages: pip==25.1.1, setuptools==80.7.1, wheel==0.45.1+computecanada
+  activators BashActivator,CShellActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator
+Looking in links: /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/x86-64-v4, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/x86-64-v3, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/generic, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic
+Requirement already satisfied: pip in /localscratch/pedro36.57161263.0/env/lib/python3.10/site-packages (25.1.1)
+Looking in links: /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/x86-64-v4, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/x86-64-v3, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/generic, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/x86-64-v3/torch-2.6.0+computecanada-cp310-cp310-linux_x86_64.whl
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/generic/torchvision-0.21.0+computecanada-cp310-cp310-linux_x86_64.whl
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/x86-64-v3/torchaudio-2.6.0+computecanada-cp310-cp310-linux_x86_64.whl
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/ftfy-6.3.1+computecanada-py3-none-any.whl
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/generic/scipy-1.15.1+computecanada-cp310-cp310-linux_x86_64.whl
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/regex-2024.9.11+computecanada-cp310-cp310-linux_x86_64.whl
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/tqdm-4.67.1+computecanada-py3-none-any.whl
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/gdown-5.2.0+computecanada-py3-none-any.whl
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/x86-64-v3/pandas-2.2.3+computecanada-cp310-cp310-linux_x86_64.whl
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/filelock-3.18.0+computecanada-py3-none-any.whl (from torch)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/typing_extensions-4.14.0+computecanada-py3-none-any.whl (from torch)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/networkx-3.5+computecanada-py3-none-any.whl (from torch)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/jinja2-3.1.6+computecanada-py3-none-any.whl (from torch)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/fsspec-2025.5.1+computecanada-py3-none-any.whl (from torch)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/sympy-1.13.1+computecanada-py3-none-any.whl (from torch)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/mpmath-1.3.0+computecanada-py3-none-any.whl (from sympy==1.13.1->torch)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/generic/numpy-2.2.2+computecanada-cp310-cp310-linux_x86_64.whl (from torchvision)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/x86-64-v3/Pillow_SIMD-9.5.0.post2+computecanada-cp310-cp310-linux_x86_64.whl (from torchvision)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/wcwidth-0.2.13+computecanada-py2.py3-none-any.whl (from ftfy)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/beautifulsoup4-4.13.4+computecanada-py3-none-any.whl (from gdown)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/requests-2.32.4+computecanada-py3-none-any.whl (from gdown)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/python_dateutil-2.9.0.post0+computecanada-py2.py3-none-any.whl (from pandas)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/pytz-2025.2+computecanada-py2.py3-none-any.whl (from pandas)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/tzdata-2025.2+computecanada-py2.py3-none-any.whl (from pandas)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/six-1.17.0+computecanada-py2.py3-none-any.whl (from python-dateutil>=2.8.2->pandas)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/soupsieve-2.7+computecanada-py3-none-any.whl (from beautifulsoup4->gdown)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/MarkupSafe-2.1.5+computecanada-cp310-cp310-linux_x86_64.whl (from jinja2->torch)
+INFO: pip is looking at multiple versions of networkx to determine which version is compatible with other requirements. This could take a while.
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/networkx-3.4.2+computecanada-py3-none-any.whl (from torch)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/charset_normalizer-3.4.2+computecanada-py3-none-any.whl (from requests[socks]->gdown)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/idna-3.10+computecanada-py3-none-any.whl (from requests[socks]->gdown)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/urllib3-2.5.0+computecanada-py3-none-any.whl (from requests[socks]->gdown)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/certifi-2025.6.15+computecanada-py3-none-any.whl (from requests[socks]->gdown)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/PySocks-1.7.1+computecanada-py3-none-any.whl (from requests[socks]->gdown)
+Installing collected packages: wcwidth, pytz, mpmath, urllib3, tzdata, typing-extensions, tqdm, sympy, soupsieve, six, regex, PySocks, pillow-simd, numpy, networkx, MarkupSafe, idna, ftfy, fsspec, filelock, charset-normalizer, certifi, scipy, requests, python-dateutil, jinja2, beautifulsoup4, torch, pandas, torchvision, torchaudio, gdown
+
+Successfully installed MarkupSafe-2.1.5+computecanada PySocks-1.7.1+computecanada beautifulsoup4-4.13.4+computecanada certifi-2025.6.15+computecanada charset-normalizer-3.4.2+computecanada filelock-3.18.0+computecanada fsspec-2025.5.1+computecanada ftfy-6.3.1+computecanada gdown-5.2.0+computecanada idna-3.10+computecanada jinja2-3.1.6+computecanada mpmath-1.3.0+computecanada networkx-3.4.2+computecanada numpy-2.2.2+computecanada pandas-2.2.3+computecanada pillow-simd-9.5.0.post2+computecanada python-dateutil-2.9.0.post0+computecanada pytz-2025.2+computecanada regex-2024.9.11+computecanada requests-2.32.4+computecanada scipy-1.15.1+computecanada six-1.17.0+computecanada soupsieve-2.7+computecanada sympy-1.13.1+computecanada torch-2.6.0+computecanada torchaudio-2.6.0+computecanada torchvision-0.21.0+computecanada tqdm-4.67.1+computecanada typing-extensions-4.14.0+computecanada tzdata-2025.2+computecanada urllib3-2.5.0+computecanada wcwidth-0.2.13+computecanada
+Preparing dataset.
+Reading split from /home/pedro36/projects/def-leszek/pedro36/datasets/DATA/Flower102/split_zhou_OxfordFlowers.json
+Creating a 4-shot dataset
+Creating a 4-shot dataset
+
+Getting textual features as CLIP's classifier.
+
+Loading visual features and labels from val set.
+
+Loading visual features and labels from test set.
+
+**** Zero-shot CLIP's test accuracy: 67.36. ****
+
+Residual Attention Block 0: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=512, out_features=512, bias=True)
+  )
+  (ln_1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=512, out_features=2048, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=2048, out_features=512, bias=True)
+  )
+  (ln_2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 1: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=512, out_features=512, bias=True)
+  )
+  (ln_1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=512, out_features=2048, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=2048, out_features=512, bias=True)
+  )
+  (ln_2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 2: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=512, out_features=512, bias=True)
+  )
+  (ln_1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=512, out_features=2048, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=2048, out_features=512, bias=True)
+  )
+  (ln_2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 3: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=512, out_features=512, bias=True)
+  )
+  (ln_1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=512, out_features=2048, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=2048, out_features=512, bias=True)
+  )
+  (ln_2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 4: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=512, out_features=512, bias=True)
+  )
+  (ln_1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=512, out_features=2048, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=2048, out_features=512, bias=True)
+  )
+  (ln_2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 5: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=512, out_features=512, bias=True)
+  )
+  (ln_1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=512, out_features=2048, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=2048, out_features=512, bias=True)
+  )
+  (ln_2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 6: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=512, out_features=512, bias=True)
+  )
+  (ln_1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=512, out_features=2048, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=2048, out_features=512, bias=True)
+  )
+  (ln_2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 7: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=512, out_features=512, bias=True)
+  )
+  (ln_1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=512, out_features=2048, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=2048, out_features=512, bias=True)
+  )
+  (ln_2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 8: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=512, out_features=512, bias=True)
+  )
+  (ln_1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=512, out_features=2048, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=2048, out_features=512, bias=True)
+  )
+  (ln_2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 9: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=512, out_features=512, bias=True)
+  )
+  (ln_1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=512, out_features=2048, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=2048, out_features=512, bias=True)
+  )
+  (ln_2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 10: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=512, out_features=512, bias=True)
+  )
+  (ln_1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=512, out_features=2048, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=2048, out_features=512, bias=True)
+  )
+  (ln_2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 11: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=512, out_features=512, bias=True)
+  )
+  (ln_1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=512, out_features=2048, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=2048, out_features=512, bias=True)
+  )
+  (ln_2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 0: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=768, out_features=768, bias=True)
+  )
+  (ln_1): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=768, out_features=3072, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=3072, out_features=768, bias=True)
+  )
+  (ln_2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 1: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=768, out_features=768, bias=True)
+  )
+  (ln_1): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=768, out_features=3072, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=3072, out_features=768, bias=True)
+  )
+  (ln_2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 2: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=768, out_features=768, bias=True)
+  )
+  (ln_1): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=768, out_features=3072, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=3072, out_features=768, bias=True)
+  )
+  (ln_2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 3: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=768, out_features=768, bias=True)
+  )
+  (ln_1): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=768, out_features=3072, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=3072, out_features=768, bias=True)
+  )
+  (ln_2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 4: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=768, out_features=768, bias=True)
+  )
+  (ln_1): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=768, out_features=3072, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=3072, out_features=768, bias=True)
+  )
+  (ln_2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 5: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=768, out_features=768, bias=True)
+  )
+  (ln_1): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=768, out_features=3072, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=3072, out_features=768, bias=True)
+  )
+  (ln_2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 6: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=768, out_features=768, bias=True)
+  )
+  (ln_1): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=768, out_features=3072, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=3072, out_features=768, bias=True)
+  )
+  (ln_2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 7: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=768, out_features=768, bias=True)
+  )
+  (ln_1): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=768, out_features=3072, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=3072, out_features=768, bias=True)
+  )
+  (ln_2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 8: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=768, out_features=768, bias=True)
+  )
+  (ln_1): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=768, out_features=3072, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=3072, out_features=768, bias=True)
+  )
+  (ln_2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 9: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=768, out_features=768, bias=True)
+  )
+  (ln_1): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=768, out_features=3072, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=3072, out_features=768, bias=True)
+  )
+  (ln_2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 10: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=768, out_features=768, bias=True)
+  )
+  (ln_1): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=768, out_features=3072, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=3072, out_features=768, bias=True)
+  )
+  (ln_2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 11: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=768, out_features=768, bias=True)
+  )
+  (ln_1): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=768, out_features=3072, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=3072, out_features=768, bias=True)
+  )
+  (ln_2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+)
+Trainable parameters: ['visual.transformer.resblocks.0.attn.q_proj.router.gate.weight', 'visual.transformer.resblocks.0.attn.q_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.0.attn.q_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.0.attn.q_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.0.attn.q_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.0.attn.q_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.0.attn.q_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.0.attn.q_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.0.attn.q_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.0.attn.k_proj.router.gate.weight', 'visual.transformer.resblocks.0.attn.k_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.0.attn.k_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.0.attn.k_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.0.attn.k_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.0.attn.k_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.0.attn.k_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.0.attn.k_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.0.attn.k_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.0.attn.v_proj.router.gate.weight', 'visual.transformer.resblocks.0.attn.v_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.0.attn.v_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.0.attn.v_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.0.attn.v_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.0.attn.v_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.0.attn.v_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.0.attn.v_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.0.attn.v_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.1.attn.q_proj.router.gate.weight', 'visual.transformer.resblocks.1.attn.q_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.1.attn.q_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.1.attn.q_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.1.attn.q_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.1.attn.q_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.1.attn.q_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.1.attn.q_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.1.attn.q_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.1.attn.k_proj.router.gate.weight', 'visual.transformer.resblocks.1.attn.k_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.1.attn.k_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.1.attn.k_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.1.attn.k_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.1.attn.k_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.1.attn.k_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.1.attn.k_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.1.attn.k_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.1.attn.v_proj.router.gate.weight', 'visual.transformer.resblocks.1.attn.v_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.1.attn.v_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.1.attn.v_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.1.attn.v_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.1.attn.v_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.1.attn.v_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.1.attn.v_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.1.attn.v_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.2.attn.q_proj.router.gate.weight', 'visual.transformer.resblocks.2.attn.q_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.2.attn.q_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.2.attn.q_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.2.attn.q_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.2.attn.q_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.2.attn.q_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.2.attn.q_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.2.attn.q_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.2.attn.k_proj.router.gate.weight', 'visual.transformer.resblocks.2.attn.k_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.2.attn.k_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.2.attn.k_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.2.attn.k_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.2.attn.k_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.2.attn.k_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.2.attn.k_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.2.attn.k_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.2.attn.v_proj.router.gate.weight', 'visual.transformer.resblocks.2.attn.v_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.2.attn.v_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.2.attn.v_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.2.attn.v_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.2.attn.v_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.2.attn.v_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.2.attn.v_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.2.attn.v_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.3.attn.q_proj.router.gate.weight', 'visual.transformer.resblocks.3.attn.q_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.3.attn.q_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.3.attn.q_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.3.attn.q_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.3.attn.q_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.3.attn.q_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.3.attn.q_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.3.attn.q_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.3.attn.k_proj.router.gate.weight', 'visual.transformer.resblocks.3.attn.k_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.3.attn.k_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.3.attn.k_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.3.attn.k_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.3.attn.k_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.3.attn.k_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.3.attn.k_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.3.attn.k_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.3.attn.v_proj.router.gate.weight', 'visual.transformer.resblocks.3.attn.v_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.3.attn.v_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.3.attn.v_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.3.attn.v_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.3.attn.v_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.3.attn.v_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.3.attn.v_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.3.attn.v_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.4.attn.q_proj.router.gate.weight', 'visual.transformer.resblocks.4.attn.q_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.4.attn.q_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.4.attn.q_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.4.attn.q_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.4.attn.q_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.4.attn.q_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.4.attn.q_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.4.attn.q_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.4.attn.k_proj.router.gate.weight', 'visual.transformer.resblocks.4.attn.k_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.4.attn.k_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.4.attn.k_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.4.attn.k_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.4.attn.k_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.4.attn.k_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.4.attn.k_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.4.attn.k_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.4.attn.v_proj.router.gate.weight', 'visual.transformer.resblocks.4.attn.v_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.4.attn.v_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.4.attn.v_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.4.attn.v_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.4.attn.v_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.4.attn.v_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.4.attn.v_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.4.attn.v_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.5.attn.q_proj.router.gate.weight', 'visual.transformer.resblocks.5.attn.q_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.5.attn.q_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.5.attn.q_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.5.attn.q_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.5.attn.q_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.5.attn.q_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.5.attn.q_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.5.attn.q_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.5.attn.k_proj.router.gate.weight', 'visual.transformer.resblocks.5.attn.k_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.5.attn.k_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.5.attn.k_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.5.attn.k_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.5.attn.k_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.5.attn.k_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.5.attn.k_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.5.attn.k_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.5.attn.v_proj.router.gate.weight', 'visual.transformer.resblocks.5.attn.v_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.5.attn.v_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.5.attn.v_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.5.attn.v_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.5.attn.v_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.5.attn.v_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.5.attn.v_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.5.attn.v_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.6.attn.q_proj.router.gate.weight', 'visual.transformer.resblocks.6.attn.q_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.6.attn.q_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.6.attn.q_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.6.attn.q_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.6.attn.q_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.6.attn.q_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.6.attn.q_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.6.attn.q_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.6.attn.k_proj.router.gate.weight', 'visual.transformer.resblocks.6.attn.k_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.6.attn.k_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.6.attn.k_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.6.attn.k_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.6.attn.k_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.6.attn.k_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.6.attn.k_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.6.attn.k_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.6.attn.v_proj.router.gate.weight', 'visual.transformer.resblocks.6.attn.v_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.6.attn.v_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.6.attn.v_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.6.attn.v_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.6.attn.v_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.6.attn.v_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.6.attn.v_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.6.attn.v_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.7.attn.q_proj.router.gate.weight', 'visual.transformer.resblocks.7.attn.q_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.7.attn.q_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.7.attn.q_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.7.attn.q_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.7.attn.q_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.7.attn.q_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.7.attn.q_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.7.attn.q_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.7.attn.k_proj.router.gate.weight', 'visual.transformer.resblocks.7.attn.k_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.7.attn.k_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.7.attn.k_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.7.attn.k_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.7.attn.k_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.7.attn.k_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.7.attn.k_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.7.attn.k_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.7.attn.v_proj.router.gate.weight', 'visual.transformer.resblocks.7.attn.v_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.7.attn.v_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.7.attn.v_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.7.attn.v_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.7.attn.v_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.7.attn.v_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.7.attn.v_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.7.attn.v_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.8.attn.q_proj.router.gate.weight', 'visual.transformer.resblocks.8.attn.q_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.8.attn.q_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.8.attn.q_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.8.attn.q_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.8.attn.q_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.8.attn.q_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.8.attn.q_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.8.attn.q_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.8.attn.k_proj.router.gate.weight', 'visual.transformer.resblocks.8.attn.k_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.8.attn.k_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.8.attn.k_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.8.attn.k_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.8.attn.k_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.8.attn.k_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.8.attn.k_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.8.attn.k_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.8.attn.v_proj.router.gate.weight', 'visual.transformer.resblocks.8.attn.v_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.8.attn.v_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.8.attn.v_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.8.attn.v_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.8.attn.v_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.8.attn.v_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.8.attn.v_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.8.attn.v_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.9.attn.q_proj.router.gate.weight', 'visual.transformer.resblocks.9.attn.q_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.9.attn.q_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.9.attn.q_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.9.attn.q_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.9.attn.q_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.9.attn.q_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.9.attn.q_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.9.attn.q_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.9.attn.k_proj.router.gate.weight', 'visual.transformer.resblocks.9.attn.k_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.9.attn.k_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.9.attn.k_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.9.attn.k_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.9.attn.k_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.9.attn.k_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.9.attn.k_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.9.attn.k_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.9.attn.v_proj.router.gate.weight', 'visual.transformer.resblocks.9.attn.v_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.9.attn.v_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.9.attn.v_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.9.attn.v_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.9.attn.v_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.9.attn.v_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.9.attn.v_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.9.attn.v_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.10.attn.q_proj.router.gate.weight', 'visual.transformer.resblocks.10.attn.q_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.10.attn.q_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.10.attn.q_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.10.attn.q_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.10.attn.q_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.10.attn.q_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.10.attn.q_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.10.attn.q_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.10.attn.k_proj.router.gate.weight', 'visual.transformer.resblocks.10.attn.k_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.10.attn.k_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.10.attn.k_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.10.attn.k_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.10.attn.k_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.10.attn.k_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.10.attn.k_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.10.attn.k_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.10.attn.v_proj.router.gate.weight', 'visual.transformer.resblocks.10.attn.v_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.10.attn.v_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.10.attn.v_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.10.attn.v_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.10.attn.v_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.10.attn.v_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.10.attn.v_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.10.attn.v_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.11.attn.q_proj.router.gate.weight', 'visual.transformer.resblocks.11.attn.q_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.11.attn.q_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.11.attn.q_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.11.attn.q_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.11.attn.q_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.11.attn.q_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.11.attn.q_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.11.attn.q_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.11.attn.k_proj.router.gate.weight', 'visual.transformer.resblocks.11.attn.k_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.11.attn.k_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.11.attn.k_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.11.attn.k_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.11.attn.k_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.11.attn.k_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.11.attn.k_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.11.attn.k_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.11.attn.v_proj.router.gate.weight', 'visual.transformer.resblocks.11.attn.v_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.11.attn.v_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.11.attn.v_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.11.attn.v_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.11.attn.v_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.11.attn.v_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.11.attn.v_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.11.attn.v_proj.experts.3.w_lora_B', 'transformer.resblocks.0.attn.q_proj.router.gate.weight', 'transformer.resblocks.0.attn.q_proj.experts.0.w_lora_A', 'transformer.resblocks.0.attn.q_proj.experts.0.w_lora_B', 'transformer.resblocks.0.attn.q_proj.experts.1.w_lora_A', 'transformer.resblocks.0.attn.q_proj.experts.1.w_lora_B', 'transformer.resblocks.0.attn.q_proj.experts.2.w_lora_A', 'transformer.resblocks.0.attn.q_proj.experts.2.w_lora_B', 'transformer.resblocks.0.attn.q_proj.experts.3.w_lora_A', 'transformer.resblocks.0.attn.q_proj.experts.3.w_lora_B', 'transformer.resblocks.0.attn.k_proj.router.gate.weight', 'transformer.resblocks.0.attn.k_proj.experts.0.w_lora_A', 'transformer.resblocks.0.attn.k_proj.experts.0.w_lora_B', 'transformer.resblocks.0.attn.k_proj.experts.1.w_lora_A', 'transformer.resblocks.0.attn.k_proj.experts.1.w_lora_B', 'transformer.resblocks.0.attn.k_proj.experts.2.w_lora_A', 'transformer.resblocks.0.attn.k_proj.experts.2.w_lora_B', 'transformer.resblocks.0.attn.k_proj.experts.3.w_lora_A', 'transformer.resblocks.0.attn.k_proj.experts.3.w_lora_B', 'transformer.resblocks.0.attn.v_proj.router.gate.weight', 'transformer.resblocks.0.attn.v_proj.experts.0.w_lora_A', 'transformer.resblocks.0.attn.v_proj.experts.0.w_lora_B', 'transformer.resblocks.0.attn.v_proj.experts.1.w_lora_A', 'transformer.resblocks.0.attn.v_proj.experts.1.w_lora_B', 'transformer.resblocks.0.attn.v_proj.experts.2.w_lora_A', 'transformer.resblocks.0.attn.v_proj.experts.2.w_lora_B', 'transformer.resblocks.0.attn.v_proj.experts.3.w_lora_A', 'transformer.resblocks.0.attn.v_proj.experts.3.w_lora_B', 'transformer.resblocks.1.attn.q_proj.router.gate.weight', 'transformer.resblocks.1.attn.q_proj.experts.0.w_lora_A', 'transformer.resblocks.1.attn.q_proj.experts.0.w_lora_B', 'transformer.resblocks.1.attn.q_proj.experts.1.w_lora_A', 'transformer.resblocks.1.attn.q_proj.experts.1.w_lora_B', 'transformer.resblocks.1.attn.q_proj.experts.2.w_lora_A', 'transformer.resblocks.1.attn.q_proj.experts.2.w_lora_B', 'transformer.resblocks.1.attn.q_proj.experts.3.w_lora_A', 'transformer.resblocks.1.attn.q_proj.experts.3.w_lora_B', 'transformer.resblocks.1.attn.k_proj.router.gate.weight', 'transformer.resblocks.1.attn.k_proj.experts.0.w_lora_A', 'transformer.resblocks.1.attn.k_proj.experts.0.w_lora_B', 'transformer.resblocks.1.attn.k_proj.experts.1.w_lora_A', 'transformer.resblocks.1.attn.k_proj.experts.1.w_lora_B', 'transformer.resblocks.1.attn.k_proj.experts.2.w_lora_A', 'transformer.resblocks.1.attn.k_proj.experts.2.w_lora_B', 'transformer.resblocks.1.attn.k_proj.experts.3.w_lora_A', 'transformer.resblocks.1.attn.k_proj.experts.3.w_lora_B', 'transformer.resblocks.1.attn.v_proj.router.gate.weight', 'transformer.resblocks.1.attn.v_proj.experts.0.w_lora_A', 'transformer.resblocks.1.attn.v_proj.experts.0.w_lora_B', 'transformer.resblocks.1.attn.v_proj.experts.1.w_lora_A', 'transformer.resblocks.1.attn.v_proj.experts.1.w_lora_B', 'transformer.resblocks.1.attn.v_proj.experts.2.w_lora_A', 'transformer.resblocks.1.attn.v_proj.experts.2.w_lora_B', 'transformer.resblocks.1.attn.v_proj.experts.3.w_lora_A', 'transformer.resblocks.1.attn.v_proj.experts.3.w_lora_B', 'transformer.resblocks.2.attn.q_proj.router.gate.weight', 'transformer.resblocks.2.attn.q_proj.experts.0.w_lora_A', 'transformer.resblocks.2.attn.q_proj.experts.0.w_lora_B', 'transformer.resblocks.2.attn.q_proj.experts.1.w_lora_A', 'transformer.resblocks.2.attn.q_proj.experts.1.w_lora_B', 'transformer.resblocks.2.attn.q_proj.experts.2.w_lora_A', 'transformer.resblocks.2.attn.q_proj.experts.2.w_lora_B', 'transformer.resblocks.2.attn.q_proj.experts.3.w_lora_A', 'transformer.resblocks.2.attn.q_proj.experts.3.w_lora_B', 'transformer.resblocks.2.attn.k_proj.router.gate.weight', 'transformer.resblocks.2.attn.k_proj.experts.0.w_lora_A', 'transformer.resblocks.2.attn.k_proj.experts.0.w_lora_B', 'transformer.resblocks.2.attn.k_proj.experts.1.w_lora_A', 'transformer.resblocks.2.attn.k_proj.experts.1.w_lora_B', 'transformer.resblocks.2.attn.k_proj.experts.2.w_lora_A', 'transformer.resblocks.2.attn.k_proj.experts.2.w_lora_B', 'transformer.resblocks.2.attn.k_proj.experts.3.w_lora_A', 'transformer.resblocks.2.attn.k_proj.experts.3.w_lora_B', 'transformer.resblocks.2.attn.v_proj.router.gate.weight', 'transformer.resblocks.2.attn.v_proj.experts.0.w_lora_A', 'transformer.resblocks.2.attn.v_proj.experts.0.w_lora_B', 'transformer.resblocks.2.attn.v_proj.experts.1.w_lora_A', 'transformer.resblocks.2.attn.v_proj.experts.1.w_lora_B', 'transformer.resblocks.2.attn.v_proj.experts.2.w_lora_A', 'transformer.resblocks.2.attn.v_proj.experts.2.w_lora_B', 'transformer.resblocks.2.attn.v_proj.experts.3.w_lora_A', 'transformer.resblocks.2.attn.v_proj.experts.3.w_lora_B', 'transformer.resblocks.3.attn.q_proj.router.gate.weight', 'transformer.resblocks.3.attn.q_proj.experts.0.w_lora_A', 'transformer.resblocks.3.attn.q_proj.experts.0.w_lora_B', 'transformer.resblocks.3.attn.q_proj.experts.1.w_lora_A', 'transformer.resblocks.3.attn.q_proj.experts.1.w_lora_B', 'transformer.resblocks.3.attn.q_proj.experts.2.w_lora_A', 'transformer.resblocks.3.attn.q_proj.experts.2.w_lora_B', 'transformer.resblocks.3.attn.q_proj.experts.3.w_lora_A', 'transformer.resblocks.3.attn.q_proj.experts.3.w_lora_B', 'transformer.resblocks.3.attn.k_proj.router.gate.weight', 'transformer.resblocks.3.attn.k_proj.experts.0.w_lora_A', 'transformer.resblocks.3.attn.k_proj.experts.0.w_lora_B', 'transformer.resblocks.3.attn.k_proj.experts.1.w_lora_A', 'transformer.resblocks.3.attn.k_proj.experts.1.w_lora_B', 'transformer.resblocks.3.attn.k_proj.experts.2.w_lora_A', 'transformer.resblocks.3.attn.k_proj.experts.2.w_lora_B', 'transformer.resblocks.3.attn.k_proj.experts.3.w_lora_A', 'transformer.resblocks.3.attn.k_proj.experts.3.w_lora_B', 'transformer.resblocks.3.attn.v_proj.router.gate.weight', 'transformer.resblocks.3.attn.v_proj.experts.0.w_lora_A', 'transformer.resblocks.3.attn.v_proj.experts.0.w_lora_B', 'transformer.resblocks.3.attn.v_proj.experts.1.w_lora_A', 'transformer.resblocks.3.attn.v_proj.experts.1.w_lora_B', 'transformer.resblocks.3.attn.v_proj.experts.2.w_lora_A', 'transformer.resblocks.3.attn.v_proj.experts.2.w_lora_B', 'transformer.resblocks.3.attn.v_proj.experts.3.w_lora_A', 'transformer.resblocks.3.attn.v_proj.experts.3.w_lora_B', 'transformer.resblocks.4.attn.q_proj.router.gate.weight', 'transformer.resblocks.4.attn.q_proj.experts.0.w_lora_A', 'transformer.resblocks.4.attn.q_proj.experts.0.w_lora_B', 'transformer.resblocks.4.attn.q_proj.experts.1.w_lora_A', 'transformer.resblocks.4.attn.q_proj.experts.1.w_lora_B', 'transformer.resblocks.4.attn.q_proj.experts.2.w_lora_A', 'transformer.resblocks.4.attn.q_proj.experts.2.w_lora_B', 'transformer.resblocks.4.attn.q_proj.experts.3.w_lora_A', 'transformer.resblocks.4.attn.q_proj.experts.3.w_lora_B', 'transformer.resblocks.4.attn.k_proj.router.gate.weight', 'transformer.resblocks.4.attn.k_proj.experts.0.w_lora_A', 'transformer.resblocks.4.attn.k_proj.experts.0.w_lora_B', 'transformer.resblocks.4.attn.k_proj.experts.1.w_lora_A', 'transformer.resblocks.4.attn.k_proj.experts.1.w_lora_B', 'transformer.resblocks.4.attn.k_proj.experts.2.w_lora_A', 'transformer.resblocks.4.attn.k_proj.experts.2.w_lora_B', 'transformer.resblocks.4.attn.k_proj.experts.3.w_lora_A', 'transformer.resblocks.4.attn.k_proj.experts.3.w_lora_B', 'transformer.resblocks.4.attn.v_proj.router.gate.weight', 'transformer.resblocks.4.attn.v_proj.experts.0.w_lora_A', 'transformer.resblocks.4.attn.v_proj.experts.0.w_lora_B', 'transformer.resblocks.4.attn.v_proj.experts.1.w_lora_A', 'transformer.resblocks.4.attn.v_proj.experts.1.w_lora_B', 'transformer.resblocks.4.attn.v_proj.experts.2.w_lora_A', 'transformer.resblocks.4.attn.v_proj.experts.2.w_lora_B', 'transformer.resblocks.4.attn.v_proj.experts.3.w_lora_A', 'transformer.resblocks.4.attn.v_proj.experts.3.w_lora_B', 'transformer.resblocks.5.attn.q_proj.router.gate.weight', 'transformer.resblocks.5.attn.q_proj.experts.0.w_lora_A', 'transformer.resblocks.5.attn.q_proj.experts.0.w_lora_B', 'transformer.resblocks.5.attn.q_proj.experts.1.w_lora_A', 'transformer.resblocks.5.attn.q_proj.experts.1.w_lora_B', 'transformer.resblocks.5.attn.q_proj.experts.2.w_lora_A', 'transformer.resblocks.5.attn.q_proj.experts.2.w_lora_B', 'transformer.resblocks.5.attn.q_proj.experts.3.w_lora_A', 'transformer.resblocks.5.attn.q_proj.experts.3.w_lora_B', 'transformer.resblocks.5.attn.k_proj.router.gate.weight', 'transformer.resblocks.5.attn.k_proj.experts.0.w_lora_A', 'transformer.resblocks.5.attn.k_proj.experts.0.w_lora_B', 'transformer.resblocks.5.attn.k_proj.experts.1.w_lora_A', 'transformer.resblocks.5.attn.k_proj.experts.1.w_lora_B', 'transformer.resblocks.5.attn.k_proj.experts.2.w_lora_A', 'transformer.resblocks.5.attn.k_proj.experts.2.w_lora_B', 'transformer.resblocks.5.attn.k_proj.experts.3.w_lora_A', 'transformer.resblocks.5.attn.k_proj.experts.3.w_lora_B', 'transformer.resblocks.5.attn.v_proj.router.gate.weight', 'transformer.resblocks.5.attn.v_proj.experts.0.w_lora_A', 'transformer.resblocks.5.attn.v_proj.experts.0.w_lora_B', 'transformer.resblocks.5.attn.v_proj.experts.1.w_lora_A', 'transformer.resblocks.5.attn.v_proj.experts.1.w_lora_B', 'transformer.resblocks.5.attn.v_proj.experts.2.w_lora_A', 'transformer.resblocks.5.attn.v_proj.experts.2.w_lora_B', 'transformer.resblocks.5.attn.v_proj.experts.3.w_lora_A', 'transformer.resblocks.5.attn.v_proj.experts.3.w_lora_B', 'transformer.resblocks.6.attn.q_proj.router.gate.weight', 'transformer.resblocks.6.attn.q_proj.experts.0.w_lora_A', 'transformer.resblocks.6.attn.q_proj.experts.0.w_lora_B', 'transformer.resblocks.6.attn.q_proj.experts.1.w_lora_A', 'transformer.resblocks.6.attn.q_proj.experts.1.w_lora_B', 'transformer.resblocks.6.attn.q_proj.experts.2.w_lora_A', 'transformer.resblocks.6.attn.q_proj.experts.2.w_lora_B', 'transformer.resblocks.6.attn.q_proj.experts.3.w_lora_A', 'transformer.resblocks.6.attn.q_proj.experts.3.w_lora_B', 'transformer.resblocks.6.attn.k_proj.router.gate.weight', 'transformer.resblocks.6.attn.k_proj.experts.0.w_lora_A', 'transformer.resblocks.6.attn.k_proj.experts.0.w_lora_B', 'transformer.resblocks.6.attn.k_proj.experts.1.w_lora_A', 'transformer.resblocks.6.attn.k_proj.experts.1.w_lora_B', 'transformer.resblocks.6.attn.k_proj.experts.2.w_lora_A', 'transformer.resblocks.6.attn.k_proj.experts.2.w_lora_B', 'transformer.resblocks.6.attn.k_proj.experts.3.w_lora_A', 'transformer.resblocks.6.attn.k_proj.experts.3.w_lora_B', 'transformer.resblocks.6.attn.v_proj.router.gate.weight', 'transformer.resblocks.6.attn.v_proj.experts.0.w_lora_A', 'transformer.resblocks.6.attn.v_proj.experts.0.w_lora_B', 'transformer.resblocks.6.attn.v_proj.experts.1.w_lora_A', 'transformer.resblocks.6.attn.v_proj.experts.1.w_lora_B', 'transformer.resblocks.6.attn.v_proj.experts.2.w_lora_A', 'transformer.resblocks.6.attn.v_proj.experts.2.w_lora_B', 'transformer.resblocks.6.attn.v_proj.experts.3.w_lora_A', 'transformer.resblocks.6.attn.v_proj.experts.3.w_lora_B', 'transformer.resblocks.7.attn.q_proj.router.gate.weight', 'transformer.resblocks.7.attn.q_proj.experts.0.w_lora_A', 'transformer.resblocks.7.attn.q_proj.experts.0.w_lora_B', 'transformer.resblocks.7.attn.q_proj.experts.1.w_lora_A', 'transformer.resblocks.7.attn.q_proj.experts.1.w_lora_B', 'transformer.resblocks.7.attn.q_proj.experts.2.w_lora_A', 'transformer.resblocks.7.attn.q_proj.experts.2.w_lora_B', 'transformer.resblocks.7.attn.q_proj.experts.3.w_lora_A', 'transformer.resblocks.7.attn.q_proj.experts.3.w_lora_B', 'transformer.resblocks.7.attn.k_proj.router.gate.weight', 'transformer.resblocks.7.attn.k_proj.experts.0.w_lora_A', 'transformer.resblocks.7.attn.k_proj.experts.0.w_lora_B', 'transformer.resblocks.7.attn.k_proj.experts.1.w_lora_A', 'transformer.resblocks.7.attn.k_proj.experts.1.w_lora_B', 'transformer.resblocks.7.attn.k_proj.experts.2.w_lora_A', 'transformer.resblocks.7.attn.k_proj.experts.2.w_lora_B', 'transformer.resblocks.7.attn.k_proj.experts.3.w_lora_A', 'transformer.resblocks.7.attn.k_proj.experts.3.w_lora_B', 'transformer.resblocks.7.attn.v_proj.router.gate.weight', 'transformer.resblocks.7.attn.v_proj.experts.0.w_lora_A', 'transformer.resblocks.7.attn.v_proj.experts.0.w_lora_B', 'transformer.resblocks.7.attn.v_proj.experts.1.w_lora_A', 'transformer.resblocks.7.attn.v_proj.experts.1.w_lora_B', 'transformer.resblocks.7.attn.v_proj.experts.2.w_lora_A', 'transformer.resblocks.7.attn.v_proj.experts.2.w_lora_B', 'transformer.resblocks.7.attn.v_proj.experts.3.w_lora_A', 'transformer.resblocks.7.attn.v_proj.experts.3.w_lora_B', 'transformer.resblocks.8.attn.q_proj.router.gate.weight', 'transformer.resblocks.8.attn.q_proj.experts.0.w_lora_A', 'transformer.resblocks.8.attn.q_proj.experts.0.w_lora_B', 'transformer.resblocks.8.attn.q_proj.experts.1.w_lora_A', 'transformer.resblocks.8.attn.q_proj.experts.1.w_lora_B', 'transformer.resblocks.8.attn.q_proj.experts.2.w_lora_A', 'transformer.resblocks.8.attn.q_proj.experts.2.w_lora_B', 'transformer.resblocks.8.attn.q_proj.experts.3.w_lora_A', 'transformer.resblocks.8.attn.q_proj.experts.3.w_lora_B', 'transformer.resblocks.8.attn.k_proj.router.gate.weight', 'transformer.resblocks.8.attn.k_proj.experts.0.w_lora_A', 'transformer.resblocks.8.attn.k_proj.experts.0.w_lora_B', 'transformer.resblocks.8.attn.k_proj.experts.1.w_lora_A', 'transformer.resblocks.8.attn.k_proj.experts.1.w_lora_B', 'transformer.resblocks.8.attn.k_proj.experts.2.w_lora_A', 'transformer.resblocks.8.attn.k_proj.experts.2.w_lora_B', 'transformer.resblocks.8.attn.k_proj.experts.3.w_lora_A', 'transformer.resblocks.8.attn.k_proj.experts.3.w_lora_B', 'transformer.resblocks.8.attn.v_proj.router.gate.weight', 'transformer.resblocks.8.attn.v_proj.experts.0.w_lora_A', 'transformer.resblocks.8.attn.v_proj.experts.0.w_lora_B', 'transformer.resblocks.8.attn.v_proj.experts.1.w_lora_A', 'transformer.resblocks.8.attn.v_proj.experts.1.w_lora_B', 'transformer.resblocks.8.attn.v_proj.experts.2.w_lora_A', 'transformer.resblocks.8.attn.v_proj.experts.2.w_lora_B', 'transformer.resblocks.8.attn.v_proj.experts.3.w_lora_A', 'transformer.resblocks.8.attn.v_proj.experts.3.w_lora_B', 'transformer.resblocks.9.attn.q_proj.router.gate.weight', 'transformer.resblocks.9.attn.q_proj.experts.0.w_lora_A', 'transformer.resblocks.9.attn.q_proj.experts.0.w_lora_B', 'transformer.resblocks.9.attn.q_proj.experts.1.w_lora_A', 'transformer.resblocks.9.attn.q_proj.experts.1.w_lora_B', 'transformer.resblocks.9.attn.q_proj.experts.2.w_lora_A', 'transformer.resblocks.9.attn.q_proj.experts.2.w_lora_B', 'transformer.resblocks.9.attn.q_proj.experts.3.w_lora_A', 'transformer.resblocks.9.attn.q_proj.experts.3.w_lora_B', 'transformer.resblocks.9.attn.k_proj.router.gate.weight', 'transformer.resblocks.9.attn.k_proj.experts.0.w_lora_A', 'transformer.resblocks.9.attn.k_proj.experts.0.w_lora_B', 'transformer.resblocks.9.attn.k_proj.experts.1.w_lora_A', 'transformer.resblocks.9.attn.k_proj.experts.1.w_lora_B', 'transformer.resblocks.9.attn.k_proj.experts.2.w_lora_A', 'transformer.resblocks.9.attn.k_proj.experts.2.w_lora_B', 'transformer.resblocks.9.attn.k_proj.experts.3.w_lora_A', 'transformer.resblocks.9.attn.k_proj.experts.3.w_lora_B', 'transformer.resblocks.9.attn.v_proj.router.gate.weight', 'transformer.resblocks.9.attn.v_proj.experts.0.w_lora_A', 'transformer.resblocks.9.attn.v_proj.experts.0.w_lora_B', 'transformer.resblocks.9.attn.v_proj.experts.1.w_lora_A', 'transformer.resblocks.9.attn.v_proj.experts.1.w_lora_B', 'transformer.resblocks.9.attn.v_proj.experts.2.w_lora_A', 'transformer.resblocks.9.attn.v_proj.experts.2.w_lora_B', 'transformer.resblocks.9.attn.v_proj.experts.3.w_lora_A', 'transformer.resblocks.9.attn.v_proj.experts.3.w_lora_B', 'transformer.resblocks.10.attn.q_proj.router.gate.weight', 'transformer.resblocks.10.attn.q_proj.experts.0.w_lora_A', 'transformer.resblocks.10.attn.q_proj.experts.0.w_lora_B', 'transformer.resblocks.10.attn.q_proj.experts.1.w_lora_A', 'transformer.resblocks.10.attn.q_proj.experts.1.w_lora_B', 'transformer.resblocks.10.attn.q_proj.experts.2.w_lora_A', 'transformer.resblocks.10.attn.q_proj.experts.2.w_lora_B', 'transformer.resblocks.10.attn.q_proj.experts.3.w_lora_A', 'transformer.resblocks.10.attn.q_proj.experts.3.w_lora_B', 'transformer.resblocks.10.attn.k_proj.router.gate.weight', 'transformer.resblocks.10.attn.k_proj.experts.0.w_lora_A', 'transformer.resblocks.10.attn.k_proj.experts.0.w_lora_B', 'transformer.resblocks.10.attn.k_proj.experts.1.w_lora_A', 'transformer.resblocks.10.attn.k_proj.experts.1.w_lora_B', 'transformer.resblocks.10.attn.k_proj.experts.2.w_lora_A', 'transformer.resblocks.10.attn.k_proj.experts.2.w_lora_B', 'transformer.resblocks.10.attn.k_proj.experts.3.w_lora_A', 'transformer.resblocks.10.attn.k_proj.experts.3.w_lora_B', 'transformer.resblocks.10.attn.v_proj.router.gate.weight', 'transformer.resblocks.10.attn.v_proj.experts.0.w_lora_A', 'transformer.resblocks.10.attn.v_proj.experts.0.w_lora_B', 'transformer.resblocks.10.attn.v_proj.experts.1.w_lora_A', 'transformer.resblocks.10.attn.v_proj.experts.1.w_lora_B', 'transformer.resblocks.10.attn.v_proj.experts.2.w_lora_A', 'transformer.resblocks.10.attn.v_proj.experts.2.w_lora_B', 'transformer.resblocks.10.attn.v_proj.experts.3.w_lora_A', 'transformer.resblocks.10.attn.v_proj.experts.3.w_lora_B', 'transformer.resblocks.11.attn.q_proj.router.gate.weight', 'transformer.resblocks.11.attn.q_proj.experts.0.w_lora_A', 'transformer.resblocks.11.attn.q_proj.experts.0.w_lora_B', 'transformer.resblocks.11.attn.q_proj.experts.1.w_lora_A', 'transformer.resblocks.11.attn.q_proj.experts.1.w_lora_B', 'transformer.resblocks.11.attn.q_proj.experts.2.w_lora_A', 'transformer.resblocks.11.attn.q_proj.experts.2.w_lora_B', 'transformer.resblocks.11.attn.q_proj.experts.3.w_lora_A', 'transformer.resblocks.11.attn.q_proj.experts.3.w_lora_B', 'transformer.resblocks.11.attn.k_proj.router.gate.weight', 'transformer.resblocks.11.attn.k_proj.experts.0.w_lora_A', 'transformer.resblocks.11.attn.k_proj.experts.0.w_lora_B', 'transformer.resblocks.11.attn.k_proj.experts.1.w_lora_A', 'transformer.resblocks.11.attn.k_proj.experts.1.w_lora_B', 'transformer.resblocks.11.attn.k_proj.experts.2.w_lora_A', 'transformer.resblocks.11.attn.k_proj.experts.2.w_lora_B', 'transformer.resblocks.11.attn.k_proj.experts.3.w_lora_A', 'transformer.resblocks.11.attn.k_proj.experts.3.w_lora_B', 'transformer.resblocks.11.attn.v_proj.router.gate.weight', 'transformer.resblocks.11.attn.v_proj.experts.0.w_lora_A', 'transformer.resblocks.11.attn.v_proj.experts.0.w_lora_B', 'transformer.resblocks.11.attn.v_proj.experts.1.w_lora_A', 'transformer.resblocks.11.attn.v_proj.experts.1.w_lora_B', 'transformer.resblocks.11.attn.v_proj.experts.2.w_lora_A', 'transformer.resblocks.11.attn.v_proj.experts.2.w_lora_B', 'transformer.resblocks.11.attn.v_proj.experts.3.w_lora_A', 'transformer.resblocks.11.attn.v_proj.experts.3.w_lora_B']
+LR: 0.000200, Acc: 62.0098, Loss: 1.8946
+LR: 0.000200, Acc: 65.9314, Loss: 1.8033
+LR: 0.000200, Acc: 65.9314, Loss: 1.6218
+LR: 0.000200, Acc: 65.6863, Loss: 1.4347
+LR: 0.000199, Acc: 68.1373, Loss: 1.2835
+LR: 0.000199, Acc: 73.7745, Loss: 1.0434
+LR: 0.000199, Acc: 74.7549, Loss: 1.0228
+LR: 0.000199, Acc: 78.6765, Loss: 0.8281
+LR: 0.000198, Acc: 81.1275, Loss: 0.7542
+LR: 0.000198, Acc: 80.3922, Loss: 0.7073
+LR: 0.000198, Acc: 82.8431, Loss: 0.6383
+LR: 0.000197, Acc: 86.0294, Loss: 0.4807
+LR: 0.000197, Acc: 87.7451, Loss: 0.4925
+LR: 0.000196, Acc: 89.2157, Loss: 0.4868
+LR: 0.000195, Acc: 88.9706, Loss: 0.4786
+LR: 0.000195, Acc: 92.4020, Loss: 0.3318
+LR: 0.000194, Acc: 91.9118, Loss: 0.3289
+LR: 0.000193, Acc: 92.1569, Loss: 0.3073
+LR: 0.000193, Acc: 90.6863, Loss: 0.3408
+LR: 0.000192, Acc: 91.6667, Loss: 0.3276
+LR: 0.000191, Acc: 93.3824, Loss: 0.2753
+LR: 0.000190, Acc: 92.8922, Loss: 0.2828
+LR: 0.000189, Acc: 93.3824, Loss: 0.2461
+LR: 0.000188, Acc: 90.6863, Loss: 0.3260
+LR: 0.000187, Acc: 93.1373, Loss: 0.2812
+LR: 0.000186, Acc: 92.6471, Loss: 0.2513
+LR: 0.000185, Acc: 93.8725, Loss: 0.2753
+LR: 0.000184, Acc: 95.3431, Loss: 0.1829
+LR: 0.000183, Acc: 95.0980, Loss: 0.1857
+LR: 0.000182, Acc: 93.8725, Loss: 0.2310
+LR: 0.000181, Acc: 93.6275, Loss: 0.2614
+LR: 0.000180, Acc: 96.5686, Loss: 0.1776
+LR: 0.000178, Acc: 96.5686, Loss: 0.1484
+LR: 0.000177, Acc: 94.6078, Loss: 0.1816
+LR: 0.000176, Acc: 94.8529, Loss: 0.1729
+LR: 0.000174, Acc: 95.0980, Loss: 0.2127
+LR: 0.000173, Acc: 96.0784, Loss: 0.1677
+LR: 0.000172, Acc: 93.1373, Loss: 0.2702
+LR: 0.000170, Acc: 96.0784, Loss: 0.1373
+LR: 0.000169, Acc: 95.3431, Loss: 0.1612
+LR: 0.000167, Acc: 96.3235, Loss: 0.1271
+LR: 0.000166, Acc: 94.8529, Loss: 0.1396
+LR: 0.000164, Acc: 95.5882, Loss: 0.2026
+LR: 0.000162, Acc: 95.0980, Loss: 0.1870
+LR: 0.000161, Acc: 96.5686, Loss: 0.1110
+LR: 0.000159, Acc: 95.3431, Loss: 0.1400
+LR: 0.000158, Acc: 97.5490, Loss: 0.1098
+LR: 0.000156, Acc: 96.5686, Loss: 0.1284
+LR: 0.000154, Acc: 94.6078, Loss: 0.1850
+LR: 0.000152, Acc: 95.3431, Loss: 0.1563
+LR: 0.000151, Acc: 97.3039, Loss: 0.1210
+LR: 0.000149, Acc: 95.8333, Loss: 0.1250
+LR: 0.000147, Acc: 98.0392, Loss: 0.1106
+LR: 0.000145, Acc: 95.5882, Loss: 0.1643
+LR: 0.000144, Acc: 97.5490, Loss: 0.0905
+LR: 0.000142, Acc: 97.3039, Loss: 0.1107
+LR: 0.000140, Acc: 96.5686, Loss: 0.1646
+LR: 0.000138, Acc: 94.1176, Loss: 0.1911
+LR: 0.000136, Acc: 96.8137, Loss: 0.1361
+LR: 0.000134, Acc: 95.5882, Loss: 0.1551
+LR: 0.000132, Acc: 96.5686, Loss: 0.1144
+LR: 0.000130, Acc: 97.5490, Loss: 0.0977
+LR: 0.000128, Acc: 96.3235, Loss: 0.1691
+LR: 0.000126, Acc: 96.8137, Loss: 0.1197
+LR: 0.000124, Acc: 95.8333, Loss: 0.1256
+LR: 0.000123, Acc: 95.5882, Loss: 0.1434
+LR: 0.000121, Acc: 97.3039, Loss: 0.0889
+LR: 0.000119, Acc: 97.3039, Loss: 0.1001
+LR: 0.000117, Acc: 96.5686, Loss: 0.1416
+LR: 0.000115, Acc: 96.5686, Loss: 0.1043
+LR: 0.000113, Acc: 97.3039, Loss: 0.1043
+LR: 0.000110, Acc: 95.0980, Loss: 0.1368
+LR: 0.000108, Acc: 95.5882, Loss: 0.1292
+LR: 0.000106, Acc: 98.0392, Loss: 0.0753
+LR: 0.000104, Acc: 98.0392, Loss: 0.0727
+LR: 0.000102, Acc: 96.5686, Loss: 0.1288
+LR: 0.000100, Acc: 97.5490, Loss: 0.1182
+LR: 0.000098, Acc: 98.0392, Loss: 0.0928
+LR: 0.000096, Acc: 97.3039, Loss: 0.0930
+LR: 0.000094, Acc: 97.0588, Loss: 0.0953
+LR: 0.000092, Acc: 98.7745, Loss: 0.0506
+LR: 0.000090, Acc: 97.7941, Loss: 0.0624
+LR: 0.000088, Acc: 97.5490, Loss: 0.1066
+LR: 0.000086, Acc: 97.3039, Loss: 0.0918
+LR: 0.000084, Acc: 96.0784, Loss: 0.1044
+LR: 0.000082, Acc: 98.5294, Loss: 0.0698
+LR: 0.000080, Acc: 97.5490, Loss: 0.0879
+LR: 0.000078, Acc: 97.7941, Loss: 0.1138
+LR: 0.000076, Acc: 96.8137, Loss: 0.1089
+LR: 0.000074, Acc: 98.5294, Loss: 0.0517
+LR: 0.000072, Acc: 96.5686, Loss: 0.0875
+LR: 0.000070, Acc: 98.0392, Loss: 0.0888
+LR: 0.000068, Acc: 98.0392, Loss: 0.0636
+LR: 0.000067, Acc: 97.5490, Loss: 0.0952
+LR: 0.000065, Acc: 98.0392, Loss: 0.0855
+LR: 0.000063, Acc: 95.8333, Loss: 0.1494
+LR: 0.000061, Acc: 97.7941, Loss: 0.0753
+LR: 0.000059, Acc: 96.0784, Loss: 0.1312
+LR: 0.000057, Acc: 97.5490, Loss: 0.0822
+LR: 0.000055, Acc: 97.3039, Loss: 0.1030
+LR: 0.000054, Acc: 95.8333, Loss: 0.1256
+LR: 0.000052, Acc: 98.0392, Loss: 0.0513
+LR: 0.000050, Acc: 98.0392, Loss: 0.0757
+LR: 0.000048, Acc: 98.7745, Loss: 0.0573
+LR: 0.000047, Acc: 98.5294, Loss: 0.0702
+LR: 0.000045, Acc: 97.7941, Loss: 0.0822
+LR: 0.000043, Acc: 98.2843, Loss: 0.0617
+LR: 0.000042, Acc: 98.0392, Loss: 0.0788
+LR: 0.000040, Acc: 97.0588, Loss: 0.1022
+LR: 0.000038, Acc: 97.3039, Loss: 0.0884
+LR: 0.000037, Acc: 97.3039, Loss: 0.1088
+LR: 0.000035, Acc: 97.5490, Loss: 0.1236
+LR: 0.000034, Acc: 98.2843, Loss: 0.0734
+LR: 0.000032, Acc: 97.7941, Loss: 0.0689
+LR: 0.000031, Acc: 98.0392, Loss: 0.0599
+LR: 0.000029, Acc: 97.3039, Loss: 0.1025
+LR: 0.000028, Acc: 98.7745, Loss: 0.0715
+LR: 0.000026, Acc: 96.8137, Loss: 0.1221
+LR: 0.000025, Acc: 98.2843, Loss: 0.0768
+LR: 0.000024, Acc: 98.0392, Loss: 0.0916
+LR: 0.000023, Acc: 97.0588, Loss: 0.1198
+LR: 0.000021, Acc: 98.5294, Loss: 0.0490
+LR: 0.000020, Acc: 99.2647, Loss: 0.0594
+LR: 0.000019, Acc: 97.0588, Loss: 0.1171
+LR: 0.000018, Acc: 98.7745, Loss: 0.0653
+LR: 0.000017, Acc: 99.0196, Loss: 0.0382
+LR: 0.000016, Acc: 100.0000, Loss: 0.0245
+LR: 0.000015, Acc: 99.2647, Loss: 0.0434
+LR: 0.000014, Acc: 98.5294, Loss: 0.0851
+LR: 0.000013, Acc: 97.5490, Loss: 0.0695
+LR: 0.000012, Acc: 98.2843, Loss: 0.0649
+LR: 0.000011, Acc: 96.8137, Loss: 0.1201
+LR: 0.000010, Acc: 98.2843, Loss: 0.0571
+LR: 0.000009, Acc: 97.5490, Loss: 0.1137
+LR: 0.000008, Acc: 97.5490, Loss: 0.0946
+LR: 0.000008, Acc: 99.0196, Loss: 0.0391
+LR: 0.000007, Acc: 98.7745, Loss: 0.0445
+LR: 0.000006, Acc: 97.7941, Loss: 0.0741
+>>> Switching to ROUTER-ONLY finetuning <<<
+LR: 0.000199, Acc: 98.0392, Loss: 0.0817
+LR: 0.000195, Acc: 98.5294, Loss: 0.0516
+LR: 0.000187, Acc: 97.3039, Loss: 0.0801
+LR: 0.000175, Acc: 95.8333, Loss: 0.1246
+LR: 0.000160, Acc: 98.2843, Loss: 0.0713
+LR: 0.000143, Acc: 98.5294, Loss: 0.0680
+LR: 0.000124, Acc: 98.7745, Loss: 0.0604
+LR: 0.000104, Acc: 98.2843, Loss: 0.1314
+LR: 0.000083, Acc: 98.2843, Loss: 0.0691
+LR: 0.000064, Acc: 97.7941, Loss: 0.0728
+LR: 0.000046, Acc: 98.2843, Loss: 0.0611
+LR: 0.000030, Acc: 98.7745, Loss: 0.0406
+LR: 0.000017, Acc: 98.7745, Loss: 0.0599
+LR: 0.000008, Acc: 99.2647, Loss: 0.0396
+LR: 0.000002, Acc: 98.7745, Loss: 0.0399
+**** Final test accuracy: 92.53. ****
+
+LoRA weights saved to weights/vitb16/oxford_flowers/4shots/4experts/seed1/CLIP-MoLE_oxford_flowers.pt

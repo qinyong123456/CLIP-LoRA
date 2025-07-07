@@ -1,0 +1,1350 @@
+created virtual environment CPython3.10.13.final.0-64 in 607ms
+  creator CPython3Posix(dest=/localscratch/pedro36.57161276.0/env, clear=False, no_vcs_ignore=False, global=False)
+  seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=/home/pedro36/.local/share/virtualenv)
+    added seed packages: pip==25.1.1, setuptools==80.7.1, wheel==0.45.1+computecanada
+  activators BashActivator,CShellActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator
+Looking in links: /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/x86-64-v4, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/x86-64-v3, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/generic, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic
+Requirement already satisfied: pip in /localscratch/pedro36.57161276.0/env/lib/python3.10/site-packages (25.1.1)
+Looking in links: /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/x86-64-v4, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/x86-64-v3, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/generic, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/x86-64-v3/torch-2.6.0+computecanada-cp310-cp310-linux_x86_64.whl
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/generic/torchvision-0.21.0+computecanada-cp310-cp310-linux_x86_64.whl
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/x86-64-v3/torchaudio-2.6.0+computecanada-cp310-cp310-linux_x86_64.whl
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/ftfy-6.3.1+computecanada-py3-none-any.whl
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/generic/scipy-1.15.1+computecanada-cp310-cp310-linux_x86_64.whl
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/regex-2024.9.11+computecanada-cp310-cp310-linux_x86_64.whl
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/tqdm-4.67.1+computecanada-py3-none-any.whl
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/gdown-5.2.0+computecanada-py3-none-any.whl
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/x86-64-v3/pandas-2.2.3+computecanada-cp310-cp310-linux_x86_64.whl
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/filelock-3.18.0+computecanada-py3-none-any.whl (from torch)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/typing_extensions-4.14.0+computecanada-py3-none-any.whl (from torch)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/networkx-3.5+computecanada-py3-none-any.whl (from torch)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/jinja2-3.1.6+computecanada-py3-none-any.whl (from torch)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/fsspec-2025.5.1+computecanada-py3-none-any.whl (from torch)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/sympy-1.13.1+computecanada-py3-none-any.whl (from torch)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/mpmath-1.3.0+computecanada-py3-none-any.whl (from sympy==1.13.1->torch)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/generic/numpy-2.2.2+computecanada-cp310-cp310-linux_x86_64.whl (from torchvision)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/x86-64-v3/Pillow_SIMD-9.5.0.post2+computecanada-cp310-cp310-linux_x86_64.whl (from torchvision)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/wcwidth-0.2.13+computecanada-py2.py3-none-any.whl (from ftfy)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/beautifulsoup4-4.13.4+computecanada-py3-none-any.whl (from gdown)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/requests-2.32.4+computecanada-py3-none-any.whl (from gdown)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/python_dateutil-2.9.0.post0+computecanada-py2.py3-none-any.whl (from pandas)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/pytz-2025.2+computecanada-py2.py3-none-any.whl (from pandas)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/tzdata-2025.2+computecanada-py2.py3-none-any.whl (from pandas)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/six-1.17.0+computecanada-py2.py3-none-any.whl (from python-dateutil>=2.8.2->pandas)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/soupsieve-2.7+computecanada-py3-none-any.whl (from beautifulsoup4->gdown)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/MarkupSafe-2.1.5+computecanada-cp310-cp310-linux_x86_64.whl (from jinja2->torch)
+INFO: pip is looking at multiple versions of networkx to determine which version is compatible with other requirements. This could take a while.
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/networkx-3.4.2+computecanada-py3-none-any.whl (from torch)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/charset_normalizer-3.4.2+computecanada-py3-none-any.whl (from requests[socks]->gdown)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/idna-3.10+computecanada-py3-none-any.whl (from requests[socks]->gdown)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/urllib3-2.5.0+computecanada-py3-none-any.whl (from requests[socks]->gdown)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/certifi-2025.6.15+computecanada-py3-none-any.whl (from requests[socks]->gdown)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/PySocks-1.7.1+computecanada-py3-none-any.whl (from requests[socks]->gdown)
+Installing collected packages: wcwidth, pytz, mpmath, urllib3, tzdata, typing-extensions, tqdm, sympy, soupsieve, six, regex, PySocks, pillow-simd, numpy, networkx, MarkupSafe, idna, ftfy, fsspec, filelock, charset-normalizer, certifi, scipy, requests, python-dateutil, jinja2, beautifulsoup4, torch, pandas, torchvision, torchaudio, gdown
+
+Successfully installed MarkupSafe-2.1.5+computecanada PySocks-1.7.1+computecanada beautifulsoup4-4.13.4+computecanada certifi-2025.6.15+computecanada charset-normalizer-3.4.2+computecanada filelock-3.18.0+computecanada fsspec-2025.5.1+computecanada ftfy-6.3.1+computecanada gdown-5.2.0+computecanada idna-3.10+computecanada jinja2-3.1.6+computecanada mpmath-1.3.0+computecanada networkx-3.4.2+computecanada numpy-2.2.2+computecanada pandas-2.2.3+computecanada pillow-simd-9.5.0.post2+computecanada python-dateutil-2.9.0.post0+computecanada pytz-2025.2+computecanada regex-2024.9.11+computecanada requests-2.32.4+computecanada scipy-1.15.1+computecanada six-1.17.0+computecanada soupsieve-2.7+computecanada sympy-1.13.1+computecanada torch-2.6.0+computecanada torchaudio-2.6.0+computecanada torchvision-0.21.0+computecanada tqdm-4.67.1+computecanada typing-extensions-4.14.0+computecanada tzdata-2025.2+computecanada urllib3-2.5.0+computecanada wcwidth-0.2.13+computecanada
+Preparing dataset.
+Reading split from /home/pedro36/projects/def-leszek/pedro36/datasets/DATA/eurosat/split_zhou_EuroSAT.json
+Creating a 4-shot dataset
+Creating a 4-shot dataset
+
+Getting textual features as CLIP's classifier.
+
+Loading visual features and labels from val set.
+
+Loading visual features and labels from test set.
+
+**** Zero-shot CLIP's test accuracy: 42.25. ****
+
+Residual Attention Block 0: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=512, out_features=512, bias=True)
+  )
+  (ln_1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=512, out_features=2048, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=2048, out_features=512, bias=True)
+  )
+  (ln_2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 1: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=512, out_features=512, bias=True)
+  )
+  (ln_1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=512, out_features=2048, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=2048, out_features=512, bias=True)
+  )
+  (ln_2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 2: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=512, out_features=512, bias=True)
+  )
+  (ln_1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=512, out_features=2048, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=2048, out_features=512, bias=True)
+  )
+  (ln_2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 3: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=512, out_features=512, bias=True)
+  )
+  (ln_1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=512, out_features=2048, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=2048, out_features=512, bias=True)
+  )
+  (ln_2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 4: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=512, out_features=512, bias=True)
+  )
+  (ln_1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=512, out_features=2048, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=2048, out_features=512, bias=True)
+  )
+  (ln_2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 5: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=512, out_features=512, bias=True)
+  )
+  (ln_1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=512, out_features=2048, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=2048, out_features=512, bias=True)
+  )
+  (ln_2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 6: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=512, out_features=512, bias=True)
+  )
+  (ln_1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=512, out_features=2048, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=2048, out_features=512, bias=True)
+  )
+  (ln_2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 7: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=512, out_features=512, bias=True)
+  )
+  (ln_1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=512, out_features=2048, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=2048, out_features=512, bias=True)
+  )
+  (ln_2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 8: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=512, out_features=512, bias=True)
+  )
+  (ln_1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=512, out_features=2048, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=2048, out_features=512, bias=True)
+  )
+  (ln_2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 9: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=512, out_features=512, bias=True)
+  )
+  (ln_1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=512, out_features=2048, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=2048, out_features=512, bias=True)
+  )
+  (ln_2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 10: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=512, out_features=512, bias=True)
+  )
+  (ln_1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=512, out_features=2048, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=2048, out_features=512, bias=True)
+  )
+  (ln_2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 11: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=512, out_features=512, bias=True)
+  )
+  (ln_1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=512, out_features=2048, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=2048, out_features=512, bias=True)
+  )
+  (ln_2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 0: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=768, out_features=768, bias=True)
+  )
+  (ln_1): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=768, out_features=3072, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=3072, out_features=768, bias=True)
+  )
+  (ln_2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 1: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=768, out_features=768, bias=True)
+  )
+  (ln_1): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=768, out_features=3072, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=3072, out_features=768, bias=True)
+  )
+  (ln_2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 2: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=768, out_features=768, bias=True)
+  )
+  (ln_1): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=768, out_features=3072, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=3072, out_features=768, bias=True)
+  )
+  (ln_2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 3: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=768, out_features=768, bias=True)
+  )
+  (ln_1): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=768, out_features=3072, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=3072, out_features=768, bias=True)
+  )
+  (ln_2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 4: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=768, out_features=768, bias=True)
+  )
+  (ln_1): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=768, out_features=3072, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=3072, out_features=768, bias=True)
+  )
+  (ln_2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 5: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=768, out_features=768, bias=True)
+  )
+  (ln_1): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=768, out_features=3072, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=3072, out_features=768, bias=True)
+  )
+  (ln_2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 6: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=768, out_features=768, bias=True)
+  )
+  (ln_1): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=768, out_features=3072, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=3072, out_features=768, bias=True)
+  )
+  (ln_2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 7: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=768, out_features=768, bias=True)
+  )
+  (ln_1): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=768, out_features=3072, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=3072, out_features=768, bias=True)
+  )
+  (ln_2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 8: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=768, out_features=768, bias=True)
+  )
+  (ln_1): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=768, out_features=3072, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=3072, out_features=768, bias=True)
+  )
+  (ln_2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 9: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=768, out_features=768, bias=True)
+  )
+  (ln_1): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=768, out_features=3072, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=3072, out_features=768, bias=True)
+  )
+  (ln_2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 10: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=768, out_features=768, bias=True)
+  )
+  (ln_1): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=768, out_features=3072, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=3072, out_features=768, bias=True)
+  )
+  (ln_2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+)
+Residual Attention Block 11: ResidualAttentionBlock(
+  (attn): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=768, out_features=768, bias=True)
+  )
+  (ln_1): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+  (mlp): Sequential(
+    (c_fc): Linear(in_features=768, out_features=3072, bias=True)
+    (gelu): QuickGELU()
+    (c_proj): Linear(in_features=3072, out_features=768, bias=True)
+  )
+  (ln_2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+)
+Trainable parameters: ['visual.transformer.resblocks.0.attn.q_proj.router.gate.weight', 'visual.transformer.resblocks.0.attn.q_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.0.attn.q_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.0.attn.q_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.0.attn.q_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.0.attn.q_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.0.attn.q_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.0.attn.q_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.0.attn.q_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.0.attn.q_proj.experts.4.w_lora_A', 'visual.transformer.resblocks.0.attn.q_proj.experts.4.w_lora_B', 'visual.transformer.resblocks.0.attn.q_proj.experts.5.w_lora_A', 'visual.transformer.resblocks.0.attn.q_proj.experts.5.w_lora_B', 'visual.transformer.resblocks.0.attn.k_proj.router.gate.weight', 'visual.transformer.resblocks.0.attn.k_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.0.attn.k_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.0.attn.k_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.0.attn.k_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.0.attn.k_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.0.attn.k_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.0.attn.k_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.0.attn.k_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.0.attn.k_proj.experts.4.w_lora_A', 'visual.transformer.resblocks.0.attn.k_proj.experts.4.w_lora_B', 'visual.transformer.resblocks.0.attn.k_proj.experts.5.w_lora_A', 'visual.transformer.resblocks.0.attn.k_proj.experts.5.w_lora_B', 'visual.transformer.resblocks.0.attn.v_proj.router.gate.weight', 'visual.transformer.resblocks.0.attn.v_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.0.attn.v_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.0.attn.v_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.0.attn.v_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.0.attn.v_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.0.attn.v_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.0.attn.v_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.0.attn.v_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.0.attn.v_proj.experts.4.w_lora_A', 'visual.transformer.resblocks.0.attn.v_proj.experts.4.w_lora_B', 'visual.transformer.resblocks.0.attn.v_proj.experts.5.w_lora_A', 'visual.transformer.resblocks.0.attn.v_proj.experts.5.w_lora_B', 'visual.transformer.resblocks.1.attn.q_proj.router.gate.weight', 'visual.transformer.resblocks.1.attn.q_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.1.attn.q_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.1.attn.q_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.1.attn.q_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.1.attn.q_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.1.attn.q_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.1.attn.q_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.1.attn.q_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.1.attn.q_proj.experts.4.w_lora_A', 'visual.transformer.resblocks.1.attn.q_proj.experts.4.w_lora_B', 'visual.transformer.resblocks.1.attn.q_proj.experts.5.w_lora_A', 'visual.transformer.resblocks.1.attn.q_proj.experts.5.w_lora_B', 'visual.transformer.resblocks.1.attn.k_proj.router.gate.weight', 'visual.transformer.resblocks.1.attn.k_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.1.attn.k_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.1.attn.k_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.1.attn.k_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.1.attn.k_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.1.attn.k_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.1.attn.k_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.1.attn.k_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.1.attn.k_proj.experts.4.w_lora_A', 'visual.transformer.resblocks.1.attn.k_proj.experts.4.w_lora_B', 'visual.transformer.resblocks.1.attn.k_proj.experts.5.w_lora_A', 'visual.transformer.resblocks.1.attn.k_proj.experts.5.w_lora_B', 'visual.transformer.resblocks.1.attn.v_proj.router.gate.weight', 'visual.transformer.resblocks.1.attn.v_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.1.attn.v_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.1.attn.v_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.1.attn.v_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.1.attn.v_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.1.attn.v_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.1.attn.v_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.1.attn.v_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.1.attn.v_proj.experts.4.w_lora_A', 'visual.transformer.resblocks.1.attn.v_proj.experts.4.w_lora_B', 'visual.transformer.resblocks.1.attn.v_proj.experts.5.w_lora_A', 'visual.transformer.resblocks.1.attn.v_proj.experts.5.w_lora_B', 'visual.transformer.resblocks.2.attn.q_proj.router.gate.weight', 'visual.transformer.resblocks.2.attn.q_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.2.attn.q_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.2.attn.q_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.2.attn.q_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.2.attn.q_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.2.attn.q_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.2.attn.q_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.2.attn.q_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.2.attn.q_proj.experts.4.w_lora_A', 'visual.transformer.resblocks.2.attn.q_proj.experts.4.w_lora_B', 'visual.transformer.resblocks.2.attn.q_proj.experts.5.w_lora_A', 'visual.transformer.resblocks.2.attn.q_proj.experts.5.w_lora_B', 'visual.transformer.resblocks.2.attn.k_proj.router.gate.weight', 'visual.transformer.resblocks.2.attn.k_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.2.attn.k_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.2.attn.k_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.2.attn.k_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.2.attn.k_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.2.attn.k_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.2.attn.k_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.2.attn.k_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.2.attn.k_proj.experts.4.w_lora_A', 'visual.transformer.resblocks.2.attn.k_proj.experts.4.w_lora_B', 'visual.transformer.resblocks.2.attn.k_proj.experts.5.w_lora_A', 'visual.transformer.resblocks.2.attn.k_proj.experts.5.w_lora_B', 'visual.transformer.resblocks.2.attn.v_proj.router.gate.weight', 'visual.transformer.resblocks.2.attn.v_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.2.attn.v_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.2.attn.v_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.2.attn.v_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.2.attn.v_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.2.attn.v_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.2.attn.v_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.2.attn.v_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.2.attn.v_proj.experts.4.w_lora_A', 'visual.transformer.resblocks.2.attn.v_proj.experts.4.w_lora_B', 'visual.transformer.resblocks.2.attn.v_proj.experts.5.w_lora_A', 'visual.transformer.resblocks.2.attn.v_proj.experts.5.w_lora_B', 'visual.transformer.resblocks.3.attn.q_proj.router.gate.weight', 'visual.transformer.resblocks.3.attn.q_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.3.attn.q_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.3.attn.q_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.3.attn.q_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.3.attn.q_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.3.attn.q_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.3.attn.q_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.3.attn.q_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.3.attn.q_proj.experts.4.w_lora_A', 'visual.transformer.resblocks.3.attn.q_proj.experts.4.w_lora_B', 'visual.transformer.resblocks.3.attn.q_proj.experts.5.w_lora_A', 'visual.transformer.resblocks.3.attn.q_proj.experts.5.w_lora_B', 'visual.transformer.resblocks.3.attn.k_proj.router.gate.weight', 'visual.transformer.resblocks.3.attn.k_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.3.attn.k_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.3.attn.k_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.3.attn.k_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.3.attn.k_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.3.attn.k_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.3.attn.k_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.3.attn.k_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.3.attn.k_proj.experts.4.w_lora_A', 'visual.transformer.resblocks.3.attn.k_proj.experts.4.w_lora_B', 'visual.transformer.resblocks.3.attn.k_proj.experts.5.w_lora_A', 'visual.transformer.resblocks.3.attn.k_proj.experts.5.w_lora_B', 'visual.transformer.resblocks.3.attn.v_proj.router.gate.weight', 'visual.transformer.resblocks.3.attn.v_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.3.attn.v_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.3.attn.v_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.3.attn.v_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.3.attn.v_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.3.attn.v_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.3.attn.v_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.3.attn.v_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.3.attn.v_proj.experts.4.w_lora_A', 'visual.transformer.resblocks.3.attn.v_proj.experts.4.w_lora_B', 'visual.transformer.resblocks.3.attn.v_proj.experts.5.w_lora_A', 'visual.transformer.resblocks.3.attn.v_proj.experts.5.w_lora_B', 'visual.transformer.resblocks.4.attn.q_proj.router.gate.weight', 'visual.transformer.resblocks.4.attn.q_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.4.attn.q_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.4.attn.q_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.4.attn.q_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.4.attn.q_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.4.attn.q_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.4.attn.q_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.4.attn.q_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.4.attn.q_proj.experts.4.w_lora_A', 'visual.transformer.resblocks.4.attn.q_proj.experts.4.w_lora_B', 'visual.transformer.resblocks.4.attn.q_proj.experts.5.w_lora_A', 'visual.transformer.resblocks.4.attn.q_proj.experts.5.w_lora_B', 'visual.transformer.resblocks.4.attn.k_proj.router.gate.weight', 'visual.transformer.resblocks.4.attn.k_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.4.attn.k_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.4.attn.k_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.4.attn.k_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.4.attn.k_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.4.attn.k_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.4.attn.k_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.4.attn.k_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.4.attn.k_proj.experts.4.w_lora_A', 'visual.transformer.resblocks.4.attn.k_proj.experts.4.w_lora_B', 'visual.transformer.resblocks.4.attn.k_proj.experts.5.w_lora_A', 'visual.transformer.resblocks.4.attn.k_proj.experts.5.w_lora_B', 'visual.transformer.resblocks.4.attn.v_proj.router.gate.weight', 'visual.transformer.resblocks.4.attn.v_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.4.attn.v_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.4.attn.v_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.4.attn.v_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.4.attn.v_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.4.attn.v_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.4.attn.v_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.4.attn.v_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.4.attn.v_proj.experts.4.w_lora_A', 'visual.transformer.resblocks.4.attn.v_proj.experts.4.w_lora_B', 'visual.transformer.resblocks.4.attn.v_proj.experts.5.w_lora_A', 'visual.transformer.resblocks.4.attn.v_proj.experts.5.w_lora_B', 'visual.transformer.resblocks.5.attn.q_proj.router.gate.weight', 'visual.transformer.resblocks.5.attn.q_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.5.attn.q_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.5.attn.q_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.5.attn.q_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.5.attn.q_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.5.attn.q_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.5.attn.q_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.5.attn.q_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.5.attn.q_proj.experts.4.w_lora_A', 'visual.transformer.resblocks.5.attn.q_proj.experts.4.w_lora_B', 'visual.transformer.resblocks.5.attn.q_proj.experts.5.w_lora_A', 'visual.transformer.resblocks.5.attn.q_proj.experts.5.w_lora_B', 'visual.transformer.resblocks.5.attn.k_proj.router.gate.weight', 'visual.transformer.resblocks.5.attn.k_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.5.attn.k_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.5.attn.k_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.5.attn.k_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.5.attn.k_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.5.attn.k_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.5.attn.k_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.5.attn.k_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.5.attn.k_proj.experts.4.w_lora_A', 'visual.transformer.resblocks.5.attn.k_proj.experts.4.w_lora_B', 'visual.transformer.resblocks.5.attn.k_proj.experts.5.w_lora_A', 'visual.transformer.resblocks.5.attn.k_proj.experts.5.w_lora_B', 'visual.transformer.resblocks.5.attn.v_proj.router.gate.weight', 'visual.transformer.resblocks.5.attn.v_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.5.attn.v_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.5.attn.v_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.5.attn.v_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.5.attn.v_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.5.attn.v_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.5.attn.v_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.5.attn.v_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.5.attn.v_proj.experts.4.w_lora_A', 'visual.transformer.resblocks.5.attn.v_proj.experts.4.w_lora_B', 'visual.transformer.resblocks.5.attn.v_proj.experts.5.w_lora_A', 'visual.transformer.resblocks.5.attn.v_proj.experts.5.w_lora_B', 'visual.transformer.resblocks.6.attn.q_proj.router.gate.weight', 'visual.transformer.resblocks.6.attn.q_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.6.attn.q_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.6.attn.q_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.6.attn.q_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.6.attn.q_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.6.attn.q_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.6.attn.q_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.6.attn.q_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.6.attn.q_proj.experts.4.w_lora_A', 'visual.transformer.resblocks.6.attn.q_proj.experts.4.w_lora_B', 'visual.transformer.resblocks.6.attn.q_proj.experts.5.w_lora_A', 'visual.transformer.resblocks.6.attn.q_proj.experts.5.w_lora_B', 'visual.transformer.resblocks.6.attn.k_proj.router.gate.weight', 'visual.transformer.resblocks.6.attn.k_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.6.attn.k_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.6.attn.k_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.6.attn.k_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.6.attn.k_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.6.attn.k_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.6.attn.k_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.6.attn.k_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.6.attn.k_proj.experts.4.w_lora_A', 'visual.transformer.resblocks.6.attn.k_proj.experts.4.w_lora_B', 'visual.transformer.resblocks.6.attn.k_proj.experts.5.w_lora_A', 'visual.transformer.resblocks.6.attn.k_proj.experts.5.w_lora_B', 'visual.transformer.resblocks.6.attn.v_proj.router.gate.weight', 'visual.transformer.resblocks.6.attn.v_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.6.attn.v_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.6.attn.v_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.6.attn.v_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.6.attn.v_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.6.attn.v_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.6.attn.v_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.6.attn.v_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.6.attn.v_proj.experts.4.w_lora_A', 'visual.transformer.resblocks.6.attn.v_proj.experts.4.w_lora_B', 'visual.transformer.resblocks.6.attn.v_proj.experts.5.w_lora_A', 'visual.transformer.resblocks.6.attn.v_proj.experts.5.w_lora_B', 'visual.transformer.resblocks.7.attn.q_proj.router.gate.weight', 'visual.transformer.resblocks.7.attn.q_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.7.attn.q_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.7.attn.q_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.7.attn.q_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.7.attn.q_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.7.attn.q_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.7.attn.q_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.7.attn.q_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.7.attn.q_proj.experts.4.w_lora_A', 'visual.transformer.resblocks.7.attn.q_proj.experts.4.w_lora_B', 'visual.transformer.resblocks.7.attn.q_proj.experts.5.w_lora_A', 'visual.transformer.resblocks.7.attn.q_proj.experts.5.w_lora_B', 'visual.transformer.resblocks.7.attn.k_proj.router.gate.weight', 'visual.transformer.resblocks.7.attn.k_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.7.attn.k_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.7.attn.k_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.7.attn.k_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.7.attn.k_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.7.attn.k_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.7.attn.k_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.7.attn.k_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.7.attn.k_proj.experts.4.w_lora_A', 'visual.transformer.resblocks.7.attn.k_proj.experts.4.w_lora_B', 'visual.transformer.resblocks.7.attn.k_proj.experts.5.w_lora_A', 'visual.transformer.resblocks.7.attn.k_proj.experts.5.w_lora_B', 'visual.transformer.resblocks.7.attn.v_proj.router.gate.weight', 'visual.transformer.resblocks.7.attn.v_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.7.attn.v_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.7.attn.v_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.7.attn.v_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.7.attn.v_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.7.attn.v_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.7.attn.v_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.7.attn.v_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.7.attn.v_proj.experts.4.w_lora_A', 'visual.transformer.resblocks.7.attn.v_proj.experts.4.w_lora_B', 'visual.transformer.resblocks.7.attn.v_proj.experts.5.w_lora_A', 'visual.transformer.resblocks.7.attn.v_proj.experts.5.w_lora_B', 'visual.transformer.resblocks.8.attn.q_proj.router.gate.weight', 'visual.transformer.resblocks.8.attn.q_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.8.attn.q_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.8.attn.q_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.8.attn.q_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.8.attn.q_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.8.attn.q_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.8.attn.q_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.8.attn.q_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.8.attn.q_proj.experts.4.w_lora_A', 'visual.transformer.resblocks.8.attn.q_proj.experts.4.w_lora_B', 'visual.transformer.resblocks.8.attn.q_proj.experts.5.w_lora_A', 'visual.transformer.resblocks.8.attn.q_proj.experts.5.w_lora_B', 'visual.transformer.resblocks.8.attn.k_proj.router.gate.weight', 'visual.transformer.resblocks.8.attn.k_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.8.attn.k_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.8.attn.k_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.8.attn.k_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.8.attn.k_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.8.attn.k_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.8.attn.k_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.8.attn.k_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.8.attn.k_proj.experts.4.w_lora_A', 'visual.transformer.resblocks.8.attn.k_proj.experts.4.w_lora_B', 'visual.transformer.resblocks.8.attn.k_proj.experts.5.w_lora_A', 'visual.transformer.resblocks.8.attn.k_proj.experts.5.w_lora_B', 'visual.transformer.resblocks.8.attn.v_proj.router.gate.weight', 'visual.transformer.resblocks.8.attn.v_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.8.attn.v_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.8.attn.v_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.8.attn.v_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.8.attn.v_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.8.attn.v_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.8.attn.v_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.8.attn.v_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.8.attn.v_proj.experts.4.w_lora_A', 'visual.transformer.resblocks.8.attn.v_proj.experts.4.w_lora_B', 'visual.transformer.resblocks.8.attn.v_proj.experts.5.w_lora_A', 'visual.transformer.resblocks.8.attn.v_proj.experts.5.w_lora_B', 'visual.transformer.resblocks.9.attn.q_proj.router.gate.weight', 'visual.transformer.resblocks.9.attn.q_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.9.attn.q_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.9.attn.q_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.9.attn.q_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.9.attn.q_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.9.attn.q_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.9.attn.q_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.9.attn.q_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.9.attn.q_proj.experts.4.w_lora_A', 'visual.transformer.resblocks.9.attn.q_proj.experts.4.w_lora_B', 'visual.transformer.resblocks.9.attn.q_proj.experts.5.w_lora_A', 'visual.transformer.resblocks.9.attn.q_proj.experts.5.w_lora_B', 'visual.transformer.resblocks.9.attn.k_proj.router.gate.weight', 'visual.transformer.resblocks.9.attn.k_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.9.attn.k_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.9.attn.k_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.9.attn.k_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.9.attn.k_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.9.attn.k_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.9.attn.k_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.9.attn.k_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.9.attn.k_proj.experts.4.w_lora_A', 'visual.transformer.resblocks.9.attn.k_proj.experts.4.w_lora_B', 'visual.transformer.resblocks.9.attn.k_proj.experts.5.w_lora_A', 'visual.transformer.resblocks.9.attn.k_proj.experts.5.w_lora_B', 'visual.transformer.resblocks.9.attn.v_proj.router.gate.weight', 'visual.transformer.resblocks.9.attn.v_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.9.attn.v_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.9.attn.v_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.9.attn.v_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.9.attn.v_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.9.attn.v_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.9.attn.v_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.9.attn.v_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.9.attn.v_proj.experts.4.w_lora_A', 'visual.transformer.resblocks.9.attn.v_proj.experts.4.w_lora_B', 'visual.transformer.resblocks.9.attn.v_proj.experts.5.w_lora_A', 'visual.transformer.resblocks.9.attn.v_proj.experts.5.w_lora_B', 'visual.transformer.resblocks.10.attn.q_proj.router.gate.weight', 'visual.transformer.resblocks.10.attn.q_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.10.attn.q_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.10.attn.q_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.10.attn.q_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.10.attn.q_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.10.attn.q_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.10.attn.q_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.10.attn.q_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.10.attn.q_proj.experts.4.w_lora_A', 'visual.transformer.resblocks.10.attn.q_proj.experts.4.w_lora_B', 'visual.transformer.resblocks.10.attn.q_proj.experts.5.w_lora_A', 'visual.transformer.resblocks.10.attn.q_proj.experts.5.w_lora_B', 'visual.transformer.resblocks.10.attn.k_proj.router.gate.weight', 'visual.transformer.resblocks.10.attn.k_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.10.attn.k_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.10.attn.k_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.10.attn.k_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.10.attn.k_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.10.attn.k_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.10.attn.k_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.10.attn.k_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.10.attn.k_proj.experts.4.w_lora_A', 'visual.transformer.resblocks.10.attn.k_proj.experts.4.w_lora_B', 'visual.transformer.resblocks.10.attn.k_proj.experts.5.w_lora_A', 'visual.transformer.resblocks.10.attn.k_proj.experts.5.w_lora_B', 'visual.transformer.resblocks.10.attn.v_proj.router.gate.weight', 'visual.transformer.resblocks.10.attn.v_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.10.attn.v_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.10.attn.v_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.10.attn.v_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.10.attn.v_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.10.attn.v_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.10.attn.v_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.10.attn.v_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.10.attn.v_proj.experts.4.w_lora_A', 'visual.transformer.resblocks.10.attn.v_proj.experts.4.w_lora_B', 'visual.transformer.resblocks.10.attn.v_proj.experts.5.w_lora_A', 'visual.transformer.resblocks.10.attn.v_proj.experts.5.w_lora_B', 'visual.transformer.resblocks.11.attn.q_proj.router.gate.weight', 'visual.transformer.resblocks.11.attn.q_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.11.attn.q_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.11.attn.q_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.11.attn.q_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.11.attn.q_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.11.attn.q_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.11.attn.q_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.11.attn.q_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.11.attn.q_proj.experts.4.w_lora_A', 'visual.transformer.resblocks.11.attn.q_proj.experts.4.w_lora_B', 'visual.transformer.resblocks.11.attn.q_proj.experts.5.w_lora_A', 'visual.transformer.resblocks.11.attn.q_proj.experts.5.w_lora_B', 'visual.transformer.resblocks.11.attn.k_proj.router.gate.weight', 'visual.transformer.resblocks.11.attn.k_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.11.attn.k_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.11.attn.k_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.11.attn.k_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.11.attn.k_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.11.attn.k_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.11.attn.k_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.11.attn.k_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.11.attn.k_proj.experts.4.w_lora_A', 'visual.transformer.resblocks.11.attn.k_proj.experts.4.w_lora_B', 'visual.transformer.resblocks.11.attn.k_proj.experts.5.w_lora_A', 'visual.transformer.resblocks.11.attn.k_proj.experts.5.w_lora_B', 'visual.transformer.resblocks.11.attn.v_proj.router.gate.weight', 'visual.transformer.resblocks.11.attn.v_proj.experts.0.w_lora_A', 'visual.transformer.resblocks.11.attn.v_proj.experts.0.w_lora_B', 'visual.transformer.resblocks.11.attn.v_proj.experts.1.w_lora_A', 'visual.transformer.resblocks.11.attn.v_proj.experts.1.w_lora_B', 'visual.transformer.resblocks.11.attn.v_proj.experts.2.w_lora_A', 'visual.transformer.resblocks.11.attn.v_proj.experts.2.w_lora_B', 'visual.transformer.resblocks.11.attn.v_proj.experts.3.w_lora_A', 'visual.transformer.resblocks.11.attn.v_proj.experts.3.w_lora_B', 'visual.transformer.resblocks.11.attn.v_proj.experts.4.w_lora_A', 'visual.transformer.resblocks.11.attn.v_proj.experts.4.w_lora_B', 'visual.transformer.resblocks.11.attn.v_proj.experts.5.w_lora_A', 'visual.transformer.resblocks.11.attn.v_proj.experts.5.w_lora_B', 'transformer.resblocks.0.attn.q_proj.router.gate.weight', 'transformer.resblocks.0.attn.q_proj.experts.0.w_lora_A', 'transformer.resblocks.0.attn.q_proj.experts.0.w_lora_B', 'transformer.resblocks.0.attn.q_proj.experts.1.w_lora_A', 'transformer.resblocks.0.attn.q_proj.experts.1.w_lora_B', 'transformer.resblocks.0.attn.q_proj.experts.2.w_lora_A', 'transformer.resblocks.0.attn.q_proj.experts.2.w_lora_B', 'transformer.resblocks.0.attn.q_proj.experts.3.w_lora_A', 'transformer.resblocks.0.attn.q_proj.experts.3.w_lora_B', 'transformer.resblocks.0.attn.q_proj.experts.4.w_lora_A', 'transformer.resblocks.0.attn.q_proj.experts.4.w_lora_B', 'transformer.resblocks.0.attn.q_proj.experts.5.w_lora_A', 'transformer.resblocks.0.attn.q_proj.experts.5.w_lora_B', 'transformer.resblocks.0.attn.k_proj.router.gate.weight', 'transformer.resblocks.0.attn.k_proj.experts.0.w_lora_A', 'transformer.resblocks.0.attn.k_proj.experts.0.w_lora_B', 'transformer.resblocks.0.attn.k_proj.experts.1.w_lora_A', 'transformer.resblocks.0.attn.k_proj.experts.1.w_lora_B', 'transformer.resblocks.0.attn.k_proj.experts.2.w_lora_A', 'transformer.resblocks.0.attn.k_proj.experts.2.w_lora_B', 'transformer.resblocks.0.attn.k_proj.experts.3.w_lora_A', 'transformer.resblocks.0.attn.k_proj.experts.3.w_lora_B', 'transformer.resblocks.0.attn.k_proj.experts.4.w_lora_A', 'transformer.resblocks.0.attn.k_proj.experts.4.w_lora_B', 'transformer.resblocks.0.attn.k_proj.experts.5.w_lora_A', 'transformer.resblocks.0.attn.k_proj.experts.5.w_lora_B', 'transformer.resblocks.0.attn.v_proj.router.gate.weight', 'transformer.resblocks.0.attn.v_proj.experts.0.w_lora_A', 'transformer.resblocks.0.attn.v_proj.experts.0.w_lora_B', 'transformer.resblocks.0.attn.v_proj.experts.1.w_lora_A', 'transformer.resblocks.0.attn.v_proj.experts.1.w_lora_B', 'transformer.resblocks.0.attn.v_proj.experts.2.w_lora_A', 'transformer.resblocks.0.attn.v_proj.experts.2.w_lora_B', 'transformer.resblocks.0.attn.v_proj.experts.3.w_lora_A', 'transformer.resblocks.0.attn.v_proj.experts.3.w_lora_B', 'transformer.resblocks.0.attn.v_proj.experts.4.w_lora_A', 'transformer.resblocks.0.attn.v_proj.experts.4.w_lora_B', 'transformer.resblocks.0.attn.v_proj.experts.5.w_lora_A', 'transformer.resblocks.0.attn.v_proj.experts.5.w_lora_B', 'transformer.resblocks.1.attn.q_proj.router.gate.weight', 'transformer.resblocks.1.attn.q_proj.experts.0.w_lora_A', 'transformer.resblocks.1.attn.q_proj.experts.0.w_lora_B', 'transformer.resblocks.1.attn.q_proj.experts.1.w_lora_A', 'transformer.resblocks.1.attn.q_proj.experts.1.w_lora_B', 'transformer.resblocks.1.attn.q_proj.experts.2.w_lora_A', 'transformer.resblocks.1.attn.q_proj.experts.2.w_lora_B', 'transformer.resblocks.1.attn.q_proj.experts.3.w_lora_A', 'transformer.resblocks.1.attn.q_proj.experts.3.w_lora_B', 'transformer.resblocks.1.attn.q_proj.experts.4.w_lora_A', 'transformer.resblocks.1.attn.q_proj.experts.4.w_lora_B', 'transformer.resblocks.1.attn.q_proj.experts.5.w_lora_A', 'transformer.resblocks.1.attn.q_proj.experts.5.w_lora_B', 'transformer.resblocks.1.attn.k_proj.router.gate.weight', 'transformer.resblocks.1.attn.k_proj.experts.0.w_lora_A', 'transformer.resblocks.1.attn.k_proj.experts.0.w_lora_B', 'transformer.resblocks.1.attn.k_proj.experts.1.w_lora_A', 'transformer.resblocks.1.attn.k_proj.experts.1.w_lora_B', 'transformer.resblocks.1.attn.k_proj.experts.2.w_lora_A', 'transformer.resblocks.1.attn.k_proj.experts.2.w_lora_B', 'transformer.resblocks.1.attn.k_proj.experts.3.w_lora_A', 'transformer.resblocks.1.attn.k_proj.experts.3.w_lora_B', 'transformer.resblocks.1.attn.k_proj.experts.4.w_lora_A', 'transformer.resblocks.1.attn.k_proj.experts.4.w_lora_B', 'transformer.resblocks.1.attn.k_proj.experts.5.w_lora_A', 'transformer.resblocks.1.attn.k_proj.experts.5.w_lora_B', 'transformer.resblocks.1.attn.v_proj.router.gate.weight', 'transformer.resblocks.1.attn.v_proj.experts.0.w_lora_A', 'transformer.resblocks.1.attn.v_proj.experts.0.w_lora_B', 'transformer.resblocks.1.attn.v_proj.experts.1.w_lora_A', 'transformer.resblocks.1.attn.v_proj.experts.1.w_lora_B', 'transformer.resblocks.1.attn.v_proj.experts.2.w_lora_A', 'transformer.resblocks.1.attn.v_proj.experts.2.w_lora_B', 'transformer.resblocks.1.attn.v_proj.experts.3.w_lora_A', 'transformer.resblocks.1.attn.v_proj.experts.3.w_lora_B', 'transformer.resblocks.1.attn.v_proj.experts.4.w_lora_A', 'transformer.resblocks.1.attn.v_proj.experts.4.w_lora_B', 'transformer.resblocks.1.attn.v_proj.experts.5.w_lora_A', 'transformer.resblocks.1.attn.v_proj.experts.5.w_lora_B', 'transformer.resblocks.2.attn.q_proj.router.gate.weight', 'transformer.resblocks.2.attn.q_proj.experts.0.w_lora_A', 'transformer.resblocks.2.attn.q_proj.experts.0.w_lora_B', 'transformer.resblocks.2.attn.q_proj.experts.1.w_lora_A', 'transformer.resblocks.2.attn.q_proj.experts.1.w_lora_B', 'transformer.resblocks.2.attn.q_proj.experts.2.w_lora_A', 'transformer.resblocks.2.attn.q_proj.experts.2.w_lora_B', 'transformer.resblocks.2.attn.q_proj.experts.3.w_lora_A', 'transformer.resblocks.2.attn.q_proj.experts.3.w_lora_B', 'transformer.resblocks.2.attn.q_proj.experts.4.w_lora_A', 'transformer.resblocks.2.attn.q_proj.experts.4.w_lora_B', 'transformer.resblocks.2.attn.q_proj.experts.5.w_lora_A', 'transformer.resblocks.2.attn.q_proj.experts.5.w_lora_B', 'transformer.resblocks.2.attn.k_proj.router.gate.weight', 'transformer.resblocks.2.attn.k_proj.experts.0.w_lora_A', 'transformer.resblocks.2.attn.k_proj.experts.0.w_lora_B', 'transformer.resblocks.2.attn.k_proj.experts.1.w_lora_A', 'transformer.resblocks.2.attn.k_proj.experts.1.w_lora_B', 'transformer.resblocks.2.attn.k_proj.experts.2.w_lora_A', 'transformer.resblocks.2.attn.k_proj.experts.2.w_lora_B', 'transformer.resblocks.2.attn.k_proj.experts.3.w_lora_A', 'transformer.resblocks.2.attn.k_proj.experts.3.w_lora_B', 'transformer.resblocks.2.attn.k_proj.experts.4.w_lora_A', 'transformer.resblocks.2.attn.k_proj.experts.4.w_lora_B', 'transformer.resblocks.2.attn.k_proj.experts.5.w_lora_A', 'transformer.resblocks.2.attn.k_proj.experts.5.w_lora_B', 'transformer.resblocks.2.attn.v_proj.router.gate.weight', 'transformer.resblocks.2.attn.v_proj.experts.0.w_lora_A', 'transformer.resblocks.2.attn.v_proj.experts.0.w_lora_B', 'transformer.resblocks.2.attn.v_proj.experts.1.w_lora_A', 'transformer.resblocks.2.attn.v_proj.experts.1.w_lora_B', 'transformer.resblocks.2.attn.v_proj.experts.2.w_lora_A', 'transformer.resblocks.2.attn.v_proj.experts.2.w_lora_B', 'transformer.resblocks.2.attn.v_proj.experts.3.w_lora_A', 'transformer.resblocks.2.attn.v_proj.experts.3.w_lora_B', 'transformer.resblocks.2.attn.v_proj.experts.4.w_lora_A', 'transformer.resblocks.2.attn.v_proj.experts.4.w_lora_B', 'transformer.resblocks.2.attn.v_proj.experts.5.w_lora_A', 'transformer.resblocks.2.attn.v_proj.experts.5.w_lora_B', 'transformer.resblocks.3.attn.q_proj.router.gate.weight', 'transformer.resblocks.3.attn.q_proj.experts.0.w_lora_A', 'transformer.resblocks.3.attn.q_proj.experts.0.w_lora_B', 'transformer.resblocks.3.attn.q_proj.experts.1.w_lora_A', 'transformer.resblocks.3.attn.q_proj.experts.1.w_lora_B', 'transformer.resblocks.3.attn.q_proj.experts.2.w_lora_A', 'transformer.resblocks.3.attn.q_proj.experts.2.w_lora_B', 'transformer.resblocks.3.attn.q_proj.experts.3.w_lora_A', 'transformer.resblocks.3.attn.q_proj.experts.3.w_lora_B', 'transformer.resblocks.3.attn.q_proj.experts.4.w_lora_A', 'transformer.resblocks.3.attn.q_proj.experts.4.w_lora_B', 'transformer.resblocks.3.attn.q_proj.experts.5.w_lora_A', 'transformer.resblocks.3.attn.q_proj.experts.5.w_lora_B', 'transformer.resblocks.3.attn.k_proj.router.gate.weight', 'transformer.resblocks.3.attn.k_proj.experts.0.w_lora_A', 'transformer.resblocks.3.attn.k_proj.experts.0.w_lora_B', 'transformer.resblocks.3.attn.k_proj.experts.1.w_lora_A', 'transformer.resblocks.3.attn.k_proj.experts.1.w_lora_B', 'transformer.resblocks.3.attn.k_proj.experts.2.w_lora_A', 'transformer.resblocks.3.attn.k_proj.experts.2.w_lora_B', 'transformer.resblocks.3.attn.k_proj.experts.3.w_lora_A', 'transformer.resblocks.3.attn.k_proj.experts.3.w_lora_B', 'transformer.resblocks.3.attn.k_proj.experts.4.w_lora_A', 'transformer.resblocks.3.attn.k_proj.experts.4.w_lora_B', 'transformer.resblocks.3.attn.k_proj.experts.5.w_lora_A', 'transformer.resblocks.3.attn.k_proj.experts.5.w_lora_B', 'transformer.resblocks.3.attn.v_proj.router.gate.weight', 'transformer.resblocks.3.attn.v_proj.experts.0.w_lora_A', 'transformer.resblocks.3.attn.v_proj.experts.0.w_lora_B', 'transformer.resblocks.3.attn.v_proj.experts.1.w_lora_A', 'transformer.resblocks.3.attn.v_proj.experts.1.w_lora_B', 'transformer.resblocks.3.attn.v_proj.experts.2.w_lora_A', 'transformer.resblocks.3.attn.v_proj.experts.2.w_lora_B', 'transformer.resblocks.3.attn.v_proj.experts.3.w_lora_A', 'transformer.resblocks.3.attn.v_proj.experts.3.w_lora_B', 'transformer.resblocks.3.attn.v_proj.experts.4.w_lora_A', 'transformer.resblocks.3.attn.v_proj.experts.4.w_lora_B', 'transformer.resblocks.3.attn.v_proj.experts.5.w_lora_A', 'transformer.resblocks.3.attn.v_proj.experts.5.w_lora_B', 'transformer.resblocks.4.attn.q_proj.router.gate.weight', 'transformer.resblocks.4.attn.q_proj.experts.0.w_lora_A', 'transformer.resblocks.4.attn.q_proj.experts.0.w_lora_B', 'transformer.resblocks.4.attn.q_proj.experts.1.w_lora_A', 'transformer.resblocks.4.attn.q_proj.experts.1.w_lora_B', 'transformer.resblocks.4.attn.q_proj.experts.2.w_lora_A', 'transformer.resblocks.4.attn.q_proj.experts.2.w_lora_B', 'transformer.resblocks.4.attn.q_proj.experts.3.w_lora_A', 'transformer.resblocks.4.attn.q_proj.experts.3.w_lora_B', 'transformer.resblocks.4.attn.q_proj.experts.4.w_lora_A', 'transformer.resblocks.4.attn.q_proj.experts.4.w_lora_B', 'transformer.resblocks.4.attn.q_proj.experts.5.w_lora_A', 'transformer.resblocks.4.attn.q_proj.experts.5.w_lora_B', 'transformer.resblocks.4.attn.k_proj.router.gate.weight', 'transformer.resblocks.4.attn.k_proj.experts.0.w_lora_A', 'transformer.resblocks.4.attn.k_proj.experts.0.w_lora_B', 'transformer.resblocks.4.attn.k_proj.experts.1.w_lora_A', 'transformer.resblocks.4.attn.k_proj.experts.1.w_lora_B', 'transformer.resblocks.4.attn.k_proj.experts.2.w_lora_A', 'transformer.resblocks.4.attn.k_proj.experts.2.w_lora_B', 'transformer.resblocks.4.attn.k_proj.experts.3.w_lora_A', 'transformer.resblocks.4.attn.k_proj.experts.3.w_lora_B', 'transformer.resblocks.4.attn.k_proj.experts.4.w_lora_A', 'transformer.resblocks.4.attn.k_proj.experts.4.w_lora_B', 'transformer.resblocks.4.attn.k_proj.experts.5.w_lora_A', 'transformer.resblocks.4.attn.k_proj.experts.5.w_lora_B', 'transformer.resblocks.4.attn.v_proj.router.gate.weight', 'transformer.resblocks.4.attn.v_proj.experts.0.w_lora_A', 'transformer.resblocks.4.attn.v_proj.experts.0.w_lora_B', 'transformer.resblocks.4.attn.v_proj.experts.1.w_lora_A', 'transformer.resblocks.4.attn.v_proj.experts.1.w_lora_B', 'transformer.resblocks.4.attn.v_proj.experts.2.w_lora_A', 'transformer.resblocks.4.attn.v_proj.experts.2.w_lora_B', 'transformer.resblocks.4.attn.v_proj.experts.3.w_lora_A', 'transformer.resblocks.4.attn.v_proj.experts.3.w_lora_B', 'transformer.resblocks.4.attn.v_proj.experts.4.w_lora_A', 'transformer.resblocks.4.attn.v_proj.experts.4.w_lora_B', 'transformer.resblocks.4.attn.v_proj.experts.5.w_lora_A', 'transformer.resblocks.4.attn.v_proj.experts.5.w_lora_B', 'transformer.resblocks.5.attn.q_proj.router.gate.weight', 'transformer.resblocks.5.attn.q_proj.experts.0.w_lora_A', 'transformer.resblocks.5.attn.q_proj.experts.0.w_lora_B', 'transformer.resblocks.5.attn.q_proj.experts.1.w_lora_A', 'transformer.resblocks.5.attn.q_proj.experts.1.w_lora_B', 'transformer.resblocks.5.attn.q_proj.experts.2.w_lora_A', 'transformer.resblocks.5.attn.q_proj.experts.2.w_lora_B', 'transformer.resblocks.5.attn.q_proj.experts.3.w_lora_A', 'transformer.resblocks.5.attn.q_proj.experts.3.w_lora_B', 'transformer.resblocks.5.attn.q_proj.experts.4.w_lora_A', 'transformer.resblocks.5.attn.q_proj.experts.4.w_lora_B', 'transformer.resblocks.5.attn.q_proj.experts.5.w_lora_A', 'transformer.resblocks.5.attn.q_proj.experts.5.w_lora_B', 'transformer.resblocks.5.attn.k_proj.router.gate.weight', 'transformer.resblocks.5.attn.k_proj.experts.0.w_lora_A', 'transformer.resblocks.5.attn.k_proj.experts.0.w_lora_B', 'transformer.resblocks.5.attn.k_proj.experts.1.w_lora_A', 'transformer.resblocks.5.attn.k_proj.experts.1.w_lora_B', 'transformer.resblocks.5.attn.k_proj.experts.2.w_lora_A', 'transformer.resblocks.5.attn.k_proj.experts.2.w_lora_B', 'transformer.resblocks.5.attn.k_proj.experts.3.w_lora_A', 'transformer.resblocks.5.attn.k_proj.experts.3.w_lora_B', 'transformer.resblocks.5.attn.k_proj.experts.4.w_lora_A', 'transformer.resblocks.5.attn.k_proj.experts.4.w_lora_B', 'transformer.resblocks.5.attn.k_proj.experts.5.w_lora_A', 'transformer.resblocks.5.attn.k_proj.experts.5.w_lora_B', 'transformer.resblocks.5.attn.v_proj.router.gate.weight', 'transformer.resblocks.5.attn.v_proj.experts.0.w_lora_A', 'transformer.resblocks.5.attn.v_proj.experts.0.w_lora_B', 'transformer.resblocks.5.attn.v_proj.experts.1.w_lora_A', 'transformer.resblocks.5.attn.v_proj.experts.1.w_lora_B', 'transformer.resblocks.5.attn.v_proj.experts.2.w_lora_A', 'transformer.resblocks.5.attn.v_proj.experts.2.w_lora_B', 'transformer.resblocks.5.attn.v_proj.experts.3.w_lora_A', 'transformer.resblocks.5.attn.v_proj.experts.3.w_lora_B', 'transformer.resblocks.5.attn.v_proj.experts.4.w_lora_A', 'transformer.resblocks.5.attn.v_proj.experts.4.w_lora_B', 'transformer.resblocks.5.attn.v_proj.experts.5.w_lora_A', 'transformer.resblocks.5.attn.v_proj.experts.5.w_lora_B', 'transformer.resblocks.6.attn.q_proj.router.gate.weight', 'transformer.resblocks.6.attn.q_proj.experts.0.w_lora_A', 'transformer.resblocks.6.attn.q_proj.experts.0.w_lora_B', 'transformer.resblocks.6.attn.q_proj.experts.1.w_lora_A', 'transformer.resblocks.6.attn.q_proj.experts.1.w_lora_B', 'transformer.resblocks.6.attn.q_proj.experts.2.w_lora_A', 'transformer.resblocks.6.attn.q_proj.experts.2.w_lora_B', 'transformer.resblocks.6.attn.q_proj.experts.3.w_lora_A', 'transformer.resblocks.6.attn.q_proj.experts.3.w_lora_B', 'transformer.resblocks.6.attn.q_proj.experts.4.w_lora_A', 'transformer.resblocks.6.attn.q_proj.experts.4.w_lora_B', 'transformer.resblocks.6.attn.q_proj.experts.5.w_lora_A', 'transformer.resblocks.6.attn.q_proj.experts.5.w_lora_B', 'transformer.resblocks.6.attn.k_proj.router.gate.weight', 'transformer.resblocks.6.attn.k_proj.experts.0.w_lora_A', 'transformer.resblocks.6.attn.k_proj.experts.0.w_lora_B', 'transformer.resblocks.6.attn.k_proj.experts.1.w_lora_A', 'transformer.resblocks.6.attn.k_proj.experts.1.w_lora_B', 'transformer.resblocks.6.attn.k_proj.experts.2.w_lora_A', 'transformer.resblocks.6.attn.k_proj.experts.2.w_lora_B', 'transformer.resblocks.6.attn.k_proj.experts.3.w_lora_A', 'transformer.resblocks.6.attn.k_proj.experts.3.w_lora_B', 'transformer.resblocks.6.attn.k_proj.experts.4.w_lora_A', 'transformer.resblocks.6.attn.k_proj.experts.4.w_lora_B', 'transformer.resblocks.6.attn.k_proj.experts.5.w_lora_A', 'transformer.resblocks.6.attn.k_proj.experts.5.w_lora_B', 'transformer.resblocks.6.attn.v_proj.router.gate.weight', 'transformer.resblocks.6.attn.v_proj.experts.0.w_lora_A', 'transformer.resblocks.6.attn.v_proj.experts.0.w_lora_B', 'transformer.resblocks.6.attn.v_proj.experts.1.w_lora_A', 'transformer.resblocks.6.attn.v_proj.experts.1.w_lora_B', 'transformer.resblocks.6.attn.v_proj.experts.2.w_lora_A', 'transformer.resblocks.6.attn.v_proj.experts.2.w_lora_B', 'transformer.resblocks.6.attn.v_proj.experts.3.w_lora_A', 'transformer.resblocks.6.attn.v_proj.experts.3.w_lora_B', 'transformer.resblocks.6.attn.v_proj.experts.4.w_lora_A', 'transformer.resblocks.6.attn.v_proj.experts.4.w_lora_B', 'transformer.resblocks.6.attn.v_proj.experts.5.w_lora_A', 'transformer.resblocks.6.attn.v_proj.experts.5.w_lora_B', 'transformer.resblocks.7.attn.q_proj.router.gate.weight', 'transformer.resblocks.7.attn.q_proj.experts.0.w_lora_A', 'transformer.resblocks.7.attn.q_proj.experts.0.w_lora_B', 'transformer.resblocks.7.attn.q_proj.experts.1.w_lora_A', 'transformer.resblocks.7.attn.q_proj.experts.1.w_lora_B', 'transformer.resblocks.7.attn.q_proj.experts.2.w_lora_A', 'transformer.resblocks.7.attn.q_proj.experts.2.w_lora_B', 'transformer.resblocks.7.attn.q_proj.experts.3.w_lora_A', 'transformer.resblocks.7.attn.q_proj.experts.3.w_lora_B', 'transformer.resblocks.7.attn.q_proj.experts.4.w_lora_A', 'transformer.resblocks.7.attn.q_proj.experts.4.w_lora_B', 'transformer.resblocks.7.attn.q_proj.experts.5.w_lora_A', 'transformer.resblocks.7.attn.q_proj.experts.5.w_lora_B', 'transformer.resblocks.7.attn.k_proj.router.gate.weight', 'transformer.resblocks.7.attn.k_proj.experts.0.w_lora_A', 'transformer.resblocks.7.attn.k_proj.experts.0.w_lora_B', 'transformer.resblocks.7.attn.k_proj.experts.1.w_lora_A', 'transformer.resblocks.7.attn.k_proj.experts.1.w_lora_B', 'transformer.resblocks.7.attn.k_proj.experts.2.w_lora_A', 'transformer.resblocks.7.attn.k_proj.experts.2.w_lora_B', 'transformer.resblocks.7.attn.k_proj.experts.3.w_lora_A', 'transformer.resblocks.7.attn.k_proj.experts.3.w_lora_B', 'transformer.resblocks.7.attn.k_proj.experts.4.w_lora_A', 'transformer.resblocks.7.attn.k_proj.experts.4.w_lora_B', 'transformer.resblocks.7.attn.k_proj.experts.5.w_lora_A', 'transformer.resblocks.7.attn.k_proj.experts.5.w_lora_B', 'transformer.resblocks.7.attn.v_proj.router.gate.weight', 'transformer.resblocks.7.attn.v_proj.experts.0.w_lora_A', 'transformer.resblocks.7.attn.v_proj.experts.0.w_lora_B', 'transformer.resblocks.7.attn.v_proj.experts.1.w_lora_A', 'transformer.resblocks.7.attn.v_proj.experts.1.w_lora_B', 'transformer.resblocks.7.attn.v_proj.experts.2.w_lora_A', 'transformer.resblocks.7.attn.v_proj.experts.2.w_lora_B', 'transformer.resblocks.7.attn.v_proj.experts.3.w_lora_A', 'transformer.resblocks.7.attn.v_proj.experts.3.w_lora_B', 'transformer.resblocks.7.attn.v_proj.experts.4.w_lora_A', 'transformer.resblocks.7.attn.v_proj.experts.4.w_lora_B', 'transformer.resblocks.7.attn.v_proj.experts.5.w_lora_A', 'transformer.resblocks.7.attn.v_proj.experts.5.w_lora_B', 'transformer.resblocks.8.attn.q_proj.router.gate.weight', 'transformer.resblocks.8.attn.q_proj.experts.0.w_lora_A', 'transformer.resblocks.8.attn.q_proj.experts.0.w_lora_B', 'transformer.resblocks.8.attn.q_proj.experts.1.w_lora_A', 'transformer.resblocks.8.attn.q_proj.experts.1.w_lora_B', 'transformer.resblocks.8.attn.q_proj.experts.2.w_lora_A', 'transformer.resblocks.8.attn.q_proj.experts.2.w_lora_B', 'transformer.resblocks.8.attn.q_proj.experts.3.w_lora_A', 'transformer.resblocks.8.attn.q_proj.experts.3.w_lora_B', 'transformer.resblocks.8.attn.q_proj.experts.4.w_lora_A', 'transformer.resblocks.8.attn.q_proj.experts.4.w_lora_B', 'transformer.resblocks.8.attn.q_proj.experts.5.w_lora_A', 'transformer.resblocks.8.attn.q_proj.experts.5.w_lora_B', 'transformer.resblocks.8.attn.k_proj.router.gate.weight', 'transformer.resblocks.8.attn.k_proj.experts.0.w_lora_A', 'transformer.resblocks.8.attn.k_proj.experts.0.w_lora_B', 'transformer.resblocks.8.attn.k_proj.experts.1.w_lora_A', 'transformer.resblocks.8.attn.k_proj.experts.1.w_lora_B', 'transformer.resblocks.8.attn.k_proj.experts.2.w_lora_A', 'transformer.resblocks.8.attn.k_proj.experts.2.w_lora_B', 'transformer.resblocks.8.attn.k_proj.experts.3.w_lora_A', 'transformer.resblocks.8.attn.k_proj.experts.3.w_lora_B', 'transformer.resblocks.8.attn.k_proj.experts.4.w_lora_A', 'transformer.resblocks.8.attn.k_proj.experts.4.w_lora_B', 'transformer.resblocks.8.attn.k_proj.experts.5.w_lora_A', 'transformer.resblocks.8.attn.k_proj.experts.5.w_lora_B', 'transformer.resblocks.8.attn.v_proj.router.gate.weight', 'transformer.resblocks.8.attn.v_proj.experts.0.w_lora_A', 'transformer.resblocks.8.attn.v_proj.experts.0.w_lora_B', 'transformer.resblocks.8.attn.v_proj.experts.1.w_lora_A', 'transformer.resblocks.8.attn.v_proj.experts.1.w_lora_B', 'transformer.resblocks.8.attn.v_proj.experts.2.w_lora_A', 'transformer.resblocks.8.attn.v_proj.experts.2.w_lora_B', 'transformer.resblocks.8.attn.v_proj.experts.3.w_lora_A', 'transformer.resblocks.8.attn.v_proj.experts.3.w_lora_B', 'transformer.resblocks.8.attn.v_proj.experts.4.w_lora_A', 'transformer.resblocks.8.attn.v_proj.experts.4.w_lora_B', 'transformer.resblocks.8.attn.v_proj.experts.5.w_lora_A', 'transformer.resblocks.8.attn.v_proj.experts.5.w_lora_B', 'transformer.resblocks.9.attn.q_proj.router.gate.weight', 'transformer.resblocks.9.attn.q_proj.experts.0.w_lora_A', 'transformer.resblocks.9.attn.q_proj.experts.0.w_lora_B', 'transformer.resblocks.9.attn.q_proj.experts.1.w_lora_A', 'transformer.resblocks.9.attn.q_proj.experts.1.w_lora_B', 'transformer.resblocks.9.attn.q_proj.experts.2.w_lora_A', 'transformer.resblocks.9.attn.q_proj.experts.2.w_lora_B', 'transformer.resblocks.9.attn.q_proj.experts.3.w_lora_A', 'transformer.resblocks.9.attn.q_proj.experts.3.w_lora_B', 'transformer.resblocks.9.attn.q_proj.experts.4.w_lora_A', 'transformer.resblocks.9.attn.q_proj.experts.4.w_lora_B', 'transformer.resblocks.9.attn.q_proj.experts.5.w_lora_A', 'transformer.resblocks.9.attn.q_proj.experts.5.w_lora_B', 'transformer.resblocks.9.attn.k_proj.router.gate.weight', 'transformer.resblocks.9.attn.k_proj.experts.0.w_lora_A', 'transformer.resblocks.9.attn.k_proj.experts.0.w_lora_B', 'transformer.resblocks.9.attn.k_proj.experts.1.w_lora_A', 'transformer.resblocks.9.attn.k_proj.experts.1.w_lora_B', 'transformer.resblocks.9.attn.k_proj.experts.2.w_lora_A', 'transformer.resblocks.9.attn.k_proj.experts.2.w_lora_B', 'transformer.resblocks.9.attn.k_proj.experts.3.w_lora_A', 'transformer.resblocks.9.attn.k_proj.experts.3.w_lora_B', 'transformer.resblocks.9.attn.k_proj.experts.4.w_lora_A', 'transformer.resblocks.9.attn.k_proj.experts.4.w_lora_B', 'transformer.resblocks.9.attn.k_proj.experts.5.w_lora_A', 'transformer.resblocks.9.attn.k_proj.experts.5.w_lora_B', 'transformer.resblocks.9.attn.v_proj.router.gate.weight', 'transformer.resblocks.9.attn.v_proj.experts.0.w_lora_A', 'transformer.resblocks.9.attn.v_proj.experts.0.w_lora_B', 'transformer.resblocks.9.attn.v_proj.experts.1.w_lora_A', 'transformer.resblocks.9.attn.v_proj.experts.1.w_lora_B', 'transformer.resblocks.9.attn.v_proj.experts.2.w_lora_A', 'transformer.resblocks.9.attn.v_proj.experts.2.w_lora_B', 'transformer.resblocks.9.attn.v_proj.experts.3.w_lora_A', 'transformer.resblocks.9.attn.v_proj.experts.3.w_lora_B', 'transformer.resblocks.9.attn.v_proj.experts.4.w_lora_A', 'transformer.resblocks.9.attn.v_proj.experts.4.w_lora_B', 'transformer.resblocks.9.attn.v_proj.experts.5.w_lora_A', 'transformer.resblocks.9.attn.v_proj.experts.5.w_lora_B', 'transformer.resblocks.10.attn.q_proj.router.gate.weight', 'transformer.resblocks.10.attn.q_proj.experts.0.w_lora_A', 'transformer.resblocks.10.attn.q_proj.experts.0.w_lora_B', 'transformer.resblocks.10.attn.q_proj.experts.1.w_lora_A', 'transformer.resblocks.10.attn.q_proj.experts.1.w_lora_B', 'transformer.resblocks.10.attn.q_proj.experts.2.w_lora_A', 'transformer.resblocks.10.attn.q_proj.experts.2.w_lora_B', 'transformer.resblocks.10.attn.q_proj.experts.3.w_lora_A', 'transformer.resblocks.10.attn.q_proj.experts.3.w_lora_B', 'transformer.resblocks.10.attn.q_proj.experts.4.w_lora_A', 'transformer.resblocks.10.attn.q_proj.experts.4.w_lora_B', 'transformer.resblocks.10.attn.q_proj.experts.5.w_lora_A', 'transformer.resblocks.10.attn.q_proj.experts.5.w_lora_B', 'transformer.resblocks.10.attn.k_proj.router.gate.weight', 'transformer.resblocks.10.attn.k_proj.experts.0.w_lora_A', 'transformer.resblocks.10.attn.k_proj.experts.0.w_lora_B', 'transformer.resblocks.10.attn.k_proj.experts.1.w_lora_A', 'transformer.resblocks.10.attn.k_proj.experts.1.w_lora_B', 'transformer.resblocks.10.attn.k_proj.experts.2.w_lora_A', 'transformer.resblocks.10.attn.k_proj.experts.2.w_lora_B', 'transformer.resblocks.10.attn.k_proj.experts.3.w_lora_A', 'transformer.resblocks.10.attn.k_proj.experts.3.w_lora_B', 'transformer.resblocks.10.attn.k_proj.experts.4.w_lora_A', 'transformer.resblocks.10.attn.k_proj.experts.4.w_lora_B', 'transformer.resblocks.10.attn.k_proj.experts.5.w_lora_A', 'transformer.resblocks.10.attn.k_proj.experts.5.w_lora_B', 'transformer.resblocks.10.attn.v_proj.router.gate.weight', 'transformer.resblocks.10.attn.v_proj.experts.0.w_lora_A', 'transformer.resblocks.10.attn.v_proj.experts.0.w_lora_B', 'transformer.resblocks.10.attn.v_proj.experts.1.w_lora_A', 'transformer.resblocks.10.attn.v_proj.experts.1.w_lora_B', 'transformer.resblocks.10.attn.v_proj.experts.2.w_lora_A', 'transformer.resblocks.10.attn.v_proj.experts.2.w_lora_B', 'transformer.resblocks.10.attn.v_proj.experts.3.w_lora_A', 'transformer.resblocks.10.attn.v_proj.experts.3.w_lora_B', 'transformer.resblocks.10.attn.v_proj.experts.4.w_lora_A', 'transformer.resblocks.10.attn.v_proj.experts.4.w_lora_B', 'transformer.resblocks.10.attn.v_proj.experts.5.w_lora_A', 'transformer.resblocks.10.attn.v_proj.experts.5.w_lora_B', 'transformer.resblocks.11.attn.q_proj.router.gate.weight', 'transformer.resblocks.11.attn.q_proj.experts.0.w_lora_A', 'transformer.resblocks.11.attn.q_proj.experts.0.w_lora_B', 'transformer.resblocks.11.attn.q_proj.experts.1.w_lora_A', 'transformer.resblocks.11.attn.q_proj.experts.1.w_lora_B', 'transformer.resblocks.11.attn.q_proj.experts.2.w_lora_A', 'transformer.resblocks.11.attn.q_proj.experts.2.w_lora_B', 'transformer.resblocks.11.attn.q_proj.experts.3.w_lora_A', 'transformer.resblocks.11.attn.q_proj.experts.3.w_lora_B', 'transformer.resblocks.11.attn.q_proj.experts.4.w_lora_A', 'transformer.resblocks.11.attn.q_proj.experts.4.w_lora_B', 'transformer.resblocks.11.attn.q_proj.experts.5.w_lora_A', 'transformer.resblocks.11.attn.q_proj.experts.5.w_lora_B', 'transformer.resblocks.11.attn.k_proj.router.gate.weight', 'transformer.resblocks.11.attn.k_proj.experts.0.w_lora_A', 'transformer.resblocks.11.attn.k_proj.experts.0.w_lora_B', 'transformer.resblocks.11.attn.k_proj.experts.1.w_lora_A', 'transformer.resblocks.11.attn.k_proj.experts.1.w_lora_B', 'transformer.resblocks.11.attn.k_proj.experts.2.w_lora_A', 'transformer.resblocks.11.attn.k_proj.experts.2.w_lora_B', 'transformer.resblocks.11.attn.k_proj.experts.3.w_lora_A', 'transformer.resblocks.11.attn.k_proj.experts.3.w_lora_B', 'transformer.resblocks.11.attn.k_proj.experts.4.w_lora_A', 'transformer.resblocks.11.attn.k_proj.experts.4.w_lora_B', 'transformer.resblocks.11.attn.k_proj.experts.5.w_lora_A', 'transformer.resblocks.11.attn.k_proj.experts.5.w_lora_B', 'transformer.resblocks.11.attn.v_proj.router.gate.weight', 'transformer.resblocks.11.attn.v_proj.experts.0.w_lora_A', 'transformer.resblocks.11.attn.v_proj.experts.0.w_lora_B', 'transformer.resblocks.11.attn.v_proj.experts.1.w_lora_A', 'transformer.resblocks.11.attn.v_proj.experts.1.w_lora_B', 'transformer.resblocks.11.attn.v_proj.experts.2.w_lora_A', 'transformer.resblocks.11.attn.v_proj.experts.2.w_lora_B', 'transformer.resblocks.11.attn.v_proj.experts.3.w_lora_A', 'transformer.resblocks.11.attn.v_proj.experts.3.w_lora_B', 'transformer.resblocks.11.attn.v_proj.experts.4.w_lora_A', 'transformer.resblocks.11.attn.v_proj.experts.4.w_lora_B', 'transformer.resblocks.11.attn.v_proj.experts.5.w_lora_A', 'transformer.resblocks.11.attn.v_proj.experts.5.w_lora_B']
+LR: 0.000200, Acc: 32.5000, Loss: 2.0178
+LR: 0.000200, Acc: 20.0000, Loss: 2.2180
+LR: 0.000200, Acc: 30.0000, Loss: 2.1289
+LR: 0.000200, Acc: 40.0000, Loss: 1.9051
+LR: 0.000200, Acc: 32.5000, Loss: 1.8432
+LR: 0.000200, Acc: 35.0000, Loss: 1.7941
+LR: 0.000200, Acc: 40.0000, Loss: 1.6828
+LR: 0.000200, Acc: 40.0000, Loss: 1.8293
+LR: 0.000200, Acc: 40.0000, Loss: 1.6645
+LR: 0.000200, Acc: 50.0000, Loss: 1.4557
+LR: 0.000200, Acc: 52.5000, Loss: 1.4930
+LR: 0.000200, Acc: 47.5000, Loss: 1.3840
+LR: 0.000200, Acc: 62.5000, Loss: 1.3705
+LR: 0.000200, Acc: 65.0000, Loss: 1.3355
+LR: 0.000200, Acc: 62.5000, Loss: 1.3451
+LR: 0.000200, Acc: 67.5000, Loss: 1.1271
+LR: 0.000200, Acc: 70.0000, Loss: 0.9832
+LR: 0.000200, Acc: 70.0000, Loss: 1.1104
+LR: 0.000200, Acc: 72.5000, Loss: 1.0535
+LR: 0.000200, Acc: 70.0000, Loss: 0.9415
+LR: 0.000200, Acc: 80.0000, Loss: 0.7664
+LR: 0.000200, Acc: 77.5000, Loss: 0.7806
+LR: 0.000200, Acc: 90.0000, Loss: 0.6816
+LR: 0.000200, Acc: 82.5000, Loss: 0.6892
+LR: 0.000200, Acc: 82.5000, Loss: 0.6079
+LR: 0.000200, Acc: 87.5000, Loss: 0.5754
+LR: 0.000200, Acc: 87.5000, Loss: 0.6399
+LR: 0.000200, Acc: 90.0000, Loss: 0.5337
+LR: 0.000200, Acc: 87.5000, Loss: 0.5878
+LR: 0.000200, Acc: 85.0000, Loss: 0.5489
+LR: 0.000200, Acc: 82.5000, Loss: 0.6095
+LR: 0.000199, Acc: 80.0000, Loss: 0.4530
+LR: 0.000199, Acc: 92.5000, Loss: 0.5125
+LR: 0.000199, Acc: 95.0000, Loss: 0.3203
+LR: 0.000199, Acc: 82.5000, Loss: 0.4924
+LR: 0.000199, Acc: 95.0000, Loss: 0.2606
+LR: 0.000199, Acc: 92.5000, Loss: 0.3653
+LR: 0.000199, Acc: 95.0000, Loss: 0.4070
+LR: 0.000199, Acc: 92.5000, Loss: 0.4439
+LR: 0.000199, Acc: 90.0000, Loss: 0.3119
+LR: 0.000199, Acc: 95.0000, Loss: 0.2463
+LR: 0.000199, Acc: 92.5000, Loss: 0.3603
+LR: 0.000199, Acc: 92.5000, Loss: 0.3764
+LR: 0.000199, Acc: 90.0000, Loss: 0.3531
+LR: 0.000199, Acc: 100.0000, Loss: 0.1725
+LR: 0.000199, Acc: 97.5000, Loss: 0.1680
+LR: 0.000199, Acc: 92.5000, Loss: 0.3118
+LR: 0.000199, Acc: 95.0000, Loss: 0.2708
+LR: 0.000199, Acc: 100.0000, Loss: 0.1234
+LR: 0.000199, Acc: 100.0000, Loss: 0.1153
+LR: 0.000199, Acc: 97.5000, Loss: 0.1355
+LR: 0.000199, Acc: 90.0000, Loss: 0.2361
+LR: 0.000199, Acc: 95.0000, Loss: 0.2903
+LR: 0.000199, Acc: 97.5000, Loss: 0.1121
+LR: 0.000199, Acc: 87.5000, Loss: 0.4450
+LR: 0.000198, Acc: 95.0000, Loss: 0.1790
+LR: 0.000198, Acc: 90.0000, Loss: 0.2256
+LR: 0.000198, Acc: 97.5000, Loss: 0.1474
+LR: 0.000198, Acc: 92.5000, Loss: 0.2000
+LR: 0.000198, Acc: 100.0000, Loss: 0.0658
+LR: 0.000198, Acc: 97.5000, Loss: 0.0837
+LR: 0.000198, Acc: 92.5000, Loss: 0.3357
+LR: 0.000198, Acc: 95.0000, Loss: 0.1508
+LR: 0.000198, Acc: 95.0000, Loss: 0.1394
+LR: 0.000198, Acc: 95.0000, Loss: 0.2095
+LR: 0.000198, Acc: 92.5000, Loss: 0.3491
+LR: 0.000198, Acc: 95.0000, Loss: 0.1293
+LR: 0.000198, Acc: 97.5000, Loss: 0.0994
+LR: 0.000198, Acc: 97.5000, Loss: 0.1777
+LR: 0.000198, Acc: 100.0000, Loss: 0.0404
+LR: 0.000198, Acc: 92.5000, Loss: 0.1668
+LR: 0.000197, Acc: 100.0000, Loss: 0.0726
+LR: 0.000197, Acc: 97.5000, Loss: 0.0446
+LR: 0.000197, Acc: 95.0000, Loss: 0.1676
+LR: 0.000197, Acc: 100.0000, Loss: 0.0436
+LR: 0.000197, Acc: 95.0000, Loss: 0.1424
+LR: 0.000197, Acc: 95.0000, Loss: 0.1076
+LR: 0.000197, Acc: 97.5000, Loss: 0.1000
+LR: 0.000197, Acc: 97.5000, Loss: 0.0649
+LR: 0.000197, Acc: 95.0000, Loss: 0.1821
+LR: 0.000197, Acc: 97.5000, Loss: 0.0694
+LR: 0.000197, Acc: 97.5000, Loss: 0.0757
+LR: 0.000197, Acc: 95.0000, Loss: 0.1096
+LR: 0.000197, Acc: 97.5000, Loss: 0.1769
+LR: 0.000196, Acc: 97.5000, Loss: 0.1531
+LR: 0.000196, Acc: 95.0000, Loss: 0.1401
+LR: 0.000196, Acc: 92.5000, Loss: 0.2834
+LR: 0.000196, Acc: 95.0000, Loss: 0.0868
+LR: 0.000196, Acc: 97.5000, Loss: 0.1886
+LR: 0.000196, Acc: 95.0000, Loss: 0.1236
+LR: 0.000196, Acc: 100.0000, Loss: 0.0398
+LR: 0.000196, Acc: 100.0000, Loss: 0.0165
+LR: 0.000196, Acc: 97.5000, Loss: 0.2006
+LR: 0.000196, Acc: 92.5000, Loss: 0.1686
+LR: 0.000196, Acc: 100.0000, Loss: 0.0189
+LR: 0.000196, Acc: 95.0000, Loss: 0.3498
+LR: 0.000195, Acc: 97.5000, Loss: 0.0657
+LR: 0.000195, Acc: 95.0000, Loss: 0.1058
+LR: 0.000195, Acc: 97.5000, Loss: 0.1086
+LR: 0.000195, Acc: 97.5000, Loss: 0.0932
+LR: 0.000195, Acc: 95.0000, Loss: 0.0676
+LR: 0.000195, Acc: 95.0000, Loss: 0.2067
+LR: 0.000195, Acc: 97.5000, Loss: 0.0396
+LR: 0.000195, Acc: 95.0000, Loss: 0.0749
+LR: 0.000195, Acc: 97.5000, Loss: 0.1051
+LR: 0.000195, Acc: 95.0000, Loss: 0.0770
+LR: 0.000194, Acc: 92.5000, Loss: 0.1972
+LR: 0.000194, Acc: 97.5000, Loss: 0.0558
+LR: 0.000194, Acc: 100.0000, Loss: 0.0422
+LR: 0.000194, Acc: 100.0000, Loss: 0.0199
+LR: 0.000194, Acc: 92.5000, Loss: 0.2121
+LR: 0.000194, Acc: 97.5000, Loss: 0.1366
+LR: 0.000194, Acc: 92.5000, Loss: 0.1951
+LR: 0.000194, Acc: 100.0000, Loss: 0.0507
+LR: 0.000194, Acc: 97.5000, Loss: 0.0801
+LR: 0.000193, Acc: 95.0000, Loss: 0.1198
+LR: 0.000193, Acc: 97.5000, Loss: 0.0567
+LR: 0.000193, Acc: 100.0000, Loss: 0.0114
+LR: 0.000193, Acc: 100.0000, Loss: 0.0266
+LR: 0.000193, Acc: 97.5000, Loss: 0.0522
+LR: 0.000193, Acc: 97.5000, Loss: 0.0485
+LR: 0.000193, Acc: 100.0000, Loss: 0.0311
+LR: 0.000193, Acc: 97.5000, Loss: 0.1078
+LR: 0.000193, Acc: 100.0000, Loss: 0.0164
+LR: 0.000192, Acc: 97.5000, Loss: 0.0495
+LR: 0.000192, Acc: 97.5000, Loss: 0.0403
+LR: 0.000192, Acc: 97.5000, Loss: 0.0700
+LR: 0.000192, Acc: 100.0000, Loss: 0.0151
+LR: 0.000192, Acc: 100.0000, Loss: 0.0201
+LR: 0.000192, Acc: 95.0000, Loss: 0.0859
+LR: 0.000192, Acc: 100.0000, Loss: 0.0068
+LR: 0.000192, Acc: 95.0000, Loss: 0.2207
+LR: 0.000191, Acc: 100.0000, Loss: 0.0216
+LR: 0.000191, Acc: 100.0000, Loss: 0.0292
+LR: 0.000191, Acc: 100.0000, Loss: 0.0181
+LR: 0.000191, Acc: 100.0000, Loss: 0.0288
+LR: 0.000191, Acc: 100.0000, Loss: 0.0123
+LR: 0.000191, Acc: 100.0000, Loss: 0.0069
+LR: 0.000191, Acc: 97.5000, Loss: 0.0841
+LR: 0.000191, Acc: 100.0000, Loss: 0.0230
+LR: 0.000190, Acc: 97.5000, Loss: 0.2300
+LR: 0.000190, Acc: 100.0000, Loss: 0.0149
+LR: 0.000190, Acc: 100.0000, Loss: 0.0357
+LR: 0.000190, Acc: 97.5000, Loss: 0.0916
+LR: 0.000190, Acc: 95.0000, Loss: 0.0718
+LR: 0.000190, Acc: 100.0000, Loss: 0.0082
+LR: 0.000190, Acc: 100.0000, Loss: 0.0112
+LR: 0.000189, Acc: 100.0000, Loss: 0.0146
+LR: 0.000189, Acc: 95.0000, Loss: 0.0902
+LR: 0.000189, Acc: 97.5000, Loss: 0.1266
+LR: 0.000189, Acc: 97.5000, Loss: 0.0948
+LR: 0.000189, Acc: 100.0000, Loss: 0.0128
+LR: 0.000189, Acc: 100.0000, Loss: 0.0239
+LR: 0.000189, Acc: 97.5000, Loss: 0.0521
+LR: 0.000188, Acc: 100.0000, Loss: 0.0135
+LR: 0.000188, Acc: 100.0000, Loss: 0.0162
+LR: 0.000188, Acc: 100.0000, Loss: 0.0145
+LR: 0.000188, Acc: 100.0000, Loss: 0.0096
+LR: 0.000188, Acc: 100.0000, Loss: 0.0207
+LR: 0.000188, Acc: 100.0000, Loss: 0.0111
+LR: 0.000188, Acc: 100.0000, Loss: 0.0382
+LR: 0.000187, Acc: 97.5000, Loss: 0.2004
+LR: 0.000187, Acc: 100.0000, Loss: 0.0043
+LR: 0.000187, Acc: 100.0000, Loss: 0.0146
+LR: 0.000187, Acc: 97.5000, Loss: 0.0440
+LR: 0.000187, Acc: 97.5000, Loss: 0.0626
+LR: 0.000187, Acc: 97.5000, Loss: 0.0957
+LR: 0.000186, Acc: 97.5000, Loss: 0.0678
+LR: 0.000186, Acc: 100.0000, Loss: 0.0032
+LR: 0.000186, Acc: 97.5000, Loss: 0.0471
+LR: 0.000186, Acc: 95.0000, Loss: 0.0711
+LR: 0.000186, Acc: 100.0000, Loss: 0.0074
+LR: 0.000186, Acc: 95.0000, Loss: 0.1864
+LR: 0.000186, Acc: 100.0000, Loss: 0.0058
+LR: 0.000185, Acc: 100.0000, Loss: 0.0025
+LR: 0.000185, Acc: 100.0000, Loss: 0.0340
+LR: 0.000185, Acc: 97.5000, Loss: 0.0970
+LR: 0.000185, Acc: 100.0000, Loss: 0.0058
+LR: 0.000185, Acc: 100.0000, Loss: 0.0195
+LR: 0.000185, Acc: 100.0000, Loss: 0.0066
+LR: 0.000184, Acc: 97.5000, Loss: 0.1344
+LR: 0.000184, Acc: 100.0000, Loss: 0.0079
+LR: 0.000184, Acc: 100.0000, Loss: 0.0156
+LR: 0.000184, Acc: 97.5000, Loss: 0.0346
+LR: 0.000184, Acc: 100.0000, Loss: 0.0078
+LR: 0.000183, Acc: 97.5000, Loss: 0.0856
+LR: 0.000183, Acc: 97.5000, Loss: 0.0418
+LR: 0.000183, Acc: 97.5000, Loss: 0.0332
+LR: 0.000183, Acc: 97.5000, Loss: 0.0607
+LR: 0.000183, Acc: 100.0000, Loss: 0.0185
+LR: 0.000183, Acc: 97.5000, Loss: 0.0472
+LR: 0.000182, Acc: 97.5000, Loss: 0.1635
+LR: 0.000182, Acc: 100.0000, Loss: 0.0203
+LR: 0.000182, Acc: 97.5000, Loss: 0.0488
+LR: 0.000182, Acc: 100.0000, Loss: 0.0046
+LR: 0.000182, Acc: 100.0000, Loss: 0.0259
+LR: 0.000182, Acc: 100.0000, Loss: 0.0075
+LR: 0.000181, Acc: 100.0000, Loss: 0.0022
+LR: 0.000181, Acc: 97.5000, Loss: 0.0855
+LR: 0.000181, Acc: 100.0000, Loss: 0.0147
+LR: 0.000181, Acc: 97.5000, Loss: 0.1178
+LR: 0.000181, Acc: 95.0000, Loss: 0.1107
+LR: 0.000180, Acc: 97.5000, Loss: 0.1235
+LR: 0.000180, Acc: 97.5000, Loss: 0.0572
+LR: 0.000180, Acc: 100.0000, Loss: 0.0286
+LR: 0.000180, Acc: 97.5000, Loss: 0.0876
+LR: 0.000180, Acc: 100.0000, Loss: 0.0075
+LR: 0.000180, Acc: 97.5000, Loss: 0.0504
+LR: 0.000179, Acc: 100.0000, Loss: 0.0132
+LR: 0.000179, Acc: 100.0000, Loss: 0.0065
+LR: 0.000179, Acc: 95.0000, Loss: 0.0859
+LR: 0.000179, Acc: 100.0000, Loss: 0.0191
+LR: 0.000179, Acc: 100.0000, Loss: 0.0265
+LR: 0.000178, Acc: 95.0000, Loss: 0.1870
+LR: 0.000178, Acc: 97.5000, Loss: 0.0591
+LR: 0.000178, Acc: 100.0000, Loss: 0.0034
+LR: 0.000178, Acc: 92.5000, Loss: 0.2334
+LR: 0.000178, Acc: 97.5000, Loss: 0.0661
+LR: 0.000177, Acc: 100.0000, Loss: 0.0068
+LR: 0.000177, Acc: 100.0000, Loss: 0.0028
+LR: 0.000177, Acc: 95.0000, Loss: 0.1206
+LR: 0.000177, Acc: 97.5000, Loss: 0.0799
+LR: 0.000177, Acc: 97.5000, Loss: 0.0574
+LR: 0.000176, Acc: 100.0000, Loss: 0.0071
+LR: 0.000176, Acc: 95.0000, Loss: 0.1967
+LR: 0.000176, Acc: 100.0000, Loss: 0.0065
+LR: 0.000176, Acc: 92.5000, Loss: 0.2106
+LR: 0.000176, Acc: 100.0000, Loss: 0.0047
+LR: 0.000175, Acc: 97.5000, Loss: 0.0503
+LR: 0.000175, Acc: 100.0000, Loss: 0.0035
+LR: 0.000175, Acc: 97.5000, Loss: 0.0713
+LR: 0.000175, Acc: 100.0000, Loss: 0.0050
+LR: 0.000175, Acc: 100.0000, Loss: 0.0115
+LR: 0.000174, Acc: 100.0000, Loss: 0.0026
+LR: 0.000174, Acc: 97.5000, Loss: 0.0407
+LR: 0.000174, Acc: 97.5000, Loss: 0.0743
+LR: 0.000174, Acc: 97.5000, Loss: 0.0487
+LR: 0.000173, Acc: 100.0000, Loss: 0.0340
+LR: 0.000173, Acc: 100.0000, Loss: 0.0087
+LR: 0.000173, Acc: 100.0000, Loss: 0.0086
+LR: 0.000173, Acc: 97.5000, Loss: 0.1108
+LR: 0.000173, Acc: 92.5000, Loss: 0.1885
+LR: 0.000172, Acc: 95.0000, Loss: 0.0614
+LR: 0.000172, Acc: 100.0000, Loss: 0.0221
+LR: 0.000172, Acc: 100.0000, Loss: 0.0114
+LR: 0.000172, Acc: 100.0000, Loss: 0.0051
+LR: 0.000172, Acc: 100.0000, Loss: 0.0095
+LR: 0.000171, Acc: 100.0000, Loss: 0.0080
+LR: 0.000171, Acc: 100.0000, Loss: 0.0316
+LR: 0.000171, Acc: 97.5000, Loss: 0.0635
+LR: 0.000171, Acc: 95.0000, Loss: 0.0808
+LR: 0.000170, Acc: 100.0000, Loss: 0.0027
+LR: 0.000170, Acc: 100.0000, Loss: 0.0262
+LR: 0.000170, Acc: 100.0000, Loss: 0.0174
+LR: 0.000170, Acc: 97.5000, Loss: 0.0680
+LR: 0.000170, Acc: 97.5000, Loss: 0.0954
+LR: 0.000169, Acc: 97.5000, Loss: 0.0378
+LR: 0.000169, Acc: 100.0000, Loss: 0.0036
+LR: 0.000169, Acc: 100.0000, Loss: 0.0190
+LR: 0.000169, Acc: 100.0000, Loss: 0.0070
+LR: 0.000168, Acc: 100.0000, Loss: 0.0066
+LR: 0.000168, Acc: 100.0000, Loss: 0.0360
+LR: 0.000168, Acc: 100.0000, Loss: 0.0047
+LR: 0.000168, Acc: 100.0000, Loss: 0.0274
+LR: 0.000167, Acc: 100.0000, Loss: 0.0275
+LR: 0.000167, Acc: 97.5000, Loss: 0.0852
+LR: 0.000167, Acc: 100.0000, Loss: 0.0044
+LR: 0.000167, Acc: 100.0000, Loss: 0.0093
+LR: 0.000167, Acc: 100.0000, Loss: 0.0119
+LR: 0.000166, Acc: 100.0000, Loss: 0.0256
+LR: 0.000166, Acc: 100.0000, Loss: 0.0051
+LR: 0.000166, Acc: 100.0000, Loss: 0.0058
+LR: 0.000166, Acc: 97.5000, Loss: 0.0556
+LR: 0.000165, Acc: 97.5000, Loss: 0.0496
+LR: 0.000165, Acc: 100.0000, Loss: 0.0011
+LR: 0.000165, Acc: 100.0000, Loss: 0.0020
+LR: 0.000165, Acc: 92.5000, Loss: 0.1601
+LR: 0.000164, Acc: 100.0000, Loss: 0.0041
+LR: 0.000164, Acc: 97.5000, Loss: 0.0405
+LR: 0.000164, Acc: 97.5000, Loss: 0.1075
+LR: 0.000164, Acc: 95.0000, Loss: 0.1466
+LR: 0.000163, Acc: 100.0000, Loss: 0.0154
+LR: 0.000163, Acc: 97.5000, Loss: 0.0689
+LR: 0.000163, Acc: 97.5000, Loss: 0.0536
+LR: 0.000163, Acc: 95.0000, Loss: 0.0795
+LR: 0.000162, Acc: 92.5000, Loss: 0.1504
+LR: 0.000162, Acc: 97.5000, Loss: 0.0555
+LR: 0.000162, Acc: 100.0000, Loss: 0.0193
+LR: 0.000162, Acc: 92.5000, Loss: 0.1066
+LR: 0.000161, Acc: 100.0000, Loss: 0.0130
+LR: 0.000161, Acc: 100.0000, Loss: 0.0035
+LR: 0.000161, Acc: 97.5000, Loss: 0.0272
+LR: 0.000161, Acc: 97.5000, Loss: 0.3801
+LR: 0.000160, Acc: 100.0000, Loss: 0.0094
+LR: 0.000160, Acc: 95.0000, Loss: 0.1036
+LR: 0.000160, Acc: 97.5000, Loss: 0.0320
+LR: 0.000160, Acc: 100.0000, Loss: 0.0104
+LR: 0.000159, Acc: 100.0000, Loss: 0.0034
+LR: 0.000159, Acc: 100.0000, Loss: 0.0203
+LR: 0.000159, Acc: 100.0000, Loss: 0.0104
+LR: 0.000159, Acc: 100.0000, Loss: 0.0247
+LR: 0.000158, Acc: 100.0000, Loss: 0.0026
+LR: 0.000158, Acc: 97.5000, Loss: 0.0326
+LR: 0.000158, Acc: 100.0000, Loss: 0.0185
+LR: 0.000158, Acc: 97.5000, Loss: 0.1568
+LR: 0.000157, Acc: 100.0000, Loss: 0.0047
+LR: 0.000157, Acc: 100.0000, Loss: 0.0063
+LR: 0.000157, Acc: 100.0000, Loss: 0.0077
+LR: 0.000157, Acc: 95.0000, Loss: 0.0947
+LR: 0.000156, Acc: 97.5000, Loss: 0.0466
+LR: 0.000156, Acc: 100.0000, Loss: 0.0103
+LR: 0.000156, Acc: 100.0000, Loss: 0.0135
+LR: 0.000156, Acc: 100.0000, Loss: 0.0026
+LR: 0.000155, Acc: 100.0000, Loss: 0.0080
+LR: 0.000155, Acc: 100.0000, Loss: 0.0034
+LR: 0.000155, Acc: 100.0000, Loss: 0.0248
+LR: 0.000155, Acc: 100.0000, Loss: 0.0052
+LR: 0.000154, Acc: 97.5000, Loss: 0.0684
+LR: 0.000154, Acc: 97.5000, Loss: 0.0612
+LR: 0.000154, Acc: 100.0000, Loss: 0.0160
+LR: 0.000154, Acc: 100.0000, Loss: 0.0170
+LR: 0.000153, Acc: 100.0000, Loss: 0.0110
+LR: 0.000153, Acc: 97.5000, Loss: 0.0480
+LR: 0.000153, Acc: 100.0000, Loss: 0.0140
+LR: 0.000152, Acc: 100.0000, Loss: 0.0415
+LR: 0.000152, Acc: 100.0000, Loss: 0.0012
+LR: 0.000152, Acc: 97.5000, Loss: 0.0673
+LR: 0.000152, Acc: 100.0000, Loss: 0.0197
+LR: 0.000151, Acc: 100.0000, Loss: 0.0029
+LR: 0.000151, Acc: 100.0000, Loss: 0.0276
+LR: 0.000151, Acc: 100.0000, Loss: 0.0141
+LR: 0.000151, Acc: 97.5000, Loss: 0.0495
+LR: 0.000150, Acc: 100.0000, Loss: 0.0060
+LR: 0.000150, Acc: 100.0000, Loss: 0.0090
+LR: 0.000150, Acc: 100.0000, Loss: 0.0078
+LR: 0.000150, Acc: 100.0000, Loss: 0.0019
+LR: 0.000149, Acc: 95.0000, Loss: 0.0683
+LR: 0.000149, Acc: 100.0000, Loss: 0.0046
+LR: 0.000149, Acc: 100.0000, Loss: 0.0039
+LR: 0.000148, Acc: 100.0000, Loss: 0.0168
+LR: 0.000148, Acc: 100.0000, Loss: 0.0096
+LR: 0.000148, Acc: 100.0000, Loss: 0.0098
+LR: 0.000148, Acc: 100.0000, Loss: 0.0167
+LR: 0.000147, Acc: 95.0000, Loss: 0.0869
+LR: 0.000147, Acc: 100.0000, Loss: 0.0040
+LR: 0.000147, Acc: 97.5000, Loss: 0.0236
+LR: 0.000147, Acc: 100.0000, Loss: 0.0193
+LR: 0.000146, Acc: 97.5000, Loss: 0.0286
+LR: 0.000146, Acc: 100.0000, Loss: 0.0049
+LR: 0.000146, Acc: 100.0000, Loss: 0.0017
+LR: 0.000145, Acc: 100.0000, Loss: 0.0217
+LR: 0.000145, Acc: 97.5000, Loss: 0.0553
+LR: 0.000145, Acc: 100.0000, Loss: 0.0076
+LR: 0.000145, Acc: 100.0000, Loss: 0.0023
+LR: 0.000144, Acc: 97.5000, Loss: 0.0693
+LR: 0.000144, Acc: 100.0000, Loss: 0.0164
+LR: 0.000144, Acc: 100.0000, Loss: 0.0071
+LR: 0.000143, Acc: 100.0000, Loss: 0.0183
+LR: 0.000143, Acc: 100.0000, Loss: 0.0030
+LR: 0.000143, Acc: 100.0000, Loss: 0.0180
+LR: 0.000143, Acc: 100.0000, Loss: 0.0027
+LR: 0.000142, Acc: 100.0000, Loss: 0.0103
+LR: 0.000142, Acc: 97.5000, Loss: 0.0404
+LR: 0.000142, Acc: 100.0000, Loss: 0.0012
+LR: 0.000141, Acc: 100.0000, Loss: 0.0025
+LR: 0.000141, Acc: 100.0000, Loss: 0.0038
+LR: 0.000141, Acc: 100.0000, Loss: 0.0024
+LR: 0.000141, Acc: 100.0000, Loss: 0.0176
+LR: 0.000140, Acc: 97.5000, Loss: 0.1587
+LR: 0.000140, Acc: 97.5000, Loss: 0.1305
+LR: 0.000140, Acc: 97.5000, Loss: 0.0617
+LR: 0.000139, Acc: 100.0000, Loss: 0.0182
+LR: 0.000139, Acc: 100.0000, Loss: 0.0219
+LR: 0.000139, Acc: 100.0000, Loss: 0.0090
+LR: 0.000139, Acc: 100.0000, Loss: 0.0011
+LR: 0.000138, Acc: 97.5000, Loss: 0.0575
+LR: 0.000138, Acc: 100.0000, Loss: 0.0084
+LR: 0.000138, Acc: 100.0000, Loss: 0.0035
+LR: 0.000137, Acc: 100.0000, Loss: 0.0079
+LR: 0.000137, Acc: 100.0000, Loss: 0.0057
+LR: 0.000137, Acc: 97.5000, Loss: 0.0533
+LR: 0.000137, Acc: 100.0000, Loss: 0.0006
+LR: 0.000136, Acc: 100.0000, Loss: 0.0219
+LR: 0.000136, Acc: 100.0000, Loss: 0.0049
+LR: 0.000136, Acc: 100.0000, Loss: 0.0008
+LR: 0.000135, Acc: 97.5000, Loss: 0.0607
+LR: 0.000135, Acc: 97.5000, Loss: 0.0365
+LR: 0.000135, Acc: 97.5000, Loss: 0.0695
+LR: 0.000134, Acc: 100.0000, Loss: 0.0194
+LR: 0.000134, Acc: 97.5000, Loss: 0.0794
+LR: 0.000134, Acc: 97.5000, Loss: 0.1687
+LR: 0.000134, Acc: 97.5000, Loss: 0.0420
+LR: 0.000133, Acc: 100.0000, Loss: 0.0078
+LR: 0.000133, Acc: 97.5000, Loss: 0.0246
+LR: 0.000133, Acc: 100.0000, Loss: 0.0218
+LR: 0.000132, Acc: 97.5000, Loss: 0.0574
+LR: 0.000132, Acc: 97.5000, Loss: 0.0305
+LR: 0.000132, Acc: 100.0000, Loss: 0.0026
+LR: 0.000132, Acc: 97.5000, Loss: 0.0655
+LR: 0.000131, Acc: 100.0000, Loss: 0.0041
+LR: 0.000131, Acc: 100.0000, Loss: 0.0143
+LR: 0.000131, Acc: 100.0000, Loss: 0.0025
+LR: 0.000130, Acc: 100.0000, Loss: 0.0012
+LR: 0.000130, Acc: 97.5000, Loss: 0.0291
+LR: 0.000130, Acc: 100.0000, Loss: 0.0113
+LR: 0.000129, Acc: 100.0000, Loss: 0.0032
+LR: 0.000129, Acc: 100.0000, Loss: 0.0067
+LR: 0.000129, Acc: 100.0000, Loss: 0.0174
+LR: 0.000129, Acc: 95.0000, Loss: 0.0443
+LR: 0.000128, Acc: 97.5000, Loss: 0.0623
+LR: 0.000128, Acc: 100.0000, Loss: 0.0026
+LR: 0.000128, Acc: 100.0000, Loss: 0.0013
+LR: 0.000127, Acc: 100.0000, Loss: 0.0197
+LR: 0.000127, Acc: 97.5000, Loss: 0.0281
+LR: 0.000127, Acc: 100.0000, Loss: 0.0032
+LR: 0.000126, Acc: 100.0000, Loss: 0.0032
+LR: 0.000126, Acc: 100.0000, Loss: 0.0050
+LR: 0.000126, Acc: 100.0000, Loss: 0.0209
+LR: 0.000126, Acc: 97.5000, Loss: 0.2453
+LR: 0.000125, Acc: 97.5000, Loss: 0.0883
+LR: 0.000125, Acc: 100.0000, Loss: 0.0023
+LR: 0.000125, Acc: 100.0000, Loss: 0.0239
+LR: 0.000124, Acc: 97.5000, Loss: 0.0948
+LR: 0.000124, Acc: 95.0000, Loss: 0.1024
+LR: 0.000124, Acc: 100.0000, Loss: 0.0021
+LR: 0.000123, Acc: 100.0000, Loss: 0.0012
+LR: 0.000123, Acc: 100.0000, Loss: 0.0009
+LR: 0.000123, Acc: 97.5000, Loss: 0.0261
+LR: 0.000123, Acc: 97.5000, Loss: 0.0598
+LR: 0.000122, Acc: 100.0000, Loss: 0.0075
+LR: 0.000122, Acc: 97.5000, Loss: 0.0209
+LR: 0.000122, Acc: 100.0000, Loss: 0.0101
+LR: 0.000121, Acc: 92.5000, Loss: 0.1357
+LR: 0.000121, Acc: 97.5000, Loss: 0.1327
+LR: 0.000121, Acc: 97.5000, Loss: 0.1197
+LR: 0.000120, Acc: 97.5000, Loss: 0.0484
+LR: 0.000120, Acc: 97.5000, Loss: 0.0528
+LR: 0.000120, Acc: 97.5000, Loss: 0.0548
+LR: 0.000119, Acc: 100.0000, Loss: 0.0050
+LR: 0.000119, Acc: 100.0000, Loss: 0.0246
+LR: 0.000119, Acc: 100.0000, Loss: 0.0066
+LR: 0.000119, Acc: 97.5000, Loss: 0.0850
+LR: 0.000118, Acc: 100.0000, Loss: 0.0214
+LR: 0.000118, Acc: 97.5000, Loss: 0.0217
+LR: 0.000118, Acc: 100.0000, Loss: 0.0024
+LR: 0.000117, Acc: 100.0000, Loss: 0.0069
+LR: 0.000117, Acc: 95.0000, Loss: 0.0808
+LR: 0.000117, Acc: 95.0000, Loss: 0.1065
+LR: 0.000116, Acc: 100.0000, Loss: 0.0028
+LR: 0.000116, Acc: 100.0000, Loss: 0.0024
+LR: 0.000116, Acc: 100.0000, Loss: 0.0359
+LR: 0.000115, Acc: 100.0000, Loss: 0.0022
+LR: 0.000115, Acc: 97.5000, Loss: 0.0516
+LR: 0.000115, Acc: 97.5000, Loss: 0.0287
+LR: 0.000115, Acc: 100.0000, Loss: 0.0260
+LR: 0.000114, Acc: 100.0000, Loss: 0.0129
+LR: 0.000114, Acc: 100.0000, Loss: 0.0037
+LR: 0.000114, Acc: 97.5000, Loss: 0.0277
+LR: 0.000113, Acc: 100.0000, Loss: 0.0058
+LR: 0.000113, Acc: 97.5000, Loss: 0.0571
+LR: 0.000113, Acc: 97.5000, Loss: 0.0327
+LR: 0.000112, Acc: 97.5000, Loss: 0.0902
+LR: 0.000112, Acc: 100.0000, Loss: 0.0048
+LR: 0.000112, Acc: 100.0000, Loss: 0.0025
+LR: 0.000111, Acc: 100.0000, Loss: 0.0044
+LR: 0.000111, Acc: 100.0000, Loss: 0.0014
+LR: 0.000111, Acc: 97.5000, Loss: 0.0433
+LR: 0.000110, Acc: 100.0000, Loss: 0.0055
+LR: 0.000110, Acc: 100.0000, Loss: 0.0026
+LR: 0.000110, Acc: 100.0000, Loss: 0.0018
+LR: 0.000110, Acc: 100.0000, Loss: 0.0011
+LR: 0.000109, Acc: 100.0000, Loss: 0.0073
+LR: 0.000109, Acc: 100.0000, Loss: 0.0038
+LR: 0.000109, Acc: 97.5000, Loss: 0.0383
+LR: 0.000108, Acc: 100.0000, Loss: 0.0097
+LR: 0.000108, Acc: 100.0000, Loss: 0.0128
+LR: 0.000108, Acc: 100.0000, Loss: 0.0015
+LR: 0.000107, Acc: 100.0000, Loss: 0.0013
+LR: 0.000107, Acc: 97.5000, Loss: 0.0496
+LR: 0.000107, Acc: 100.0000, Loss: 0.0078
+LR: 0.000106, Acc: 100.0000, Loss: 0.0028
+LR: 0.000106, Acc: 97.5000, Loss: 0.1601
+LR: 0.000106, Acc: 100.0000, Loss: 0.0014
+LR: 0.000105, Acc: 100.0000, Loss: 0.0019
+LR: 0.000105, Acc: 100.0000, Loss: 0.0020
+LR: 0.000105, Acc: 100.0000, Loss: 0.0042
+LR: 0.000105, Acc: 100.0000, Loss: 0.0015
+LR: 0.000104, Acc: 100.0000, Loss: 0.0205
+LR: 0.000104, Acc: 100.0000, Loss: 0.0016
+LR: 0.000104, Acc: 97.5000, Loss: 0.1771
+LR: 0.000103, Acc: 97.5000, Loss: 0.0451
+LR: 0.000103, Acc: 100.0000, Loss: 0.0010
+LR: 0.000103, Acc: 100.0000, Loss: 0.0093
+LR: 0.000102, Acc: 100.0000, Loss: 0.0153
+LR: 0.000102, Acc: 100.0000, Loss: 0.0031
+LR: 0.000102, Acc: 100.0000, Loss: 0.0114
+LR: 0.000101, Acc: 100.0000, Loss: 0.0009
+LR: 0.000101, Acc: 100.0000, Loss: 0.0089
+LR: 0.000101, Acc: 97.5000, Loss: 0.0645
+LR: 0.000100, Acc: 97.5000, Loss: 0.0456
+LR: 0.000100, Acc: 100.0000, Loss: 0.0011
+LR: 0.000100, Acc: 100.0000, Loss: 0.0142
+LR: 0.000100, Acc: 97.5000, Loss: 0.0479
+LR: 0.000099, Acc: 100.0000, Loss: 0.0004
+LR: 0.000099, Acc: 97.5000, Loss: 0.0450
+LR: 0.000099, Acc: 97.5000, Loss: 0.0509
+LR: 0.000098, Acc: 97.5000, Loss: 0.0225
+LR: 0.000098, Acc: 100.0000, Loss: 0.0015
+LR: 0.000098, Acc: 97.5000, Loss: 0.0840
+LR: 0.000097, Acc: 97.5000, Loss: 0.0826
+LR: 0.000097, Acc: 100.0000, Loss: 0.0096
+LR: 0.000097, Acc: 100.0000, Loss: 0.0301
+LR: 0.000096, Acc: 97.5000, Loss: 0.0484
+LR: 0.000096, Acc: 97.5000, Loss: 0.0255
+LR: 0.000096, Acc: 100.0000, Loss: 0.0230
+LR: 0.000096, Acc: 100.0000, Loss: 0.0027
+LR: 0.000095, Acc: 95.0000, Loss: 0.1258
+LR: 0.000095, Acc: 100.0000, Loss: 0.0015
+LR: 0.000095, Acc: 100.0000, Loss: 0.0093
+LR: 0.000094, Acc: 100.0000, Loss: 0.0039
+LR: 0.000094, Acc: 100.0000, Loss: 0.0024
+LR: 0.000094, Acc: 100.0000, Loss: 0.0016
+LR: 0.000093, Acc: 100.0000, Loss: 0.0032
+LR: 0.000093, Acc: 95.0000, Loss: 0.1004
+LR: 0.000093, Acc: 100.0000, Loss: 0.0009
+LR: 0.000092, Acc: 100.0000, Loss: 0.0037
+LR: 0.000092, Acc: 100.0000, Loss: 0.0014
+LR: 0.000092, Acc: 97.5000, Loss: 0.0348
+LR: 0.000091, Acc: 97.5000, Loss: 0.0389
+LR: 0.000091, Acc: 97.5000, Loss: 0.0285
+LR: 0.000091, Acc: 100.0000, Loss: 0.0015
+LR: 0.000091, Acc: 100.0000, Loss: 0.0263
+LR: 0.000090, Acc: 100.0000, Loss: 0.0094
+LR: 0.000090, Acc: 97.5000, Loss: 0.0681
+LR: 0.000090, Acc: 100.0000, Loss: 0.0028
+LR: 0.000089, Acc: 100.0000, Loss: 0.0020
+LR: 0.000089, Acc: 100.0000, Loss: 0.0048
+LR: 0.000089, Acc: 100.0000, Loss: 0.0188
+LR: 0.000088, Acc: 100.0000, Loss: 0.0011
+LR: 0.000088, Acc: 100.0000, Loss: 0.0026
+LR: 0.000088, Acc: 97.5000, Loss: 0.0396
+LR: 0.000087, Acc: 100.0000, Loss: 0.0151
+LR: 0.000087, Acc: 100.0000, Loss: 0.0015
+LR: 0.000087, Acc: 100.0000, Loss: 0.0022
+LR: 0.000086, Acc: 100.0000, Loss: 0.0030
+LR: 0.000086, Acc: 100.0000, Loss: 0.0030
+LR: 0.000086, Acc: 100.0000, Loss: 0.0021
+LR: 0.000086, Acc: 97.5000, Loss: 0.0303
+LR: 0.000085, Acc: 100.0000, Loss: 0.0026
+LR: 0.000085, Acc: 97.5000, Loss: 0.0522
+LR: 0.000085, Acc: 97.5000, Loss: 0.0328
+LR: 0.000084, Acc: 100.0000, Loss: 0.0172
+LR: 0.000084, Acc: 95.0000, Loss: 0.2072
+LR: 0.000084, Acc: 100.0000, Loss: 0.0014
+LR: 0.000083, Acc: 100.0000, Loss: 0.0059
+LR: 0.000083, Acc: 100.0000, Loss: 0.0042
+LR: 0.000083, Acc: 100.0000, Loss: 0.0046
+LR: 0.000082, Acc: 100.0000, Loss: 0.0018
+LR: 0.000082, Acc: 100.0000, Loss: 0.0263
+LR: 0.000082, Acc: 100.0000, Loss: 0.0308
+LR: 0.000082, Acc: 97.5000, Loss: 0.2180
+LR: 0.000081, Acc: 100.0000, Loss: 0.0145
+LR: 0.000081, Acc: 100.0000, Loss: 0.0009
+LR: 0.000081, Acc: 100.0000, Loss: 0.0034
+LR: 0.000080, Acc: 100.0000, Loss: 0.0032
+LR: 0.000080, Acc: 100.0000, Loss: 0.0173
+LR: 0.000080, Acc: 100.0000, Loss: 0.0039
+LR: 0.000079, Acc: 100.0000, Loss: 0.0006
+LR: 0.000079, Acc: 100.0000, Loss: 0.0123
+LR: 0.000079, Acc: 100.0000, Loss: 0.0024
+LR: 0.000078, Acc: 100.0000, Loss: 0.0014
+LR: 0.000078, Acc: 100.0000, Loss: 0.0014
+LR: 0.000078, Acc: 97.5000, Loss: 0.0287
+LR: 0.000078, Acc: 100.0000, Loss: 0.0029
+LR: 0.000077, Acc: 100.0000, Loss: 0.0113
+LR: 0.000077, Acc: 97.5000, Loss: 0.0377
+LR: 0.000077, Acc: 100.0000, Loss: 0.0056
+LR: 0.000076, Acc: 100.0000, Loss: 0.0154
+LR: 0.000076, Acc: 100.0000, Loss: 0.0050
+LR: 0.000076, Acc: 97.5000, Loss: 0.0948
+LR: 0.000075, Acc: 100.0000, Loss: 0.0015
+LR: 0.000075, Acc: 100.0000, Loss: 0.0222
+LR: 0.000075, Acc: 100.0000, Loss: 0.0015
+LR: 0.000075, Acc: 100.0000, Loss: 0.0026
+LR: 0.000074, Acc: 100.0000, Loss: 0.0175
+LR: 0.000074, Acc: 100.0000, Loss: 0.0048
+LR: 0.000074, Acc: 95.0000, Loss: 0.0783
+LR: 0.000073, Acc: 100.0000, Loss: 0.0023
+LR: 0.000073, Acc: 100.0000, Loss: 0.0020
+LR: 0.000073, Acc: 97.5000, Loss: 0.0387
+LR: 0.000072, Acc: 100.0000, Loss: 0.0016
+LR: 0.000072, Acc: 100.0000, Loss: 0.0024
+LR: 0.000072, Acc: 100.0000, Loss: 0.0008
+LR: 0.000072, Acc: 100.0000, Loss: 0.0427
+LR: 0.000071, Acc: 97.5000, Loss: 0.0386
+LR: 0.000071, Acc: 100.0000, Loss: 0.0024
+LR: 0.000071, Acc: 100.0000, Loss: 0.0028
+LR: 0.000070, Acc: 100.0000, Loss: 0.0011
+LR: 0.000070, Acc: 100.0000, Loss: 0.0019
+LR: 0.000070, Acc: 100.0000, Loss: 0.0050
+LR: 0.000069, Acc: 100.0000, Loss: 0.0024
+LR: 0.000069, Acc: 100.0000, Loss: 0.0010
+LR: 0.000069, Acc: 100.0000, Loss: 0.0113
+LR: 0.000069, Acc: 100.0000, Loss: 0.0006
+LR: 0.000068, Acc: 100.0000, Loss: 0.0119
+LR: 0.000068, Acc: 100.0000, Loss: 0.0170
+LR: 0.000068, Acc: 100.0000, Loss: 0.0032
+LR: 0.000067, Acc: 97.5000, Loss: 0.1000
+LR: 0.000067, Acc: 100.0000, Loss: 0.0284
+LR: 0.000067, Acc: 100.0000, Loss: 0.0069
+LR: 0.000067, Acc: 100.0000, Loss: 0.0032
+LR: 0.000066, Acc: 100.0000, Loss: 0.0016
+LR: 0.000066, Acc: 97.5000, Loss: 0.0739
+LR: 0.000066, Acc: 97.5000, Loss: 0.0976
+LR: 0.000065, Acc: 100.0000, Loss: 0.0052
+LR: 0.000065, Acc: 100.0000, Loss: 0.0084
+LR: 0.000065, Acc: 100.0000, Loss: 0.0084
+LR: 0.000064, Acc: 100.0000, Loss: 0.0073
+LR: 0.000064, Acc: 100.0000, Loss: 0.0006
+LR: 0.000064, Acc: 100.0000, Loss: 0.0020
+LR: 0.000064, Acc: 97.5000, Loss: 0.0246
+LR: 0.000063, Acc: 100.0000, Loss: 0.0005
+LR: 0.000063, Acc: 100.0000, Loss: 0.0022
+LR: 0.000063, Acc: 97.5000, Loss: 0.0309
+LR: 0.000062, Acc: 100.0000, Loss: 0.0053
+LR: 0.000062, Acc: 100.0000, Loss: 0.0009
+LR: 0.000062, Acc: 100.0000, Loss: 0.0011
+LR: 0.000062, Acc: 100.0000, Loss: 0.0044
+LR: 0.000061, Acc: 100.0000, Loss: 0.0119
+LR: 0.000061, Acc: 100.0000, Loss: 0.0215
+LR: 0.000061, Acc: 100.0000, Loss: 0.0024
+LR: 0.000060, Acc: 100.0000, Loss: 0.0023
+LR: 0.000060, Acc: 100.0000, Loss: 0.0027
+LR: 0.000060, Acc: 100.0000, Loss: 0.0144
+LR: 0.000060, Acc: 100.0000, Loss: 0.0085
+LR: 0.000059, Acc: 97.5000, Loss: 0.1232
+LR: 0.000059, Acc: 100.0000, Loss: 0.0080
+LR: 0.000059, Acc: 100.0000, Loss: 0.0113
+LR: 0.000058, Acc: 100.0000, Loss: 0.0006
+LR: 0.000058, Acc: 100.0000, Loss: 0.0141
+LR: 0.000058, Acc: 100.0000, Loss: 0.0028
+LR: 0.000058, Acc: 100.0000, Loss: 0.0013
+LR: 0.000057, Acc: 97.5000, Loss: 0.0473
+LR: 0.000057, Acc: 100.0000, Loss: 0.0024
+LR: 0.000057, Acc: 100.0000, Loss: 0.0028
+LR: 0.000056, Acc: 100.0000, Loss: 0.0146
+LR: 0.000056, Acc: 100.0000, Loss: 0.0022
+LR: 0.000056, Acc: 97.5000, Loss: 0.1292
+LR: 0.000056, Acc: 100.0000, Loss: 0.0028
+LR: 0.000055, Acc: 100.0000, Loss: 0.0009
+LR: 0.000055, Acc: 100.0000, Loss: 0.0146
+LR: 0.000055, Acc: 100.0000, Loss: 0.0076
+LR: 0.000054, Acc: 100.0000, Loss: 0.0216
+LR: 0.000054, Acc: 100.0000, Loss: 0.0015
+LR: 0.000054, Acc: 100.0000, Loss: 0.0243
+LR: 0.000054, Acc: 100.0000, Loss: 0.0012
+LR: 0.000053, Acc: 100.0000, Loss: 0.0010
+LR: 0.000053, Acc: 100.0000, Loss: 0.0008
+LR: 0.000053, Acc: 95.0000, Loss: 0.0596
+LR: 0.000053, Acc: 100.0000, Loss: 0.0023
+LR: 0.000052, Acc: 100.0000, Loss: 0.0041
+LR: 0.000052, Acc: 100.0000, Loss: 0.0139
+LR: 0.000052, Acc: 100.0000, Loss: 0.0217
+LR: 0.000051, Acc: 100.0000, Loss: 0.0007
+LR: 0.000051, Acc: 100.0000, Loss: 0.0030
+LR: 0.000051, Acc: 100.0000, Loss: 0.0010
+LR: 0.000051, Acc: 100.0000, Loss: 0.0156
+LR: 0.000050, Acc: 100.0000, Loss: 0.0018
+LR: 0.000050, Acc: 100.0000, Loss: 0.0005
+LR: 0.000050, Acc: 100.0000, Loss: 0.0083
+LR: 0.000050, Acc: 100.0000, Loss: 0.0216
+LR: 0.000049, Acc: 100.0000, Loss: 0.0159
+LR: 0.000049, Acc: 100.0000, Loss: 0.0007
+LR: 0.000049, Acc: 97.5000, Loss: 0.0894
+LR: 0.000049, Acc: 100.0000, Loss: 0.0011
+LR: 0.000048, Acc: 100.0000, Loss: 0.0025
+LR: 0.000048, Acc: 100.0000, Loss: 0.0073
+LR: 0.000048, Acc: 97.5000, Loss: 0.0319
+LR: 0.000047, Acc: 100.0000, Loss: 0.0020
+LR: 0.000047, Acc: 100.0000, Loss: 0.0042
+LR: 0.000047, Acc: 100.0000, Loss: 0.0019
+LR: 0.000047, Acc: 100.0000, Loss: 0.0024
+LR: 0.000046, Acc: 100.0000, Loss: 0.0126
+LR: 0.000046, Acc: 100.0000, Loss: 0.0011
+LR: 0.000046, Acc: 100.0000, Loss: 0.0018
+LR: 0.000046, Acc: 100.0000, Loss: 0.0046
+LR: 0.000045, Acc: 100.0000, Loss: 0.0011
+LR: 0.000045, Acc: 100.0000, Loss: 0.0054
+LR: 0.000045, Acc: 100.0000, Loss: 0.0006
+LR: 0.000045, Acc: 100.0000, Loss: 0.0047
+LR: 0.000044, Acc: 100.0000, Loss: 0.0088
+LR: 0.000044, Acc: 100.0000, Loss: 0.0006
+LR: 0.000044, Acc: 95.0000, Loss: 0.3805
+LR: 0.000044, Acc: 100.0000, Loss: 0.0184
+LR: 0.000043, Acc: 100.0000, Loss: 0.0056
+LR: 0.000043, Acc: 100.0000, Loss: 0.0015
+LR: 0.000043, Acc: 97.5000, Loss: 0.0553
+LR: 0.000043, Acc: 100.0000, Loss: 0.0012
+LR: 0.000042, Acc: 100.0000, Loss: 0.0123
+LR: 0.000042, Acc: 100.0000, Loss: 0.0029
+LR: 0.000042, Acc: 100.0000, Loss: 0.0028
+LR: 0.000042, Acc: 100.0000, Loss: 0.0032
+LR: 0.000041, Acc: 100.0000, Loss: 0.0025
+LR: 0.000041, Acc: 100.0000, Loss: 0.0008
+LR: 0.000041, Acc: 100.0000, Loss: 0.0029
+LR: 0.000041, Acc: 100.0000, Loss: 0.0046
+LR: 0.000040, Acc: 100.0000, Loss: 0.0018
+LR: 0.000040, Acc: 100.0000, Loss: 0.0010
+LR: 0.000040, Acc: 100.0000, Loss: 0.0006
+LR: 0.000040, Acc: 97.5000, Loss: 0.0390
+LR: 0.000039, Acc: 100.0000, Loss: 0.0009
+LR: 0.000039, Acc: 97.5000, Loss: 0.0599
+LR: 0.000039, Acc: 100.0000, Loss: 0.0080
+LR: 0.000039, Acc: 100.0000, Loss: 0.0073
+LR: 0.000038, Acc: 100.0000, Loss: 0.0020
+LR: 0.000038, Acc: 97.5000, Loss: 0.0342
+LR: 0.000038, Acc: 100.0000, Loss: 0.0016
+LR: 0.000038, Acc: 97.5000, Loss: 0.0338
+LR: 0.000037, Acc: 97.5000, Loss: 0.0415
+LR: 0.000037, Acc: 100.0000, Loss: 0.0011
+LR: 0.000037, Acc: 100.0000, Loss: 0.0014
+LR: 0.000037, Acc: 100.0000, Loss: 0.0014
+LR: 0.000036, Acc: 100.0000, Loss: 0.0069
+LR: 0.000036, Acc: 100.0000, Loss: 0.0025
+LR: 0.000036, Acc: 95.0000, Loss: 0.1031
+LR: 0.000036, Acc: 100.0000, Loss: 0.0038
+LR: 0.000035, Acc: 100.0000, Loss: 0.0045
+LR: 0.000035, Acc: 100.0000, Loss: 0.0175
+LR: 0.000035, Acc: 100.0000, Loss: 0.0078
+LR: 0.000035, Acc: 97.5000, Loss: 0.0659
+LR: 0.000034, Acc: 100.0000, Loss: 0.0122
+LR: 0.000034, Acc: 100.0000, Loss: 0.0021
+LR: 0.000034, Acc: 100.0000, Loss: 0.0051
+LR: 0.000034, Acc: 100.0000, Loss: 0.0049
+LR: 0.000034, Acc: 100.0000, Loss: 0.0118
+LR: 0.000033, Acc: 100.0000, Loss: 0.0043
+LR: 0.000033, Acc: 97.5000, Loss: 0.0373
+LR: 0.000033, Acc: 100.0000, Loss: 0.0009
+LR: 0.000033, Acc: 100.0000, Loss: 0.0043
+LR: 0.000032, Acc: 100.0000, Loss: 0.0012
+LR: 0.000032, Acc: 100.0000, Loss: 0.0065
+LR: 0.000032, Acc: 100.0000, Loss: 0.0012
+LR: 0.000032, Acc: 100.0000, Loss: 0.0039
+LR: 0.000031, Acc: 100.0000, Loss: 0.0061
+LR: 0.000031, Acc: 100.0000, Loss: 0.0199
+LR: 0.000031, Acc: 100.0000, Loss: 0.0013
+LR: 0.000031, Acc: 100.0000, Loss: 0.0013
+LR: 0.000031, Acc: 97.5000, Loss: 0.0452
+LR: 0.000030, Acc: 100.0000, Loss: 0.0394
+LR: 0.000030, Acc: 100.0000, Loss: 0.0040
+LR: 0.000030, Acc: 100.0000, Loss: 0.0030
+LR: 0.000030, Acc: 100.0000, Loss: 0.0084
+LR: 0.000029, Acc: 100.0000, Loss: 0.0032
+LR: 0.000029, Acc: 100.0000, Loss: 0.0005
+LR: 0.000029, Acc: 100.0000, Loss: 0.0032
+LR: 0.000029, Acc: 97.5000, Loss: 0.0231
+LR: 0.000029, Acc: 100.0000, Loss: 0.0020
+LR: 0.000028, Acc: 97.5000, Loss: 0.0893
+LR: 0.000028, Acc: 100.0000, Loss: 0.0184
+LR: 0.000028, Acc: 100.0000, Loss: 0.0063
+LR: 0.000028, Acc: 100.0000, Loss: 0.0010
+LR: 0.000028, Acc: 100.0000, Loss: 0.0019
+LR: 0.000027, Acc: 100.0000, Loss: 0.0093
+LR: 0.000027, Acc: 100.0000, Loss: 0.0007
+LR: 0.000027, Acc: 100.0000, Loss: 0.0041
+LR: 0.000027, Acc: 100.0000, Loss: 0.0039
+LR: 0.000026, Acc: 100.0000, Loss: 0.0005
+LR: 0.000026, Acc: 100.0000, Loss: 0.0008
+LR: 0.000026, Acc: 100.0000, Loss: 0.0005
+LR: 0.000026, Acc: 100.0000, Loss: 0.0016
+LR: 0.000026, Acc: 97.5000, Loss: 0.0251
+LR: 0.000025, Acc: 100.0000, Loss: 0.0048
+LR: 0.000025, Acc: 100.0000, Loss: 0.0187
+LR: 0.000025, Acc: 97.5000, Loss: 0.0294
+LR: 0.000025, Acc: 100.0000, Loss: 0.0004
+LR: 0.000025, Acc: 100.0000, Loss: 0.0005
+LR: 0.000024, Acc: 100.0000, Loss: 0.0016
+LR: 0.000024, Acc: 100.0000, Loss: 0.0025
+LR: 0.000024, Acc: 100.0000, Loss: 0.0009
+LR: 0.000024, Acc: 97.5000, Loss: 0.0562
+LR: 0.000024, Acc: 100.0000, Loss: 0.0014
+LR: 0.000023, Acc: 100.0000, Loss: 0.0008
+LR: 0.000023, Acc: 100.0000, Loss: 0.0009
+LR: 0.000023, Acc: 97.5000, Loss: 0.0311
+LR: 0.000023, Acc: 95.0000, Loss: 0.1631
+LR: 0.000023, Acc: 97.5000, Loss: 0.0608
+LR: 0.000022, Acc: 100.0000, Loss: 0.0004
+LR: 0.000022, Acc: 100.0000, Loss: 0.0051
+LR: 0.000022, Acc: 100.0000, Loss: 0.0025
+LR: 0.000022, Acc: 100.0000, Loss: 0.0024
+LR: 0.000022, Acc: 100.0000, Loss: 0.0052
+LR: 0.000021, Acc: 100.0000, Loss: 0.0012
+LR: 0.000021, Acc: 100.0000, Loss: 0.0007
+LR: 0.000021, Acc: 100.0000, Loss: 0.0003
+LR: 0.000021, Acc: 100.0000, Loss: 0.0049
+LR: 0.000021, Acc: 100.0000, Loss: 0.0004
+LR: 0.000021, Acc: 100.0000, Loss: 0.0022
+LR: 0.000020, Acc: 100.0000, Loss: 0.0021
+LR: 0.000020, Acc: 100.0000, Loss: 0.0047
+LR: 0.000020, Acc: 100.0000, Loss: 0.0022
+LR: 0.000020, Acc: 100.0000, Loss: 0.0050
+LR: 0.000020, Acc: 100.0000, Loss: 0.0080
+LR: 0.000019, Acc: 100.0000, Loss: 0.0034
+LR: 0.000019, Acc: 100.0000, Loss: 0.0005
+LR: 0.000019, Acc: 100.0000, Loss: 0.0013
+LR: 0.000019, Acc: 100.0000, Loss: 0.0009
+LR: 0.000019, Acc: 100.0000, Loss: 0.0006
+LR: 0.000019, Acc: 97.5000, Loss: 0.0524
+LR: 0.000018, Acc: 100.0000, Loss: 0.0018
+LR: 0.000018, Acc: 100.0000, Loss: 0.0006
+LR: 0.000018, Acc: 100.0000, Loss: 0.0039
+LR: 0.000018, Acc: 100.0000, Loss: 0.0004
+LR: 0.000018, Acc: 100.0000, Loss: 0.0063
+LR: 0.000018, Acc: 97.5000, Loss: 0.0592
+LR: 0.000017, Acc: 100.0000, Loss: 0.0182
+LR: 0.000017, Acc: 100.0000, Loss: 0.0022
+LR: 0.000017, Acc: 100.0000, Loss: 0.0003
+LR: 0.000017, Acc: 100.0000, Loss: 0.0004
+LR: 0.000017, Acc: 100.0000, Loss: 0.0055
+LR: 0.000016, Acc: 100.0000, Loss: 0.0082
+LR: 0.000016, Acc: 100.0000, Loss: 0.0109
+LR: 0.000016, Acc: 100.0000, Loss: 0.0011
+LR: 0.000016, Acc: 100.0000, Loss: 0.0013
+LR: 0.000016, Acc: 100.0000, Loss: 0.0046
+LR: 0.000016, Acc: 100.0000, Loss: 0.0021
+LR: 0.000015, Acc: 100.0000, Loss: 0.0011
+LR: 0.000015, Acc: 100.0000, Loss: 0.0010
+LR: 0.000015, Acc: 100.0000, Loss: 0.0030
+LR: 0.000015, Acc: 100.0000, Loss: 0.0004
+LR: 0.000015, Acc: 100.0000, Loss: 0.0123
+LR: 0.000015, Acc: 100.0000, Loss: 0.0008
+LR: 0.000015, Acc: 100.0000, Loss: 0.0031
+LR: 0.000014, Acc: 100.0000, Loss: 0.0093
+LR: 0.000014, Acc: 100.0000, Loss: 0.0014
+LR: 0.000014, Acc: 100.0000, Loss: 0.0107
+LR: 0.000014, Acc: 97.5000, Loss: 0.0450
+LR: 0.000014, Acc: 100.0000, Loss: 0.0005
+LR: 0.000014, Acc: 100.0000, Loss: 0.0002
+LR: 0.000013, Acc: 100.0000, Loss: 0.0028
+LR: 0.000013, Acc: 100.0000, Loss: 0.0010
+LR: 0.000013, Acc: 100.0000, Loss: 0.0226
+LR: 0.000013, Acc: 100.0000, Loss: 0.0005
+LR: 0.000013, Acc: 100.0000, Loss: 0.0015
+LR: 0.000013, Acc: 100.0000, Loss: 0.0046
+LR: 0.000013, Acc: 100.0000, Loss: 0.0009
+LR: 0.000012, Acc: 97.5000, Loss: 0.1081
+LR: 0.000012, Acc: 100.0000, Loss: 0.0019
+LR: 0.000012, Acc: 100.0000, Loss: 0.0076
+LR: 0.000012, Acc: 100.0000, Loss: 0.0003
+LR: 0.000012, Acc: 97.5000, Loss: 0.0672
+LR: 0.000012, Acc: 100.0000, Loss: 0.0010
+LR: 0.000012, Acc: 97.5000, Loss: 0.2337
+LR: 0.000011, Acc: 100.0000, Loss: 0.0033
+LR: 0.000011, Acc: 100.0000, Loss: 0.0003
+LR: 0.000011, Acc: 100.0000, Loss: 0.0089
+LR: 0.000011, Acc: 100.0000, Loss: 0.0005
+LR: 0.000011, Acc: 97.5000, Loss: 0.0431
+LR: 0.000011, Acc: 100.0000, Loss: 0.0002
+LR: 0.000011, Acc: 100.0000, Loss: 0.0105
+LR: 0.000010, Acc: 100.0000, Loss: 0.0004
+LR: 0.000010, Acc: 100.0000, Loss: 0.0005
+LR: 0.000010, Acc: 100.0000, Loss: 0.0017
+LR: 0.000010, Acc: 100.0000, Loss: 0.0058
+LR: 0.000010, Acc: 100.0000, Loss: 0.0012
+LR: 0.000010, Acc: 100.0000, Loss: 0.0006
+LR: 0.000010, Acc: 100.0000, Loss: 0.0043
+LR: 0.000010, Acc: 100.0000, Loss: 0.0013
+LR: 0.000009, Acc: 100.0000, Loss: 0.0004
+LR: 0.000009, Acc: 97.5000, Loss: 0.0284
+LR: 0.000009, Acc: 100.0000, Loss: 0.0019
+LR: 0.000009, Acc: 100.0000, Loss: 0.0134
+LR: 0.000009, Acc: 100.0000, Loss: 0.0012
+LR: 0.000009, Acc: 100.0000, Loss: 0.0004
+LR: 0.000009, Acc: 100.0000, Loss: 0.0041
+LR: 0.000009, Acc: 100.0000, Loss: 0.0005
+LR: 0.000008, Acc: 100.0000, Loss: 0.0006
+LR: 0.000008, Acc: 100.0000, Loss: 0.0040
+LR: 0.000008, Acc: 100.0000, Loss: 0.0010
+LR: 0.000008, Acc: 100.0000, Loss: 0.0089
+LR: 0.000008, Acc: 100.0000, Loss: 0.0044
+LR: 0.000008, Acc: 100.0000, Loss: 0.0011
+LR: 0.000008, Acc: 100.0000, Loss: 0.0029
+LR: 0.000008, Acc: 100.0000, Loss: 0.0005
+LR: 0.000008, Acc: 100.0000, Loss: 0.0011
+LR: 0.000007, Acc: 100.0000, Loss: 0.0077
+LR: 0.000007, Acc: 100.0000, Loss: 0.0036
+LR: 0.000007, Acc: 100.0000, Loss: 0.0007
+LR: 0.000007, Acc: 100.0000, Loss: 0.0010
+LR: 0.000007, Acc: 97.5000, Loss: 0.0570
+LR: 0.000007, Acc: 100.0000, Loss: 0.0019
+LR: 0.000007, Acc: 100.0000, Loss: 0.0004
+LR: 0.000007, Acc: 100.0000, Loss: 0.0019
+LR: 0.000007, Acc: 100.0000, Loss: 0.0015
+LR: 0.000006, Acc: 100.0000, Loss: 0.0042
+LR: 0.000006, Acc: 100.0000, Loss: 0.0060
+LR: 0.000006, Acc: 100.0000, Loss: 0.0032
+LR: 0.000006, Acc: 97.5000, Loss: 0.0239
+LR: 0.000006, Acc: 100.0000, Loss: 0.0010
+LR: 0.000006, Acc: 100.0000, Loss: 0.0003
+LR: 0.000006, Acc: 100.0000, Loss: 0.0004
+>>> Switching to ROUTER-ONLY finetuning <<<
+LR: 0.000200, Acc: 97.5000, Loss: 0.0402
+LR: 0.000200, Acc: 97.5000, Loss: 0.0212
+LR: 0.000200, Acc: 100.0000, Loss: 0.0068
+LR: 0.000199, Acc: 100.0000, Loss: 0.0007
+LR: 0.000199, Acc: 97.5000, Loss: 0.0562
+LR: 0.000198, Acc: 100.0000, Loss: 0.0012
+LR: 0.000198, Acc: 100.0000, Loss: 0.0008
+LR: 0.000197, Acc: 100.0000, Loss: 0.0018
+LR: 0.000196, Acc: 100.0000, Loss: 0.0099
+LR: 0.000195, Acc: 100.0000, Loss: 0.0004
+LR: 0.000194, Acc: 100.0000, Loss: 0.0036
+LR: 0.000193, Acc: 100.0000, Loss: 0.0072
+LR: 0.000192, Acc: 100.0000, Loss: 0.0117
+LR: 0.000191, Acc: 100.0000, Loss: 0.0125
+LR: 0.000189, Acc: 100.0000, Loss: 0.0034
+LR: 0.000188, Acc: 100.0000, Loss: 0.0006
+LR: 0.000186, Acc: 100.0000, Loss: 0.0060
+LR: 0.000185, Acc: 97.5000, Loss: 0.0549
+LR: 0.000183, Acc: 100.0000, Loss: 0.0020
+LR: 0.000181, Acc: 100.0000, Loss: 0.0021
+LR: 0.000179, Acc: 100.0000, Loss: 0.0010
+LR: 0.000177, Acc: 100.0000, Loss: 0.0014
+LR: 0.000175, Acc: 100.0000, Loss: 0.0022
+LR: 0.000173, Acc: 100.0000, Loss: 0.0006
+LR: 0.000171, Acc: 100.0000, Loss: 0.0002
+LR: 0.000169, Acc: 100.0000, Loss: 0.0005
+LR: 0.000166, Acc: 100.0000, Loss: 0.0006
+LR: 0.000164, Acc: 100.0000, Loss: 0.0006
+LR: 0.000161, Acc: 100.0000, Loss: 0.0016
+LR: 0.000159, Acc: 100.0000, Loss: 0.0004
+LR: 0.000156, Acc: 100.0000, Loss: 0.0006
+LR: 0.000154, Acc: 100.0000, Loss: 0.0011
+LR: 0.000151, Acc: 100.0000, Loss: 0.0006
+LR: 0.000148, Acc: 100.0000, Loss: 0.0122
+LR: 0.000146, Acc: 100.0000, Loss: 0.0161
+LR: 0.000143, Acc: 100.0000, Loss: 0.0033
+LR: 0.000140, Acc: 100.0000, Loss: 0.0007
+LR: 0.000137, Acc: 100.0000, Loss: 0.0040
+LR: 0.000134, Acc: 100.0000, Loss: 0.0198
+LR: 0.000131, Acc: 100.0000, Loss: 0.0027
+LR: 0.000128, Acc: 100.0000, Loss: 0.0003
+LR: 0.000125, Acc: 97.5000, Loss: 0.0268
+LR: 0.000122, Acc: 100.0000, Loss: 0.0024
+LR: 0.000119, Acc: 100.0000, Loss: 0.0027
+LR: 0.000116, Acc: 100.0000, Loss: 0.0013
+LR: 0.000113, Acc: 100.0000, Loss: 0.0027
+LR: 0.000110, Acc: 100.0000, Loss: 0.0260
+LR: 0.000107, Acc: 100.0000, Loss: 0.0038
+LR: 0.000104, Acc: 100.0000, Loss: 0.0016
+LR: 0.000100, Acc: 100.0000, Loss: 0.0005
+LR: 0.000097, Acc: 100.0000, Loss: 0.0036
+LR: 0.000094, Acc: 100.0000, Loss: 0.0005
+LR: 0.000091, Acc: 100.0000, Loss: 0.0047
+LR: 0.000088, Acc: 100.0000, Loss: 0.0011
+LR: 0.000085, Acc: 100.0000, Loss: 0.0041
+LR: 0.000082, Acc: 100.0000, Loss: 0.0237
+LR: 0.000079, Acc: 100.0000, Loss: 0.0029
+LR: 0.000076, Acc: 100.0000, Loss: 0.0079
+LR: 0.000073, Acc: 100.0000, Loss: 0.0010
+LR: 0.000070, Acc: 100.0000, Loss: 0.0009
+LR: 0.000067, Acc: 100.0000, Loss: 0.0007
+LR: 0.000064, Acc: 100.0000, Loss: 0.0257
+LR: 0.000061, Acc: 100.0000, Loss: 0.0297
+LR: 0.000058, Acc: 100.0000, Loss: 0.0015
+LR: 0.000055, Acc: 100.0000, Loss: 0.0076
+LR: 0.000053, Acc: 100.0000, Loss: 0.0019
+LR: 0.000050, Acc: 97.5000, Loss: 0.0528
+LR: 0.000047, Acc: 100.0000, Loss: 0.0095
+LR: 0.000045, Acc: 100.0000, Loss: 0.0010
+LR: 0.000042, Acc: 100.0000, Loss: 0.0007
+LR: 0.000040, Acc: 100.0000, Loss: 0.0011
+LR: 0.000037, Acc: 100.0000, Loss: 0.0004
+LR: 0.000035, Acc: 100.0000, Loss: 0.0018
+LR: 0.000032, Acc: 100.0000, Loss: 0.0002
+LR: 0.000030, Acc: 100.0000, Loss: 0.0009
+LR: 0.000028, Acc: 97.5000, Loss: 0.0723
+LR: 0.000026, Acc: 100.0000, Loss: 0.0132
+LR: 0.000024, Acc: 100.0000, Loss: 0.0008
+LR: 0.000022, Acc: 100.0000, Loss: 0.0106
+LR: 0.000020, Acc: 100.0000, Loss: 0.0087
+LR: 0.000018, Acc: 100.0000, Loss: 0.0054
+LR: 0.000016, Acc: 100.0000, Loss: 0.0013
+LR: 0.000015, Acc: 100.0000, Loss: 0.0010
+LR: 0.000013, Acc: 100.0000, Loss: 0.0006
+LR: 0.000012, Acc: 100.0000, Loss: 0.0062
+LR: 0.000010, Acc: 100.0000, Loss: 0.0010
+LR: 0.000009, Acc: 100.0000, Loss: 0.0013
+LR: 0.000008, Acc: 100.0000, Loss: 0.0004
+LR: 0.000007, Acc: 100.0000, Loss: 0.0022
+LR: 0.000006, Acc: 100.0000, Loss: 0.0009
+LR: 0.000005, Acc: 100.0000, Loss: 0.0013
+LR: 0.000004, Acc: 100.0000, Loss: 0.0012
+LR: 0.000003, Acc: 100.0000, Loss: 0.0013
+LR: 0.000003, Acc: 97.5000, Loss: 0.0237
+LR: 0.000002, Acc: 100.0000, Loss: 0.0004
+LR: 0.000002, Acc: 100.0000, Loss: 0.0014
+LR: 0.000001, Acc: 100.0000, Loss: 0.0024
+LR: 0.000001, Acc: 97.5000, Loss: 0.1105
+LR: 0.000001, Acc: 100.0000, Loss: 0.0007
+**** Final test accuracy: 87.63. ****
+
+LoRA weights saved to weights/vitb16/eurosat/4shots/6experts/seed1/CLIP-MoLE_eurosat.pt
