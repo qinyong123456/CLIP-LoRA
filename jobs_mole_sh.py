@@ -5,10 +5,11 @@ methods = [
 "CLIP-MoLE"
 ]
 datasets = [
+"oxford_pets",
 "oxford_flowers",
 "eurosat"
 ]
-shots_list = [1, 2, 4, 8]
+shots_list = [16]
 seeds = [1]
 num_experts_list = [2, 4, 6]
 
