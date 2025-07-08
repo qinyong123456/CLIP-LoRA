@@ -1,0 +1,30 @@
+Traceback (most recent call last):
+  File "/lustre03/project/6036820/pedro36/workspace/CLIP-LoRA/main.py", line 53, in <module>
+    main()
+  File "/lustre03/project/6036820/pedro36/workspace/CLIP-LoRA/main.py", line 50, in main
+    run_lora(args, clip_model, logit_scale, dataset, train_loader, val_loader, test_loader)
+  File "/lustre03/project/6036820/pedro36/workspace/CLIP-LoRA/lora.py", line 45, in run_lora
+    textual_features = clip_classifier(dataset.classnames, dataset.template, clip_model)
+  File "/lustre03/project/6036820/pedro36/workspace/CLIP-LoRA/utils.py", line 22, in clip_classifier
+    class_embeddings = clip_model.encode_text(texts)
+  File "/lustre03/project/6036820/pedro36/workspace/CLIP-LoRA/clip/model.py", line 346, in encode_text
+    x = self.transformer(x)
+  File "/localscratch/pedro36.57183503.0/env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/localscratch/pedro36.57183503.0/env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/lustre03/project/6036820/pedro36/workspace/CLIP-LoRA/clip/model.py", line 201, in forward
+    return self.resblocks(x)
+  File "/localscratch/pedro36.57183503.0/env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/localscratch/pedro36.57183503.0/env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/localscratch/pedro36.57183503.0/env/lib/python3.10/site-packages/torch/nn/modules/container.py", line 250, in forward
+    input = module(input)
+  File "/localscratch/pedro36.57183503.0/env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/localscratch/pedro36.57183503.0/env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/lustre03/project/6036820/pedro36/workspace/CLIP-LoRA/clip/model.py", line 186, in forward
+    valor, balance_loss  = self.attention(self.ln_1(x))
+ValueError: too many values to unpack (expected 2)
