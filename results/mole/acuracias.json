@@ -16,6 +16,11 @@
     "zero_shot": 88.2,
     "final": 93.0
   },
+  "CLIP-MoLE_oxford_flowers_16shots_2experts.out": {
+    "shots": 16,
+    "experts": 2,
+    "final": 98.09
+  },
   "CLIP-MoLE_oxford_pets_8shots_2experts.out": {
     "shots": 8,
     "experts": 2,
@@ -47,6 +52,11 @@
     "zero_shot": 88.2,
     "final": 93.73
   },
+  "CLIP-MoLE_eurosat_16shots_4experts.out": {
+    "shots": 16,
+    "experts": 4,
+    "final": 93.36
+  },
   "CLIP-MoLE_eurosat_1shots_4experts.out": {
     "shots": 1,
     "experts": 4,
@@ -73,6 +83,11 @@
     "shots": 2,
     "experts": 4,
     "final": 87.58
+  },
+  "CLIP-MoLE_oxford_pets_16shots_2experts.out": {
+    "shots": 16,
+    "experts": 2,
+    "final": 93.84
   },
   "CLIP-MoLE_oxford_flowers_4shots_4experts.out": {
     "shots": 4,
@@ -121,6 +136,11 @@
     "experts": 6,
     "final": 93.49
   },
+  "CLIP-MoLE_eurosat_16shots_2experts.out": {
+    "shots": 16,
+    "experts": 2,
+    "final": 91.72
+  },
   "CLIP-MoLE_oxford_pets_1shots_2experts.out": {
     "shots": 1,
     "experts": 2,
@@ -147,6 +167,11 @@
     "experts": 2,
     "final": 93.63
   },
+  "CLIP-MoLE_oxford_pets_16shots_4experts.out": {
+    "shots": 16,
+    "experts": 4,
+    "final": 93.65
+  },
   "CLIP-MoLE_oxford_flowers_8shots_2experts.out": {
     "shots": 8,
     "experts": 2,
@@ -167,6 +192,11 @@
     "shots": 2,
     "experts": 6,
     "final": 84.2
+  },
+  "CLIP-MoLE_oxford_flowers_16shots_4experts.out": {
+    "shots": 16,
+    "experts": 4,
+    "final": 97.04
   },
   "CLIP-MoLE_eurosat_8shots_4experts.out": {
     "shots": 8,
