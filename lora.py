@@ -98,7 +98,7 @@ def run_lora(args, clip_model, logit_scale, dataset, train_loader, val_loader, t
         if args.encoder == 'vision': 
             text_features = textual_features.t().half()
         for i, (images, target) in enumerate(tqdm(train_loader)):
-            # Quando atingir 95% das iterações, congela LoRA e libera só o router
+            # Quando atingir 90% das iterações, congela LoRA e libera só o router
             if count_iters >= freeze_point and not args.router_phase:
                 print(">>> Switching to ROUTER-ONLY finetuning <<<")
                 mark_only_router_as_trainable(clip_model, train_router=True)
@@ -120,6 +120,7 @@ def run_lora(args, clip_model, logit_scale, dataset, train_loader, val_loader, t
                     texts = clip.tokenize(texts).cuda()
                     text_out = clip_model.encode_text(texts)
                 if isinstance(text_out, tuple):
+                    print("\ntupla\n")
                     class_embeddings, balance_loss_text = text_out
                     balance_loss = balance_loss + balance_loss_text
                 else:
@@ -143,6 +144,7 @@ def run_lora(args, clip_model, logit_scale, dataset, train_loader, val_loader, t
             cosine_similarity = logit_scale * image_features @ text_features.t()
             loss = F.cross_entropy(cosine_similarity, target)
             if balance_loss != 0.0:
+                print(f'\nbalance loss: {balance_loss}\n')
                 loss = loss + lambda_balance * balance_loss
             acc_train += cls_acc(cosine_similarity, target) * target.shape[0]
             loss_epoch += loss.item() * target.shape[0]
