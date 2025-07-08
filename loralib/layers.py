@@ -423,6 +423,7 @@ class PlainMultiheadAttentionLoRA(nn.Module):
             o_balance = 0.0
         o = o.view(tgt_len, bsz, o.size(-1))
         total_balance = q_balance + k_balance + v_balance + o_balance
+        print(f'\ntotal_balance\n')
         if self.batch_first and is_batched:
             return o.transpose(1, 0), total_balance
         return o, total_balance

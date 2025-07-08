@@ -120,7 +120,7 @@ def run_lora(args, clip_model, logit_scale, dataset, train_loader, val_loader, t
                     texts = clip.tokenize(texts).cuda()
                     text_out = clip_model.encode_text(texts)
                 if isinstance(text_out, tuple):
-                    print("\ntupla\n")
+                    print("\ntupla texto caralho\n")
                     class_embeddings, balance_loss_text = text_out
                     balance_loss = balance_loss + balance_loss_text
                 else:
@@ -131,6 +131,7 @@ def run_lora(args, clip_model, logit_scale, dataset, train_loader, val_loader, t
                 with torch.amp.autocast(device_type="cuda", dtype=torch.float16):
                     image_out = clip_model.encode_image(images)
                 if isinstance(image_out, tuple):
+                    print("\ntupla visao caralho\n")
                     image_features, balance_loss_img = image_out
                     balance_loss = balance_loss + balance_loss_img
                 else:
