@@ -155,18 +155,6 @@ class MultiLinearLoRA(nn.Linear, LoRALayer):
         self.num_experts = num_experts
         self.top_k = top_k
         self.dropout = nn.Dropout(dropout_rate) if dropout_rate > 0 else None
-        # Parâmetro de ruído do router
-        self.router_noise_std = kwargs.get('router_noise_std', 1.0)
-
-    
-
-    def get_balance_loss(self, router_logits):
-        # router_logits: [N, num_experts] (antes ou depois do softmax)
-        probs = torch.softmax(router_logits, dim=-1)  # [N, num_experts]
-        expert_probs = probs.mean(dim=0)  # [num_experts]
-        ideal = torch.full_like(expert_probs, 1.0 / self.num_experts)
-        balance_loss = torch.sum((expert_probs - ideal) ** 2)
-        return balance_loss
 
     def forward(self, x: torch.Tensor, **kwargs):
         orig_shape = x.shape
@@ -184,10 +172,6 @@ class MultiLinearLoRA(nn.Linear, LoRALayer):
                 return original_output
 
         router_logits = self.router(x_flat)  # [N, num_experts]
-        # Adiciona ruído gaussiano aos logits do router durante o treinamento
-        if self.training and self.router_noise_std > 0:
-            noise = torch.randn_like(router_logits) * self.router_noise_std
-            router_logits = router_logits + noise
         topk_vals, topk_indices = torch.topk(router_logits, self.top_k, dim=-1)  # [N, top_k]
 
         expert_adjust = torch.zeros_like(original_output)
@@ -203,11 +187,10 @@ class MultiLinearLoRA(nn.Linear, LoRALayer):
                     expert_adjust[mask] += adjust * vals[mask].unsqueeze(-1)
 
         result = original_output + expert_adjust
-        balance_loss = self.get_balance_loss(router_logits)
         if x.dim() > 2:
-            return result.view(*orig_shape[:-1], -1), balance_loss
+            return result.view(*orig_shape[:-1], -1)
         else:
-            return result, balance_loss
+            return result
         
         
 class PlainMultiheadAttentionLoRA(nn.Module):
@@ -352,25 +335,9 @@ class PlainMultiheadAttentionLoRA(nn.Module):
         q, k, v = qkv[0], qkv[1], qkv[2]
         """
         
-        # Substitui chamadas para aceitar ambos os casos (tupla ou tensor)
-        q_proj_out = self.q_proj(query)
-        if isinstance(q_proj_out, tuple):
-            q, q_balance = q_proj_out
-        else:
-            q = q_proj_out
-            q_balance = 0.0
-        k_proj_out = self.k_proj(key)
-        if isinstance(k_proj_out, tuple):
-            k, k_balance = k_proj_out
-        else:
-            k = k_proj_out
-            k_balance = 0.0
-        v_proj_out = self.v_proj(value)
-        if isinstance(v_proj_out, tuple):
-            v, v_balance = v_proj_out
-        else:
-            v = v_proj_out
-            v_balance = 0.0
+        q = self.q_proj(query)
+        k = self.k_proj(key)
+        v = self.v_proj(value)
 
         attn_mask = F._canonical_mask(
             mask=attn_mask,
@@ -415,18 +382,11 @@ class PlainMultiheadAttentionLoRA(nn.Module):
 
         attn_output = self.scaled_dot_product_attention(q, k, v, attn_mask, dropout_p, is_causal)
         attn_output = attn_output.permute(2, 0, 1, 3).contiguous().view(bsz * tgt_len, embed_dim)
-        proj_out = self.proj(attn_output)
-        if isinstance(proj_out, tuple):
-            o, o_balance = proj_out
-        else:
-            o = proj_out
-            o_balance = 0.0
-        o = o.view(tgt_len, bsz, o.size(-1))
-        total_balance = q_balance + k_balance + v_balance + o_balance
-        print(f'\ntotal_balance\n')
+        attn_output = self.proj(attn_output)
+        attn_output = attn_output.view(tgt_len, bsz, attn_output.size(1))
         if self.batch_first and is_batched:
-            return o.transpose(1, 0), total_balance
-        return o, total_balance
+            return attn_output.transpose(1, 0), None
+        return attn_output, None  
 
     def train(self, mode: bool = True):
         super().train(mode)
