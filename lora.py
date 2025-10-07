@@ -1,10 +1,78 @@
 import torch
 import torch.nn.functional as F
-
+import math
 from utils import *
 
 from loralib.utils import mark_only_lora_as_trainable, apply_lora, get_lora_parameters, lora_state_dict, save_lora, load_lora
 from loralib import layers as lora_layers
+
+# 添加C-AdamW优化器实现
+class CAdamW(torch.optim.AdamW):
+    """
+    C-AdamW优化器：AdamW的变种，增加了一个额外的校正项
+    """
+    def __init__(self, params, lr=1e-3, betas=(0.9, 0.999), eps=1e-8,
+                 weight_decay=1e-2, amsgrad=False, c=0.2):
+        super(CAdamW, self).__init__(params, lr, betas, eps, weight_decay, amsgrad)
+        self.c = c  # 校正系数
+        
+    def step(self, closure=None):
+        """执行单步优化"""
+        loss = None
+        if closure is not None:
+            loss = closure()
+
+        for group in self.param_groups:
+            for p in group['params']:
+                if p.grad is None:
+                    continue
+                
+                # 获取梯度
+                grad = p.grad.data
+                if grad.is_sparse:
+                    raise RuntimeError('C-AdamW does not support sparse gradients')
+                
+                # 应用原始AdamW的更新逻辑
+                state = self.state[p]
+                
+                # 状态初始化
+                if len(state) == 0:
+                    state['step'] = 0
+                    # 指数移动平均
+                    state['exp_avg'] = torch.zeros_like(p.data)
+                    # 指数移动平均的平方
+                    state['exp_avg_sq'] = torch.zeros_like(p.data)
+                
+                exp_avg, exp_avg_sq = state['exp_avg'], state['exp_avg_sq']
+                beta1, beta2 = group['betas']
+                
+                state['step'] += 1
+                
+                # 应用权重衰减
+                if group['weight_decay'] != 0:
+                    grad = grad.add(p.data, alpha=group['weight_decay'])
+                
+                # 更新偏置校正的指数平均
+                exp_avg.mul_(beta1).add_(grad, alpha=1 - beta1)
+                exp_avg_sq.mul_(beta2).addcmul_(grad, grad, value=1 - beta2)
+                
+                # 偏置校正
+                bias_correction1 = 1 - beta1 ** state['step']
+                bias_correction2 = 1 - beta2 ** state['step']
+                
+                # 计算自适应学习率
+                denom = (exp_avg_sq.sqrt() / math.sqrt(bias_correction2)).add_(group['eps'])
+                
+                # 应用C-AdamW的校正项
+                step_size = group['lr'] / bias_correction1
+                
+                # 添加校正项
+                correction = self.c * torch.sign(exp_avg) * torch.sqrt(exp_avg_sq)
+                
+                # 更新参数
+                p.data.addcdiv_(exp_avg + correction, denom, value=-step_size)
+                
+        return loss
 
 def evaluate_lora(args, clip_model, loader, dataset):
     clip_model.eval()
@@ -72,7 +140,8 @@ def run_lora(args, clip_model, logit_scale, dataset, train_loader, val_loader, t
     mark_only_lora_as_trainable(clip_model)
     total_iters = args.n_iters * args.shots
     
-    optimizer = torch.optim.AdamW(get_lora_parameters(clip_model), weight_decay=1e-2, betas=(0.9, 0.999), lr=args.lr)
+    # 将AdamW替换为C-AdamW
+    optimizer = CAdamW(get_lora_parameters(clip_model), weight_decay=1e-2, betas=(0.9, 0.999), lr=args.lr, c=0.2)
     scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, total_iters, eta_min=1e-6)
     
     best_acc_val, best_acc_test = 0., 0.
