@@ -85,7 +85,16 @@ def run_lora(args, clip_model, logit_scale, dataset, train_loader, val_loader, t
     if hasattr(args, 'rank_strategy') and args.rank_strategy == 'warmup_dynamic':
         warmup_iters = getattr(args, 'rank_warmup_iters', 0)
         scores = [0.0 for _ in range(len(list_lora_layers))]
-        mats_count = [0 for _ in range(len(list_lora_layers))]
+        # count matrices per layer once
+        mats_count = []
+        for li, layer in enumerate(list_lora_layers):
+            m = 0
+            for attr in ['q_proj', 'k_proj', 'v_proj', 'proj']:
+                if hasattr(layer, attr):
+                    sub = getattr(layer, attr)
+                    if hasattr(sub, 'w_lora_A') and hasattr(sub, 'w_lora_B'):
+                        m += 1
+            mats_count.append(max(1, m))
         scaler = torch.cuda.amp.GradScaler()
         count_warm = 0
         while count_warm < warmup_iters:
@@ -118,7 +127,6 @@ def run_lora(args, clip_model, logit_scale, dataset, train_loader, val_loader, t
                                     layer_score += gA.norm().item()
                                 if gB is not None:
                                     layer_score += gB.norm().item()
-                                mats_count[li] += 1
                     scores[li] += layer_score
                 scaler.step(optimizer)
                 scaler.update()
@@ -131,19 +139,13 @@ def run_lora(args, clip_model, logit_scale, dataset, train_loader, val_loader, t
         B = getattr(args, 'rank_budget', len(list_lora_layers))
         r_min = getattr(args, 'rank_min', 0)
         r_max = getattr(args, 'rank_max', original_r)
-        total_mats = sum(mats_count) if sum(mats_count) > 0 else len(list_lora_layers)
         sum_scores = sum(scores)
         eff_r = [r_min for _ in range(len(list_lora_layers))]
         if sum_scores > 0:
-            units = []
             for i in range(len(list_lora_layers)):
                 w = scores[i]
-                u = int(round(B * (w / sum_scores)))
-                units.append(u)
-            # convert units to per-layer r
-            for i in range(len(list_lora_layers)):
-                m = max(1, mats_count[i])
-                ri = units[i] // m
+                m = mats_count[i]
+                ri = int(round((B * (w / sum_scores)) / m))
                 ri = max(r_min, min(r_max, ri))
                 eff_r[i] = ri
         # adjust to budget precisely
@@ -178,6 +180,10 @@ def run_lora(args, clip_model, logit_scale, dataset, train_loader, val_loader, t
                     sub = getattr(layer, attr)
                     if hasattr(sub, 'effective_r'):
                         setattr(sub, 'effective_r', ri)
+        # optional: print allocation summary
+        print("Dynamic rank allocation under budget:")
+        for li, layer in enumerate(list_lora_layers):
+            print(f"Layer {li}: effective_r={eff_r[li]}, mats={mats_count[li]}, score={scores[li]:.4f}")
         # restore r to original if needed
         args.r = original_r
 
