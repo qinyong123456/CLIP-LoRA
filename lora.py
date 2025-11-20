@@ -60,6 +60,9 @@ def run_lora(args, clip_model, logit_scale, dataset, train_loader, val_loader, t
     test_labels = test_labels.cpu()
     
     
+    original_r = args.r
+    if hasattr(args, 'rank_strategy') and args.rank_strategy == 'warmup_dynamic':
+        args.r = getattr(args, 'rank_max', original_r)
     list_lora_layers = apply_lora(args, clip_model)
     clip_model = clip_model.cuda() 
     
@@ -78,6 +81,106 @@ def run_lora(args, clip_model, logit_scale, dataset, train_loader, val_loader, t
     best_acc_val, best_acc_test = 0., 0.
     best_epoch_val = 0
     
+    # Dynamic warmup and rank allocation
+    if hasattr(args, 'rank_strategy') and args.rank_strategy == 'warmup_dynamic':
+        warmup_iters = getattr(args, 'rank_warmup_iters', 0)
+        scores = [0.0 for _ in range(len(list_lora_layers))]
+        mats_count = [0 for _ in range(len(list_lora_layers))]
+        scaler = torch.cuda.amp.GradScaler()
+        count_warm = 0
+        while count_warm < warmup_iters:
+            clip_model.train()
+            for i, (images, target) in enumerate(tqdm(train_loader)):
+                template = dataset.template[0]
+                texts = [template.format(classname.replace('_', ' ')) for classname in dataset.classnames]
+                images, target = images.cuda(), target.cuda()
+                with torch.amp.autocast(device_type="cuda", dtype=torch.float16):
+                    texts_ids = clip.tokenize(texts).cuda()
+                    class_embeddings = clip_model.encode_text(texts_ids)
+                    text_features = class_embeddings/class_embeddings.norm(dim=-1, keepdim=True)
+                    image_features = clip_model.encode_image(images)
+                image_features = image_features/image_features.norm(dim=-1, keepdim=True)
+                cosine_similarity = logit_scale * image_features @ text_features.t()
+                loss = F.cross_entropy(cosine_similarity, target)
+                optimizer.zero_grad()
+                scaler.scale(loss).backward()
+
+                # accumulate grad norms per layer
+                for li, layer in enumerate(list_lora_layers):
+                    layer_score = 0.0
+                    for attr in ['q_proj', 'k_proj', 'v_proj', 'proj']:
+                        if hasattr(layer, attr):
+                            sub = getattr(layer, attr)
+                            if hasattr(sub, 'w_lora_A') and hasattr(sub, 'w_lora_B'):
+                                gA = getattr(sub, 'w_lora_A').grad
+                                gB = getattr(sub, 'w_lora_B').grad
+                                if gA is not None:
+                                    layer_score += gA.norm().item()
+                                if gB is not None:
+                                    layer_score += gB.norm().item()
+                                mats_count[li] += 1
+                    scores[li] += layer_score
+                scaler.step(optimizer)
+                scaler.update()
+
+                count_warm += 1
+                if count_warm >= warmup_iters:
+                    break
+
+        # allocate effective ranks per layer under budget
+        B = getattr(args, 'rank_budget', len(list_lora_layers))
+        r_min = getattr(args, 'rank_min', 0)
+        r_max = getattr(args, 'rank_max', original_r)
+        total_mats = sum(mats_count) if sum(mats_count) > 0 else len(list_lora_layers)
+        sum_scores = sum(scores)
+        eff_r = [r_min for _ in range(len(list_lora_layers))]
+        if sum_scores > 0:
+            units = []
+            for i in range(len(list_lora_layers)):
+                w = scores[i]
+                u = int(round(B * (w / sum_scores)))
+                units.append(u)
+            # convert units to per-layer r
+            for i in range(len(list_lora_layers)):
+                m = max(1, mats_count[i])
+                ri = units[i] // m
+                ri = max(r_min, min(r_max, ri))
+                eff_r[i] = ri
+        # adjust to budget precisely
+        def total_units(eff):
+            return sum((eff[i] * (mats_count[i] if mats_count[i] > 0 else 1)) for i in range(len(eff)))
+        # reduce if over budget
+        while total_units(eff_r) > B:
+            # reduce on smallest scores first
+            order = sorted(range(len(list_lora_layers)), key=lambda i: scores[i])
+            for i in order:
+                if eff_r[i] > r_min:
+                    eff_r[i] -= 1
+                    if total_units(eff_r) <= B:
+                        break
+            else:
+                break
+        # increase if under budget
+        while total_units(eff_r) < B:
+            order = sorted(range(len(list_lora_layers)), key=lambda i: -scores[i])
+            for i in order:
+                if eff_r[i] < r_max:
+                    eff_r[i] += 1
+                    if total_units(eff_r) >= B:
+                        break
+            else:
+                break
+        # apply effective_r to each submodule
+        for li, layer in enumerate(list_lora_layers):
+            ri = eff_r[li]
+            for attr in ['q_proj', 'k_proj', 'v_proj', 'proj']:
+                if hasattr(layer, attr):
+                    sub = getattr(layer, attr)
+                    if hasattr(sub, 'effective_r'):
+                        setattr(sub, 'effective_r', ri)
+        # restore r to original if needed
+        args.r = original_r
+
     # training LoRA
     scaler = torch.cuda.amp.GradScaler()
     count_iters = 0
