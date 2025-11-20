@@ -277,7 +277,8 @@ def load_lora(args, list_lora_layers):
             raise ValueError('per_layer_r length mismatch')
         for i in range(len(current)):
             if current[i] != metadata['per_layer_r'][i]:
-                raise ValueError(f'per_layer_r mismatch at layer {i}: expected {current[i]}, found {metadata['per_layer_r'][i]}')
+                found = metadata['per_layer_r'][i]
+                raise ValueError(f"per_layer_r mismatch at layer {i}: expected {current[i]}, found {found}")
     else:
         if metadata['r'] != args.r:
             raise ValueError(
