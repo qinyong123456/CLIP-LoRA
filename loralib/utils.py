@@ -106,31 +106,102 @@ def get_lora_parameters(model, bias='none'):
 
 def apply_lora(args, clip_model):
     list_lora_layers = []
+    per_layer_r = []
+
+    def assign_r_for_index(encoder_type, idx):
+        if args.rank_strategy == 'uniform':
+            return args.r
+        pos = args.position
+        dataset = getattr(args, 'dataset', '')
+        is_fine = dataset in ['stanford_cars', 'fgvc', 'oxford_pets']
+        r_h = args.rank_high
+        r_m = args.rank_mid
+        r_l = args.rank_low
+        if pos == 'all':
+            if idx <= 3:
+                base = r_l
+            elif idx <= 7:
+                base = r_m
+            else:
+                base = r_h
+        else:
+            if encoder_type == 'vision':
+                if pos in ['top', 'top3', 'up']:
+                    base = r_h
+                elif pos in ['mid', 'half-up']:
+                    base = r_m
+                else:
+                    base = r_l
+            else:
+                if pos in ['top1', 'top3', 'up']:
+                    base = r_m
+                elif pos in ['mid', 'half-up']:
+                    base = r_m
+                else:
+                    base = r_l
+        if args.dataset_rank_bias == 'auto' and is_fine:
+            base = min(r_h, base + 2)
+        return base
+
+    text_indices = []
+    vision_indices = []
     if args.encoder == 'text' or args.encoder == 'both':
-        indices = INDEX_POSITIONS_TEXT[args.position]
+        text_indices = INDEX_POSITIONS_TEXT[args.position]
+    if args.encoder == 'vision' or args.encoder == 'both':
+        vision_indices = INDEX_POSITIONS_VISION[args.backbone][args.position]
+
+    assigned_rs_text = [assign_r_for_index('text', i) for i in text_indices]
+    assigned_rs_vision = [assign_r_for_index('vision', i) for i in vision_indices]
+
+    all_assigned = assigned_rs_text + assigned_rs_vision
+    if len(all_assigned) > 0 and args.rank_strategy == 'static_map':
+        total = sum(all_assigned) * len(args.params)
+        budget = args.rank_budget
+        if total > budget:
+            scale = budget / float(total)
+            scaled = [max(1, int(round(r * scale))) for r in all_assigned]
+            diff = budget - sum(scaled) * len(args.params)
+            if diff < 0:
+                for k in range(len(scaled)):
+                    if diff == 0:
+                        break
+                    if scaled[k] > 1:
+                        scaled[k] -= 1
+                        diff += len(args.params)
+            ptr = 0
+            assigned_rs_text = scaled[:len(assigned_rs_text)]
+            assigned_rs_vision = scaled[len(assigned_rs_text):]
+
+    if args.encoder == 'text' or args.encoder == 'both':
         text_encoder = clip_model.transformer
         for i, block in enumerate(text_encoder.resblocks):
             print(f"Residual Attention Block {i}: {block}")
-            if i in indices:
+            if i in text_indices:
+                r_i = assigned_rs_text[text_indices.index(i)] if args.rank_strategy == 'static_map' else args.r
                 for name, submodule in block.named_children():
                     if isinstance(submodule, nn.MultiheadAttention):
+                        print(f"Assigned r={r_i} for text block {i}")
                         new_multi_head_lora = PlainMultiheadAttentionLoRA(
-                            submodule, enable_lora=args.params, r=args.r, lora_alpha=args.alpha, dropout_rate=args.dropout_rate)
+                            submodule, enable_lora=args.params, r=r_i, lora_alpha=args.alpha, dropout_rate=args.dropout_rate)
                         setattr(block, name, new_multi_head_lora)
                         list_lora_layers.append(new_multi_head_lora)
+                        per_layer_r.append(r_i)
 
     if args.encoder == 'vision' or args.encoder == 'both':
-        indices = INDEX_POSITIONS_VISION[args.backbone][args.position]
         vision_encoder = clip_model.visual.transformer
         for i, block in enumerate(vision_encoder.resblocks):
             print(f"Residual Attention Block {i}: {block}")
-            if i in indices:
+            if i in vision_indices:
+                r_i = assigned_rs_vision[vision_indices.index(i)] if args.rank_strategy == 'static_map' else args.r
                 for name, submodule in block.named_children():
                     if isinstance(submodule, nn.MultiheadAttention):
+                        print(f"Assigned r={r_i} for vision block {i}")
                         new_multi_head_lora = PlainMultiheadAttentionLoRA(
-                            submodule, enable_lora=args.params, r=args.r, lora_alpha=args.alpha, dropout_rate=args.dropout_rate)
+                            submodule, enable_lora=args.params, r=r_i, lora_alpha=args.alpha, dropout_rate=args.dropout_rate)
                         setattr(block, name, new_multi_head_lora)
                         list_lora_layers.append(new_multi_head_lora)
+                        per_layer_r.append(r_i)
+    setattr(args, 'per_layer_r', per_layer_r)
     return list_lora_layers
 
 
@@ -166,7 +237,10 @@ def save_lora(args, list_lora_layers):
         'alpha': args.alpha,
         'encoder': args.encoder,
         'params': args.params,
-        'position': args.position
+        'position': args.position,
+        'rank_strategy': getattr(args, 'rank_strategy', 'uniform'),
+        'rank_budget': getattr(args, 'rank_budget', None),
+        'per_layer_r': getattr(args, 'per_layer_r', None)
     }
 
     save_data = {
@@ -195,9 +269,19 @@ def load_lora(args, list_lora_layers):
     loaded_data = torch.load(load_path)
 
     metadata = loaded_data['metadata']
-    if metadata['r'] != args.r:
-        raise ValueError(
-            f"r mismatch: expected {args.r}, found {metadata['r']}")
+    if 'per_layer_r' in metadata and metadata['per_layer_r'] is not None:
+        current = getattr(args, 'per_layer_r', None)
+        if current is None:
+            raise ValueError('per_layer_r missing in current args')
+        if len(current) != len(metadata['per_layer_r']):
+            raise ValueError('per_layer_r length mismatch')
+        for i in range(len(current)):
+            if current[i] != metadata['per_layer_r'][i]:
+                raise ValueError(f'per_layer_r mismatch at layer {i}: expected {current[i]}, found {metadata['per_layer_r'][i]}')
+    else:
+        if metadata['r'] != args.r:
+            raise ValueError(
+                f"r mismatch: expected {args.r}, found {metadata['r']}")
     if metadata['alpha'] != args.alpha:
         raise ValueError(
             f"alpha mismatch: expected {args.alpha}, found {metadata['alpha']}")
