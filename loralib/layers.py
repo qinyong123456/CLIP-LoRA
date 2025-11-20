@@ -66,13 +66,22 @@ class LoRALayer():
                 # initialize A the same way as the default for nn.Linear and B to zero
                 nn.init.kaiming_uniform_(eval(f'self.{lora_name}_lora_A'), a=math.sqrt(5))
                 nn.init.zeros_(eval(f'self.{lora_name}_lora_B'))
+        # default effective rank equals r
+        if hasattr(self, 'r'):
+            self.effective_r = self.r
 
     def transpose(self, w: torch.Tensor):
         return w.transpose(0, 1) if self.fan_in_fan_out else w
 
     def merge_BA(self, param_name: str):
         lora_name = self.params_with_lora[param_name]
-        return self.transpose((eval(f'self.{lora_name}_lora_B') @ eval(f'self.{lora_name}_lora_A')).view(eval(f'self.{param_name}').shape))
+        A = eval(f'self.{lora_name}_lora_A')
+        B = eval(f'self.{lora_name}_lora_B')
+        r_eff = getattr(self, 'effective_r', self.r)
+        if r_eff is not None and r_eff >= 0 and r_eff < self.r:
+            A = A[:r_eff, :]
+            B = B[:, :r_eff]
+        return self.transpose((B @ A).view(eval(f'self.{param_name}').shape))
 
     
    
